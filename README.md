@@ -1,6 +1,6 @@
-# :car: Zonin Showroom
+# :car: Zonin Showroom - Front-end
 
-### Welcome to the Zonin Showroom! This repository contains the front-end codebase for our online platform where customers can explore our car catalog, read our blog, and learn more about our dealership.
+### Zonin Showroom! This repository contains the front-end codebase for our online platform where customers can explore our car catalog, read our blog, and learn more about automotive niche.
 
 Our Car Dealership aims to provide a visually appealing and intuitive user interface, enhancing the browsing experience for our customers. Please note that this project is solely focused on the front end, providing the layout, design, and interactivity of the website. The back-end functionalities such as user authentication, database management, and server operations are not included, but will be developed in the future to complement the front-end features.
 
