@@ -1,4 +1,5 @@
 @import url("./reset.css");
+@import url('./typography.css');
 
 :root {
   --primary-dark: #131219;
@@ -24,6 +25,7 @@
   --font-size-body: clamp(16px, 1.5vw, 18px);
   --font-size-a: clamp(16px, 2vw, 18px);
 
-  --font-weight-600: 600;
   --font-weight-400: 400;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
 }
