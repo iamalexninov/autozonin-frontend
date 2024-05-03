@@ -11,6 +11,7 @@ Our Car Dealership aims to provide a visually appealing and intuitive user inter
 - `CSS Modules`
 - `React-icons`
 - `Vite`
+- `Figma`
 
 ## :memo: Process
 
