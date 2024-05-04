@@ -24,6 +24,7 @@
   --font-size-btn: clamp(16px, 2vw, 20px);
   --font-size-body: clamp(16px, 1.5vw, 18px);
   --font-size-a: clamp(16px, 2vw, 19px);
+  --font-size-small-text: clamp(12px, 1.5vw, 14px);
 
   --font-weight-400: 400;
   --font-weight-600: 600;

@@ -50,3 +50,11 @@ a {
   font-size: var(--font-size-a);
   font-weight: var(--font-weight-400);
 }
+
+input,
+select,
+textarea,
+li,
+label {
+  font-size: var(--font-size-small-text);
+}

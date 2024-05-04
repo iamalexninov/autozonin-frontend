@@ -1,0 +1,16 @@
+.before_line,
+.line,
+.after_line {
+  width: 50px;
+}
+
+.before_line,
+.after_line {
+  height: 0.1px;
+  background-color: var(--orange);
+}
+
+.line {
+  height: 3px;
+  background-color: transparent;
+}
