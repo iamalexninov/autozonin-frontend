@@ -7,6 +7,10 @@ Our Car Dealership aims to provide a visually appealing and intuitive user inter
 ## :art: Design
 [Figma Public File](https://www.figma.com/community/file/1368623059742207486/zonin-showroom)
 
+#### Landing Page:
+<img src="./src/assets/images/design/Home.png"> 
+
+
 ## :hammer_and_pick: Main Technologies
 
 - `React`
