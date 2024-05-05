@@ -4,6 +4,9 @@
 
 Our Car Dealership aims to provide a visually appealing and intuitive user interface, enhancing the browsing experience for our customers. Please note that this project is solely focused on the front end, providing the layout, design, and interactivity of the website. The back-end functionalities such as user authentication, database management, and server operations are not included, but will be developed in the future to complement the front-end features.
 
+## :art: Design
+[Figma Public File](https://www.figma.com/community/file/1368623059742207486/zonin-showroom)
+
 ## :hammer_and_pick: Main Technologies
 
 - `React`
