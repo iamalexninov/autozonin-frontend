@@ -1,5 +1,11 @@
+import { NavbarTop } from "../navbar-top/NavbarTop";
+import { NavbarBottom } from "../navbar-bottom/NavbarBottom";
+
 export const Navbar = () => {
   return (
-    <div>Navbar</div>
-  )
-}
+    <header>
+      <NavbarTop />
+      <NavbarBottom />
+    </header>
+  );
+};
