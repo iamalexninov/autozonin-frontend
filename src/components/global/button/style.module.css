@@ -1,29 +1,23 @@
+/* .link {
+} */
+
 .primary_btn {
   color: var(--white);
   background-color: var(--orange);
 }
 
 .primary_btn:hover {
-  background-color: var(--primary-dark);
-}
-
-.primary_light_btn,
-.primary_dark_btn,
-.primary_orange_btn {
-  background-color: transparent;
+  background-color: var(--secondary-dark);
 }
 
 .primary_light_btn {
   color: var(--white);
   border: 1px solid var(--white);
+  background-color: var(--white);
 }
 
 .primary_dark_btn {
-  color: var(--primary-dark);
+  color: var(--white);
   border: 1px solid var(--primary-dark);
-}
-
-.primary_orange_btn {
-  color: var(--orange);
-  border: 1px solid var(--orange);
+  background-color: var(--primary-dark)
 }

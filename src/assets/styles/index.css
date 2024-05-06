@@ -1,48 +1,20 @@
 @import url("./reset.css");
+@import url('./variables.css');
 @import url("./typography.css");
-@import url('./reuse.css');
+@import url("./reuse.css");
 
-:root {
-  --primary-dark: #131219;
-  --secondary-dark: #222029;
-  --orange: #ff5400;
-  --black: #000;
-  --white: #fff;
-  --light-gray: #f0f0f0;
-  --middle-gray: #909090;
-  --dark-gray: #494848;
-
-  --font-family-headings: "Oswald", sans-serif;
-  --font-family-body: "Poppins", sans-serif;
-  --font-family-btns-links: "Lato", sans-serif;
-
-  --font-size-h1: clamp(36px, 6vw, 44px);
-  --font-size-h2: clamp(30px, 5vw, 38px);
-  --font-size-h3: clamp(24px, 4vw, 32px);
-  --font-size-h4: clamp(20px, 3.5vw, 28px);
-  --font-size-h5: clamp(18px, 3vw, 24px);
-
-  --font-size-btn: clamp(16px, 2vw, 20px);
-  --font-size-body: clamp(16px, 1.5vw, 18px);
-  --font-size-a: clamp(16px, 2vw, 19px);
-  --font-size-small-text: clamp(12px, 1.5vw, 14px);
-
-  --font-weight-400: 400;
-  --font-weight-600: 600;
-  --font-weight-700: 700;
-}
-
+/* 
 .select {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   display: block;
   margin: auto;
-  /* TODO: consider changes */
+  TODO: consider changes
   width: 330px;
   height: 100%;
   border: 1px solid var(--light-gray);
-  /* TODO: Consider adding a shadow */
-  /* box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5); */
+  TODO: Consider adding a shadow
+  box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
 }
 
 .toggle {
@@ -69,8 +41,8 @@
   top: 0;
   left: 0;
   z-index: 1;
-  /* width: 100%; */
-  /* height: 100%; */
+  width: 100%;
+  height: 100%;
   display: block;
   opacity: 0;
 }
@@ -79,5 +51,5 @@ label.option .title {
   padding: 1.2em 2em;
   color: var(--middle-gray);
   border: 1px solid var(--light-gray);
-  /* display: none !important; */
-}
+  display: none !important;
+} */
