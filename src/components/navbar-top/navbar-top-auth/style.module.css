@@ -1,0 +1,14 @@
+.nav_auth {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--light-gray);
+}
+
+.nav_auth .nav_auth_link {
+  color: var(--middle-gray);
+}
+
+.nav_auth .nav_auth_link:hover {
+  color: var(--orange);
+}

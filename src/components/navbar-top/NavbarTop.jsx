@@ -1,30 +1,18 @@
-import { GlobalButton } from "../global/button/GlobalButton";
 import styles from "./style.module.css";
 
-import { Link } from "react-router-dom";
+import { Wrapper } from "../global/wrapper/Wrapper";
+import { NavbarTopInfo } from "./navbar-top-info/NavbarTopInfo";
+import { NavbarTopAuth } from "./navbar-top-auth/NavbarTopAuth";
 
 export const NavbarTop = () => {
   return (
-    <div className={styles.nav}>
-      <GlobalButton
-        btnVariant="generic"
-        btnType="primary"
-        path="/about"
-        text="Submit"
-      />
-      {/* <div className={styles.nav_info}>
-        <div className={styles.nav_info_phone}></div>
-        <div className={styles.nav_info_email}></div>
-      </div>
-      <div className={styles.nav_auth}>
-        <Link to="/login">
-          <p>Login</p>
-        </Link>
-        <p>or</p>
-        <Link to="/register">
-          <p>Register</p>
-        </Link>
-      </div> */}
+    <div className={styles.nav_top_container}>
+      <Wrapper>
+        <div className={styles.nav}>
+          <NavbarTopInfo />
+          <NavbarTopAuth />
+        </div>
+      </Wrapper>
     </div>
   );
 };

@@ -1,3 +1,11 @@
-.nav {
+.nav_top_container {
   background-color: var(--primary-dark);
+  padding-inline: 20px;
+  padding-block: 10px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

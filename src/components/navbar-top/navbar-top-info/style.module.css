@@ -1,0 +1,21 @@
+.nav_info,
+.nav_info_item {
+  display: flex;
+  align-items: center;
+}
+
+.nav_info {
+  gap: 20px;
+}
+
+.nav_info_item {
+  gap: 5px;
+}
+
+.nav_info_item div {
+  color: var(--orange);
+}
+
+.nav_info_item p {
+  color: var(--light-gray);
+}
