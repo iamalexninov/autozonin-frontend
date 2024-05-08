@@ -1,7 +1,7 @@
 .nav_top_container {
-  background-color: var(--primary-dark);
   padding-inline: 20px;
   padding-block: 10px;
+  background-color: var(--primary-dark);
 }
 
 .nav {
