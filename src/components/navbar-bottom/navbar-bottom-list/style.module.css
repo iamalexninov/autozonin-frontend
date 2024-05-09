@@ -1,6 +1,12 @@
 .list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 45px;
+  display: none;
+}
+
+@media only screen and (min-width: 767px) {
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+  }
 }

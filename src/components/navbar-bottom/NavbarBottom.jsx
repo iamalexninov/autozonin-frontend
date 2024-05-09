@@ -2,6 +2,8 @@ import styles from "./style.module.css";
 
 import { Wrapper } from "../global/wrapper/Wrapper";
 import { NavbarBottomList } from "./navbar-bottom-list/NavbarBottomList";
+import { GlobalIcon } from "../global/GlobalIcon";
+import { NavbarMobile } from "../navbar-mobile/NavbarMobile";
 
 export const NavbarBottom = () => {
   const mockdata = [
@@ -39,6 +41,10 @@ export const NavbarBottom = () => {
     <div className={styles.nav_bottom_container}>
       <Wrapper>
         <NavbarBottomList data={mockdata} />
+        <div className={styles.open_mobile_menu}>
+          <GlobalIcon type="bars" size={25}/>
+        </div>
+        <NavbarMobile />
       </Wrapper>
     </div>
   );
