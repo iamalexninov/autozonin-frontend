@@ -1,5 +1,8 @@
-import { NavbarMobileList } from "./navbar-mobile-list/NavbarMobileList";
 import styles from "./style.module.css";
+
+import { useMobileMenu } from "../../hooks/useMobileMenu";
+
+import { NavbarMobileList } from "./navbar-mobile-list/NavbarMobileList";
 
 export const NavbarMobile = () => {
   const mockdata = [
@@ -29,8 +32,14 @@ export const NavbarMobile = () => {
     },
   ];
 
+  const { menu } = useMobileMenu();
+
   return (
-    <div className={styles.nav_mobile}>
+    <div
+      className={
+        menu ? `${styles.nav_mobile} ${styles.active}` : styles.nav_mobile
+      }
+    >
       <NavbarMobileList data={mockdata} />
     </div>
   );

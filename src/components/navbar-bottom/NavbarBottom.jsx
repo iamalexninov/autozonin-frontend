@@ -1,5 +1,7 @@
 import styles from "./style.module.css";
 
+import { useMobileMenu } from "../../hooks/useMobileMenu";
+
 import { Wrapper } from "../global/wrapper/Wrapper";
 import { NavbarBottomList } from "./navbar-bottom-list/NavbarBottomList";
 import { GlobalIcon } from "../global/GlobalIcon";
@@ -37,14 +39,20 @@ export const NavbarBottom = () => {
     },
   ];
 
+  const { menu, toggleMenu } = useMobileMenu();
+
+  const handleMobileMenu = () => {
+    toggleMenu();
+    console.log(menu);
+  };
+
   return (
     <div className={styles.nav_bottom_container}>
       <Wrapper>
         <NavbarBottomList data={mockdata} />
-        <div className={styles.open_mobile_menu}>
-          <GlobalIcon type="bars" size={25}/>
+        <div className={styles.open_mobile_menu} onClick={handleMobileMenu}>
+          <GlobalIcon type="bars" size={25} />
         </div>
-        <NavbarMobile />
       </Wrapper>
     </div>
   );
