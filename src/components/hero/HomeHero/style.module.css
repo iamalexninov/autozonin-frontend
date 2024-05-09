@@ -1,0 +1,21 @@
+.hero,
+.hero_angle {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero {
+  position: relative;
+  height: 1000px;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url("../../../assets/images/png/home-hero-bg.png");
+}
+
+.hero_angle {
+  max-width: 950px;
+  height: 100%;
+  background-position: right;
+  background-image: url("../../../assets/images/png/home-hero-angle.png");
+}

@@ -1,5 +1,7 @@
 import styles from "./style.module.css";
 
+import { renderErrorMessage } from "../../../utils/errorMessages";
+
 import { Link } from "react-router-dom";
 
 export const GlobalButton = ({ btnVariant, btnType, path, text }) => {
@@ -23,15 +25,36 @@ const RenderButton = ({ type, variant, path, text }) => {
 
   // After
   const buttons = {
-    primary: <Button variant={variant} path={path} text={text} useClass="primary_btn"/>,
-    primaryLight: <Button variant={variant} path={path} text={text} useClass="primary_light_btn" />,
-    primaryDark: <Button variant={variant} path={path} text={text} useClass="primary_dark_btn" />
+    primary: (
+      <Button
+        variant={variant}
+        path={path}
+        text={text}
+        useClass="primary_btn"
+      />
+    ),
+    primaryLight: (
+      <Button
+        variant={variant}
+        path={path}
+        text={text}
+        useClass="primary_light_btn"
+      />
+    ),
+    primaryDark: (
+      <Button
+        variant={variant}
+        path={path}
+        text={text}
+        useClass="primary_dark_btn"
+      />
+    ),
   };
 
   const buttonComponent = buttons[type];
-  if(!buttonComponent) throw new Error('Invalid component')
+  if (!buttonComponent) renderErrorMessage("invalid_component");
 
-  return buttonComponent
+  return buttonComponent;
 };
 
 const Button = ({ variant, path, useClass, text }) => {
