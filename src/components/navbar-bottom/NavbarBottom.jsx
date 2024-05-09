@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 
-import { useMobileMenu } from "../../hooks/useMobileMenu";
+import { useMobileMenuContext } from "../../hooks/useContexts";
 
 import { Wrapper } from "../global/wrapper/Wrapper";
 import { NavbarBottomList } from "./navbar-bottom-list/NavbarBottomList";
@@ -39,10 +39,10 @@ export const NavbarBottom = () => {
     },
   ];
 
-  const { menu, toggleMenu } = useMobileMenu();
+  const { menu, toggle } = useMobileMenuContext();
 
   const handleMobileMenu = () => {
-    toggleMenu();
+    toggle();
     console.log(menu);
   };
 

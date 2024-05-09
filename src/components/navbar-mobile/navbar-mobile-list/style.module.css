@@ -1,0 +1,19 @@
+.mobile_container {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.mobile_container_icon,
+.mobile_container_list {
+  display: flex;
+}
+
+.mobile_container_icon {
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.mobile_container_list {
+  flex-direction: column;
+  gap: 35px;
+}

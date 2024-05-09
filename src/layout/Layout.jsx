@@ -13,23 +13,27 @@ import { Contact } from "../pages/Contact";
 import { Login } from "../pages/Login";
 import { Register } from "../pages/Register";
 
+import { MobileMenuContextProvider } from "../contexts/MobileMenuContext";
+
 export const Layout = () => {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <main>
-        <Routes>
-          <Route path={endpoints.home} element={<Home />} />
-          <Route path={endpoints.about} element={<About />} />
-          <Route path={endpoints.vehicles} element={<Vehicles />} />
-          <Route path={endpoints.team} element={<Team />} />
-          <Route path={endpoints.blog} element={<Blog />} />
-          <Route path={endpoints.contact} element={<Contact />} />
-          <Route path={endpoints.login} element={<Login />} />
-          <Route path={endpoints.register} element={<Register />} />
-        </Routes>
-      </main>
-      <Footer />
-    </BrowserRouter>
+    <MobileMenuContextProvider>
+      <BrowserRouter>
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path={endpoints.home} element={<Home />} />
+            <Route path={endpoints.about} element={<About />} />
+            <Route path={endpoints.vehicles} element={<Vehicles />} />
+            <Route path={endpoints.team} element={<Team />} />
+            <Route path={endpoints.blog} element={<Blog />} />
+            <Route path={endpoints.contact} element={<Contact />} />
+            <Route path={endpoints.login} element={<Login />} />
+            <Route path={endpoints.register} element={<Register />} />
+          </Routes>
+        </main>
+        <Footer />
+      </BrowserRouter>
+    </MobileMenuContextProvider>
   );
 };

@@ -4,6 +4,8 @@
   border-bottom: 2px solid var(--middle-gray);
 }
 
-.open_mobile_menu {
-   
+@media only screen and (min-width: 767px) {
+  .open_mobile_menu {
+    display: none;
+  }
 }

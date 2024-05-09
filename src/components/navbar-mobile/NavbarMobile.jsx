@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 
-import { useMobileMenu } from "../../hooks/useMobileMenu";
+import { useMobileMenuContext } from "../../hooks/useContexts";
 
 import { NavbarMobileList } from "./navbar-mobile-list/NavbarMobileList";
 
@@ -32,7 +32,7 @@ export const NavbarMobile = () => {
     },
   ];
 
-  const { menu } = useMobileMenu();
+  const { menu } = useMobileMenuContext();
 
   return (
     <div
