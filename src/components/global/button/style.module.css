@@ -10,14 +10,23 @@
   background-color: var(--secondary-dark);
 }
 
+.primary_light_btn,
+.primary_dark_btn,
+.primary_orange_btn {
+  background-color: transparent;
+}
+
 .primary_light_btn {
   color: var(--white);
   border: 1px solid var(--white);
-  background-color: var(--white);
 }
 
 .primary_dark_btn {
   color: var(--white);
   border: 1px solid var(--primary-dark);
-  background-color: var(--primary-dark)
+}
+
+.primary_orange_btn {
+  color: var(--orange);
+  border: 1px solid var(--orange);
 }

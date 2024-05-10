@@ -1,5 +1,5 @@
 function errorInvalidComponent() {
-  throw new Error("Invalid Component");
+  return "Invalid Component";
 }
 
 export function renderErrorMessage(type) {

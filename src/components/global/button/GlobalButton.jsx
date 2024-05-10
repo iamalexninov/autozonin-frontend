@@ -10,7 +10,7 @@ export const GlobalButton = ({ btnVariant, btnType, path, text }) => {
   );
 };
 
-const RenderButton = ({ type, variant, path, text }) => {
+const RenderButton = ({ variant, type, path, text }) => {
   // Before
   // switch (type) {
   //   case "primary_btn":
@@ -49,10 +49,23 @@ const RenderButton = ({ type, variant, path, text }) => {
         useClass="primary_dark_btn"
       />
     ),
+    primaryOrange: (
+      <Button
+        variant={variant}
+        path={path}
+        text={text}
+        useClass="primary_orange_btn"
+      />
+    ),
   };
 
-  const buttonComponent = buttons[type];
-  if (!buttonComponent) renderErrorMessage("invalid_component");
+  let buttonComponent = buttons[type];
+  const errorMsg = renderErrorMessage("invalid_component");
+
+  if (!buttonComponent) {
+    alert(errorMsg())
+    buttonComponent = null;
+  }
 
   return buttonComponent;
 };

@@ -1,6 +1,12 @@
+import { renderErrorMessage } from "../../utils/errorMessages";
+
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
+import {
+  MdEmail,
+  MdKeyboardArrowDown,
+  MdKeyboardArrowUp,
+} from "react-icons/md";
 import { IoClose } from "react-icons/io5";
 
 export const GlobalIcon = ({ type, size }) => {
@@ -13,9 +19,17 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     email: MdEmail,
     bars: FaBars,
     exit: IoClose,
+    arrowUp: MdKeyboardArrowUp,
+    arrowDown: MdKeyboardArrowDown,
   };
 
-  const IconComponent = iconComponents[type] || null;
+  let IconComponent = iconComponents[type];
+  const errorMsg = renderErrorMessage("invalid_component");
+
+  if (!IconComponent) {
+    alert(errorMsg());
+    IconComponent = null;
+  }
 
   return <IconComponent size={size} />;
 };
