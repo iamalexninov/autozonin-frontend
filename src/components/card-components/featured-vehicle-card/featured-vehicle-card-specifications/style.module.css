@@ -1,0 +1,24 @@
+.specifications,
+.specification {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.specifications {
+  position: absolute;
+  bottom: 0;
+  padding: 5px;
+  gap: 5px;
+}
+
+.specification {
+  padding: 5px;
+  gap: 5px;
+  color: var(--orange);
+  background-color: var(--light-gray);
+}
+
+.specification > p {
+  color: var(--secondary-dark);
+}

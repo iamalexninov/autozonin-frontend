@@ -1,5 +1,5 @@
 .nav_bottom_container {
-  padding: 20px;
+  padding-block: 20px;
   background-color: var(--white);
   border-bottom: 2px solid var(--middle-gray);
 }

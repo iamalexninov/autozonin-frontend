@@ -1,0 +1,28 @@
+.vehicles {
+  padding-block: 80px;
+  background-color: var(--light-gray);
+}
+
+.vehicles_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.vehicles_content_line {
+  margin-block: 20px;
+}
+
+.vehicles_content_desc {
+  max-width: 500px;
+  color: var(--middle-gray);
+}
+
+.vehicles_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
