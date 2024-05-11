@@ -1,0 +1,13 @@
+.identifier {
+  padding-block: 40px 20px;
+}
+
+.identifier_text {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.identifier_text_line,.identifier_text_all a {
+  color: var(--orange);
+}
