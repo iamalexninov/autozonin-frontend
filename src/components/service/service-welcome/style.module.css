@@ -1,0 +1,40 @@
+.service_welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding-block: 90px 50px;
+}
+
+.service_welcome_text {
+  width: 100%;
+}
+
+.service_welcome_text_title {
+  margin-bottom: 20px;
+}
+
+.service_welcome_text_title span {
+  color: var(--orange);
+}
+
+.service_welcome_text_description {
+  color: var(--middle-gray);
+}
+
+@media only screen and (min-width: 767px) {
+  .service_welcome {
+    flex-direction: row;
+  }
+
+  .service_welcome_text {
+    max-width: 250px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .service_welcome_text {
+    max-width: 550px;
+  }
+}
