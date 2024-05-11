@@ -1,7 +1,7 @@
 import { renderErrorMessage } from "../../utils/errorMessages";
 
 import { FaPhoneAlt } from "react-icons/fa";
-import { FaBars } from "react-icons/fa6";
+import { FaArrowRight, FaBars } from "react-icons/fa6";
 import {
   MdEmail,
   MdKeyboardArrowDown,
@@ -21,6 +21,7 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     exit: IoClose,
     arrowUp: MdKeyboardArrowUp,
     arrowDown: MdKeyboardArrowDown,
+    arrowRight: FaArrowRight,
   };
 
   let IconComponent = iconComponents[type];

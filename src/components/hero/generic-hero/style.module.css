@@ -1,0 +1,36 @@
+.hero {
+  min-height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../../assets/images/png/generic-hero-bg.png");
+}
+
+.hero,
+.hero_redirect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_redirect {
+  gap: 10px;
+}
+
+.hero_redirect,
+.hero > div > h4,
+.hero_redirect > p > a {
+  color: var(--light-gray);
+}
+
+.hero_redirect > p {
+    font-size: 18px;
+  color: var(--white);
+}
+
+.hero > div > h4 {
+  margin-bottom: 10px;
+}
+
+.hero > div {
+  padding-top: 100px;
+}
