@@ -1,11 +1,10 @@
 import styles from "./style.module.css";
 
-import { useMobileMenuContext } from "../../hooks/useContexts";
+import { useMobileMenuContext } from "../../../hooks/useContexts";
 
-import { Wrapper } from "../global/wrapper/Wrapper";
+import { Wrapper } from "../../global/wrapper/Wrapper";
+import { GlobalIcon } from "../../global/GlobalIcon";
 import { NavbarBottomList } from "./navbar-bottom-list/NavbarBottomList";
-import { GlobalIcon } from "../global/GlobalIcon";
-import { NavbarMobile } from "../navbar-mobile/NavbarMobile";
 
 export const NavbarBottom = () => {
   const mockdata = [

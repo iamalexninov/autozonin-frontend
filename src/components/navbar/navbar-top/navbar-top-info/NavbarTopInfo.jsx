@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 
-import { GlobalIcon } from "../../global/GlobalIcon";
+import { GlobalIcon } from "../../../global/GlobalIcon";
 
 export const NavbarTopInfo = () => {
   return (

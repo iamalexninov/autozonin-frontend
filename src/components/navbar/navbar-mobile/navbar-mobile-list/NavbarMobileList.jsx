@@ -1,9 +1,9 @@
 import styles from "./style.module.css";
 
-import { GlobalIcon } from "../../global/GlobalIcon";
+import { GlobalIcon } from "../../../global/GlobalIcon";
 import { NavbarMobileItem } from "../navbar-mobile-item/NavbarMobileItem";
 
-import { useMobileMenuContext } from "../../../hooks/useContexts";
+import { useMobileMenuContext } from "../../../../hooks/useContexts";
 
 export const NavbarMobileList = ({ data }) => {
   const { toggle } = useMobileMenuContext();

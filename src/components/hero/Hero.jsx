@@ -1,5 +1,5 @@
-import { GenericHero } from "./GenericHero/GenericHero";
-import { HomeHero } from "./HomeHero/HomeHero";
+import { GenericHero } from "./generic-hero/GenericHero";
+import { HomeHero } from "./home-hero/HomeHero";
 
 export const Hero = ({ type }) => {
   const heroComponents = {

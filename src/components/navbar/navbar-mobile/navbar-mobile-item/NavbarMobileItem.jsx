@@ -2,7 +2,7 @@ import styles from "./style.module.css";
 
 import { Link } from "react-router-dom";
 
-import { useMobileMenuContext } from "../../../hooks/useContexts";
+import { useMobileMenuContext } from "../../../../hooks/useContexts";
 
 export const NavbarMobileItem = ({ content, path }) => {
   const { close } = useMobileMenuContext();

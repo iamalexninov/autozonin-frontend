@@ -1,5 +1,5 @@
 import styles from "./style.module.css";
-import zoninLogo from "../../../assets/images/png/zonin-logo.png";
+import zoninLogo from "../../../../assets/images/png/zonin-logo.png";
 
 import { Link } from "react-router-dom";
 
