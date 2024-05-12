@@ -1,3 +1,10 @@
 .hub {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width:1024px) {
+    .hub {
+        flex-direction: row;
+    }
 }

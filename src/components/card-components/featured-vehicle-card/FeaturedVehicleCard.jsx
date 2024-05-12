@@ -4,39 +4,28 @@ import { FeaturedVehicleCardPoster } from "./featured-vehicle-card-poster/Featur
 import { FeaturedVehicleCardText } from "./featured-vehicle-card-text/FeaturedVehicleCardText";
 import { FeaturedVehicleCardSpecifications } from "./featured-vehicle-card-specifications/FeaturedVehicleCardSpecifications";
 
-export const FeaturedVehicleCard = ({
-  logo,
-  detailsPath,
-  price,
-  make,
-  model,
-  description,
-  year,
-  mileage,
-  condition,
-  horsepower,
-}) => {
+export const FeaturedVehicleCard = ({ data }) => {
   return (
-    <div className={styles.card}>
+    <>
       {/* TODO: Alt should be the name of the vehicle - make + model */}
       <FeaturedVehicleCardPoster
-        logo={logo}
-        detailsPath={detailsPath}
-        make={make}
-        model={model}
-        price={price}
+        logo={data.logo}
+        detailsPath={data.detailsPath}
+        make={data.make}
+        model={data.model}
+        price={data.price}
       />
       <FeaturedVehicleCardText
-        make={make}
-        model={model}
-        description={description}
+        make={data.make}
+        model={data.model}
+        description={data.description}
       />
       <FeaturedVehicleCardSpecifications
-        year={year}
-        mileage={mileage}
-        condition={condition}
-        horsepower={horsepower}
+        year={data.year}
+        mileage={data.mileage}
+        condition={data.condition}
+        horsepower={data.horsepower}
       />
-    </div>
+    </>
   );
 };

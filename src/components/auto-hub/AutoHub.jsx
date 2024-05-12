@@ -1,12 +1,15 @@
-import styles from './style.module.css'
+import styles from "./style.module.css";
 
-import { AutoHubNavigator } from "./auto-hub-navigators/AutoHubNavigator";
+import { AutoMarket } from "./auto-market/AutoMarket";
 
 export const AutoHub = () => {
+  const marketListing = ["seeker", "seller"];
+
   return (
     <section className={styles.hub}>
-      <AutoHubNavigator navigator="seeker" />
-      <AutoHubNavigator navigator="seller" />
+      {marketListing.map((comp) => (
+        <AutoMarket key={comp} renderComp={comp} />
+      ))}
     </section>
   );
 };

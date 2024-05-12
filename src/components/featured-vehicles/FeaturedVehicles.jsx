@@ -7,7 +7,7 @@ import porche from "../../assets/images/jpg/test_porche.jpg";
 
 import { Wrapper } from "../global/wrapper/Wrapper";
 import { GlobalUnderline } from "../global/underline/GlobalUnderline";
-import { FeaturedVehicleCard } from "../card-components/featured-vehicle-card/FeaturedVehicleCard";
+import { RenderCard } from "../card-components/RenderCard";
 
 export const FeaturedVehicles = () => {
   // TODO: Should be at least 3, at most 6, consider Swapper
@@ -69,19 +69,7 @@ export const FeaturedVehicles = () => {
         </div>
         <ul className={styles.vehicles_list}>
           {vehiclesmockdata.map((vehicle) => (
-            <FeaturedVehicleCard
-              key={vehicle.model}
-              logo={vehicle.logo}
-              detailsPath={vehicle.detailsPath}
-              price={vehicle.price}
-              make={vehicle.make}
-              model={vehicle.model}
-              description={vehicle.description}
-              year={vehicle.year}
-              mileage={vehicle.mileage}
-              condition={vehicle.condition}
-              horsepower={vehicle.horsepower}
-            />
+            <RenderCard card="featured_vehicle" key={vehicle.model} data={vehicle}/>
           ))}
         </ul>
       </Wrapper>

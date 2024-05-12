@@ -1,0 +1,5 @@
+.card_version1 {
+  position: relative;
+  max-width: 350px;
+  background-color: var(--white);
+}

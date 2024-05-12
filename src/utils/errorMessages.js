@@ -7,5 +7,8 @@ export function renderErrorMessage(type) {
     invalid_component: errorInvalidComponent,
   };
 
+  // if(!component) {
+  //   return alert(messages[type])
+  // }
   return messages[type];
 }
