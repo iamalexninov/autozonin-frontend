@@ -1,0 +1,19 @@
+.engage_score_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+  height: 90px;
+  border: 1px solid var(--light-gray);
+}
+
+.engage_score_item_icon {
+  margin-bottom: 5px;
+  color: var(--orange);
+}
+
+.engage_score_item p {
+  color: var(--middle-gray);
+}

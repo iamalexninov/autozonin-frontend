@@ -12,6 +12,6 @@ export const AutoMagazineCard = () => {
         <AutoMagazineCardEngageScore />
         <AutoMagazineCardContent />
       </div>
-    </>
+    </>  
   );
 };

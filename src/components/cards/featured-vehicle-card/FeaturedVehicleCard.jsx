@@ -1,5 +1,3 @@
-import styles from "./style.module.css";
-
 import { FeaturedVehicleCardPoster } from "./featured-vehicle-card-poster/FeaturedVehicleCardPoster";
 import { FeaturedVehicleCardText } from "./featured-vehicle-card-text/FeaturedVehicleCardText";
 import { FeaturedVehicleCardSpecifications } from "./featured-vehicle-card-specifications/FeaturedVehicleCardSpecifications";

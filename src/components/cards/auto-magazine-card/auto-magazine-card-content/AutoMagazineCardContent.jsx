@@ -15,8 +15,8 @@ export const AutoMagazineCardContent = () => {
           <p>Article</p>
         </div>
       </div>
-      <h5>toyota cuts production plan again on ongoing chip shortage</h5>
-      <Link to="/blog">Read More</Link>
+      <h5 className={styles.content_title}>toyota cuts production plan again on ongoing chip shortage</h5>
+      <Link to="/blog" className={styles.content_link}>Read More</Link>
     </div>
   );
 };

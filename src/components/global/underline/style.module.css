@@ -1,6 +1,7 @@
 .before_line,
 .line,
 .after_line {
+  display: block;
   width: 45px;
 }
 

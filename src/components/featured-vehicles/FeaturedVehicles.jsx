@@ -7,7 +7,7 @@ import porche from "../../assets/images/jpg/test_porche.jpg";
 
 import { Wrapper } from "../global/wrapper/Wrapper";
 import { GlobalUnderline } from "../global/underline/GlobalUnderline";
-import { RenderCard } from "../card-components/RenderCard";
+import { RenderCard } from "../cards/RenderCard";
 
 export const FeaturedVehicles = () => {
   // TODO: Should be at least 3, at most 6, consider Swapper

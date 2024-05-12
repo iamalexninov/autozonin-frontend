@@ -1,13 +1,15 @@
 // import styles from "./styl.module.css";
 
 import { Wrapper } from "../global/wrapper/Wrapper";
-import { AutoMagazineCard } from "../card-components/auto-magazine-card/AutoMagazineCard";
+import { RenderCard } from "../cards/RenderCard";
 
 export const AutoMagazine = () => {
   return (
     <section>
       <Wrapper>
-        <AutoMagazineCard />    
+        <RenderCard card="auto_magazine" />
+        {/* <RenderCard card="auto_magazine" /> */}
+        {/* <RenderCard card="auto_magazine" /> */}
       </Wrapper>
     </section>
   );
