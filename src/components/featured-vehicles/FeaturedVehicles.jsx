@@ -8,6 +8,7 @@ import porche from "../../assets/images/jpg/test_porche.jpg";
 import { Wrapper } from "../global/wrapper/Wrapper";
 import { GlobalUnderline } from "../global/underline/GlobalUnderline";
 import { RenderCard } from "../cards/RenderCard";
+import { SectionTextContent } from "../global/section-text-content/SectionTextContent";
 
 export const FeaturedVehicles = () => {
   // TODO: Should be at least 3, at most 6, consider Swapper
@@ -56,20 +57,19 @@ export const FeaturedVehicles = () => {
   return (
     <section className={styles.vehicles}>
       <Wrapper>
-        <div className={styles.vehicles_content}>
-          <h3>featured vehicles</h3>
-          <div className={styles.vehicles_content_line}>
-            <GlobalUnderline />
-          </div>
-          <p className={styles.vehicles_content_desc}>
-            Experience innovation and elegance with our latest featured
+        <SectionTextContent
+          title="featured vehicles"
+          paragraph="Experience innovation and elegance with our latest featured
             vehicles, redefining performance and style for the future of
-            driving.
-          </p>
-        </div>
-        <ul className={styles.vehicles_list}>
+            driving."
+        />
+        <ul className="cards_list">
           {vehiclesmockdata.map((vehicle) => (
-            <RenderCard card="featured_vehicle" key={vehicle.model} data={vehicle}/>
+            <RenderCard
+              card="featured_vehicle"
+              key={vehicle.model}
+              data={vehicle}
+            />
           ))}
         </ul>
       </Wrapper>

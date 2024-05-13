@@ -22,7 +22,6 @@ export const FeaturedVehicleCard = ({ data }) => {
         year={data.year}
         mileage={data.mileage}
         condition={data.condition}
-        horsepower={data.horsepower}
       />
     </>
   );

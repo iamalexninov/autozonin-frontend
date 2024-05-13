@@ -6,7 +6,6 @@ export const FeaturedVehicleCardSpecifications = ({
   year,
   mileage,
   condition,
-  horsepower,
 }) => {
   const specifications = [
     {
@@ -20,10 +19,6 @@ export const FeaturedVehicleCardSpecifications = ({
     {
       icon: "car",
       item: condition,
-    },
-    {
-      icon: "speedometer",
-      item: horsepower,
     },
   ];
 

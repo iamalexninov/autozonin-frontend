@@ -1,5 +1,6 @@
-main {
-    display: grid;
-    margin: 0 auto;
-    /* width: 100vw; */
+.cards_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
