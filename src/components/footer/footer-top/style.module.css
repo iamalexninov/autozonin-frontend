@@ -1,0 +1,17 @@
+.footer_top {
+  padding-block: 80px;
+  background-color: var(--secondary-dark);
+}
+
+.footer_top_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media only screen and (min-width:1024px) {
+  .footer_top_wrapper {
+    gap: 0;
+  }
+}

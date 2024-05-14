@@ -1,5 +1,9 @@
+import { FooterTop } from "./footer-top/FooterTop";
+
 export const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer>
+      <FooterTop />
+    </footer>
+  );
+};
