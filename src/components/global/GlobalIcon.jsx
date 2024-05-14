@@ -9,6 +9,8 @@ import {
   FaFolderOpen,
   FaPinterest,
   FaLinkedin,
+  FaPlus,
+  FaMinus,
 } from "react-icons/fa";
 import {
   FaArrowRight,
@@ -50,6 +52,8 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     pinterest: FaPinterest,
     linkedin: FaLinkedin,
     instagram: FaSquareInstagram,
+    plus: FaPlus,
+    minus: FaMinus,
   };
 
   let IconComponent = iconComponents[type];

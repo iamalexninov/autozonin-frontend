@@ -22,7 +22,7 @@
 }
 
 .primary_dark_btn {
-  color: var(--white);
+  color: var(--primary-dark);
   border: 1px solid var(--primary-dark);
 }
 

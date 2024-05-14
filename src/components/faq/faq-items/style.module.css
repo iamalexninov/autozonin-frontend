@@ -1,0 +1,35 @@
+.questions,
+.question {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.questions {
+  margin-bottom: 50px;
+}
+
+.questions .question_container {
+  padding: 20px 25px;
+  background-color: var(--white);
+  border-radius: 1px solid var(--middle-gray);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.question {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.question_title {
+  font-size: 20px;
+}
+
+.question_icon {
+  cursor: pointer;
+}
