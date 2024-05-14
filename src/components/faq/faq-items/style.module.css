@@ -6,7 +6,7 @@
 }
 
 .questions {
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .questions .question_container {
@@ -32,4 +32,12 @@
 
 .question_icon {
   cursor: pointer;
+}
+
+.answer {
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: var(--light-gray);
+  color: var(--middle-gray);
 }
