@@ -7,15 +7,22 @@ import {
   FaCarAlt,
   FaComment,
   FaFolderOpen,
+  FaPinterest,
+  FaLinkedin,
 } from "react-icons/fa";
-import { FaArrowRight, FaBars } from "react-icons/fa6";
+import {
+  FaArrowRight,
+  FaBars,
+  FaFacebook,
+  FaSquareInstagram,
+} from "react-icons/fa6";
 import {
   MdEmail,
   MdKeyboardArrowDown,
   MdKeyboardArrowUp,
 } from "react-icons/md";
 import { IoClose, IoSettings, IoSpeedometer } from "react-icons/io5";
-import { AiFillLike } from "react-icons/ai";
+import { AiFillLike, AiFillTwitterCircle } from "react-icons/ai";
 
 export const GlobalIcon = ({ type, size }) => {
   return <RenderIconComponent type={type} size={size} />;
@@ -38,6 +45,11 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     comment: FaComment,
     like: AiFillLike,
     folder: FaFolderOpen,
+    facebook: FaFacebook,
+    twitter: AiFillTwitterCircle,
+    pinterest: FaPinterest,
+    linkedin: FaLinkedin,
+    instagram: FaSquareInstagram,
   };
 
   let IconComponent = iconComponents[type];
