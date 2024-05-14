@@ -1,7 +1,7 @@
 .social {
   position: absolute;
   left: 50%;
-  bottom: 10px;
+  bottom: 115px;
   z-index: 5;
   transform: translateX(-50%);
   padding-block: 15px;

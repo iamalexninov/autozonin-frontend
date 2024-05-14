@@ -8,9 +8,9 @@ import { FooterTopNewsletter } from "./footer-top-newsletter/FooterTopNewsletter
 
 export const FooterTop = () => {
   return (
-    <div className={styles.footer_top}>
+    <div className={styles.top}>
       <Wrapper>
-        <div className={styles.footer_top_wrapper}>
+        <div className={styles.top_wrapper}>
           <FooterTopContact />
           <FooterTopCompany />
           <FooterTopNavigation />
