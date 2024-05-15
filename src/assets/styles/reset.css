@@ -71,6 +71,10 @@ textarea {
   height: 150px;
 }
 
+textarea,input {
+  width: 100%;
+}
+
 select,
 button,
 a {

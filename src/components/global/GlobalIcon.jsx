@@ -11,6 +11,7 @@ import {
   FaLinkedin,
   FaPlus,
   FaMinus,
+  FaAddressBook,
 } from "react-icons/fa";
 import {
   FaArrowRight,
@@ -34,6 +35,7 @@ const RenderIconComponent = ({ type, size = 20 }) => {
   const iconComponents = {
     phone: FaPhoneAlt,
     email: MdEmail,
+    address: FaAddressBook,
     bars: FaBars,
     exit: IoClose,
     arrowUp: MdKeyboardArrowUp,

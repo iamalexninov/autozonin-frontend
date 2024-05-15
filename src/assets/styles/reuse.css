@@ -4,3 +4,9 @@
   gap: 30px;
   justify-content: center;
 }
+
+.field {
+  outline: none;
+  padding: 20px;
+  border: 1px solid var(--light-gray);
+}
