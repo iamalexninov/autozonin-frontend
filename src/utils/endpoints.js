@@ -4,7 +4,7 @@ export const endpoints = {
   vehicles: "/catalogue",
   team: "/team",
   blog: "/articles",
-  contact: "/contact",
+  contact: "/contacts",
   login: "/login",
   register: "/register",
   profile: "/dealer/dashboard",

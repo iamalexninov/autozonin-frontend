@@ -3,6 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../../../assets/images/png/generic-hero-bg.png");
+  background-position: 50%;
 }
 
 .hero,
@@ -10,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .hero_redirect {
@@ -23,7 +25,7 @@
 }
 
 .hero_redirect > p {
-    font-size: 18px;
+  font-size: 18px;
   color: var(--white);
 }
 
