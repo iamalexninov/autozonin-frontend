@@ -12,6 +12,8 @@ import {
   FaPlus,
   FaMinus,
   FaAddressBook,
+  FaFlag,
+  FaBullhorn,
 } from "react-icons/fa";
 import {
   FaArrowRight,
@@ -56,6 +58,8 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     instagram: FaSquareInstagram,
     plus: FaPlus,
     minus: FaMinus,
+    flag: FaFlag,
+    promote: FaBullhorn,
   };
 
   let IconComponent = iconComponents[type];

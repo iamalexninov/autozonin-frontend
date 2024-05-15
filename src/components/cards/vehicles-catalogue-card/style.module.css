@@ -1,0 +1,42 @@
+.card {
+  padding: 40px 30px;
+  background-color: var(--light-gray);
+}
+
+.card_info,
+.tools {
+  display: flex;
+  align-items: center;
+}
+
+.card_info {
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.info_make_model {
+  margin-bottom: 5px;
+}
+
+.info_dealer {
+  color: var(--middle-gray);
+}
+
+.info_dealer a {
+  color: var(--orange);
+}
+
+.info_dealer a:hover {
+  color: var(--secondary-dark);
+}
+
+.tools {
+  gap: 15px;
+}
+
+.tools_item {
+  cursor: pointer;
+  padding: 10px 12px;
+  border: 1px solid var(--secondary-dark);
+  color: var(--secondary-dark);
+}
