@@ -1,0 +1,15 @@
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details_price {
+  font-size: 18px;
+  color: var(--orange);
+}
+
+.details_price span {
+  margin-right: 8px;
+  color: var(--secondary-dark);
+}

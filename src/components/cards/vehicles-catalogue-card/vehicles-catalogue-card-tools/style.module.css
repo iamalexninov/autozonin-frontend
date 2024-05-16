@@ -1,0 +1,12 @@
+.tools {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.tools_item {
+  cursor: pointer;
+  padding: 8px 10px;
+  border: 1px solid var(--secondary-dark);
+  color: var(--secondary-dark);
+}

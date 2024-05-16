@@ -1,42 +1,15 @@
 .card {
   padding: 40px 30px;
   background-color: var(--light-gray);
-}
-
-.card_info,
-.tools {
-  display: flex;
-  align-items: center;
+  width: 100%;
+  max-width: 500px;
 }
 
 .card_info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.info_make_model {
-  margin-bottom: 5px;
-}
-
-.info_dealer {
-  color: var(--middle-gray);
-}
-
-.info_dealer a {
-  color: var(--orange);
-}
-
-.info_dealer a:hover {
-  color: var(--secondary-dark);
-}
-
-.tools {
-  gap: 15px;
-}
-
-.tools_item {
-  cursor: pointer;
-  padding: 10px 12px;
-  border: 1px solid var(--secondary-dark);
-  color: var(--secondary-dark);
+  gap: 25px;
+  margin-bottom: 20px;
 }

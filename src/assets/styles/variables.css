@@ -7,6 +7,7 @@
   --light-gray: #f0f0f0;
   --middle-gray: #909090;
   --dark-gray: #494848;
+  --section-bg: #f7f9fb;
 
   --font-family-headings: "Oswald", sans-serif;
   --font-family-body: "Poppins", sans-serif;
@@ -18,7 +19,7 @@
   --font-size-h4: clamp(20px, 3.5vw, 28px);
   --font-size-h5: clamp(18px, 3vw, 24px);
 
-  --font-size-btn: clamp(16px, 2vw, 20px);
+  --font-size-btn: clamp(14px, 2vw, 16px);
   --font-size-body: clamp(16px, 1.5vw, 18px);
   --font-size-a: clamp(16px, 2vw, 19px);
   --font-size-small-text: clamp(12px, 1.5vw, 14px);

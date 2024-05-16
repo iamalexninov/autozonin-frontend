@@ -1,0 +1,16 @@
+.info_make_model {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .info_dealer {
+    color: var(--middle-gray);
+  }
+  
+  .info_dealer a {
+    color: var(--orange);
+  }
+  
+  .info_dealer a:hover {
+    color: var(--secondary-dark);
+  }
