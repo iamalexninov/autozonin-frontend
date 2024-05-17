@@ -7,15 +7,15 @@ export const VehiclesCatalogueCardTools = () => {
     <div className={styles.tools}>
       <div className={styles.tools_item}>
         {/* quick view */}
-        <GlobalIcon type="eye" size={22} />
+        <GlobalIcon type="eye" size={15} />
       </div>
       <div className={styles.tools_item}>
         {/* save to favourite */}
-        <GlobalIcon type="flag" size={22} />
+        <GlobalIcon type="flag" size={15} />
       </div>
       <div className={styles.tools_item}>
         {/* promote */}
-        <GlobalIcon type="promote" size={22} />
+        <GlobalIcon type="promote" size={15} />
       </div>
     </div>
   );

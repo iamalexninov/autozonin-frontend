@@ -16,7 +16,7 @@
   flex-wrap: wrap;
   align-items: normal;
   gap: 50px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .feature_id,

@@ -7,6 +7,6 @@
 
 .field {
   outline: none;
-  padding: 20px;
+  padding: 15px 20px;
   border: 1px solid var(--light-gray);
 }

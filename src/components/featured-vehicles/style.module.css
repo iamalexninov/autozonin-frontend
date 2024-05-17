@@ -1,6 +1,6 @@
 .vehicles {
   padding-block: 80px;
-  background-color: var(--light-gray);
+  background-color: var(--section-bg);
 }
 
 .vehicles_list {

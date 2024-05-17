@@ -1,3 +1,38 @@
 .catalogue {
+  padding-block: 80px;
   background-color: var(--section-bg);
+}
+
+.wrapper {
+  padding-inline: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.catalogue_wrapper {
+  /* display: flex; */
+}
+
+.catalogue_wrapper_available {
+  /* padding-left: 50px; */
+  width: 100%;
+}
+
+.entries {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+@media only screen and (min-width: 481px) {
+  .catalogue_wrapper {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .entries {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

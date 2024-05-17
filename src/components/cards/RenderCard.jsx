@@ -2,11 +2,13 @@ import styles from "./style.module.css";
 
 import { AutoMagazineCard } from "./auto-magazine-card/AutoMagazineCard";
 import { FeaturedVehicleCard } from "./featured-vehicle-card/FeaturedVehicleCard";
+import { VehiclesCatalogueCard } from "./vehicles-catalogue-card/VehiclesCatalogueCard";
 
 export const RenderCard = ({ card, data }) => {
   const cards = {
     auto_magazine: AutoMagazineCard,
     featured_vehicle: FeaturedVehicleCard,
+    vehicles_catalogue: VehiclesCatalogueCard,
   };
 
   const renderClassNameByCard = {
