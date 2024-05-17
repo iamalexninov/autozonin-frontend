@@ -1,13 +1,12 @@
 :root {
-  --primary-dark: #131219;
-  --secondary-dark: #222029;
-  --orange: #ff5400;
+  --cape-verde-green-: #00574f;
+  --hidden-falls-green: #274541;
+  --hunter-green: #1c3933;
   --black: #000;
   --white: #fff;
   --light-gray: #f0f0f0;
-  --middle-gray: #909090;
   --dark-gray: #494848;
-  --section-bg: #f7f9fb;
+  --section-bg: #f1f9f1;
 
   --font-family-headings: "Oswald", sans-serif;
   --font-family-body: "Poppins", sans-serif;
