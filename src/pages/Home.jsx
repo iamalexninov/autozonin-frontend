@@ -8,7 +8,7 @@ import { AutoMagazine } from "../components/auto-magazine/AutoMagazine";
 export const Home = () => {
   return (
     <>
-      <Hero type="home" />
+      <Hero />
       <Service />
       <BrowseSection />
       <FeaturedVehicles />

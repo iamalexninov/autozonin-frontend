@@ -1,0 +1,13 @@
+.content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.content p {
+  color: var(--light-gray);
+  margin-bottom: 20px;
+}
+
+.content h1 {
+  color: var(--white);
+}

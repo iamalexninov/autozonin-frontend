@@ -1,13 +1,17 @@
-import { HomeHero } from "./home-hero/HomeHero";
-import { GenericHero } from "./generic-hero/GenericHero";
+import styles from "./style.module.css";
 
-export const Hero = ({ type, text, page }) => {
-  const heroComponents = {
-    home: HomeHero,
-    generic: GenericHero,
-  };
+import { HeroTextContent } from "./hero-text-content/HeroTextContent";
+import { HeroConditions } from "./hero-conditions/HeroConditions";
+import { HeroSearchBar } from "./hero-search-bar/HeroSearchBar";
 
-  const RenderHero = heroComponents[type];
-
-  return <RenderHero text={text} page={page} />;
+export const Hero = () => {
+  return (
+    <section className={styles.hero}>
+      <div className={styles.hero_wrapper}>
+        <HeroTextContent />
+        <HeroConditions />
+        <HeroSearchBar />
+      </div>
+    </section>
+  );
 };
