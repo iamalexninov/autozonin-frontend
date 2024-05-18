@@ -1,17 +1,18 @@
-.conditions_records {
+.records {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
-.conditions_record,.active {
+.record,.active {
   cursor: pointer;
   color: var(--white);
   transition: all ease-in-out 0.5s;
 }
 
-.conditions_record {
+.record {
   font-size: 18px;
 }
 

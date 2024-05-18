@@ -25,6 +25,7 @@ import {
   MdEmail,
   MdKeyboardArrowDown,
   MdKeyboardArrowUp,
+  MdOutlineSearch,
 } from "react-icons/md";
 import { IoClose, IoSettings, IoSpeedometer } from "react-icons/io5";
 import { AiFillLike, AiFillTwitterCircle } from "react-icons/ai";
@@ -60,6 +61,7 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     minus: FaMinus,
     flag: FaFlag,
     promote: FaBullhorn,
+    search: MdOutlineSearch,
   };
 
   let IconComponent = iconComponents[type];

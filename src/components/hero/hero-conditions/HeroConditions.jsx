@@ -7,19 +7,17 @@ export const HeroConditions = () => {
   const conditions = ["All", "New", "Used", "Damaged"];
 
   return (
-    <div className={styles.conditions}>
-      <ConditionsRecords
-        records={conditions}
-        clicked={clicked}
-        setClicked={setClicked}
-      />
-    </div>
+    <ConditionsRecords
+      records={conditions}
+      clicked={clicked}
+      setClicked={setClicked}
+    />
   );
 };
 
 const ConditionsRecords = ({ records, clicked, setClicked }) => {
   return (
-    <ul className={styles.conditions_records}>
+    <ul className={styles.records}>
       {records.map((record) => (
         <ConditionRecord
           key={record}
@@ -39,7 +37,7 @@ const ConditionRecord = ({ record, clicked, setClicked }) => {
 
   return (
     <li
-      className={clicked === record ? styles.active : styles.conditions_record}
+      className={clicked === record ? styles.active : styles.record}
       onClick={handleClick}
     >
       {record}
