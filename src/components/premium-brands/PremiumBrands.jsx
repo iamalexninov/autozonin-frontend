@@ -6,7 +6,9 @@ import bmw from "../../assets/images/svg/bmw.svg";
 import honda from "../../assets/images/svg/honda.svg";
 import ford from "../../assets/images/svg/ford.svg";
 import lexus from "../../assets/images/svg/lexus.svg";
+
 import { Link } from "react-router-dom";
+
 import { Wrapper } from "../global/wrapper/Wrapper";
 import { GlobalIcon } from "../global/GlobalIcon";
 
@@ -51,7 +53,7 @@ export const ExplorePremiumBrands = () => {
 const PremiumBrandsHeading = () => {
   return (
     <div className={styles.heading}>
-      <h2>explore our premium brands</h2>
+      <h3>explore our premium brands</h3>
       <Link to="/catalogue" className={styles.heading_show}>
         <p>Show All Brands</p>
         <GlobalIcon type="arrowRightInline" />

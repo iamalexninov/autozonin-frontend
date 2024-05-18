@@ -38,7 +38,6 @@
   justify-content: center;
   cursor: pointer;
   width: 100%;
-  max-width: 210px;
   height: 200px;
   padding: 40px;
   text-align: center;
@@ -61,4 +60,16 @@
 .record_brand:hover {
   color: var(--cape-verde-green);
   transition: all ease-in-out 0.5s;
+}
+
+@media only screen and (min-width:481px) {
+  .record {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (min-width:767px) {
+  .record {
+    max-width: 210px;
+  }
 }
