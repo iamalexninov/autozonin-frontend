@@ -29,6 +29,7 @@ import {
 } from "react-icons/md";
 import { IoClose, IoSettings, IoSpeedometer } from "react-icons/io5";
 import { AiFillLike, AiFillTwitterCircle } from "react-icons/ai";
+import { GoArrowUpRight } from "react-icons/go";
 
 export const GlobalIcon = ({ type, size }) => {
   return <RenderIconComponent type={type} size={size} />;
@@ -44,6 +45,7 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     arrowUp: MdKeyboardArrowUp,
     arrowDown: MdKeyboardArrowDown,
     arrowRight: FaArrowRight,
+    arrowRightInline: GoArrowUpRight,
     eye: FaEye,
     calendar: FaCalendarAlt,
     setting: IoSettings,

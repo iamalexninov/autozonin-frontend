@@ -1,0 +1,64 @@
+.premium_brands {
+  position: relative;
+  top: -80px;
+  padding-block: 120px;
+  border-radius: 50px 50px 0px 0px;
+  background-color: var(--section-bg);
+}
+
+.heading,
+.heading_show,
+.records,
+.record {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading {
+  margin-bottom: 50px;
+}
+
+.heading_show {
+  color: var(--dark-gray);
+  transition: all ease-in-out 0.5s;
+}
+
+.heading_show:hover {
+  color: var(--cape-verde-green);
+}
+
+.records {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.record {
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  max-width: 210px;
+  height: 200px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: var(--white);
+  border: 1px solid var(--light-gray);
+  transition: all ease-in-out 0.5s;
+}
+
+.record:hover {
+  color: var(--cape-verde-green);
+  border: 1px solid var(--cape-verde-green);
+}
+
+.record_banner {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.record_brand:hover {
+  color: var(--cape-verde-green);
+  transition: all ease-in-out 0.5s;
+}
