@@ -10,7 +10,7 @@ import lexus from "../../assets/images/svg/lexus.svg";
 import { Link } from "react-router-dom";
 
 import { Wrapper } from "../global/wrapper/Wrapper";
-import { GlobalIcon } from "../global/GlobalIcon";
+import { SectionHeaderWithLinkBtn } from "../global/section-header-link-btn/SectionHeaderWithLinkBtn";
 
 export const ExplorePremiumBrands = () => {
   const brands = [
@@ -43,22 +43,14 @@ export const ExplorePremiumBrands = () => {
   return (
     <section className={styles.premium_brands}>
       <Wrapper>
-        <PremiumBrandsHeading />
+        <SectionHeaderWithLinkBtn
+          header="Explore Our Premium Brands"
+          linkPath="/catalogue"
+          linkText="Show All Brands"
+        />
         <BrandsRecords records={brands} />
       </Wrapper>
     </section>
-  );
-};
-
-const PremiumBrandsHeading = () => {
-  return (
-    <div className={styles.heading}>
-      <h3>explore our premium brands</h3>
-      <Link to="/catalogue" className={styles.heading_show}>
-        <p>Show All Brands</p>
-        <GlobalIcon type="arrowRightInline" />
-      </Link>
-    </div>
   );
 };
 

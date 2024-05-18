@@ -1,0 +1,5 @@
+.card_banner img {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 25px 25px 0 0;
+}

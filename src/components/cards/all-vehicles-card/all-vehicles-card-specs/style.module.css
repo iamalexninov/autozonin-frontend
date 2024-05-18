@@ -1,0 +1,23 @@
+.card_specs,
+.card_specs_record {
+  display: flex;
+}
+
+.card_specs {
+  justify-content: space-between;
+  padding: 10px;
+  margin-block: 25px;
+  color: var(--dark-gray);
+  border-top: 1px solid var(--light-gray);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.card_specs_record {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card_specs_record p {
+  font-size: 14px;
+}

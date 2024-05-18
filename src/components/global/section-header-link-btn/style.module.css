@@ -1,0 +1,22 @@
+.header,
+.header_link {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.header_link {
+  gap: 5px;
+}
+
+.header_link {
+  color: var(--dark-gray);
+}
+
+.header_link:hover {
+  color: var(--cape-verde-green);
+}

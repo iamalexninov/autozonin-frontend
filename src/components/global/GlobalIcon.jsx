@@ -30,6 +30,8 @@ import {
 import { IoClose, IoSettings, IoSpeedometer } from "react-icons/io5";
 import { AiFillLike, AiFillTwitterCircle } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
+import { BsFillFuelPumpFill } from "react-icons/bs";
+import { TbManualGearbox } from "react-icons/tb";
 
 export const GlobalIcon = ({ type, size }) => {
   return <RenderIconComponent type={type} size={size} />;
@@ -50,7 +52,6 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     calendar: FaCalendarAlt,
     setting: IoSettings,
     car: FaCarAlt,
-    speedometer: IoSpeedometer,
     comment: FaComment,
     like: AiFillLike,
     folder: FaFolderOpen,
@@ -64,6 +65,9 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     flag: FaFlag,
     promote: FaBullhorn,
     search: MdOutlineSearch,
+    speedometer: IoSpeedometer,
+    petrol: BsFillFuelPumpFill,
+    transmission: TbManualGearbox,
   };
 
   let IconComponent = iconComponents[type];

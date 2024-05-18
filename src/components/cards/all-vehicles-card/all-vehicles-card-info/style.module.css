@@ -1,0 +1,8 @@
+.card_info_header {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card_info_desc {
+  color: var(--dark-gray);
+}
