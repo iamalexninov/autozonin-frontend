@@ -1,0 +1,39 @@
+.features {
+  padding-block: 80px;
+}
+
+.features_header {
+  margin-bottom: 50px;
+}
+
+.features_records {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.features_record {
+  max-width: 200px;
+}
+
+.features_record_type {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.features_record_desc {
+  text-align: justify;
+  word-break: break-all;
+  color: var(--dark-gray);
+}
+
+@media only screen and (min-width: 1024px) {
+  .features_records {
+    gap: 10px;
+  }
+
+  .features_record {
+    max-width: 300px;
+  }
+}
