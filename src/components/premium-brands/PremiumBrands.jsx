@@ -46,7 +46,7 @@ export const ExplorePremiumBrands = () => {
         <SectionHeaderWithLinkBtn
           header="Explore Our Premium Brands"
           linkPath="/catalogue"
-          linkText="Show All Brands"
+          linkText="Show All"
         />
         <BrandsRecords records={brands} />
       </Wrapper>

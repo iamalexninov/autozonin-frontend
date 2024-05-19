@@ -20,6 +20,7 @@ import {
   FaBars,
   FaFacebook,
   FaSquareInstagram,
+  FaCheck,
 } from "react-icons/fa6";
 import {
   MdEmail,
@@ -68,6 +69,7 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     speedometer: IoSpeedometer,
     petrol: BsFillFuelPumpFill,
     transmission: TbManualGearbox,
+    check: FaCheck,
   };
 
   let IconComponent = iconComponents[type];

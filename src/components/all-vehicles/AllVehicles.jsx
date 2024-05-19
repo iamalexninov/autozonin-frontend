@@ -14,6 +14,12 @@ export const AllVehicles = () => {
           linkPath="/catalogue"
           linkText="View All"
         />
+        <div className={styles.vehicles_conditions}>
+          <p>Damaged</p>
+          <p>New</p>
+          <p>Used</p>
+        </div>
+        {/* TODO: Create records */}
         <AllVehiclesCard />
       </Wrapper>
     </section>

@@ -1,0 +1,11 @@
+.vehicles {
+  padding-bottom: 120px;
+}
+
+.vehicles_conditions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--light-gray);
+}
