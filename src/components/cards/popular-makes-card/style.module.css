@@ -1,0 +1,23 @@
+.card,.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  justify-content: center;
+  width: 100%;
+  padding: 30px;
+  color: var(--white);
+  background-color: var(--hidden-falls-green);
+  border-radius: 0px 0px 20px 20px;
+}
+
+@media only screen and (min-width: 767px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .content {
+    border-radius: 0px 20px 20px 0px;
+  }
+}

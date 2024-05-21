@@ -1,0 +1,12 @@
+.card_specs {
+  margin-bottom: 20px;
+}
+
+.card_specs_record {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+

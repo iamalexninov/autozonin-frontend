@@ -2,22 +2,21 @@ import styles from "./style.module.css";
 
 import { GlobalIcon } from "../../../global/GlobalIcon";
 
-export const AllVehiclesCardSpecs = () => {
+export const PopularMakesCardSpecs = () => {
   return (
     <div className={styles.card_specs}>
       <div className={styles.card_specs_record}>
-        <GlobalIcon type="speedometer" size={15} />
+        <GlobalIcon type="speedometer" />
         <p>15000mi.</p>
       </div>
       <div className={styles.card_specs_record}>
-        <GlobalIcon type="petrol" size={15} />
+        <GlobalIcon type="petrol" />
         <p>Diesel</p>
       </div>
       <div className={styles.card_specs_record}>
-        <GlobalIcon type="transmission" size={15} />
+        <GlobalIcon type="transmission" />
         <p>Automatic</p>
       </div>
     </div>
   );
-  redw
 };

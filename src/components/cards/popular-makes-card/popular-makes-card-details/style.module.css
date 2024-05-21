@@ -1,0 +1,14 @@
+.details,
+.link_btn {
+  display: flex;
+  align-items: center;
+}
+
+.details {
+  justify-content: space-between;
+}
+
+.link_btn {
+  font-size: 16px;
+  color: var(--light-gray);
+}
