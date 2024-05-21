@@ -1,15 +1,13 @@
 import styles from "./style.module.css";
-
+import { Wrapper } from "../global/wrapper/Wrapper";
 import { FooterTop } from "./footer-top/FooterTop";
-import { FooterSocials } from "./footer-socials/FooterSocials";
-import { FooterBottom } from "./footer-bottom/FooterBottom";
 
 export const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <FooterTop />
-      <FooterSocials />
-      <FooterBottom />
+      <Wrapper>
+        <FooterTop />
+      </Wrapper>
     </footer>
   );
 };

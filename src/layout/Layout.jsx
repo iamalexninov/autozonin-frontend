@@ -2,7 +2,7 @@ import { endpoints } from "../utils/endpoints";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import { Navbar } from "../components/navbar/Navbar";
-// import { Footer } from "../components/footer/Footer";
+import { Footer } from "../components/footer/Footer";
 
 import {Home} from '../pages/Home'
 // import { About } from "../pages/About";
@@ -32,7 +32,7 @@ export const Layout = () => {
             <Route path={endpoints.register} element={<Register />} /> */}
           </Routes>
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </MobileMenuContextProvider>
   );

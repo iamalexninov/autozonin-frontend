@@ -26,7 +26,7 @@ export const AutoHub = () => {
 const RenderAutohubSection = ({ header, desc, path, className }) => {
   return (
     <div className={[styles[className], styles.autohub_section].join(" ")}>
-      <h5 className={styles.autohub_section_header}>{header}</h5>
+      <h3 className={styles.autohub_section_header}>{header}</h3>
       <p className={styles.autohub_section_desc}>
         We are committed to providing our customers with exceptional service.
       </p>
