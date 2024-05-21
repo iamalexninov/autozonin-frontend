@@ -1,0 +1,50 @@
+.autohub {
+  padding-block: 80px;
+  background-color: var(--light-gray);
+  border-radius: 20px 20px 0px 0px;
+}
+
+.autohub_items {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.autohub_section {
+  padding: 20px 50px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--black);
+  width: 100%;
+}
+
+.autohub_section_header {
+  margin-bottom: 20px;
+}
+
+.autohub_section_desc {
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+
+.autohub_buying {
+  background-color: #e9f2ff;
+}
+
+.autohub_selling {
+  background-color: #ffe9f3;
+}
+
+.autohub_btn {
+  display: block;
+  padding: 15px;
+  max-width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  color: var(--white);
+  background-color: var(--black);
+  /* border: 1px solid var(--light-gray); */
+}
