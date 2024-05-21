@@ -8,11 +8,3 @@
   justify-content: space-between;
   margin-bottom: 50px;
 }
-
-.header_link {
-  color: var(--dark-gray);
-}
-
-.header_link:hover {
-  color: var(--cape-verde-green);
-}

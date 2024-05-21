@@ -1,0 +1,31 @@
+.card {
+  width: 100%;
+}
+
+.card_banner {
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.card_info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--dark-gray);
+  margin-bottom: 10px;
+}
+
+.card_info_dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background-color: var(--cape-verde-green);
+}
+
+.card_info_header {
+  font-weight: bold;
+}
+
+.card_info_header:hover {
+  color: var(--cape-verde-green);
+}

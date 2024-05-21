@@ -20,5 +20,12 @@
 
 .makes_cards {
   display: flex;
+  flex-direction: column;
   gap: 50px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .makes_cards {
+    flex-direction: row;
+  }
 }

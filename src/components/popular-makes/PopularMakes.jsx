@@ -11,6 +11,7 @@ export const PopularMakes = () => {
     <section className={styles.makes}>
       <Wrapper>
         <SectionHeaderWithLinkBtn
+          color="light"
           header="Popular Makes"
           linkPath="/catalogue"
           linkText="View All"

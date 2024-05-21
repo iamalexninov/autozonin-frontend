@@ -5,6 +5,7 @@ import { Services } from "../components/services/Services";
 import { Stats } from "../components/stats/Stats";
 import { WhyChooseUs } from "../components/why-choose-us/WhyChooseUs";
 import { PopularMakes } from "../components/popular-makes/PopularMakes";
+import { LatestBlogPosts } from "../components/latest-blog-posts/LatestBlogPosts";
 
 export const Home = () => {
   return (
@@ -16,6 +17,7 @@ export const Home = () => {
       <Stats />
       <WhyChooseUs />
       <PopularMakes />
+      <LatestBlogPosts />
     </>
   );
 };
