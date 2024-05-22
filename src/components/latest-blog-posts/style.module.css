@@ -1,5 +1,6 @@
 .blog {
   padding-block: 80px;
+  background-color: var(--white);
 }
 
 .blog_cards {

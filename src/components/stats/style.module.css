@@ -1,5 +1,6 @@
 .stats {
-  padding-bottom: 80px;
+  padding-block: 50px;
+  background-color: var(--white);
   border-bottom: 1px solid var(--light-gray);
 }
 

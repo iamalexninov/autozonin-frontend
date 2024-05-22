@@ -1,5 +1,6 @@
 .vehicles {
-  padding-bottom: 120px;
+  padding-block: 120px;
+  background-color: var(--white);
 }
 
 .vehicles_conditions {

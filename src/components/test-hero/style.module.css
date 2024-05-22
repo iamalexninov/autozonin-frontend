@@ -1,0 +1,31 @@
+.hero {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  background-color: var(--white);
+  border-radius: 60px 60px 0 0;
+}
+
+.hero_pages {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.hero_pages > li,
+.hero_pages > li > a {
+  font-size: 14px;
+}
+
+.hero_pages > li > a {
+  padding: 5px 8px;
+  color: var(--white);
+  border-radius: 10px;
+  border: 1px solid var(--cape-verde-green);
+  background-color: var(--cape-verde-green);
+}
+
+.hero_pages li:nth-child(2)::before {
+  margin-inline: 8px;
+  content: "/";
+}

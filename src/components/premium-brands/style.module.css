@@ -1,7 +1,5 @@
 .premium_brands {
-  position: relative;
-  top: -80px;
-  padding-block: 120px;
+  padding-block: 80px;
   border-radius: 50px 50px 0px 0px;
   background-color: var(--section-bg);
 }

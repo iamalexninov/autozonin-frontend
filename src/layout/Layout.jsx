@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Footer } from "../components/footer/Footer";
 
 import {Home} from '../pages/Home'
-// import { About } from "../pages/About";
+import { About } from "../pages/About";
 // import { Vehicles } from "../pages/Vehicles";
 // import { Team } from "../pages/Team";
 // import { Blog } from "../pages/Blog";
@@ -23,7 +23,8 @@ export const Layout = () => {
         <main>
           <Routes>
             <Route path={endpoints.home} element={<Home />} />
-            {/* <Route path={endpoints.about} element={<About />} />
+            <Route path={endpoints.about} element={<About />} />
+            {/* 
             <Route path={endpoints.vehicles} element={<Vehicles />} />
             <Route path={endpoints.team} element={<Team />} />
             <Route path={endpoints.blog} element={<Blog />} />
