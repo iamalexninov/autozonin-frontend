@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   padding-block: 50px;
   gap: 50px;
+  border-bottom: 1px solid var(--light-gray);
 }
 
 .footer_section_links .footer_section_link {

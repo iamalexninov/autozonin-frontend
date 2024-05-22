@@ -1,0 +1,26 @@
+.footer_bottom,
+.footer_bottom_terms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_bottom {
+  padding-block: 25px;
+  color: var(--light-gray);
+}
+
+.footer_bottom_terms {
+  gap: 10px;
+}
+
+.footer_bottom_terms_dot {
+  width: 5px;
+  height: 5px;
+  background-color: var(--light-gray);
+  border-radius: 50px;
+}
+
+.footer_bottom_terms p:hover {
+    border-bottom: 1px solid var(--light-gray);
+}
