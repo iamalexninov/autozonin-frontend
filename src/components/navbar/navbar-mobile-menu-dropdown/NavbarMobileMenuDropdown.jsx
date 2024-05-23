@@ -1,43 +1,20 @@
 import styles from "./style.module.css";
 
 import { NavbarMobile } from "../navbar-mobile/NavbarMobile";
-import { RenderRecords } from "./navbar-mobile-menu-dropdown-records/NavbarMobileMenuDropdownRecords";
 import { useMobileMenuContext } from "../../../hooks/useContexts";
+import { NavbarLinkRecords } from "../navbar-link-records/NavbarLinkRecords";
 
-export const NavbarMobileMenuDropdown = () => {
-  const pagesmockdata = [
-    {
-      path: "/",
-      text: "Home",
-    },
-    {
-      path: "/about",
-      text: "About",
-    },
-    {
-      path: "/vehicles",
-      text: "Vehicles",
-    },
-    {
-      path: "/blog",
-      text: "Blog",
-    },
-    {
-      path: "/contact",
-      text: "Contact",
-    },
-    {
-      path: "/profile",
-      text: "sell vehicle",
-    },
-  ];
-
+export const NavbarMobileMenuDropdown = ({ records }) => {
   const { menu } = useMobileMenuContext();
 
   return (
-    <div className={menu ? [styles.dropdown,styles.active].join(' ') : styles.dropdown}>
+    <div
+      className={
+        menu ? [styles.dropdown, styles.active].join(" ") : styles.dropdown
+      }
+    >
       <NavbarMobile icon="exit" />
-      <RenderRecords records={pagesmockdata} />
+      <NavbarLinkRecords records={records} type="mobile" />
     </div>
   );
 };
