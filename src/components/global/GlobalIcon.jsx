@@ -17,10 +17,11 @@ import {
 } from "react-icons/fa";
 import {
   FaArrowRight,
-  FaBars,
   FaFacebook,
   FaSquareInstagram,
   FaCheck,
+  FaBarsStaggered,
+  FaUser,
 } from "react-icons/fa6";
 import {
   MdEmail,
@@ -43,7 +44,7 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     phone: FaPhoneAlt,
     email: MdEmail,
     address: FaAddressBook,
-    bars: FaBars,
+    bars: FaBarsStaggered,
     exit: IoClose,
     arrowUp: MdKeyboardArrowUp,
     arrowDown: MdKeyboardArrowDown,
@@ -70,7 +71,8 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     petrol: BsFillFuelPumpFill,
     transmission: TbManualGearbox,
     check: FaCheck,
-  };
+    user: FaUser,
+    };
 
   let IconComponent = iconComponents[type];
   const errorMsg = renderErrorMessage("invalid_component");

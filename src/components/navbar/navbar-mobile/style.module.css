@@ -1,0 +1,22 @@
+.nav,
+.nav_links,
+.nav_links_menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  justify-content: space-between;
+}
+
+.nav_links {
+    gap: 15px;
+}
+
+.nav_links_menu {
+  gap: 5px;
+}
+
+.nav_links_auth > a,.nav_links_menu {
+  color: var(--white);
+}
