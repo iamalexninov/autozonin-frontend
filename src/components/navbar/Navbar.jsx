@@ -1,9 +1,10 @@
 import styles from "./style.module.css";
 
+import { useLocation } from "react-router-dom";
+import { endpoints } from "../../utils/endpoints";
 import { NavbarMobile } from "./navbar-mobile/NavbarMobile";
 import { NavbarDesktop } from "./navbar-desktop/NavbarDesktop";
 import { NavbarMobileMenuDropdown } from "./navbar-mobile-menu-dropdown/NavbarMobileMenuDropdown";
-import { endpoints } from "../../utils/endpoints";
 
 export const Navbar = () => {
   const pagesmockdata = [
@@ -29,11 +30,20 @@ export const Navbar = () => {
     },
   ];
 
+  const url = useLocation();
+
   return (
-    <header className={styles.header}>
-      <NavbarDesktop records={pagesmockdata}/>
+    <header
+      style={
+        url.pathname === "/"
+          ? { backgroundColor: "transparent" }
+          : { backgroundColor: "var(--hunter-green)" }
+      }
+      className={styles.header}
+    >
+      <NavbarDesktop records={pagesmockdata} />
       <NavbarMobile icon="bars" />
-      <NavbarMobileMenuDropdown records={pagesmockdata}/>
+      <NavbarMobileMenuDropdown records={pagesmockdata} />
     </header>
   );
 };
