@@ -1,0 +1,28 @@
+.records {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.record {
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.record > a {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.record_btn {
+  width: 100%;
+  padding-block: 20px;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.active {
+  background-color: var(--cape-verde-green);
+}

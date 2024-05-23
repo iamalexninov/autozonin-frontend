@@ -1,4 +1,8 @@
-import React from "react";
+import styles from "./style.module.css";
+
+import { Link } from "react-router-dom";
+import { NavbarLogo } from "../NavbarLogo";
+import { GlobalIcon } from "../../global/GlobalIcon";
 
 export const NavbarDesktop = () => {
   return (

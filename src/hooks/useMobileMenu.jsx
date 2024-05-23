@@ -7,9 +7,13 @@ export const useMobileMenu = () => {
     setMenu((prev) => !prev);
   };
 
+  const openMenu = () => {
+    setMenu(true);
+  };
+
   const closeMenu = () => {
     setMenu(false);
   };
 
-  return { menu, toggleMenu, closeMenu };
+  return { menu, toggleMenu, openMenu, closeMenu };
 };

@@ -20,3 +20,9 @@
 .nav_links_auth > a,.nav_links_menu {
   color: var(--white);
 }
+
+@media only screen and (min-width:1024px) {
+  .nav {
+    display: none;
+  }
+}

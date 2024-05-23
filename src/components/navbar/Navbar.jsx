@@ -1,17 +1,15 @@
 import styles from "./style.module.css";
 
-import { GlobalIcon } from "../global/GlobalIcon";
-import { NavbarLogo } from "./NavbarLogo";
 import { NavbarMobile } from "./navbar-mobile/NavbarMobile";
 import { NavbarDesktop } from "./navbar-desktop/NavbarDesktop";
+import { NavbarMobileMenuDropdown } from "./navbar-mobile-menu-dropdown/NavbarMobileMenuDropdown";
 
 export const Navbar = () => {
   return (
     <header className={styles.header}>
-      {/* Desktop Navbar */}
-      {/* <NavbarDesktop /> */}
-      {/* Mobile Navbar */}
-      <NavbarMobile />
+      <NavbarDesktop />
+      <NavbarMobile icon="bars"/>
+      <NavbarMobileMenuDropdown />
     </header>
   );
 };

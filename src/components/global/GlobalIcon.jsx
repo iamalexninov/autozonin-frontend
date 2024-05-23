@@ -29,8 +29,8 @@ import {
   MdKeyboardArrowUp,
   MdOutlineSearch,
 } from "react-icons/md";
-import { IoClose, IoSettings, IoSpeedometer } from "react-icons/io5";
-import { AiFillLike, AiFillTwitterCircle } from "react-icons/ai";
+import { IoSettings, IoSpeedometer } from "react-icons/io5";
+import { AiFillLike, AiFillTwitterCircle, AiOutlineClose } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import { BsFillFuelPumpFill } from "react-icons/bs";
 import { TbManualGearbox } from "react-icons/tb";
@@ -45,7 +45,7 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     email: MdEmail,
     address: FaAddressBook,
     bars: FaBarsStaggered,
-    exit: IoClose,
+    exit: AiOutlineClose,
     arrowUp: MdKeyboardArrowUp,
     arrowDown: MdKeyboardArrowDown,
     arrowRight: FaArrowRight,
