@@ -6,7 +6,7 @@ import { Stats } from "../components/stats/Stats";
 import { ExplorePremiumBrands } from "../components/premium-brands/PremiumBrands";
 import { Team } from "../components/team/Team";
 import { Testimonials } from "../components/testimonials/Testimonials";
-import { AutoHub } from "../components/autohub/AutoHub";
+import { FAQ } from "../components/faq/FAQ";
 
 export const About = () => {
   return (
@@ -19,7 +19,7 @@ export const About = () => {
       <ExplorePremiumBrands type="generic" />
       <Team />
       <Testimonials />
-      <AutoHub />
+      <FAQ />
     </>
   );
 };
