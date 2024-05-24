@@ -1,5 +1,5 @@
 .features {
-  padding-block: 80px;
+  padding-bottom: 80px;
   background-color: var(--white);
 }
 
@@ -10,12 +10,7 @@
 .features_records {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 30px;
-}
-
-.features_record {
-  max-width: 200px;
 }
 
 .features_record_type {
@@ -24,17 +19,18 @@
 }
 
 .features_record_desc {
-  text-align: justify;
-  word-break: break-all;
   color: var(--dark-gray);
+}
+
+@media only screen and (min-width: 481px) {
+  .features_record {
+    max-width: 300px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .features_records {
+    justify-content: space-between;
     gap: 10px;
-  }
-
-  .features_record {
-    max-width: 300px;
   }
 }

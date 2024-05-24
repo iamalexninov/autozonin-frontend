@@ -1,0 +1,35 @@
+.about_content,
+.about_content_paragraphs {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_content_header {
+  max-width: 550px;
+  margin-bottom: 20px;
+}
+
+.about_content_paragraphs {
+  gap: 20px;
+  max-width: 400px;
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+@media only screen and (min-width: 767px) {
+  .about_content {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .about_content_header {
+    line-height: 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about_content_paragraphs {
+    max-width: 700px;
+  }
+}

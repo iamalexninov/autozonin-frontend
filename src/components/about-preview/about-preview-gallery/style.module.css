@@ -1,0 +1,26 @@
+.about_gallery_row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-block: 80px;
+}
+
+.about_gallery_column {
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.about_gallery_column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  border-radius: 10px;
+  width: 100%;
+  filter: grayscale(1);
+}
+
+@media only screen and (min-width: 767px) {
+  .about_gallery_column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}

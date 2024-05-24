@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import { Wrapper } from "../global/wrapper/Wrapper";
 import { SectionHeaderWithLinkBtn } from "../global/section-header-link-btn/SectionHeaderWithLinkBtn";
 
-export const ExplorePremiumBrands = () => {
+export const ExplorePremiumBrands = ({ type }) => {
   const brands = [
     {
       banner: audi,
@@ -41,7 +41,10 @@ export const ExplorePremiumBrands = () => {
   ];
 
   return (
-    <section className={styles.premium_brands}>
+    <section
+      className={styles.premium_brands}
+      style={type !== "generic" ? { borderRadius: "50px 50px 0px 0px" } : null}
+    >
       <Wrapper>
         <SectionHeaderWithLinkBtn
           header="Explore Our Premium Brands"
