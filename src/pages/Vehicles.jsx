@@ -1,13 +1,11 @@
-import { Hero } from "../components/hero/Hero";
-import { VehiclesCatalogue } from "../components/vehicles-catalogue/VehiclesCatalogue";
-import { AutoHub } from "../components/auto-hub/AutoHub";
+import { GenericHero } from "../components/hero/generic-hero/GenericHero";
+import { VehiclesListing } from "../components/listings/vehicles-listing/VehiclesListing";
 
 export const Vehicles = () => {
   return (
     <>
-      <Hero type="generic" page="Vehicles Catalogue" text="Browse on our catalogue" />
-      <VehiclesCatalogue />
-      <AutoHub />
+      <GenericHero header="Catalogue" title="Vehicles Catalogue"/>
+      <VehiclesListing />
     </>
   );
 };

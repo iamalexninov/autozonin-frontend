@@ -1,0 +1,23 @@
+.articles {
+  padding-block: 80px;
+  background-color: var(--white);
+  border-radius: 0px 0px 50px 50px;
+}
+
+.articles_records {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 80px 30px;
+}
+
+@media only screen and (min-width: 481px) {
+  .articles_records {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .articles_records {
+    grid-template-columns: repeat(3, 4fr);
+  }
+}

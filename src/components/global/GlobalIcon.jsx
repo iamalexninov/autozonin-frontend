@@ -30,7 +30,7 @@ import {
   MdKeyboardArrowUp,
   MdOutlineSearch,
 } from "react-icons/md";
-import { IoSettings, IoSpeedometer } from "react-icons/io5";
+import { IoOptionsSharp, IoSettings, IoSpeedometer } from "react-icons/io5";
 import {
   AiFillLike,
   AiFillTwitterCircle,
@@ -78,6 +78,7 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     check: FaCheck,
     user: FaUser,
     quote: FaQuoteRight,
+    filter: IoOptionsSharp,
   };
 
   let IconComponent = iconComponents[type];
