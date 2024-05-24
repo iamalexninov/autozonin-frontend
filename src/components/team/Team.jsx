@@ -17,7 +17,7 @@ export const Team = () => {
     {
       img: nadq,
       name: "Nadq Stoeva",
-      role: "Software redwqDeveloper",
+      role: "Software Developer",
     },
     {
       img: petq,
@@ -41,6 +41,24 @@ export const Team = () => {
   );
 };
 
-const TeamRecords = ({ records }) => {};
+const TeamRecords = ({ records }) => {
+  return (
+    <ul className={styles.team_records}>
+      {records.map((record) => (
+        <TeamRecord key={record.name} record={record} />
+      ))}
+    </ul>
+  );
+};
 
-const TeamRecord = ({ record }) => {};
+const TeamRecord = ({ record }) => {
+  return (
+    <li className={styles.team_record}>
+      <img src={record.img} alt={record.name} />
+      <div className={styles.team_record_info}>
+        <p>{record.name}</p>
+        <p>{record.role}</p>
+      </div>
+    </li>
+  );
+};

@@ -1,0 +1,42 @@
+.team {
+  padding-block: 80px;
+  background-color: var(--white);
+}
+
+.team_header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.team_records {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  gap: 20px;
+}
+
+.team_record {
+  position: relative;
+}
+
+.team_record img {
+  height: 400px;
+  max-width: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.team_record_info {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+}
+
+.team_record_info p {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px 20px;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  text-align: center;
+}

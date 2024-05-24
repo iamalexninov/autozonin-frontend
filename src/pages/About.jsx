@@ -4,6 +4,7 @@ import { WhyChooseUs } from "../components/why-choose-us/WhyChooseUs";
 import { Services } from "../components/services/Services";
 import { Stats } from "../components/stats/Stats";
 import { ExplorePremiumBrands } from "../components/premium-brands/PremiumBrands";
+import { Team } from "../components/team/Team";
 
 export const About = () => {
   return (
@@ -14,6 +15,7 @@ export const About = () => {
       <Services />
       <Stats />
       <ExplorePremiumBrands type="generic" />
+      <Team />
     </>
   );
 };
