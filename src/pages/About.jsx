@@ -5,6 +5,8 @@ import { Services } from "../components/services/Services";
 import { Stats } from "../components/stats/Stats";
 import { ExplorePremiumBrands } from "../components/premium-brands/PremiumBrands";
 import { Team } from "../components/team/Team";
+import { Testimonials } from "../components/testimonials/Testimonials";
+import { AutoHub } from "../components/autohub/AutoHub";
 
 export const About = () => {
   return (
@@ -16,6 +18,8 @@ export const About = () => {
       <Stats />
       <ExplorePremiumBrands type="generic" />
       <Team />
+      <Testimonials />
+      <AutoHub />
     </>
   );
 };

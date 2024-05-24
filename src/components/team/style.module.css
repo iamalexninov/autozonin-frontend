@@ -10,8 +10,8 @@
 
 .team_records {
   display: grid;
-  grid-template-columns: repeat(4, 4fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 10px;
 }
 
 .team_record {
@@ -20,7 +20,6 @@
 
 .team_record img {
   height: 400px;
-  max-width: 320px;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -28,15 +27,26 @@
 .team_record_info {
   position: absolute;
   bottom: 5px;
-  left: 15px;
+  left: 2px;
 }
 
 .team_record_info p {
   display: block;
   margin-bottom: 10px;
-  padding: 8px 20px;
+  padding: 8px 10px;
   font-size: 12px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50px;
   text-align: center;
+}
+
+@media only screen and (min-width: 767px) {
+  .team_records {
+    grid-template-columns: repeat(4, 4fr);
+    gap: 20px;
+  }
+
+  .team_record_info {
+    left: 10px;
+  }
 }

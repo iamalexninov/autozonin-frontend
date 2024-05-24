@@ -14,6 +14,7 @@ import {
   FaAddressBook,
   FaFlag,
   FaBullhorn,
+  FaQuoteRight,
 } from "react-icons/fa";
 import {
   FaArrowRight,
@@ -30,7 +31,11 @@ import {
   MdOutlineSearch,
 } from "react-icons/md";
 import { IoSettings, IoSpeedometer } from "react-icons/io5";
-import { AiFillLike, AiFillTwitterCircle, AiOutlineClose } from "react-icons/ai";
+import {
+  AiFillLike,
+  AiFillTwitterCircle,
+  AiOutlineClose,
+} from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import { BsFillFuelPumpFill } from "react-icons/bs";
 import { TbManualGearbox } from "react-icons/tb";
@@ -72,7 +77,8 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     transmission: TbManualGearbox,
     check: FaCheck,
     user: FaUser,
-    };
+    quote: FaQuoteRight,
+  };
 
   let IconComponent = iconComponents[type];
   const errorMsg = renderErrorMessage("invalid_component");
