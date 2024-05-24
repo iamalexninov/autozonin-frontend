@@ -1,9 +1,9 @@
 import styles from "./style.module.css";
 
-import { Wrapper } from "../global/wrapper/Wrapper";
 import { Link } from "react-router-dom";
+import { Wrapper } from "../../global/wrapper/Wrapper";
 
-export const TestHero = () => {
+export const GenericHero = ({ header, title }) => {
   return (
     <section className={styles.hero}>
       <Wrapper>
@@ -12,9 +12,9 @@ export const TestHero = () => {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li>About Us</li>
+            <li>{header}</li>
           </ol>
-          <h2>About Us</h2>
+          <h2>{title}</h2>
         </div>
       </Wrapper>
     </section>

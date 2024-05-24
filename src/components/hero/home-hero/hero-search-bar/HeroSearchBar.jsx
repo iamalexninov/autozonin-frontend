@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 
 import Select from "react-select";
-import { GlobalIcon } from "../../global/GlobalIcon";
+import { GlobalIcon } from "../../../global/GlobalIcon";
 
 export const HeroSearchBar = () => {
   const selectStyles = {

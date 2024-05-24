@@ -1,4 +1,4 @@
-import { Hero } from "../components/hero/Hero";
+import { HomeHero } from "../components/hero/home-hero/HomeHero";
 import { ExplorePremiumBrands } from "../components/premium-brands/PremiumBrands";
 import { AllVehicles } from "../components/all-vehicles/AllVehicles";
 import { Services } from "../components/services/Services";
@@ -12,7 +12,7 @@ import { Subscribe } from "../components/subscribe/Subscribe";
 export const Home = () => {
   return (
     <>
-      <Hero />
+      <HomeHero />
       <ExplorePremiumBrands />
       <AllVehicles />
       <Services />

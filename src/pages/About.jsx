@@ -1,8 +1,11 @@
-import { TestHero } from "../components/test-hero/TestHero";
+import { AboutPreview } from "../components/about-preview/AboutPreview";
+import { GenericHero } from "../components/hero/generic-hero/GenericHero";
+
 export const About = () => {
   return (
     <>
-      <TestHero />
+      <GenericHero header="About Us" title="Our History" />
+      <AboutPreview />
     </>
   );
 };

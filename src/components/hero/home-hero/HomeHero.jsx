@@ -5,7 +5,7 @@ import { HeroConditions } from "./hero-conditions/HeroConditions";
 import { HeroSearchBar } from "./hero-search-bar/HeroSearchBar";
 import { HeroTypes } from "./hero-types/HeroTypes";
 
-export const Hero = () => {
+export const HomeHero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.hero_wrapper}>
