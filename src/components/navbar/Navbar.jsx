@@ -36,7 +36,12 @@ export const Navbar = () => {
     <header
       style={
         url.pathname === "/"
-          ? { backgroundColor: "transparent" }
+          ? {
+              backgroundColor: "transparent",
+              position: "absolute",
+              top: "0",
+              left: "0",
+            }
           : { backgroundColor: "var(--hunter-green)" }
       }
       className={styles.header}
