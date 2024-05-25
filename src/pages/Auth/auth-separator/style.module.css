@@ -1,0 +1,11 @@
+.separator {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.separator_line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--light-gray);
+}

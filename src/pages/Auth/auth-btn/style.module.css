@@ -1,0 +1,16 @@
+.auth_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding-block: 20px;
+  border-radius: 10px;
+  color: var(--white);
+  background-color: var(--cape-verde-green);
+}
+
+.auth_btn:hover {
+  color: var(--cape-verde-green);
+  background-color: transparent;
+  border: 2px solid var(--cape-verde-green);
+}

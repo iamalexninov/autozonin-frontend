@@ -1,0 +1,38 @@
+.auth_socials,
+.auth_social_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth_socials {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth_social_btn {
+  padding: 20px;
+  gap: 5px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.auth_social_btn p {
+  font-size: 16px;
+}
+
+.auth_social_btn_f {
+  color: #1967d2;
+  border: 1px solid #1967d2;
+}
+
+.auth_social_btn_g {
+  color: #d93025;
+  border: 1px solid #d93025;
+}
+
+@media only screen and (min-width:481px) {
+  .auth_socials {
+    flex-direction: row;
+  }
+}
