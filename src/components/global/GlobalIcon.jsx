@@ -18,11 +18,12 @@ import {
 } from "react-icons/fa";
 import {
   FaArrowRight,
-  FaFacebook,
   FaSquareInstagram,
   FaCheck,
   FaBarsStaggered,
   FaUser,
+  FaFacebookF,
+  FaGoogle,
 } from "react-icons/fa6";
 import {
   MdEmail,
@@ -62,11 +63,12 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     comment: FaComment,
     like: AiFillLike,
     folder: FaFolderOpen,
-    facebook: FaFacebook,
+    facebook: FaFacebookF,
     twitter: AiFillTwitterCircle,
     pinterest: FaPinterest,
     linkedin: FaLinkedin,
     instagram: FaSquareInstagram,
+    google: FaGoogle,
     plus: FaPlus,
     minus: FaMinus,
     flag: FaFlag,
