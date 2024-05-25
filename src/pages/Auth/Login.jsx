@@ -1,5 +1,5 @@
 import { Form } from "../../components/global/form/Form";
-import { InputTextField } from "../../components/global/input-text-field/InputTextField";
+import { TextField } from "../../components/global/text-field/TextField";
 import { AuthBtn } from "./auth-btn/AuthBtn";
 import { AuthSeparator } from "./auth-separator/AuthSeparator";
 import { AuthSocials } from "./auth-socials/AuthSocials";
@@ -7,12 +7,18 @@ import { AuthSocials } from "./auth-socials/AuthSocials";
 export const Login = () => {
   return (
     <Form>
-      <InputTextField
+      <TextField
+        type="input"
         label="Username or Email"
-        name=""
+        name="usernameOrEmail"
         placeholder="admin or admin@gmail.com"
       />
-      <InputTextField label="Password" name="password" placeholder="*****" />
+      <TextField
+        type="input"
+        label="Password"
+        name="password"
+        placeholder="*****"
+      />
       <AuthBtn text="Login" />
       <AuthSeparator />
       <AuthSocials />

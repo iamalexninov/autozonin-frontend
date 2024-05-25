@@ -1,0 +1,17 @@
+.auth_nav {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.auth_nav_link {
+  font-size: 14px;
+  padding-bottom: 8px;
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  transition: all ease-in-out 0.5s;
+}
+
+.auth_nav_link:hover {
+  border-bottom: 1px solid var(--cape-verde-green);
+}

@@ -1,0 +1,24 @@
+.info_header {
+  margin-bottom: 20px;
+}
+
+.info_desc {
+  max-width: 650px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.btn {
+  max-width: 200px;
+  padding: 20px;
+  border-radius: 15px;
+  color: var(--white);
+  background-color: var(--cape-verde-green);
+}

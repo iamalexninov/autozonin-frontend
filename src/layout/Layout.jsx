@@ -8,7 +8,7 @@ import { Home } from "../pages/Home";
 import { About } from "../pages/About";
 import { Vehicles } from "../pages/Vehicles";
 import { Blog } from "../pages/Blog";
-// import { Contact } from "../pages/Contact";
+import { Contact } from "../pages/Contact";
 
 import { MobileMenuContextProvider } from "../contexts/MobileMenuContext";
 import { Auth } from "../pages/Auth/Auth";
@@ -26,7 +26,7 @@ export const Layout = () => {
             <Route path={endpoints.blog} element={<Blog />} />
             <Route path={endpoints.login} element={<Auth />} />
             <Route path={endpoints.register} element={<Auth />} />
-            {/* <Route path={endpoints.contact} element={<Contact />} /> */}
+            <Route path={endpoints.contact} element={<Contact />} />
           </Routes>
         </main>
         <Footer />

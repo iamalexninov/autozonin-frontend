@@ -1,12 +1,7 @@
 .auth {
   padding-block: 80px;
   background-color: var(--white);
-}
-
-.auth_nav {
-  display: flex;
-  gap: 10px;
-  border-bottom: 1px solid var(--light-gray);
+  border-radius: 50px;
 }
 
 .auth_wrapper {
@@ -15,12 +10,3 @@
   padding-inline: 20px;
 }
 
-.auth_nav_link {
-  padding-bottom: 8px;
-  font-size: 18px;
-  transition: all ease-in-out 0.5s;
-}
-
-.auth_nav_link:hover {
-  border-bottom: 1px solid var(--cape-verde-green);
-}

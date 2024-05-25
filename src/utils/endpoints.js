@@ -3,7 +3,7 @@ export const endpoints = {
   about: "/about",
   vehicles: "/catalogue",
   blog: "/articles",
-  contact: "/contacts",
+  contact: "/contact",
   login: "/login",
   register: "/register",
   profile: "/dealer/dashboard",

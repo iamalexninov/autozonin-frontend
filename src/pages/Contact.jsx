@@ -1,13 +1,11 @@
-import { Hero } from "../components/hero/Hero";
-import { ContactSection } from "../components/contact/ContactSection";
-import { AutoHub } from "../components/auto-hub/AutoHub";
+import { ContactUs } from "../components/contact-us/ContactUs";
+import { GenericHero } from "../components/hero/generic-hero/GenericHero";
 
 export const Contact = () => {
   return (
     <>
-      <Hero type="generic" page="Contact Us" text="get in touch" />
-      <ContactSection />
-      <AutoHub />
+      <GenericHero header="Contact Us" title="Connect With Us" />
+      <ContactUs />
     </>
   );
 };

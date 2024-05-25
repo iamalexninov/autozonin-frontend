@@ -1,10 +1,14 @@
+.field {
+  width: 100%;
+}
+
 .field_label {
   padding-left: 20px;
   padding-bottom: 10px;
   color: var(--dark-gray);
 }
 
-.field_input {
+.field_item {
   padding: 20px;
   border-radius: 10px;
   border: 1px solid var(--light-gray);
