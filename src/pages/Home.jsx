@@ -8,6 +8,7 @@ import { PopularMakes } from "../components/popular-makes/PopularMakes";
 import { LatestBlogPosts } from "../components/latest-blog-posts/LatestBlogPosts";
 import { AutoHub } from "../components/autohub/AutoHub";
 import { Subscribe } from "../components/subscribe/Subscribe";
+import { RangeSlider } from "../components/global/range-slider/RangeSlider";
 
 export const Home = () => {
   return (
@@ -20,6 +21,7 @@ export const Home = () => {
       <WhyChooseUs />
       <PopularMakes />
       <LatestBlogPosts />
+      <RangeSlider />
       <AutoHub />
       <Subscribe />
     </>

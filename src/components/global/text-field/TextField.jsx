@@ -3,9 +3,11 @@ import styles from "./style.module.css";
 export const TextField = ({ type, label, placeholder, name }) => {
   return (
     <div className={styles.field}>
-      <label htmlFor={name} className={styles.field_label}>
-        {label}
-      </label>
+      {label && (
+        <label htmlFor={name} className={styles.field_label}>
+          {label}
+        </label>
+      )}
       {type === "input" ? (
         <input
           type="text"

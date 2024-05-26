@@ -61,7 +61,7 @@ const BrandsRecords = ({ records }) => {
   return (
     <ul className={styles.records}>
       {records.map((record) => (
-        <BrandsRecord key={record} record={record} />
+        <BrandsRecord key={record.brand} record={record} />
       ))}
     </ul>
   );

@@ -1,5 +1,5 @@
-import styles from "./style.module.css";
-import { VehiclesListingSearch } from "./vehicles-listing-search/VehiclesListingSearch";
+// import styles from "./style.module.css";
+import { VehiclesListingSearch } from "../vehicles-listing/vehicles-listing-search/VehiclesListingSearch";
 
 export const VehiclesListing = () => {
   return (

@@ -1,22 +1,11 @@
 import styles from "./style.module.css";
-import Select from "react-select";
-import { options } from "./Text";
 import { Wrapper } from "../../../global/wrapper/Wrapper";
 import { GlobalIcon } from "../../../global/GlobalIcon";
 import { useState } from "react";
+import { GlobalSelect } from "../../../global/GlobalSelect";
+import { TextField } from "../../../global/text-field/TextField";
 
 export const VehiclesListingSearch = () => {
-  const useStyles = {
-    control: () => ({
-      border: "1px solid var(--light-gray)",
-      borderRadius: "50px",
-      display: "flex",
-      padding: "10px",
-      color: "var(--white)",
-      width: "100%",
-    }),
-  };
-
   const [toggleFilters, setToggleFilters] = useState(false);
 
   const handleClick = () => {
@@ -28,27 +17,11 @@ export const VehiclesListingSearch = () => {
       <Wrapper>
         <form className={styles.search_form}>
           <div className={styles.search_form_preview}>
-            <Select
-              placeholder="Condition.."
-              options={options.condition}
-              styles={useStyles}
-            />
-            <Select
-              placeholder="Category.."
-              options={options.category}
-              styles={useStyles}
-            />
-            <Select
-              placeholder="Type.."
-              options={options.type}
-              styles={useStyles}
-            />
-            <Select
-              placeholder="Make"
-              options={options.make}
-              styles={useStyles}
-            />
-            <Select placeholder="Model" styles={useStyles} />
+            <GlobalSelect placeholder="Condition" name="condition" />
+            <GlobalSelect placeholder="Category" name="category" />
+            <GlobalSelect placeholder="Type" name="type" />
+            <GlobalSelect placeholder="Make" name="make" />
+            <GlobalSelect placeholder="Model" name="model" />
             {/* TODO: set per click - show/hide */}
             <div className={styles.more_filters} onClick={handleClick}>
               <GlobalIcon type="filter" size={25} />
@@ -58,16 +31,16 @@ export const VehiclesListingSearch = () => {
           {toggleFilters && (
             <div className={styles.filters}>
               <div className={styles.filters_select}>
-                <Select placeholder="Fuel Type" styles={useStyles} />
-                <Select placeholder="Cylinder" styles={useStyles} />
-                <Select placeholder="Drive Type" styles={useStyles} />
-                <Select placeholder="Transmission" styles={useStyles} />
+                <GlobalSelect placeholder="Fuel Type" name="fuel" />
+                <GlobalSelect placeholder="Cylinder" name="cylinder" />
+                <GlobalSelect placeholder="Drive Type" name="drivetype" />
+                <GlobalSelect placeholder="Offer Type" name="transmission" />
               </div>
               <div className={styles.filters_select}>
-                <Select placeholder="Door" styles={useStyles} />
-                <Select placeholder="Color" styles={useStyles} />
-                <Select placeholder="Offer Type" styles={useStyles} />
-                <input type="text" placeholder="VIN" />
+                <GlobalSelect placeholder="Door" name="door" />
+                <GlobalSelect placeholder="Color" name="color" />
+                <GlobalSelect placeholder="Drive Type" name="offertype" />
+                <TextField name="VIN" placeholder="VIN" type="input" />
               </div>
               <div className={styles.features}>
                 {/* TODO: Think about it */}

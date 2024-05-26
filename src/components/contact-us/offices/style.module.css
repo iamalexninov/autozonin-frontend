@@ -13,10 +13,9 @@
   display: flex;
 }
 
-.office_records,
 .office_record_hub,
-.office_record_hub_item {
-  justify-content: space-between;
+.office_records {
+  flex-direction: column;
 }
 
 .office_record {
@@ -27,13 +26,13 @@
 
 .office_record_town {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .office_record_address {
   font-size: 16px;
+  margin-bottom: 10px;
   color: var(--dark-gray);
-  margin-bottom: 5px;
 }
 
 .office_record_map {
@@ -58,4 +57,11 @@
 
 .office_record_hub_item p {
   color: var(--cape-verde-green);
+}
+
+@media only screen and (min-width:767px) {
+  .office_records {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
