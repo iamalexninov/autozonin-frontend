@@ -2,3 +2,16 @@
   border-radius: 0 0 50px 50px;
   background-color: var(--white);
 }
+
+.contact_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+@media only screen and (min-width: 767px) {
+  .contact_info {
+    flex-direction: row;
+  }
+}

@@ -21,11 +21,6 @@ i {
   display: block;
 }
 
-p,
-span {
-  display: inline-block;
-}
-
 body {
   line-height: 1;
   background-color: #fff;

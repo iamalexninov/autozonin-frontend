@@ -1,3 +1,9 @@
+.info_section {
+  width: 100%;
+  max-width: 800px;
+  padding-block: 40px;
+}
+
 .info_header {
   margin-bottom: 20px;
 }
