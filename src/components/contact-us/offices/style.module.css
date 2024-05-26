@@ -1,0 +1,61 @@
+.offices {
+  padding-block: 50px;
+}
+
+.offices_title {
+  margin-bottom: 50px;
+}
+
+.office_records,
+.office_record_map,
+.office_record_hub,
+.office_record_hub_item {
+  display: flex;
+}
+
+.office_records,
+.office_record_hub,
+.office_record_hub_item {
+  justify-content: space-between;
+}
+
+.office_record {
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--light-gray);
+}
+
+.office_record_town {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.office_record_address {
+  font-size: 16px;
+  color: var(--dark-gray);
+  margin-bottom: 5px;
+}
+
+.office_record_map {
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 20px;
+  color: var(--cape-verde-green);
+}
+
+.office_records {
+  gap: 10px;
+}
+
+.office_record_hub {
+  gap: 20px;
+}
+
+.office_record_hub_item {
+  align-items: center;
+  gap: 5px;
+}
+
+.office_record_hub_item p {
+  color: var(--cape-verde-green);
+}
