@@ -1,8 +1,7 @@
 import styles from "./style.module.css";
 
 import { HeroTextContent } from "./hero-text-content/HeroTextContent";
-import { HeroConditions } from "./hero-conditions/HeroConditions";
-import { HeroSearchBar } from "./hero-search-bar/HeroSearchBar";
+import { HomeSearch } from "../../search-boxes/home-search/HomeSearch";
 import { HeroTypes } from "./hero-types/HeroTypes";
 
 export const HomeHero = () => {
@@ -10,8 +9,7 @@ export const HomeHero = () => {
     <section className={styles.hero}>
       <div className={styles.hero_wrapper}>
         <HeroTextContent />
-        <HeroConditions />
-        <HeroSearchBar />
+        <HomeSearch />
         <HeroTypes />
       </div>
     </section>
