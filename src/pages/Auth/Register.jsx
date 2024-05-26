@@ -1,5 +1,4 @@
 import { Form } from "../../components/global/form/Form";
-import { TextField } from "../../components/global/text-field/TextField";
 import { AuthBtn } from "./auth-btn/AuthBtn";
 import { AuthSeparator } from "./auth-separator/AuthSeparator";
 import { AuthSocials } from "./auth-socials/AuthSocials";
@@ -7,7 +6,7 @@ import { AuthSocials } from "./auth-socials/AuthSocials";
 export const Register = () => {
   return (
     <Form>
-      <TextField
+      {/* <TextField
         type="input"
         label="Username"
         name="username"
@@ -26,7 +25,7 @@ export const Register = () => {
         placeholder="*****"
       />
       <TextField
-        type="input"
+        type="input" */}
         label="Repeat Password"
         name="repass"
         placeholder="*****"

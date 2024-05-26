@@ -1,6 +1,6 @@
 import Select from "react-select";
 
-export const GlobalSelect = ({ name, placeholder }) => {
+export const SelectField = ({ name, placeholder }) => {
   const useStyles = {
     control: () => ({
       display: "flex",
@@ -9,7 +9,7 @@ export const GlobalSelect = ({ name, placeholder }) => {
       fontSize: "14px",
       borderRadius: "50px",
       color: "var(--white)",
-      border: "1px solid var(--dark-gray)",
+      border: "1px solid var(--light-gray)",
     }),
   };
 

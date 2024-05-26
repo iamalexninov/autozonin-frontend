@@ -1,7 +1,6 @@
 import styles from "./style.module.css";
 
 import { Form } from "../../global/form/Form";
-import { TextField } from "../../global/text-field/TextField";
 
 export const GetInTouch = () => {
   return (
@@ -17,22 +16,22 @@ export const GetInTouch = () => {
           </p>
         </div>
         <div className={styles.fields}>
-          <TextField type="input" label="First Name" placeholder="Alex" />
-          <TextField type="input" label="Last Name" placeholder="Bochev" />
+          {/* <TextField type="input" label="First Name" placeholder="Alex" /> */}
+          {/* <TextField type="input" label="Last Name" placeholder="Bochev" /> */}
         </div>
         <div className={styles.fields}>
-          <TextField type="input" label="Email" placeholder="alex@gmail.com" />
+          {/* <TextField type="input" label="Email" placeholder="alex@gmail.com" />
           <TextField
             type="input"
             label="Phone Number"
             placeholder="+359 896 35 9845 "
-          />
+          /> */}
         </div>
-        <TextField
+        {/* <TextField
           type="textarea"
           label="Write your thoughts"
           placeholder="Message"
-        />
+        /> */}
         <button className={styles.btn}>Send Message</button>
       </Form>
     </div>

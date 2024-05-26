@@ -1,10 +1,10 @@
 // import styles from "./style.module.css";
-import { VehiclesListingSearch } from "../vehicles-listing/vehicles-listing-search/VehiclesListingSearch";
+import { ListingSearch } from "../../search-boxes/listing-search/ListingSearch";
 
 export const VehiclesListing = () => {
   return (
     <section>
-      <VehiclesListingSearch />
+      <ListingSearch />
       {/* components */}
     </section>
   );
