@@ -1,0 +1,23 @@
+.sort {
+  padding-block: 3rem;
+  background-color: var(--white);
+}
+
+.sort_wrapper,
+.sort_field {
+  display: flex;
+  align-items: center;
+}
+
+.sort_wrapper {
+  justify-content: space-between;
+}
+
+.sort_field {
+  gap: 10px;
+}
+
+.sort_available, .sort_by {
+  font-size: 14px;
+  color: var(--dark-gray);
+}
