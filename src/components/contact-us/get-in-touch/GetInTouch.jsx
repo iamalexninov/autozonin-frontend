@@ -1,6 +1,7 @@
 import styles from "./style.module.css";
 
 import { Form } from "../../global/form/Form";
+import { RenderField } from "../../global/fields/RenderField";
 
 export const GetInTouch = () => {
   return (
@@ -16,22 +17,54 @@ export const GetInTouch = () => {
           </p>
         </div>
         <div className={styles.fields}>
-          {/* <TextField type="input" label="First Name" placeholder="Alex" /> */}
-          {/* <TextField type="input" label="Last Name" placeholder="Bochev" /> */}
+          <RenderField
+            attributes={{
+              type: "input",
+              inputType: "text",
+              name: "firstName",
+              label: "First Name",
+              placeholder: "Iordan",
+            }}
+          />
+          <RenderField
+            attributes={{
+              type: "input",
+              inputType: "text",
+              name: "lastName",
+              label: "Last Name",
+              placeholder: "Bochev",
+            }}
+          />
         </div>
         <div className={styles.fields}>
-          {/* <TextField type="input" label="Email" placeholder="alex@gmail.com" />
-          <TextField
-            type="input"
-            label="Phone Number"
-            placeholder="+359 896 35 9845 "
-          /> */}
+          <RenderField
+            attributes={{
+              type: "input",
+              inputType: "text",
+              label: "Email",
+              name: "email",
+              placeholder: "iordan@gmail.com",
+            }}
+          />
+          <RenderField
+            attributes={{
+              type: "input",
+              inputType: "text",
+              label: "Phone Number",
+              name: "phone",
+              placeholder: "+359 896 35 9812",
+            }}
+          />
         </div>
-        {/* <TextField
-          type="textarea"
-          label="Write your thoughts"
-          placeholder="Message"
-        /> */}
+        <RenderField
+          attributes={{
+            type: "input",
+            inputType: "textarea",
+            name: "message",
+            label: "Share with us",
+            placeholder: "Message",
+          }}
+        />
         <button className={styles.btn}>Send Message</button>
       </Form>
     </div>

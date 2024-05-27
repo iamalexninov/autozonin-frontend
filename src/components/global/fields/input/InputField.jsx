@@ -5,8 +5,9 @@ import { TextareaField } from "./text-field/TextareaField";
 
 export const InputField = ({ type, label, name, placeholder }) => {
   const renderInputField = {
-    text: <TextField name={name} label={label} placeholder={placeholder} />,
-    range: <RangeField name={name} label={label}/>,
+    text: <TextField type={type} name={name} label={label} placeholder={placeholder} />,
+    number: <TextField type={type} name={name} label={label} placeholder={placeholder} />,
+    range: <RangeField name={name} label={label} />,
     checkbox: <CheckboxField name={name} />,
     textarea: (
       <TextareaField name={name} label={label} placeholder={placeholder} />

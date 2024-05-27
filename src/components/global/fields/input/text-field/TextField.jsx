@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 
-export const TextField = ({ label, placeholder, name }) => {
+export const TextField = ({ type,label, placeholder, name }) => {
   return (
     <div className={styles.field}>
       {label && (
@@ -10,7 +10,7 @@ export const TextField = ({ label, placeholder, name }) => {
       )}
       {name && (
         <input
-          type="text"
+          type={type}
           placeholder={placeholder}
           name={name}
           id={name}
