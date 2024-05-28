@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 
-import { RenderField } from "../global/fields/RenderField";
-import { Wrapper } from "../global/wrapper/Wrapper";
+import { RenderField } from "../../../global/fields/RenderField";
+import { Wrapper } from "../../../global/wrapper/Wrapper";
 
 export const SortBy = () => {
   return (

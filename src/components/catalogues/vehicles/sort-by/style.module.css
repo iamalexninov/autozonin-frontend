@@ -1,5 +1,4 @@
 .sort {
-  padding-block: 3rem;
   background-color: var(--white);
 }
 
@@ -10,6 +9,8 @@
 }
 
 .sort_wrapper {
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: space-between;
 }
 

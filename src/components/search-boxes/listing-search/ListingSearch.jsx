@@ -62,65 +62,73 @@ export const ListingSearch = () => {
           {toggleFilters && (
             <div className={styles.filters}>
               <div className={styles.filters_select}>
-                <RenderField
-                  attributes={{
-                    type: "select",
-                    placeholder: "Fuel Type",
-                    name: "fuel",
-                  }}
-                />
-                <RenderField
-                  attributes={{
-                    type: "select",
-                    placeholder: "Cylinder",
-                    name: "cylinder",
-                  }}
-                />
-                <RenderField
-                  attributes={{
-                    type: "select",
-                    placeholder: "Drive Type",
-                    name: "drivetype",
-                  }}
-                />
-                <RenderField
-                  attributes={{
-                    type: "select",
-                    placeholder: "Transmission",
-                    name: "transmission",
-                  }}
-                />
+                <div>
+                  <RenderField
+                    attributes={{
+                      type: "select",
+                      placeholder: "Fuel Type",
+                      name: "fuel",
+                    }}
+                  />
+                  <RenderField
+                    attributes={{
+                      type: "select",
+                      placeholder: "Cylinder",
+                      name: "cylinder",
+                    }}
+                  />
+                </div>
+                <div>
+                  <RenderField
+                    attributes={{
+                      type: "select",
+                      placeholder: "Drive Type",
+                      name: "drivetype",
+                    }}
+                  />
+                  <RenderField
+                    attributes={{
+                      type: "select",
+                      placeholder: "Transmission",
+                      name: "transmission",
+                    }}
+                  />
+                </div>
               </div>
               <div className={styles.filters_select}>
-                <RenderField
-                  attributes={{
-                    type: "select",
-                    placeholder: "Door",
-                    name: "door",
-                  }}
-                />
-                <RenderField
-                  attributes={{
-                    type: "select",
-                    placeholder: "Color",
-                    name: "color",
-                  }}
-                />
-                <RenderField
-                  attributes={{
-                    type: "select",
-                    placeholder: "Offer Type",
-                    name: "Offer Type",
-                  }}
-                />
-                <RenderField
-                  attributes={{
-                    type: "input",
-                    inputType: "text",
-                    placeholder: "VIN",
-                    name: "VIN",
-                  }}
-                />
+                <div>
+                  <RenderField
+                    attributes={{
+                      type: "select",
+                      placeholder: "Door",
+                      name: "door",
+                    }}
+                  />
+                  <RenderField
+                    attributes={{
+                      type: "select",
+                      placeholder: "Color",
+                      name: "color",
+                    }}
+                  />
+                </div>
+                <div>
+                  <RenderField
+                    attributes={{
+                      type: "select",
+                      placeholder: "Offer Type",
+                      name: "Offer Type",
+                    }}
+                  />
+                  <RenderField
+                    attributes={{
+                      type: "input",
+                      inputType: "text",
+                      placeholder: "VIN",
+                      name: "VIN",
+                    }}
+                  />
+                </div>
               </div>
               <div className={styles.sliders}>
                 <RenderField

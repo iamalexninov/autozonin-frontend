@@ -4,10 +4,9 @@
 }
 
 .search_form_preview {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  width: 100%;
 }
 
 .more_filters {
@@ -16,7 +15,7 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
-  padding: 10px;
+  padding: 10px 20px;
   color: var(--white);
   border-radius: 50px;
   background-color: var(--cape-verde-green);

@@ -1,0 +1,19 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filters_btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 20px;
+  color: var(--white);
+  border-radius: 50px;
+  background-color: var(--cape-verde-green);
+  transition: all ease-in-out 0.5s;
+  font-size: 18px;
+}

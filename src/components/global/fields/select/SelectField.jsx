@@ -5,6 +5,7 @@ export const SelectField = ({ name, placeholder }) => {
     control: () => ({
       display: "flex",
       width: "100%",
+      minWidth: "180px",
       padding: "5px",
       fontSize: "14px",
       borderRadius: "50px",
