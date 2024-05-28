@@ -3,7 +3,6 @@ import styles from "./style.module.css";
 import { useState } from "react";
 
 import { Form } from "../../../global/form/Form";
-import { Wrapper } from "../../../global/wrapper/Wrapper";
 import { MainFilters } from "./main-filters/MainFilters";
 import { AdditionalFilters } from "./additional-filters/AdditionalFilters";
 import { SliderFilters } from "./slider-filters/SliderFilters";
@@ -18,18 +17,16 @@ export const VehiclesSearchBar = () => {
 
   return (
     <div className={styles.search}>
-      <Wrapper>
-        <Form>
-          <MainFilters onClick={handleClick} />
-          {toggleFilters && (
-            <div className={styles.filters}>
-              <AdditionalFilters />
-              <SliderFilters />
-              <FeatureFilters />
-            </div>
-          )}
-        </Form>
-      </Wrapper>
+      <Form>
+        <MainFilters onClick={handleClick} />
+        {toggleFilters && (
+          <div className={styles.filters}>
+            <AdditionalFilters />
+            <SliderFilters />
+            <FeatureFilters />
+          </div>
+        )}
+      </Form>
     </div>
   );
 };

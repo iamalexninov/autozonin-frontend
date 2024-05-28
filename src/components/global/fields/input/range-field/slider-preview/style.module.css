@@ -1,0 +1,30 @@
+.preview_label,
+.preview_fields {
+  display: flex;
+  align-items: center;
+}
+
+.preview_label {
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.preview_label p {
+  font-size: 10px;
+  color: var(--cape-verde-green);
+  text-transform: uppercase;
+}
+
+.preview_fields {
+  column-gap: 5px;
+}
+
+.preview_input {
+  outline: none;
+  border-radius: 5px;
+  max-width: 80px;
+  padding: 5px;
+  color: var(--dark-gray);
+  border: 1px solid var(--light-gray);
+  background-color: var(--width);
+}

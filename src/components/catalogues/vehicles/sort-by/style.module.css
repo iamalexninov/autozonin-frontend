@@ -1,14 +1,10 @@
-.sort {
-  background-color: var(--white);
-}
-
-.sort_wrapper,
+.sort,
 .sort_field {
   display: flex;
   align-items: center;
 }
 
-.sort_wrapper {
+.sort {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-between;

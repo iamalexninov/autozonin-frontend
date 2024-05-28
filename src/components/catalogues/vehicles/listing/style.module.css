@@ -1,27 +1,23 @@
 .listing {
-  background-color: var(--white);
-}
-
-.listing_records {
   display: grid;
   grid-template-columns: repeat(1, 2fr);
   gap: 25px;
 }
 
 @media only screen and (min-width: 550px) {
-  .listing_records {
+  .listing {
     grid-template-columns: repeat(2, 2fr);
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .listing_records {
+  .listing {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media only screen and (min-width: 1281px) {
-  .listing_records {
+  .listing {
     grid-template-columns: repeat(4, 1fr);
   }
 }

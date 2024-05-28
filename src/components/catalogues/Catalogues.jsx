@@ -1,6 +1,8 @@
+import { VehiclesCatalogue } from "./vehicles/VehiclesCatalogue";
+
 export const Catalogues = ({ type }) => {
   const renderCatalogue = {
-    vehicles: "",
+    vehicles: <VehiclesCatalogue />,
     blog: "",
   };
 

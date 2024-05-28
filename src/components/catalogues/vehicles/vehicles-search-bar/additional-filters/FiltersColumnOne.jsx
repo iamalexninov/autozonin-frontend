@@ -4,8 +4,8 @@ import { RenderField } from "../../../../global/fields/RenderField";
 
 export const FiltersColumnOne = () => {
   return (
-    <div className={styles.filters_select}>
-      <div>
+    <div className={styles.column}>
+      <div className={styles.row}>
         <RenderField
           attributes={{
             type: "select",
@@ -21,7 +21,7 @@ export const FiltersColumnOne = () => {
           }}
         />
       </div>
-      <div>
+      <div className={styles.row}>
         <RenderField
           attributes={{
             type: "select",

@@ -1,0 +1,22 @@
+.column,
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.column {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 481px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .column {
+    flex-direction: row;
+  }
+}

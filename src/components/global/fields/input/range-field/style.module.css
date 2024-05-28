@@ -1,14 +1,11 @@
-.slider_box {
-  padding: 40px 30px;
+.slider {
+  padding: 15px 30px;
   height: 100%;
+  width: 100%;
+  max-width: 235px;
   background-color: var(--white);
   border: 1px solid var(--light-gray);
   border-radius: 10px;
-}
-
-p.slider_box_title {
-  font-size: 18px;
-  margin-bottom: 1rem;
 }
 
 input[type="range"]::-webkit-slider-thumb {
