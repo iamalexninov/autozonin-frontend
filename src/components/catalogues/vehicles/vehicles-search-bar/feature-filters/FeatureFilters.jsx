@@ -1,7 +1,8 @@
 export const FeatureFilters = () => {
   return (
     <div>
-        <p>Features</p>
+      {/* checkboxes - 4 column */}
+        <p>Features In</p>
     </div>
   )
 }
