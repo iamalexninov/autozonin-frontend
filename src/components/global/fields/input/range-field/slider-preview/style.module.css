@@ -22,7 +22,6 @@
 .preview_input {
   outline: none;
   border-radius: 5px;
-  max-width: 80px;
   padding: 5px;
   color: var(--dark-gray);
   border: 1px solid var(--light-gray);

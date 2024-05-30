@@ -3,7 +3,8 @@
 }
 
 .filters {
-  padding: 40px;
+  padding: 30px;
   border-radius: 10px;
   border: 1px solid var(--light-gray);
+  max-width: 1200px;
 }

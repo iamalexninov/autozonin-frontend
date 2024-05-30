@@ -1,7 +1,8 @@
 .filters {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 10px;
+  max-width: 1200px;
 }
 
 .filters_btn {
@@ -16,4 +17,22 @@
   background-color: var(--cape-verde-green);
   transition: all ease-in-out 0.5s;
   font-size: 18px;
+}
+
+@media only screen and (min-width: 481px) {
+  .filters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .filters {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  .filters {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
