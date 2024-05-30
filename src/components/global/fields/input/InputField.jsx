@@ -8,7 +8,7 @@ export const InputField = ({ type, label, name, placeholder }) => {
     text: <TextField type={type} name={name} label={label} placeholder={placeholder} />,
     number: <TextField type={type} name={name} label={label} placeholder={placeholder} />,
     range: <RangeField name={name} label={label} />,
-    checkbox: <CheckboxField name={name} />,
+    checkbox: <CheckboxField name={name} label={label}/>,
     textarea: (
       <TextareaField name={name} label={label} placeholder={placeholder} />
     ),

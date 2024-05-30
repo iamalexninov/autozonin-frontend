@@ -66,9 +66,9 @@ textarea {
   height: 150px;
 }
 
-textarea,input {
+/* textarea,input {
   width: 100%;
-}
+} */
 
 select,
 button,
