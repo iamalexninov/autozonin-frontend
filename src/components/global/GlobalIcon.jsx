@@ -52,6 +52,7 @@ import { BsFillFuelPumpFill } from "react-icons/bs";
 import { TbManualGearbox } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
 import { RiSendPlaneFill } from "react-icons/ri";
+import { IoIosArrowDown } from "react-icons/io";
 
 export const GlobalIcon = ({ type, size }) => {
   return <RenderIconComponent type={type} size={size} />;

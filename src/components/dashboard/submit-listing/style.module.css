@@ -1,4 +1,13 @@
 .submit {
   padding-top: 50px;
-  background-color: var(--white);
+}
+
+.submit_form {
+  padding: 20px;
+  border: 1px solid var(--light-gray);
+}
+
+.submit_fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }

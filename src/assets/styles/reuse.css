@@ -16,6 +16,15 @@
 }
 
 .dashboard_section {
+  /* TODO: Make it less for responsive screens */
+  padding: 60px 60px 30px;
   width: 100%;
-  background-color: var(--light-gray);
+  background-color: var(--white);
+}
+
+.custom-select .react-select__menu {
+  margin-top: 0; 
+  margin-bottom: 0; 
+  padding-top: 0; 
+  padding-bottom: 0;
 }
