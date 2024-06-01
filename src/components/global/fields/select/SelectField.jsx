@@ -5,6 +5,7 @@ import { useState } from "react";
 import { GlobalIcon } from "../../GlobalIcon";
 
 export const SelectField = ({ name, label, placeholder }) => {
+  // TODO: open one options onToggle, close others
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -27,11 +28,15 @@ export const SelectField = ({ name, label, placeholder }) => {
 
   return (
     <div>
-      <label htmlFor={label}>{label}</label>
+      {label && (
+        <label htmlFor={label} className="label">
+          {label}
+        </label>
+      )}
       <div className={styles.select} id={label}>
         <div className={styles.select_control} onClick={toggleDropdown}>
           <div className={styles.select_selected}>
-            {selectedOption ? selectedOption.label : "Select..."}
+            {selectedOption ? selectedOption.label : placeholder}
           </div>
           <div className={styles.select_dropdown}>
             {isOpen ? (

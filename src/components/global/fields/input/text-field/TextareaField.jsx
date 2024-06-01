@@ -4,7 +4,7 @@ export const TextareaField = ({ label, name, placeholder }) => {
   return (
     <div className={styles.field}>
       {label && (
-        <label htmlFor={name} className={styles.field_label}>
+        <label htmlFor={name} className="label">
           {label}
         </label>
       )}

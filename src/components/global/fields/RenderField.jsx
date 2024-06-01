@@ -14,7 +14,7 @@ export const RenderField = ({ attributes }) => {
       />
     ),
     // TODO: Consider adding options
-    select: <SelectField placeholder={placeholder} name={name} />,
+    select: <SelectField label={label} placeholder={placeholder} name={name} />,
   };
 
   return renderFieldByType[type];

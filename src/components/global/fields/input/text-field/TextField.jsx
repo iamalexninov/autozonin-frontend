@@ -4,7 +4,7 @@ export const TextField = ({ type,label, placeholder, name }) => {
   return (
     <div className={styles.field}>
       {label && (
-        <label htmlFor={name} className={styles.field_label}>
+        <label htmlFor={name} className="label">
           {label}
         </label>
       )}

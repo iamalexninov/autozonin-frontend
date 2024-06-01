@@ -1,6 +1,7 @@
 .select {
   position: relative;
   width: 100%;
+  font-size: 14px;
 }
 
 .select_control {
@@ -9,7 +10,7 @@
   align-items: center;
   justify-content: space-between;
   border: 1px solid var(--light-gray);
-  padding: 15px;
+  padding: 12.5px;
   border-radius: 10px;
 }
 
@@ -31,7 +32,6 @@
   background-color: var(--white);
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px;
 }
 
 .select_option {
