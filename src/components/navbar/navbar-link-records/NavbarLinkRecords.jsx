@@ -62,7 +62,7 @@ const NavbarLinkRecordAuth = () => {
 const NavbarLinkRecordSell = ({ type }) => {
   return (
     <li>
-      <Link to={endpoints.profile}>
+      <Link to={endpoints.dashboardSubmit}>
         <button
           className={
             type === "mobile"

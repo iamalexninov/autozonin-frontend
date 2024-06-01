@@ -6,5 +6,12 @@ export const endpoints = {
   contact: "/contact",
   login: "/login",
   register: "/register",
-  profile: "/dealer/dashboard",
+  dashboard: "/dashboard",
+  dashboardSubmit: "/dashboard/submit-listing",
 };
+
+export function isDashboardPath(path) {
+  const dashboardPaths = [endpoints.dashboard, endpoints.dashboardSubmit];
+
+  return dashboardPaths.includes(path);
+}
