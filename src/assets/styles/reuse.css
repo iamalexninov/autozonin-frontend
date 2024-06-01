@@ -10,3 +10,12 @@
   padding: 15px 20px;
   border: 1px solid var(--light-gray);
 }
+
+.dashboard {
+  display: flex;
+}
+
+.dashboard_section {
+  width: 100%;
+  background-color: var(--light-gray);
+}

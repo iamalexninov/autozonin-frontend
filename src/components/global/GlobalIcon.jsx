@@ -15,6 +15,8 @@ import {
   FaFlag,
   FaBullhorn,
   FaQuoteRight,
+  FaHouseDamage,
+  FaUnlockAlt,
 } from "react-icons/fa";
 import {
   FaArrowRight,
@@ -29,10 +31,13 @@ import {
   MdEmail,
   MdKeyboardArrowDown,
   MdKeyboardArrowUp,
+  MdOutlineSaveAlt,
   MdOutlineSearch,
 } from "react-icons/md";
 import {
+  IoCarSport,
   IoLocationSharp,
+  IoLogOut,
   IoOptionsSharp,
   IoSettings,
   IoSpeedometer,
@@ -45,6 +50,8 @@ import {
 import { GoArrowUpRight } from "react-icons/go";
 import { BsFillFuelPumpFill } from "react-icons/bs";
 import { TbManualGearbox } from "react-icons/tb";
+import { CgProfile } from "react-icons/cg";
+import { RiSendPlaneFill } from "react-icons/ri";
 
 export const GlobalIcon = ({ type, size }) => {
   return <RenderIconComponent type={type} size={size} />;
@@ -87,6 +94,13 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     quote: FaQuoteRight,
     filter: IoOptionsSharp,
     location: IoLocationSharp,
+    dashboard: FaHouseDamage,
+    profile: CgProfile,
+    listing: IoCarSport,
+    favorite: MdOutlineSaveAlt,
+    submitListing: RiSendPlaneFill,
+    password: FaUnlockAlt,
+    logout: IoLogOut,
   };
 
   let IconComponent = iconComponents[type];

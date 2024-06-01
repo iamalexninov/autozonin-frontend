@@ -20,8 +20,8 @@ export const Layout = () => {
   return (
     <>
       <Navbar />
-      {isDashboardPath(pathname) && <DashboardAside />}
-      <main>
+      <main className={isDashboardPath(pathname) && "dashboard"}>
+        {isDashboardPath(pathname) && <DashboardAside />}
         <Routes>
           <Route path={endpoints.home} element={<Home />} />
           <Route path={endpoints.about} element={<About />} />

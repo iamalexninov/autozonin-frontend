@@ -8,7 +8,7 @@ function App() {
   return (
     <MobileMenuContextProvider>
       <Router>
-        <Layout />;
+        <Layout />
       </Router>
     </MobileMenuContextProvider>
   );

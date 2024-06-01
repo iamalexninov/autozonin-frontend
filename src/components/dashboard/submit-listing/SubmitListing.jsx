@@ -1,7 +1,5 @@
-import styles from './style.module.css';
+import styles from "./style.module.css";
 
 export const SubmitListing = () => {
-  return (
-    <div className={styles.submit}>SubmitListing</div>
-  )
-}
+  return <div className="dashboard_section">SubmitListing</div>;
+};
