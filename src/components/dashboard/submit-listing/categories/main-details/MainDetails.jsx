@@ -166,6 +166,15 @@ export const MainDetails = () => {
           }}
         />
       </div>
+      <RenderField
+        attributes={{
+          type: "input",
+          inputType: "textarea",
+          label: "Listing Description",
+          placeholder: "Description",
+          name: "description",
+        }}
+      />
     </div>
   );
 };

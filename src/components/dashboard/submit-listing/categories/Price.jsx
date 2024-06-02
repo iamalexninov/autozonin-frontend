@@ -1,4 +1,4 @@
-import { RenderField } from "../../../../global/fields/RenderField";
+import { RenderField } from "../../../global/fields/RenderField";
 
 export const Price = () => {
   return (

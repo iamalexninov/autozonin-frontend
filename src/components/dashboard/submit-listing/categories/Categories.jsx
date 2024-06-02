@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 
 import { MainDetails } from "./main-details/MainDetails";
-import { Price } from "./price/Price";
+import { Price } from "./Price";
 
 export const Categories = () => {
   return (
