@@ -1,16 +1,19 @@
 import styles from "./style.module.css";
 
 import { NavbarMobile } from "../navbar-mobile/NavbarMobile";
-import { useMobileMenuContext } from "../../../hooks/useContexts";
 import { NavbarLinkRecords } from "../navbar-link-records/NavbarLinkRecords";
 
+import { useMenuContext } from "../../../hooks/useContexts";
+
 export const NavbarMobileMenuDropdown = ({ records }) => {
-  const { menu } = useMobileMenuContext();
+  const { navbarMenu } = useMenuContext();
 
   return (
     <div
       className={
-        menu ? [styles.dropdown, styles.active].join(" ") : styles.dropdown
+        navbarMenu.navbar
+          ? [styles.dropdown, styles.active].join(" ")
+          : styles.dropdown
       }
     >
       <NavbarMobile icon="exit" />

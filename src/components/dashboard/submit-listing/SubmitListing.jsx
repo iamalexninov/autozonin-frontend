@@ -14,7 +14,8 @@ export const SubmitListing = () => {
     <div className={["dashboard_section", styles.submit].join(" ")}>
       <h3 className={styles.submit_title}>Add Vehicle Listing</h3>
       <Form>
-        <Categories />
+        <div>submit</div>
+        {/* <Categories /> */}
       </Form>
     </div>
   );

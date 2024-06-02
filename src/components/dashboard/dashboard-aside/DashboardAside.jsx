@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom";
-import { GlobalIcon } from "../../global/GlobalIcon";
 import styles from "./style.module.css";
+
+import { Link } from "react-router-dom";
+import { useMenuContext } from "../../../hooks/useContexts";
+
+import { GlobalIcon } from "../../global/GlobalIcon";
 
 export const DashboardAside = () => {
   const paths = [
@@ -41,10 +44,27 @@ export const DashboardAside = () => {
     },
   ];
 
+  const { asideMenu } = useMenuContext();
+
+  const handleClick = () => {
+    asideMenu.toggleAside();
+  };
+
   return (
-    <aside className={styles.aside}>
-      <LinkRecords records={paths} />
-    </aside>
+    <>
+      <aside
+        className={
+          asideMenu.aside
+            ? [styles.aside, styles.active].join(" ")
+            : styles.aside
+        }
+      >
+        <LinkRecords records={paths} />
+      </aside>
+      <div className={styles.aside_btn} onClick={handleClick}>
+        <GlobalIcon type={asideMenu.aside ? "exit" : "bars"} />
+      </div>
+    </>
   );
 };
 

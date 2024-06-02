@@ -2,15 +2,15 @@ import "./assets/styles/index.css";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import { Layout } from "./layout/Layout";
-import { MobileMenuContextProvider } from "./contexts/MobileMenuContext";
+import { MenuContextProvider } from "./contexts/MenuContext";
 
 function App() {
   return (
-    <MobileMenuContextProvider>
+    <MenuContextProvider>
       <Router>
         <Layout />
       </Router>
-    </MobileMenuContextProvider>
+    </MenuContextProvider>
   );
 }
 

@@ -3,13 +3,13 @@ import styles from "./style.module.css";
 import { Link } from "react-router-dom";
 import { NavbarLogo } from "../NavbarLogo";
 import { GlobalIcon } from "../../global/GlobalIcon";
-import { useMobileMenuContext } from "../../../hooks/useContexts";
+import { useMenuContext } from "../../../hooks/useContexts";
 
 export const NavbarMobile = ({ icon }) => {
-  const { open, close } = useMobileMenuContext();
+  const { navbarMenu } = useMenuContext();
 
   const handleOnMenuClick = () => {
-    icon === "bars" ? open() : close();
+    icon === "bars" ? navbarMenu.openNavbar() : navbarMenu.closeNavbar();
   };
 
   return (
