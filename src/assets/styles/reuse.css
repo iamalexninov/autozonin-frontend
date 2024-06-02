@@ -28,8 +28,14 @@
   background-color: var(--white);
 }
 
-.add_vehicle_category {
+.vehicle_category {
   padding: 40px;
   border: 1px solid var(--light-gray);
   border-radius: 10px;
+}
+
+.vehicle_category_title {
+  font-size: 1.25rem;
+  font-family: var(--font-family-body);
+  margin-bottom: 2rem;
 }

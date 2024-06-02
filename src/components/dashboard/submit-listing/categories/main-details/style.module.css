@@ -1,5 +1,10 @@
-.fields {
+.details_fields {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.details .details_fields:last-child {
+  margin-bottom: 0;
 }

@@ -4,8 +4,9 @@ import { RenderField } from "../../../../global/fields/RenderField";
 
 export const MainDetails = () => {
   return (
-    <div className="add_vehicle_category">
-      <div className={styles.fields}>
+    <div className={["vehicle_category", styles.details].join(" ")}>
+      <h5 className="vehicle_category_title">Vehicle Details</h5>
+      <div className={styles.details_fields}>
         <RenderField
           attributes={{
             type: "input",
@@ -31,7 +32,7 @@ export const MainDetails = () => {
           }}
         />
       </div>
-      <div className={styles.fields}>
+      <div className={styles.details_fields}>
         <RenderField
           attributes={{
             type: "input",
@@ -57,7 +58,7 @@ export const MainDetails = () => {
           }}
         />
       </div>
-      <div className={styles.fields}>
+      <div className={styles.details_fields}>
         <RenderField
           attributes={{
             type: "select",
@@ -83,7 +84,7 @@ export const MainDetails = () => {
           }}
         />
       </div>
-      <div className={styles.fields}>
+      <div className={styles.details_fields}>
         <RenderField
           attributes={{
             type: "select",
@@ -110,7 +111,7 @@ export const MainDetails = () => {
           }}
         />
       </div>
-      <div className={styles.fields}>
+      <div className={styles.details_fields}>
         <RenderField
           attributes={{
             type: "input",
@@ -138,7 +139,7 @@ export const MainDetails = () => {
           }}
         />
       </div>
-      <div className={styles.fields}>
+      <div className={styles.details_fields}>
         <RenderField
           attributes={{
             type: "select",
