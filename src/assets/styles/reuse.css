@@ -23,7 +23,7 @@
 
 .dashboard_section {
   /* TODO: Make it less for responsive screens */
-  padding: 60px 60px 30px;
+  padding: 20px;
   width: 100%;
   background-color: var(--white);
 }
@@ -38,4 +38,10 @@
   font-size: 1.25rem;
   font-family: var(--font-family-body);
   margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 767px) {
+  .dashboard_section {
+    padding: 40px;
+  }
 }
