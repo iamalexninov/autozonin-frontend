@@ -1,0 +1,32 @@
+.password {
+  padding: 20px;
+  background-color: var(--white);
+}
+
+.password_container {
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  border: 1px solid var(--light-gray);
+}
+
+.password_fields {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.password_btn {
+  padding: 10px;
+  color: var(--white);
+  border-radius: 10px;
+  background-color: var(--cape-verde-green);
+}
+
+@media only screen and (min-width: 767px) {
+  .password,
+  .password_container {
+    padding: 35px;
+  }
+}

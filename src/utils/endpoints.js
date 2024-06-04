@@ -8,6 +8,7 @@ export const endpoints = {
   register: "/register",
   dashboard: "/dashboard",
   dashboardSubmit: "/dashboard/submit-listing",
+  dashboardChangePass: "/dashboard/change-password",
 };
 
 export function isDashboardPath(path) {
