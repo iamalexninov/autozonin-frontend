@@ -1,0 +1,28 @@
+.profile {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 20px;
+  width: 100%;
+  background-color: var(--white);
+}
+
+.profile_fields {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.profile_btn {
+  align-self: flex-end;
+  max-width: 280px;
+  padding: 15px;
+  color: var(--white);
+  border-radius: 15px;
+  background-color: var(--cape-verde-green);
+}
+
+@media only screen and (min-width: 767px) {
+  .profile_fields {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

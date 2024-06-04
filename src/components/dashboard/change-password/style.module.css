@@ -1,11 +1,13 @@
 .password {
-  padding: 20px;
   background-color: var(--white);
 }
 
-.password_container {
+.password,.password_container {
   padding: 20px;
   width: 100%;
+}
+
+.password_container {
   max-width: 500px;
   border-radius: 10px;
   border: 1px solid var(--light-gray);
@@ -18,9 +20,10 @@
 }
 
 .password_btn {
-  padding: 10px;
+  padding: 15px;
   color: var(--white);
-  border-radius: 10px;
+  border-radius: 15px;
+  max-width: 280px;
   background-color: var(--cape-verde-green);
 }
 

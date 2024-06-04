@@ -3,6 +3,7 @@ import { endpoints } from "../utils/endpoints";
 
 import { SubmitListing } from "../components/dashboard/submit-listing/SubmitListing";
 import { ChangePassword } from "../components/dashboard/change-password/ChangePassword";
+import { MyProfile } from "../components/dashboard/my-profile/MyProfile";
 
 export const DashboardLayout = () => {
   return (
@@ -12,6 +13,7 @@ export const DashboardLayout = () => {
         path={endpoints.dashboardChangePass}
         element={<ChangePassword />}
       />
+      <Route path={endpoints.dashboardProfile} element={<MyProfile />} />
     </Routes>
   );
 };
