@@ -7,7 +7,7 @@ export const Features = () => {
   return (
     <div className="vehicle_category">
       <h5 className="vehicle_category_title">Features</h5>
-      <FeatureRecords records={additionalFeatures} />
+      <FeatureRecords records={additionalFeatures}/>
     </div>
   );
 };

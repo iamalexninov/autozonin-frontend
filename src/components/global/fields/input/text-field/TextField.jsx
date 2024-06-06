@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 
-export const TextField = ({ type,label, placeholder, name }) => {
+export const TextField = ({ type, label, placeholder, name, onChange }) => {
   return (
     <div className={styles.field}>
       {label && (
@@ -15,6 +15,7 @@ export const TextField = ({ type,label, placeholder, name }) => {
           name={name}
           id={name}
           className={styles.field_item}
+          onChange={onChange}
         />
       )}
     </div>
