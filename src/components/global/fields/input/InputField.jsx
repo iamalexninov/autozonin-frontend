@@ -1,33 +1,23 @@
-import { TextField } from "./text-field/TextField";
-import { RangeField } from "./range-field/RangeField";
-import { CheckboxField } from "./checkbox-field/CheckboxField";
-import { TextareaField } from "./text-field/TextareaField";
+import styles from "./style.module.css";
 
-export const InputField = ({ type, label, name, placeholder, onChange }) => {
-  const renderInputField = {
-    text: (
-      <TextField
-        type={type}
-        name={name}
-        label={label}
-        placeholder={placeholder}
-        onChange={onChange}
-      />
-    ),
-    number: (
-      <TextField
-        type={type}
-        name={name}
-        label={label}
-        placeholder={placeholder}
-      />
-    ),
-    range: <RangeField name={name} label={label} />,
-    checkbox: <CheckboxField name={name} label={label} />,
-    textarea: (
-      <TextareaField name={name} label={label} placeholder={placeholder} />
-    ),
-  };
-
-  return renderInputField[type];
+export const InputField = ({ type, label, placeholder, name, onChange }) => {
+  return (
+    <div className={styles.field}>
+      {label && (
+        <label htmlFor={name} className="label">
+          {label}
+        </label>
+      )}
+      {name && (
+        <input
+          type={type}
+          placeholder={placeholder}
+          name={name}
+          id={name}
+          className={styles.field_item}
+          onChange={onChange}
+        />
+      )}
+    </div>
+  );
 };
