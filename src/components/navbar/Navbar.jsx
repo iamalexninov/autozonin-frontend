@@ -1,32 +1,43 @@
 import styles from "./style.module.css";
+import { endpoints } from "../../utils/endpoints";
 
 import { useLocation } from "react-router-dom";
-import { endpoints } from "../../utils/endpoints";
-import { NavbarMobile } from "./navbar-mobile/NavbarMobile";
-import { NavbarDesktop } from "./navbar-desktop/NavbarDesktop";
-import { NavbarMobileMenuDropdown } from "./navbar-mobile-menu-dropdown/NavbarMobileMenuDropdown";
+
+import { NavbarLogo } from "./NavbarLogo";
+import { LinksRecords } from "./links/LinksRecords";
+import { MobileBtns } from "./mobile/MobileBtns";
 
 export const Navbar = () => {
   const pagesmockdata = [
     {
       path: endpoints.home,
       text: "Home",
+      icon: "home",
     },
     {
       path: endpoints.about,
       text: "About",
+      icon: "about",
     },
     {
       path: endpoints.vehicles,
-      text: "Catalogue",
+      text: "Catalog",
+      icon: "catalog",
     },
     {
       path: endpoints.blog,
       text: "Articles",
+      icon: "blog",
     },
     {
       path: endpoints.contact,
       text: "Contact",
+      icon: "contact",
+    },
+    {
+      path: endpoints.login,
+      text: "Login",
+      icon: "user",
     },
   ];
 
@@ -42,13 +53,15 @@ export const Navbar = () => {
               top: "0",
               left: "0",
             }
-          : { backgroundColor: "var(--hunter-green)" }
+          : { backgroundColor: "var(--cape-verde-green)" }
       }
       className={styles.header}
     >
-      <NavbarDesktop records={pagesmockdata} />
-      <NavbarMobile icon="bars" />
-      <NavbarMobileMenuDropdown records={pagesmockdata} />
+      <nav className={styles.nav}>
+        <NavbarLogo />
+        <LinksRecords records={pagesmockdata} />
+        <MobileBtns />
+      </nav>
     </header>
   );
 };

@@ -17,6 +17,8 @@ import {
   FaQuoteRight,
   FaHouseDamage,
   FaUnlockAlt,
+  FaHome,
+  FaInfoCircle,
 } from "react-icons/fa";
 import {
   FaArrowRight,
@@ -31,6 +33,7 @@ import {
   MdEmail,
   MdKeyboardArrowDown,
   MdKeyboardArrowUp,
+  MdOutlineContacts,
   MdOutlineSaveAlt,
   MdOutlineSearch,
 } from "react-icons/md";
@@ -51,8 +54,8 @@ import { GoArrowUpRight } from "react-icons/go";
 import { BsFillFuelPumpFill } from "react-icons/bs";
 import { TbManualGearbox } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
-import { RiSendPlaneFill } from "react-icons/ri";
-import { IoIosArrowDown } from "react-icons/io";
+import { RiArticleFill, RiSendPlaneFill } from "react-icons/ri";
+import { IoIosArrowDown, IoIosListBox } from "react-icons/io";
 
 export const GlobalIcon = ({ type, size }) => {
   return <RenderIconComponent type={type} size={size} />;
@@ -102,13 +105,16 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     submitListing: RiSendPlaneFill,
     password: FaUnlockAlt,
     logout: IoLogOut,
+    home: FaHome,
+    about: FaInfoCircle,
+    catalog: IoIosListBox,
+    blog: RiArticleFill,
+    contact: MdOutlineContacts,
   };
 
   let IconComponent = iconComponents[type];
-  const errorMsg = renderErrorMessage("invalid_component");
 
   if (!IconComponent) {
-    alert(errorMsg());
     IconComponent = null;
   }
 

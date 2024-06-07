@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 
 export const Form = ({ onSubmit, children }) => {
-  const handleSubmit = (e) => {
+  const handleSubmit = () => {
     onSubmit();
   };
 
