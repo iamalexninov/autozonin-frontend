@@ -1,9 +1,9 @@
 import styles from "./style.module.css";
 
-import { RenderField } from "../../global/fields/RenderField";
-import { GlobalIcon } from "../../global/GlobalIcon";
+import { RenderField } from "../../../global/fields/RenderField";
+import { GlobalIcon } from "../../../global/GlobalIcon";
 
-export const HomeSearch = () => {
+export const SearchBar = () => {
   return (
     <div className={styles.bar}>
       <RenderField attributes={{ type: "select", placeholder: "Conditions" }} />

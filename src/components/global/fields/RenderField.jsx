@@ -52,7 +52,14 @@ export const RenderField = ({ attributes }) => {
       />
     ),
     range: <RangeField label={label} name={name} />,
-    select: <SelectField label={label} name={name} onChange={onChange} />,
+    select: (
+      <SelectField
+        label={label}
+        name={name}
+        onChange={onChange}
+        placeholder={placeholder}
+      />
+    ),
   };
 
   return renderFieldByType[type];

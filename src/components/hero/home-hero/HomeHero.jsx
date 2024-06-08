@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 
 import { TitleContent } from "./title-content/TitleContent";
-import { HomeSearch } from "../../search-boxes/home-search/HomeSearch";
+import { SearchBar } from "./search-bar/SearchBar";
 import { VehiclesTypes } from "./vehicles-types/VehiclesTypes";
 
 export const HomeHero = () => {
@@ -9,7 +9,7 @@ export const HomeHero = () => {
     <section className={styles.hero}>
       <div className={styles.hero_wrapper}>
         <TitleContent />
-        <HomeSearch />
+        <SearchBar />
         <VehiclesTypes />
       </div>
     </section>
