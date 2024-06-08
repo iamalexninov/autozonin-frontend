@@ -1,7 +1,6 @@
 import styles from "./style.module.css";
 
 import { RenderField } from "../../../global/fields/RenderField";
-import { GlobalIcon } from "../../../global/GlobalIcon";
 
 export const SearchBar = () => {
   return (
@@ -9,10 +8,7 @@ export const SearchBar = () => {
       <RenderField attributes={{ type: "select", placeholder: "Conditions" }} />
       <RenderField attributes={{ type: "select", placeholder: "Makers" }} />
       <RenderField attributes={{ type: "select", placeholder: "Models" }} />
-      <button className={styles.bar_btn}>
-        <GlobalIcon type="search" size={25} />
-        <p>Search Vehicles</p>
-      </button>
+      <button className={styles.bar_btn}>Search</button>
     </div>
   );
 };

@@ -11,7 +11,8 @@
 }
 
 .types_info {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 
 .types_records {
@@ -21,7 +22,7 @@
 
 .types_record {
   cursor: pointer;
-  padding: 15px 20px;
+  padding: 12px 30px;
   border-radius: 50px;
   font-size: 14px;
   background-color: rgba(197, 196, 196, 0.325);
