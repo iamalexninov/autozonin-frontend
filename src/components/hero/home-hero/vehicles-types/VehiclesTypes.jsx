@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 
-export const HeroTypes = () => {
-  const vehiclesTypes = [
+export const VehiclesTypes = () => {
+  const types = [
     "SUV",
     "Coupe",
     "Hatchback",
@@ -13,24 +13,24 @@ export const HeroTypes = () => {
   return (
     <div className={styles.types}>
       <p className={styles.types_info}>Or Browse Featured Model</p>
-      <VehiclesTypesRecords records={vehiclesTypes} />
+      <TypesRecords records={types} />
     </div>
   );
 };
 
-const VehiclesTypesRecords = ({ records }) => {
+const TypesRecords = ({ records }) => {
   return (
-    <ul className={styles.records}>
+    <ul className={styles.types_records}>
       {records.map((record) => (
-        <VehiclesTypeRecord key={record} record={record}/>
+        <TypesRecord key={record} record={record} />
       ))}
     </ul>
   );
 };
 
-const VehiclesTypeRecord = ({ record }) => {
+const TypesRecord = ({ record }) => {
   return (
-    <li className={styles.record}>
+    <li className={styles.types_record}>
       <p>{record}</p>
     </li>
   );

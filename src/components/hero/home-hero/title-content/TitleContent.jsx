@@ -1,8 +1,8 @@
 import styles from "./style.module.css";
 
-export const HeroTextContent = () => {
+export const TitleContent = () => {
   return (
-    <div className={styles.content}>
+    <div className={styles.title}>
       <p>Find cars for sale or rent near you.</p>
       <h1>Find Your Perfect Vehicle</h1>
     </div>

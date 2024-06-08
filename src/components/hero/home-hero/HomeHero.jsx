@@ -1,16 +1,16 @@
 import styles from "./style.module.css";
 
-import { HeroTextContent } from "./hero-text-content/HeroTextContent";
+import { TitleContent } from "./title-content/TitleContent";
 import { HomeSearch } from "../../search-boxes/home-search/HomeSearch";
-import { HeroTypes } from "./hero-types/HeroTypes";
+import { VehiclesTypes } from "./vehicles-types/VehiclesTypes";
 
 export const HomeHero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.hero_wrapper}>
-        <HeroTextContent />
+        <TitleContent />
         <HomeSearch />
-        <HeroTypes />
+        <VehiclesTypes />
       </div>
     </section>
   );
