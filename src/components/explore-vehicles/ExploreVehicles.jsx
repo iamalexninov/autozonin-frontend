@@ -8,7 +8,7 @@ import { Wrapper } from "../global/wrapper/Wrapper";
 import { SectionHeaderWithLinkBtn } from "../global/section-header-link-btn/SectionHeaderWithLinkBtn";
 import { AllVehiclesCard } from "../cards/all-vehicles-card/AllVehiclesCard";
 
-export const AllVehicles = () => {
+export const ExploreVehicles = () => {
   return (
     <section className={styles.vehicles}>
       <Wrapper>
