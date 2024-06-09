@@ -1,10 +1,10 @@
 .features {
-  padding-bottom: 80px;
+  padding-block: 5rem;
   background-color: var(--white);
 }
 
-.features_header {
-  margin-bottom: 50px;
+.features_title {
+  margin-bottom: 3.125rem;
 }
 
 .features_records {
@@ -13,12 +13,12 @@
   gap: 30px;
 }
 
-.features_record_type {
+.features_type {
   font-size: 20px;
   margin-bottom: 15px;
 }
 
-.features_record_desc {
+.features_desc {
   color: var(--dark-gray);
 }
 

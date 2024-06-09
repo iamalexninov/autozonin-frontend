@@ -1,5 +1,5 @@
 .stats {
-  padding-block: 50px;
+  padding-bottom: 3.125rem;
   background-color: var(--white);
   border-bottom: 1px solid var(--light-gray);
 }
@@ -19,13 +19,13 @@
   display: block;
 }
 
-.stats_record_value {
+.stats_value {
   font-size: 42px;
   font-weight: 900;
   margin-bottom: 10px;
 }
 
-.stats_record_type {
+.stats_type {
   font-size: 18px;
   color: var(--dark-gray);
   text-transform: uppercase;
