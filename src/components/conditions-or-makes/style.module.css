@@ -1,0 +1,19 @@
+.types {
+}
+
+.types_records {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.types_link {
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.active {
+  border-radius: 2px;
+  border-bottom: 2px solid var(--cape-verde-green);
+}
