@@ -1,11 +1,5 @@
 import styles from "./style.module.css";
-
-import audi from "../../assets/images/svg/audi.svg";
-import mercedes from "../../assets/images/svg/mercedes.svg";
-import bmw from "../../assets/images/svg/bmw.svg";
-import honda from "../../assets/images/svg/honda.svg";
-import ford from "../../assets/images/svg/ford.svg";
-import lexus from "../../assets/images/svg/lexus.svg";
+import { brands } from "./Text";
 
 import { Link } from "react-router-dom";
 
@@ -13,37 +7,16 @@ import { Wrapper } from "../global/wrapper/Wrapper";
 import { SectionHeaderWithLinkBtn } from "../global/section-header-link-btn/SectionHeaderWithLinkBtn";
 
 export const ExplorePremiumBrands = ({ type }) => {
-  const brands = [
-    {
-      banner: audi,
-      brand: "Audi",
-    },
-    {
-      banner: mercedes,
-      brand: "Mercedes",
-    },
-    {
-      banner: bmw,
-      brand: "BMW",
-    },
-    {
-      banner: honda,
-      brand: "Honda",
-    },
-    {
-      banner: ford,
-      brand: "Ford",
-    },
-    {
-      banner: lexus,
-      brand: "Lexus",
-    },
-  ];
+  const customStyles = {
+    position: "relative",
+    top: "-80px",
+    borderRadius: "50px 50px 0px 0px",
+  };
 
   return (
     <section
       className={styles.premium_brands}
-      style={type !== "generic" ? { borderRadius: "50px 50px 0px 0px" } : null}
+      style={type !== "generic" && customStyles}
     >
       <Wrapper>
         <SectionHeaderWithLinkBtn

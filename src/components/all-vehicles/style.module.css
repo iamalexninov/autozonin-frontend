@@ -1,5 +1,4 @@
 .vehicles {
-  padding-block: 120px;
   background-color: var(--white);
 }
 
@@ -7,6 +6,23 @@
   display: flex;
   gap: 15px;
   margin-bottom: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   border-bottom: 1px solid var(--light-gray);
+}
+
+.vehicles_condition {
+  cursor: pointer;
+}
+
+.vehicles_path {
+  color: var(--dark-gray);
+  padding-bottom: 0.15rem;
+  transition: all ease-in-out 0.5s;
+}
+
+.active,.vehicles_path:hover {
+  color: var(--cape-verde-green);
+}
+.active {
+  border-bottom: 1px solid var(--cape-verde-green);
 }
