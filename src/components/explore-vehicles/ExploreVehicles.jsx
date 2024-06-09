@@ -1,8 +1,8 @@
 import styles from "./style.module.css";
 import { conditions } from "./Text";
 
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { Wrapper } from "../global/wrapper/Wrapper";
 import { SectionHeaderWithLinkBtn } from "../global/section-header-link-btn/SectionHeaderWithLinkBtn";
@@ -18,9 +18,8 @@ export const ExploreVehicles = () => {
           linkText="View All"
         />
         <ConditionRecords records={conditions} />
-        <AllVehiclesCard />
-        <AllVehiclesCard />
-        <AllVehiclesCard />
+        {/* TODO: change name of card */}
+        <CardsList />
       </Wrapper>
     </section>
   );
@@ -63,5 +62,15 @@ const ConditionRecord = ({ record, clickedCondition, setClickedCondition }) => {
         {record.text}
       </Link>
     </li>
+  );
+};
+
+const CardsList = () => {
+  return (
+    <div className={styles.vehicles_cards}>
+      <AllVehiclesCard />
+      <AllVehiclesCard />
+      <AllVehiclesCard />
+    </div>
   );
 };
