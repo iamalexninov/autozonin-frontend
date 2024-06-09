@@ -23,6 +23,7 @@
 .active,.vehicles_path:hover {
   color: var(--cape-verde-green);
 }
+
 .active {
   border-bottom: 1px solid var(--cape-verde-green);
 }

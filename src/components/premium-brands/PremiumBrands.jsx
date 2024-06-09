@@ -32,7 +32,7 @@ export const ExplorePremiumBrands = ({ type }) => {
 
 const BrandsRecords = ({ records }) => {
   return (
-    <ul className={styles.records}>
+    <ul className={styles.premium_records}>
       {records.map((record) => (
         <BrandsRecord key={record.brand} record={record} />
       ))}
@@ -42,14 +42,14 @@ const BrandsRecords = ({ records }) => {
 
 const BrandsRecord = ({ record }) => {
   return (
-    <li className={styles.record}>
-      <Link to="/catalogue">
+    <li className={styles.premium_record}>
+      <Link to="/catalogue" className={styles.premium_link}>
         <img
-          className={styles.record_banner}
+          className={styles.premium_banner}
           src={record.banner}
           alt={record.brand}
         />
-        <p className={styles.record_brand}>{record.brand}</p>
+        <p className={styles.premium_brand}>{record.brand}</p>
       </Link>
     </li>
   );
