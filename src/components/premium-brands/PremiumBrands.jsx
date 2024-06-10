@@ -16,7 +16,7 @@ export const ExplorePremiumBrands = ({ type }) => {
   return (
     <section
       className={styles.premium_brands}
-      style={type !== "generic" && customStyles}
+      style={type !== "generic" ? customStyles : null}
     >
       <Wrapper>
         <SectionHeaderWithLinkBtn

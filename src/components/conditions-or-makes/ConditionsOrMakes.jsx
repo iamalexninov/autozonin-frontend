@@ -6,13 +6,28 @@ import { useState } from "react";
 
 import { Wrapper } from "../global/wrapper/Wrapper";
 import { SectionHeaderWithLinkBtn } from "../global/section-header-link-btn/SectionHeaderWithLinkBtn";
+import { PopularMakesCard } from "../cards/popular-makes-card/PopularMakesCard";
+import { AllVehiclesCard } from "../cards/all-vehicles-card/AllVehiclesCard";
 
 export const ConditionsOrMakes = ({ type }) => {
   return (
-    <section className={styles.types}>
+    <section
+      className={styles.types}
+      style={
+        type === "makes"
+          ? {
+              backgroundColor: "var(--hunter-green)",
+              paddingBlock: "5rem",
+              color: "var(--white)",
+            }
+          : null
+      }
+    >
       <Wrapper>
         <SectionHeaderWithLinkBtn
-          color="dark"
+          color={
+            type === "conditions" ? "dark" : type === "makes" ? "light" : null
+          }
           header={
             type === "makes"
               ? "Popular Makes"
@@ -24,17 +39,18 @@ export const ConditionsOrMakes = ({ type }) => {
           linkText="View All"
         />
         <Records
+          type={type}
           records={
             type === "makes" ? makes : type === "conditions" ? conditions : null
           }
         />
-        <CardList />
+        <CardList type={type} />
       </Wrapper>
     </section>
   );
 };
 
-const Records = ({ records }) => {
+const Records = ({ type, records }) => {
   const [clicked, setClicked] = useState(records[0].text);
 
   return (
@@ -42,6 +58,7 @@ const Records = ({ records }) => {
       {records.map((record) => (
         <Record
           key={record.text}
+          type={type}
           record={record}
           clicked={clicked}
           setClicked={setClicked}
@@ -51,7 +68,7 @@ const Records = ({ records }) => {
   );
 };
 
-const Record = ({ record, clicked, setClicked }) => {
+const Record = ({ type, record, clicked, setClicked }) => {
   const navigate = useNavigate();
 
   const handleClick = (e) => {
@@ -69,6 +86,7 @@ const Record = ({ record, clicked, setClicked }) => {
             ? [styles.types_link, styles.active].join(" ")
             : styles.types_link
         }
+        style={type === "makes" ? { color: "var(--light-gray)" } : null}
         onClick={handleClick}
       >
         {record.text}
@@ -81,9 +99,16 @@ const CardList = ({ type }) => {
   return (
     <>
       {type === "conditions" ? (
-        <div className={styles.card_conditions}></div>
+        <div className={styles.cards_conditions}>
+          <AllVehiclesCard />
+          <AllVehiclesCard />
+          <AllVehiclesCard />
+        </div>
       ) : type === "makes" ? (
-        <div className={styles.card_makes}></div>
+        <div className={styles.cards_makes}>
+          <PopularMakesCard />
+          <PopularMakesCard />
+        </div>
       ) : null}
     </>
   );

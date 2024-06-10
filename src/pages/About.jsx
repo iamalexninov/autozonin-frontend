@@ -7,6 +7,7 @@ import { ExplorePremiumBrands } from "../components/premium-brands/PremiumBrands
 import { Team } from "../components/team/Team";
 import { Testimonials } from "../components/testimonials/Testimonials";
 import { FAQ } from "../components/faq/FAQ";
+import { Subscribe } from "../components/subscribe/Subscribe";
 
 export const About = () => {
   return (
@@ -20,6 +21,7 @@ export const About = () => {
       <Team />
       <Testimonials />
       <FAQ />
+      <Subscribe />
     </>
   );
 };

@@ -6,8 +6,10 @@ export const Subscribe = () => {
     <section className={styles.subscribe}>
       <Wrapper>
         <div className={styles.subscribe_content}>
-          <h3>Join Zonin Dealership</h3>
-          <p>Receive pricing updates, shopping tips & more!</p>
+          <div className={styles.subscribe_text}>
+            <h3>Join Zonin Dealership</h3>
+            <p>Receive pricing updates, shopping tips & more!</p>
+          </div>
           <div className={styles.subscribe_field}>
             <input type="text" placeholder="Your email address..." />
             <button>Join</button>
