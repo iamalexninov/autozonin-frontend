@@ -6,15 +6,17 @@
 
 .sort {
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
+.sort,
 .sort_field {
-  gap: 10px;
+  gap: 0.75rem;
 }
 
-.sort_available, .sort_by {
+.sort_available,
+.sort_by {
   font-size: 14px;
   color: var(--dark-gray);
 }

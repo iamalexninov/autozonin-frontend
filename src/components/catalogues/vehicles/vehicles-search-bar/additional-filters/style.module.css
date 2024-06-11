@@ -9,9 +9,25 @@
   margin-bottom: 0.7rem;
 }
 
+.filters_three {
+  display: flex;
+  align-items: center;
+  gap: 2.6rem;
+}
+
+.filters_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 @media only screen and (min-width: 481px) {
   .row {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .filters_container {
+    flex-direction: row;
   }
 }
 

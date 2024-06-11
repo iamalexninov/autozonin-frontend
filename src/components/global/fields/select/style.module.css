@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: space-between;
   border: 1px solid var(--light-gray);
-  padding: 12.5px;
+  padding: 0.8rem;
   border-radius: 10px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .select_dropdown {
-  margin-left: 8px;
+  margin-left: 0.5rem;
 }
 
 .select_menu {
@@ -35,7 +35,7 @@
 }
 
 .select_option {
-  padding: 10px;
+  padding: 0.75rem;
   cursor: pointer;
 }
 

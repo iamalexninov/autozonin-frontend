@@ -1,9 +1,10 @@
 .search {
+  margin-bottom: 2rem;
   background-color: var(--white);
 }
 
 .filters {
-  padding: 30px;
+  padding: 1.875rem;
   border-radius: 10px;
   border: 1px solid var(--light-gray);
   max-width: 1200px;

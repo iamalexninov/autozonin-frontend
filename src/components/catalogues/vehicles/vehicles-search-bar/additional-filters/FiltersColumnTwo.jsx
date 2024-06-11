@@ -4,7 +4,7 @@ import { RenderField } from "../../../../global/fields/RenderField";
 
 export const FiltersColumnTwo = () => {
   return (
-    <div className={[styles.row,styles.filters_two].join(' ')}>
+    <div className={[styles.row, styles.filters_two].join(" ")}>
       <RenderField
         attributes={{
           type: "select",
@@ -28,8 +28,7 @@ export const FiltersColumnTwo = () => {
       />
       <RenderField
         attributes={{
-          type: "input",
-          inputType: "text",
+          type: "text",
           placeholder: "VIN",
           name: "VIN",
         }}

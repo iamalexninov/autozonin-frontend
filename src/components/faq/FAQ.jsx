@@ -10,7 +10,7 @@ export const FAQ = () => {
   return (
     <section className={styles.faq}>
       <Wrapper>
-        <h2 className={styles.faq_header}>Frequently Asked Questions</h2>
+        <h2 className={styles.faq_title}>Frequently Asked Questions</h2>
         <FAQRecords records={questions} />
       </Wrapper>
     </section>
