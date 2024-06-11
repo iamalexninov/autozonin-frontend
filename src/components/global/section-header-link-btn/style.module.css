@@ -6,7 +6,8 @@
 
 .header {
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
 }
 
 .header_link {

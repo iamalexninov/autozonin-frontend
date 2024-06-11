@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 0.50rem;
-  padding: 15px;
+  padding: 1rem;
   margin-bottom: 2rem;
   background-color: var(--white);
   border: 1px solid var(--light-gray);
@@ -19,7 +19,7 @@
   justify-content: center;
   gap: 0.25rem;
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem;
   color: var(--white);
   background-color: var(--cape-verde-green);
 }

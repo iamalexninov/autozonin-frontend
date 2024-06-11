@@ -1,5 +1,5 @@
 .premium_brands {
-  padding-block: 5rem;
+  padding-block: 8rem;
   background-color: var(--section-bg);
 }
 
@@ -14,7 +14,7 @@
 .premium_records {
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .premium_record {
@@ -22,7 +22,7 @@
   cursor: pointer;
   width: 100%;
   max-width: 200px;
-  padding: 40px;
+  padding: 2.5rem;
   text-align: center;
   border-radius: 20px;
   background-color: var(--white);
@@ -41,7 +41,7 @@
 
 .premium_banner {
   width: 60px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .record_brand:hover {

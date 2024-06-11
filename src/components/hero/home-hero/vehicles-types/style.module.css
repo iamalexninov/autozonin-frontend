@@ -17,12 +17,12 @@
 
 .types_records {
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 1rem;
 }
 
 .types_record {
   cursor: pointer;
-  padding: 12px 30px;
+  padding: 0.75rem 1.75rem;
   border-radius: 50px;
   font-size: 14px;
   background-color: rgba(197, 196, 196, 0.325);

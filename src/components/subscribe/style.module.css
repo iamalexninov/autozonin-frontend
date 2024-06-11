@@ -38,7 +38,7 @@
 
 .subscribe_field button {
   width: 100%;
-  padding: 15px;
+  padding: 0.8rem;
   border-radius: 50px;
   color: var(--white);
   background-color: var(--cape-verde-green);

@@ -17,7 +17,7 @@ export const ConditionsOrMakes = ({ type }) => {
         type === "makes"
           ? {
               backgroundColor: "var(--hunter-green)",
-              paddingBlock: "5rem",
+              paddingBlock: "6rem",
               color: "var(--white)",
             }
           : null

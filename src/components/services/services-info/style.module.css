@@ -1,35 +1,31 @@
-.content {
-  padding-bottom: 80px;
-}
-
 .content_banner {
   border-radius: 10px 10px 0px 0px;
 }
 
 .content_info {
   width: 100%;
-  padding: 40px 30px;
+  padding: 1.875rem 1.25rem;
   background-color: var(--section-bg);
 }
 
 .content_info_header {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .content_info_desc {
   font-size: 14px;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .records {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .record {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 10px;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .records .record:nth-child(3) {
@@ -38,7 +34,7 @@
 
 .record_icon {
   display: flex;
-  padding: 5px;
+  padding: 0.3rem;
   border-radius: 50px;
   color: var(--white);
   background-color: var(--cape-verde-green);
@@ -48,7 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 0.5rem;
   max-width: 200px;
   min-height: 60px;
   border-radius: 10px;
@@ -71,11 +67,11 @@
     max-width: 350px;
   }
 
-  .content_info {
+  .content_info { 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: 80px;
+    padding-block: 5rem;
     border-radius: 0 10px 10px 0;
   }
 

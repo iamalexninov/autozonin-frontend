@@ -3,13 +3,12 @@
   align-items: center;
   height: 220px;
   background-color: var(--white);
-  border-radius: 60px 60px 0 0;
 }
 
 .hero_pages {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .hero_pages > li,
@@ -18,7 +17,7 @@
 }
 
 .hero_pages > li > a {
-  padding: 5px 8px;
+  padding: 0.3rem 0.5rem;
   color: var(--white);
   border-radius: 10px;
   border: 1px solid var(--cape-verde-green);
@@ -26,6 +25,6 @@
 }
 
 .hero_pages li:nth-child(2)::before {
-  margin-inline: 8px;
+  margin-inline: 0.5rem;
   content: "/";
 }

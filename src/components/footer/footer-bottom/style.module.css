@@ -6,12 +6,12 @@
 }
 
 .footer_bottom {
-  padding-block: 25px;
+  padding-block: 1.5rem;
   color: var(--light-gray);
 }
 
 .footer_bottom_terms {
-  gap: 10px;
+  gap: 0.6rem;
 }
 
 .footer_bottom_terms_dot {
@@ -22,5 +22,5 @@
 }
 
 .footer_bottom_terms p:hover {
-    border-bottom: 1px solid var(--light-gray);
+  border-bottom: 1px solid var(--light-gray);
 }

@@ -1,17 +1,17 @@
 .team {
-  padding-block: 80px;
+  padding-block: 5rem;
   background-color: var(--white);
 }
 
 .team_header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 .team_records {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  gap: 10px;
+  gap: 0.75rem;
 }
 
 .team_record {
@@ -32,8 +32,8 @@
 
 .team_record_info p {
   display: block;
-  margin-bottom: 10px;
-  padding: 8px 10px;
+  margin-bottom: 0.6rem;
+  padding: 0.5rem 0.6rem;
   font-size: 12px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50px;
@@ -43,7 +43,7 @@
 @media only screen and (min-width: 767px) {
   .team_records {
     grid-template-columns: repeat(4, 4fr);
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .team_record_info {

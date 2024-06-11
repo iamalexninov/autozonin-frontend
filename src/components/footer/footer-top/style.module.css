@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-block: 50px;
-  gap: 50px;
+  padding-block: 3.125rem;
+  gap: 3.125rem;
   border-bottom: 1px solid var(--light-gray);
 }
 
 .footer_section_links .footer_section_link {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .footer_section_link a {
@@ -23,19 +23,19 @@
 .footer_section_header,
 .footer_connect_header {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   color: var(--white);
 }
 
 .footer_connect_icons {
   display: flex;
-  gap: 15px;
+  gap: 1rem;
 }
 
 .footer_connect_icon {
   cursor: pointer;
   display: flex;
-  padding: 15px;
+  padding: 1rem;
   border-radius: 50px;
   color: var(--white);
   background-color: var(--cape-verde-green);
