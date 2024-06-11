@@ -2,6 +2,7 @@ import styles from "./style.module.css";
 
 import { LinkRecord } from "./LinkRecord";
 import { useMenuContext } from "../../../hooks/useContexts";
+import { Link } from "react-router-dom";
 
 export const LinksRecords = ({ records }) => {
   const { navbarMenu } = useMenuContext();
@@ -17,7 +18,9 @@ export const LinksRecords = ({ records }) => {
       {records.map((record) => (
         <LinkRecord record={record} key={record.text} />
       ))}
-      <button className={styles.nav_btn}>Submit Listing</button>
+      <Link to="/dashboard/submit-listing" className={styles.nav_btn}>
+        Submit Listing
+      </Link>
     </ul>
   );
 };

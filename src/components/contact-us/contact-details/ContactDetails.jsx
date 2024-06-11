@@ -1,27 +1,9 @@
 import styles from "./style.module.css";
+import { contacts, socials } from "./Text";
+
 import { GlobalIcon } from "../../global/GlobalIcon";
 
 export const ContactDetails = () => {
-  const contacts = [
-    {
-      icon: "location",
-      label: "Address",
-      value: "2 Dondukov Blvd, Sofia, Bulgaria",
-    },
-    {
-      icon: "email",
-      label: "Email",
-      value: "zonin@gmail.com",
-    },
-    {
-      icon: "phone",
-      label: "Phone Number",
-      value: "+359 896 35 9864",
-    },
-  ];
-
-  const socials = ["facebook", "twitter", "instagram", "linkedin"];
-
   return (
     <div className={styles.contact}>
       <h5 className={styles.contact_header}>Contact Details</h5>

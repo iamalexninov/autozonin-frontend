@@ -12,8 +12,7 @@ export const Login = () => {
       <Form>
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "Username or Email",
             name: "usernameOrEmail",
             placeholder: "iamiordan or iordan@gmail.com",
@@ -21,8 +20,7 @@ export const Login = () => {
         />  
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "password",
             label: "Password",
             name: "password",
             placeholder: "*****",

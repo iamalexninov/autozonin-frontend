@@ -41,8 +41,7 @@ export const Register = () => {
       <Form onSubmit={handleOnSubmit}>
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "Username",
             placeholder: "iamiordan",
             name: "username",
@@ -51,8 +50,7 @@ export const Register = () => {
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "Email",
             placeholder: "iordan@gmail.com",
             name: "email",
@@ -61,8 +59,7 @@ export const Register = () => {
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "Phone",
             placeholder: "+359 896 35 9651",
             name: "phone",
@@ -71,8 +68,7 @@ export const Register = () => {
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "password",
             label: "Password",
             placeholder: "*****",
             name: "password",
@@ -81,8 +77,7 @@ export const Register = () => {
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "password",
             label: "Repeat Password",
             placeholder: "*****",
             name: "repass",

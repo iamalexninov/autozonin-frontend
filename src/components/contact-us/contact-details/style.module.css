@@ -1,14 +1,13 @@
 .contact {
-  padding: 40px;
+  padding: 2.5rem;
   border-radius: 50px;
   border: 1px solid var(--light-gray);
   width: 100%;
-  height: 100%;
 }
 
 .contact_header,
 .contact_desc {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .contact_desc {
@@ -25,12 +24,12 @@
 
 .contact_records {
   flex-direction: column;
-  gap: 30px;
-  margin-bottom: 50px;
+  gap: 1.875rem;
+  margin-bottom: 3.125rem;
 }
 
 .contact_record {
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .contact_record_icon {
@@ -39,7 +38,7 @@
 
 .contact_record p:nth-child(1) {
   font-size: 16px;
-  margin-bottom: 5px;
+  margin-bottom: 0.3rem;
 }
 
 .contact_record p:nth-child(2) {
@@ -48,7 +47,7 @@
 }
 
 .contact_social_records {
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .contact_social_record {

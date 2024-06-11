@@ -19,8 +19,7 @@ export const GetInTouch = () => {
         <div className={styles.fields}>
           <RenderField
             attributes={{
-              type: "input",
-              inputType: "text",
+              type: "text",
               name: "firstName",
               label: "First Name",
               placeholder: "Iordan",
@@ -28,8 +27,7 @@ export const GetInTouch = () => {
           />
           <RenderField
             attributes={{
-              type: "input",
-              inputType: "text",
+              type: "text",
               name: "lastName",
               label: "Last Name",
               placeholder: "Bochev",
@@ -39,8 +37,7 @@ export const GetInTouch = () => {
         <div className={styles.fields}>
           <RenderField
             attributes={{
-              type: "input",
-              inputType: "text",
+              type: "text",
               label: "Email",
               name: "email",
               placeholder: "iordan@gmail.com",
@@ -48,8 +45,7 @@ export const GetInTouch = () => {
           />
           <RenderField
             attributes={{
-              type: "input",
-              inputType: "text",
+              type: "text",
               label: "Phone Number",
               name: "phone",
               placeholder: "+359 896 35 9812",
@@ -58,8 +54,7 @@ export const GetInTouch = () => {
         </div>
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "textarea",
+            type: "textarea",
             name: "message",
             label: "Share with us",
             placeholder: "Message",
