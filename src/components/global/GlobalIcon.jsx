@@ -54,11 +54,16 @@ import {
 } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import { BsFillFuelPumpFill } from "react-icons/bs";
-import { TbManualGearbox } from "react-icons/tb";
+import { TbCylinderPlus, TbEngine, TbManualGearbox } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
 import { RiArticleFill, RiSendPlaneFill } from "react-icons/ri";
-import { IoIosListBox, IoIosPricetags } from "react-icons/io";
-import { GiOverdrive } from "react-icons/gi";
+import {
+  IoIosColorPalette,
+  IoIosListBox,
+  IoIosPricetags,
+} from "react-icons/io";
+import { GiCarDoor, GiOverdrive } from "react-icons/gi";
+import { PiIdentificationCardFill } from "react-icons/pi";
 
 export const GlobalIcon = ({ type, size }) => {
   return <RenderIconComponent type={type} size={size} />;
@@ -117,6 +122,11 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     like: AiFillLike,
     document: IoDocumentText,
     offer: IoIosPricetags,
+    engine: TbEngine,
+    doors: GiCarDoor,
+    cylinders: TbCylinderPlus,
+    color: IoIosColorPalette,
+    vin: PiIdentificationCardFill,
   };
 
   let IconComponent = iconComponents[type];

@@ -5,6 +5,7 @@ import { VehicleEngagementPanel } from "./vehicle-engagement-panel/VehicleEngage
 import { VehicleBanners } from "./vehicle-banners/VehicleBanners";
 import { Description } from "./description/Description";
 import { ActionPanel } from "./action-panel/ActionPanel";
+import { VehicleOverview } from "./vehicle-overview/VehicleOverview";
 
 export const VehiclesDetails = () => {
   return (
@@ -18,6 +19,7 @@ export const VehiclesDetails = () => {
             <VehicleTitle />
             <Description />
             <ActionPanel />
+            <VehicleOverview />
           </div>
         </Wrapper>
       </section>
