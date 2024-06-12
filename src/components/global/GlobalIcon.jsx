@@ -39,6 +39,7 @@ import {
 } from "react-icons/md";
 import {
   IoCarSport,
+  IoDocumentText,
   IoLocationSharp,
   IoLogOut,
   IoOptionsSharp,
@@ -114,6 +115,7 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     share: IoShareSocial,
     favorite: MdOutlineSaveAlt,
     like: AiFillLike,
+    document: IoDocumentText,
   };
 
   let IconComponent = iconComponents[type];
