@@ -9,8 +9,7 @@ export const MainDetails = () => {
       <div className={styles.details_fields}>
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "Vehicle Title",
             name: "vehicleTitle",
           }}
@@ -35,24 +34,21 @@ export const MainDetails = () => {
       <div className={styles.details_fields}>
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "Model",
             name: "model",
           }}
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "Make",
             name: "make",
           }}
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "Modification",
             name: "modification",
           }}
@@ -77,8 +73,7 @@ export const MainDetails = () => {
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "number",
             label: "Year",
             name: "year",
           }}
@@ -103,8 +98,7 @@ export const MainDetails = () => {
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "number",
             label: "Mileage",
             name: "mileage",
             placeholder: "From 0 km To 500000 km.",
@@ -114,8 +108,7 @@ export const MainDetails = () => {
       <div className={styles.details_fields}>
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "number",
             label: "Engine Size",
             name: "enginesize",
             placeholder: "Hp...",
@@ -123,8 +116,7 @@ export const MainDetails = () => {
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "number",
             label: "Torque",
             name: "torque",
             placeholder: "Nm...",
@@ -158,8 +150,7 @@ export const MainDetails = () => {
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "VIN",
             name: "vin",
             placeholder: "2B3KA43T39H587629",
@@ -168,8 +159,7 @@ export const MainDetails = () => {
       </div>
       <RenderField
         attributes={{
-          type: "input",
-          inputType: "textarea",
+          type: "textarea",
           label: "Listing Description",
           placeholder: "Description",
           name: "description",

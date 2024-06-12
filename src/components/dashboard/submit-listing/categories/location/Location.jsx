@@ -8,8 +8,7 @@ export const Location = () => {
       <h5 className="vehicle_category_title">Location</h5>
       <RenderField
         attributes={{
-          type: "input",
-          inputType: "text",
+          type: "text",
           label: "Map Location",
           name: "location",
           placeholder:

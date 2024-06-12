@@ -9,8 +9,7 @@ export const Media = () => {
       <div className={styles.images_box}>
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "Upload Image",
             name: "image1",
             placeholder: "Place Image Link",
@@ -18,8 +17,7 @@ export const Media = () => {
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "Upload Image",
             name: "image2",
             placeholder: "Place Image Link",
@@ -27,8 +25,7 @@ export const Media = () => {
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "Upload Image",
             name: "image3",
             placeholder: "Place Image Link",
@@ -36,8 +33,7 @@ export const Media = () => {
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "Upload Image",
             name: "image4",
             placeholder: "Place Image Link",
@@ -45,8 +41,7 @@ export const Media = () => {
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "Upload Image",
             name: "image5",
             placeholder: "Place Image Link",
@@ -54,8 +49,7 @@ export const Media = () => {
         />
         <RenderField
           attributes={{
-            type: "input",
-            inputType: "text",
+            type: "text",
             label: "Upload Image",
             name: "image6",
             placeholder: "Place Image Link",
@@ -64,8 +58,7 @@ export const Media = () => {
       </div>
       <RenderField
         attributes={{
-          type: "input",
-          inputType: "text",
+          type: "text",
           label: "Video Link",
           name: "video",
           placeholder: "Enter Youtube or Vimeo url..",

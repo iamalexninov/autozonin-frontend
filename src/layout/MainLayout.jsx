@@ -7,6 +7,7 @@ import { Vehicles } from "../pages/Vehicles";
 import { Blog } from "../pages/Blog";
 import { Auth } from "../pages/Auth/Auth";
 import { Contact } from "../pages/Contact";
+import { VehiclesDetails } from "../components/vehicle-details/VehiclesDetails";
 
 export const MainLayout = () => {
   return (
@@ -18,6 +19,7 @@ export const MainLayout = () => {
       <Route path={endpoints.login} element={<Auth />} />
       <Route path={endpoints.register} element={<Auth />} />
       <Route path={endpoints.contact} element={<Contact />} />
+      <Route path='/vehicle/details' element={<VehiclesDetails />} />
     </Routes>
   );
 };

@@ -27,8 +27,7 @@ const FeatureRecord = ({ record }) => {
     <li className={styles.features_record}>
       <RenderField
         attributes={{
-          type: "input",
-          inputType: "checkbox",
+          type: "checkbox",
           label: record.label,
           name: record.name,
         }}

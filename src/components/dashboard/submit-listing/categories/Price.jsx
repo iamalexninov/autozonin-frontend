@@ -6,10 +6,9 @@ export const Price = () => {
       <h5 className="vehicle_category_title">Price</h5>
       <RenderField
         attributes={{
-          type: "input",
-          inputType: "text",
+          type: "number",
           label: "Price",
-          placeholder: "ex: $15,000",
+          placeholder: "ex: 15,000Eu",
           name: "price",
         }}
       />

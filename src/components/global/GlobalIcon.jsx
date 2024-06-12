@@ -43,6 +43,7 @@ import {
   IoLogOut,
   IoOptionsSharp,
   IoSettings,
+  IoShareSocial,
   IoSpeedometer,
 } from "react-icons/io5";
 import {
@@ -55,7 +56,8 @@ import { BsFillFuelPumpFill } from "react-icons/bs";
 import { TbManualGearbox } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
 import { RiArticleFill, RiSendPlaneFill } from "react-icons/ri";
-import { IoIosArrowDown, IoIosListBox } from "react-icons/io";
+import { IoIosListBox } from "react-icons/io";
+import { GiOverdrive } from "react-icons/gi";
 
 export const GlobalIcon = ({ type, size }) => {
   return <RenderIconComponent type={type} size={size} />;
@@ -77,7 +79,6 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     setting: IoSettings,
     car: FaCarAlt,
     comment: FaComment,
-    like: AiFillLike,
     folder: FaFolderOpen,
     facebook: FaFacebookF,
     twitter: AiFillTwitterCircle,
@@ -101,7 +102,6 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     dashboard: FaHouseDamage,
     profile: CgProfile,
     listing: IoCarSport,
-    favorite: MdOutlineSaveAlt,
     submitListing: RiSendPlaneFill,
     password: FaUnlockAlt,
     logout: IoLogOut,
@@ -110,6 +110,10 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     catalog: IoIosListBox,
     blog: RiArticleFill,
     contact: MdOutlineContacts,
+    drive: GiOverdrive,
+    share: IoShareSocial,
+    favorite: MdOutlineSaveAlt,
+    like: AiFillLike,
   };
 
   let IconComponent = iconComponents[type];
