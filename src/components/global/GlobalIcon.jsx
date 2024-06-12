@@ -57,7 +57,7 @@ import { BsFillFuelPumpFill } from "react-icons/bs";
 import { TbManualGearbox } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
 import { RiArticleFill, RiSendPlaneFill } from "react-icons/ri";
-import { IoIosListBox } from "react-icons/io";
+import { IoIosListBox, IoIosPricetags } from "react-icons/io";
 import { GiOverdrive } from "react-icons/gi";
 
 export const GlobalIcon = ({ type, size }) => {
@@ -116,6 +116,7 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     favorite: MdOutlineSaveAlt,
     like: AiFillLike,
     document: IoDocumentText,
+    offer: IoIosPricetags,
   };
 
   let IconComponent = iconComponents[type];

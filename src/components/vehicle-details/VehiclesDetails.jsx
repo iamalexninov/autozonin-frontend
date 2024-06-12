@@ -4,6 +4,7 @@ import { Wrapper } from "../global/wrapper/Wrapper";
 import { VehicleEngagementPanel } from "./vehicle-engagement-panel/VehicleEngagementPanel";
 import { VehicleBanners } from "./vehicle-banners/VehicleBanners";
 import { Description } from "./description/Description";
+import { ActionPanel } from "./action-panel/ActionPanel";
 
 export const VehiclesDetails = () => {
   return (
@@ -12,10 +13,11 @@ export const VehiclesDetails = () => {
       <section>
         <Wrapper>
           <div>
-            <VehicleTitle />
             <VehicleEngagementPanel />
             <VehicleBanners />
+            <VehicleTitle />
             <Description />
+            <ActionPanel />
           </div>
         </Wrapper>
       </section>

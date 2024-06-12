@@ -1,11 +1,11 @@
 .desc_container {
-  padding: 3rem;
+  padding: 1rem;
   border: 1px solid var(--light-gray);
 }
 
 .desc_container,
 .desc_brochure {
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 .desc_h5,
@@ -26,4 +26,10 @@
   padding: 1.15rem 2rem;
   color: var(--hunter-green);
   background-color: var(--cape-verde-green-light);
+}
+
+@media only screen and (min-width:767px) {
+  .desc_container {
+    padding: 2.5rem;
+  }
 }
