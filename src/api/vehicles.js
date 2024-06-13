@@ -1,14 +1,21 @@
 import { api } from "./api";
 
 const endpoints = {
-  create: "/vehicle/create",
+  vehicles: "/vehicles/",
+  create: "/vehicles/create",
 };
 
-async function createVehicle(vehicleData) {
+const renderVehicles = async () => {
+  const records = await api.get(endpoints.vehicles);
+  return records;
+};
+
+const createVehicle = async (vehicleData) => {
   const vehicle = await api.post(endpoints.create, vehicleData);
   return vehicle;
-}
+};
 
 export const vehicleApi = {
+  renderVehicles,
   createVehicle,
 };
