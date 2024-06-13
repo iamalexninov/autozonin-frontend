@@ -1,0 +1,15 @@
+@media only screen and (min-width: 1024px) {
+  .panels {
+    display: grid;
+    grid-template-columns: minmax(500px, 900px) minmax(300px, 400px);
+    gap: 2rem;
+  }
+
+  .panels_left {
+    width: 100%;
+  }
+
+  .panels_right {
+    max-width: 550px;
+  }
+}

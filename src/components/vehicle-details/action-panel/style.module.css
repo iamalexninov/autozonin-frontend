@@ -66,12 +66,6 @@
   background-color: var(--black);
 }
 
-@media only screen and (min-width: 481px) {
-  .panel_action {
-    flex-direction: row;
-  }
-}
-
 @media only screen and (min-width: 767px) {
   .panel {
     padding: 2.5rem;
