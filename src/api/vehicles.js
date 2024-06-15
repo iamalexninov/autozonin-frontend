@@ -11,8 +11,8 @@ const renderVehicles = async () => {
 };
 
 const createVehicle = async (vehicleData) => {
-  const vehicle = await api.post(endpoints.create, vehicleData);
-  return vehicle;
+  const record = await api.post(endpoints.create, vehicleData);
+  return record;
 };
 
 export const vehicleApi = {

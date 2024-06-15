@@ -4,50 +4,10 @@ import { conditions, makes } from "./Text";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-import { Wrapper } from "../global/wrapper/Wrapper";
-import { SectionHeaderWithLinkBtn } from "../global/section-header-link-btn/SectionHeaderWithLinkBtn";
-import { PopularMakesCard } from "../cards/popular-makes-card/PopularMakesCard";
-import { AllVehiclesCard } from "../cards/all-vehicles-card/AllVehiclesCard";
-
 export const ConditionsOrMakes = ({ type }) => {
-  return (
-    <section
-      className={styles.types}
-      style={
-        type === "makes"
-          ? {
-              backgroundColor: "var(--hunter-green)",
-              paddingBlock: "6rem",
-              color: "var(--white)",
-            }
-          : null
-      }
-    >
-      <Wrapper>
-        <SectionHeaderWithLinkBtn
-          color={
-            type === "conditions" ? "dark" : type === "makes" ? "light" : null
-          }
-          header={
-            type === "makes"
-              ? "Popular Makes"
-              : type === "conditions"
-              ? "Explore Vehicles"
-              : null
-          }
-          linkPath="/catalogue"
-          linkText="View All"
-        />
-        <Records
-          type={type}
-          records={
-            type === "makes" ? makes : type === "conditions" ? conditions : null
-          }
-        />
-        <CardList type={type} />
-      </Wrapper>
-    </section>
-  );
+  const renderComponentByType = {};
+
+  return renderComponentByType[type];
 };
 
 const Records = ({ type, records }) => {
@@ -92,24 +52,5 @@ const Record = ({ type, record, clicked, setClicked }) => {
         {record.text}
       </Link>
     </li>
-  );
-};
-
-const CardList = ({ type }) => {
-  return (
-    <>
-      {type === "conditions" ? (
-        <div className={styles.cards_conditions}>
-          <AllVehiclesCard />
-          <AllVehiclesCard />
-          <AllVehiclesCard />
-        </div>
-      ) : type === "makes" ? (
-        <div className={styles.cards_makes}>
-          <PopularMakesCard />
-          <PopularMakesCard />
-        </div>
-      ) : null}
-    </>
   );
 };

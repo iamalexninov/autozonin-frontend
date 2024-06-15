@@ -1,3 +1,9 @@
+import { Link } from "react-router-dom";
+
 export const NavbarLogo = () => {
-  return <h3 style={{ color: "var(--white)" }}>ZONIN</h3>;
+  return (
+    <Link to="/">
+      <h3 style={{ color: "var(--white)" }}>ZONIN</h3>
+    </Link>
+  );
 };

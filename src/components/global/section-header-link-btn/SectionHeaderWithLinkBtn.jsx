@@ -16,7 +16,8 @@ export const SectionHeaderWithLinkBtn = ({
     color: "var(--black)",
   };
 
-  const renderStyles = color === "light" ? lightStyles : darkStyles;
+  const renderStyles =
+    color === "light" ? lightStyles : color === "dark" ? darkStyles : null;
 
   return (
     <div className={styles.header} style={renderStyles}>
