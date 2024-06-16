@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 
-import { GlobalIcon } from "../../../global/GlobalIcon";
+import { GlobalIcon } from "../../../../global/GlobalIcon";
 
 export const AllVehiclesCardSpecs = () => {
   return (
@@ -19,5 +19,4 @@ export const AllVehiclesCardSpecs = () => {
       </div>
     </div>
   );
-  redw
 };

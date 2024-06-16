@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 
 import { Link } from "react-router-dom";
-import { GlobalIcon } from "../../../global/GlobalIcon";
+import { GlobalIcon } from "../../../../global/GlobalIcon";
 
 export const PopularMakesCardDetails = () => {
   return (

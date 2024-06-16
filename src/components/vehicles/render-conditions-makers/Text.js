@@ -29,7 +29,7 @@ export const conditions = [
   },
 ];
 
-export const makes = [
+export const makers = [
   {
     path: endpoints.bmw,
     text: "Bmw",

@@ -6,18 +6,19 @@ import { WhyChooseUs } from "../components/why-choose-us/WhyChooseUs";
 import { LatestBlogPosts } from "../components/latest-blog-posts/LatestBlogPosts";
 import { AutoHub } from "../components/autohub/AutoHub";
 import { Subscribe } from "../components/subscribe/Subscribe";
-import { ConditionsOrMakes } from "../components/conditions-or-makes/ConditionsOrMakes";
+import { ExplorePremiumCars } from "../components/vehicles/explore-premium-cars/ExplorePremiumCars";
+import { PopularMakers } from "../components/vehicles/popular-makers/PopularMakers";
 
 export const Home = () => {
   return (
     <>
       <HomeHero />
       <ExplorePremiumBrands />
-      <ConditionsOrMakes type="conditions"/>
+      <ExplorePremiumCars />
       <Services />
       <Stats />
       <WhyChooseUs />
-      <ConditionsOrMakes type="makes"/>
+      <PopularMakers />
       <LatestBlogPosts />
       <AutoHub />
       <Subscribe />

@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 
-import { AllVehiclesCard } from "../../../cards/all-vehicles-card/AllVehiclesCard";
+import { AllVehiclesCard } from "../../../vehicles/vehicle-cards/all-vehicles-card/AllVehiclesCard";
 
 export const Listing = () => {
   return (

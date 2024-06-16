@@ -1,0 +1,22 @@
+.types {
+  padding-block: 6rem;
+}
+
+.types_records {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.types_link {
+  padding-bottom: 0.10rem;
+  font-size: 18px;
+}
+
+.active {
+  border-radius: 2px;
+  border-bottom: 2px solid var(--cape-verde-green);
+}

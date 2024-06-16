@@ -1,5 +1,5 @@
 import styles from "./style.module.css";
-import test from "../../../../assets/images/jpg/test_bmw.jpg";
+import test from "../../../../../assets/images/jpg/test_bmw.jpg";
 
 export const AllVehiclesCardBanner = () => {
   return (
