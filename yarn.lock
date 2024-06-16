@@ -3921,6 +3921,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"swiper@npm:^11.1.4":
+  version: 11.1.4
+  resolution: "swiper@npm:11.1.4"
+  checksum: 386ea824ae8ab3b1992c54f02c8593068c96203feb9da4c23e165a7277a539de7bba6f9d40adc068268ff06314443ca714d75348f5b20039e43b022f62e65f67
+  languageName: node
+  linkType: hard
+
 "tar@npm:^6.1.11, tar@npm:^6.1.2":
   version: 6.2.1
   resolution: "tar@npm:6.2.1"
@@ -4265,6 +4272,7 @@ __metadata:
     react-dotenv: ^0.1.3
     react-icons: ^5.2.0
     react-router-dom: ^6.23.0
+    swiper: ^11.1.4
     vite: ^5.2.0
   languageName: unknown
   linkType: soft
