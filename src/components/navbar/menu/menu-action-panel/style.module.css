@@ -1,0 +1,39 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.panel_auth,
+.panel_sell {
+  width: 120px;
+  padding: 0.75rem;
+  color: var(--white);
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.5s;
+}
+
+.panel_auth {
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.panel_sell {
+  background-color: var(--cape-verde-green);
+}
+
+.panel_auth:hover,
+.panel_sell:hover {
+  color: var(--white);
+  background-color: transparent;
+  border: 1px solid var(--white);
+}
+
+@media only screen and (min-width: 1024px) {
+  .panel {
+    flex-direction: row;
+  }
+}

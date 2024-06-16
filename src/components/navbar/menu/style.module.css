@@ -1,0 +1,33 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  padding: 1.75rem 1.5rem;
+  height: 100vh;
+  z-index: 999;
+  border-radius: 0px 30px 0px 0px;
+  background-color: var(--white);
+  transition: all ease-in-out 0.5s;
+}
+
+.menu_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.active {
+  left: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu {
+    all: unset;
+  }
+
+  .menu_container {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}

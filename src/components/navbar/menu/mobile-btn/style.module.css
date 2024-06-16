@@ -1,0 +1,31 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: var(--white);
+  transition: all ease-in-out 0.5s;
+  background-color: rgba(0, 0, 0, 0.315);
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.399);
+}
+
+.open {
+  border-radius: 10px;
+}
+
+.close {
+  border-radius: 50px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .btn {
+    display: none;
+  }
+}
