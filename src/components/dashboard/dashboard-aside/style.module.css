@@ -1,13 +1,13 @@
 .aside {
-  position: absolute;
-  top: 63px;
+  position: fixed;
+  top: 80px;
   left: -100%;
   width: 100%;
   max-width: 250px;
-  height: 263.6vh;
-  z-index: 999;
-  background-color: var(--hunter-green);
+  height: 100vh;
+  z-index: 998;
   transition: all ease-in-out 0.5s;
+  background-color: var(--cape-verde-green);
 }
 
 .active {
@@ -53,3 +53,17 @@
   font-size: 16px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .aside {
+    all: unset;
+    width: 100%;
+    max-width: 320px;
+    /* change */
+    height: 260vh;
+    background-color: var(--cape-verde-green);
+  }
+
+  .aside_btn {
+    display: none;
+  }
+}

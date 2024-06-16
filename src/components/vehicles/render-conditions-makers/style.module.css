@@ -17,6 +17,5 @@
 }
 
 .active {
-  border-radius: 2px;
-  border-bottom: 2px solid var(--cape-verde-green);
+  border-bottom: 1px solid var(--light-gray);
 }

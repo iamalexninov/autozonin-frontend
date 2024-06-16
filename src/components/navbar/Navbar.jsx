@@ -13,13 +13,7 @@ export const Navbar = () => {
     <header
       style={
         url.pathname === "/"
-          ? {
-              position: "absolute",
-              top: "0",
-              left: "0",
-              zIndex: "999",
-              backgroundColor: "transparent",
-            }
+          ? { backgroundColor: "transparent" }
           : { backgroundColor: "var(--cape-verde-green)" }
       }
       className={styles.header}

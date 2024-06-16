@@ -51,7 +51,7 @@ const TypeEntry = ({ type, entry, clicked, setClicked }) => {
             ? [styles.types_link, styles.active].join(" ")
             : styles.types_link
         }
-        // style={type === "makers" ? { color: "var(--light-gray)" } : null}
+        style={type === "makers" ? { color: "var(--light-gray)" } : null}
         onClick={handleClick}
       >
         {entry.text}
