@@ -5,8 +5,10 @@ import { SectionHeaderWithLinkBtn } from "../../global/section-header-link-btn/S
 import { RenderConditionsMakers } from "../render-conditions-makers/RenderConditionsMakers";
 import { AllVehiclesCard } from "../vehicle-cards/all-vehicles-card/AllVehiclesCard";
 
+import { useGetVehicles } from "../../../hooks/useGetVehicles";
+
 export const ExplorePremiumCars = () => {
-  // TODO: fetch latest added
+  const { vehicles } = useGetVehicles();
 
   return (
     <section className={styles.car}>
@@ -18,7 +20,7 @@ export const ExplorePremiumCars = () => {
           linkText="View All"
         />
         <RenderConditionsMakers type="conditions" />
-        <CarEntries />
+        <CarEntries entries={vehicles} />
       </Wrapper>
     </section>
   );
@@ -27,15 +29,12 @@ export const ExplorePremiumCars = () => {
 const CarEntries = ({ entries }) => {
   return (
     <div className={styles.car_entries}>
-      <div className={styles.car_card}>
-        <AllVehiclesCard />
-      </div>
-      <div className={styles.car_card}>
-        <AllVehiclesCard />
-      </div>
-      <div className={styles.car_card}>
-        <AllVehiclesCard />
-      </div>
+      {entries &&
+        entries
+          .slice(0, 3)
+          .map((vehicle) => (
+            <AllVehiclesCard key={vehicle._id} vehicle={vehicle} />
+          ))}
     </div>
   );
 };

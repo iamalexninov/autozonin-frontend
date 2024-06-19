@@ -8,7 +8,7 @@ import { AdditionalFilters } from "./additional-filters/AdditionalFilters";
 import { SliderFilters } from "./slider-filters/SliderFilters";
 import { FeatureFilters } from "./feature-filters/FeatureFilters";
 
-export const VehiclesSearchBar = () => {
+export const VehiclesCatalogSearch = () => {
   const [toggleFilters, setToggleFilters] = useState(false);
 
   const handleClick = () => {

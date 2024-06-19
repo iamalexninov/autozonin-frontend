@@ -1,7 +1,7 @@
 export const endpoints = {
   home: "/",
   about: "/about",
-  vehicles: "/catalogue",
+  catalog: "/catalog",
   blog: "/articles",
   contact: "/contact",
   login: "/login",

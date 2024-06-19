@@ -12,7 +12,7 @@ export const links = [
     icon: "about",
   },
   {
-    path: endpoints.vehicles,
+    path: endpoints.catalog,
     text: "Catalog",
     icon: "catalog",
   },

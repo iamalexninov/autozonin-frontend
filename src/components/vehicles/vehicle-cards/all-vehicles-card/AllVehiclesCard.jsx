@@ -5,14 +5,24 @@ import { AllVehiclesCardInfo } from "./all-vehicles-card-info/AllVehiclesCardInf
 import { AllVehiclesCardSpecs } from "./all-vehicles-card-specs/AllVehiclesCardSpecs";
 import { AllVehiclesCardDetails } from "./all-vehicles-card-details/AllVehiclesCardDetails";
 
-export const AllVehiclesCard = () => {
+export const AllVehiclesCard = ({ vehicle }) => {
+  const { banners, details, price, _id } = vehicle;
+
   return (
     <div className={styles.card}>
-      <AllVehiclesCardBanner />
+      <AllVehiclesCardBanner banners={banners} />
       <div className={styles.card_content}>
-        <AllVehiclesCardInfo />
-        <AllVehiclesCardSpecs />
-        <AllVehiclesCardDetails />
+        <AllVehiclesCardInfo title={details.title} tagline={details.tagline} />
+        <AllVehiclesCardSpecs
+          mileage={details.mileage}
+          fuelType={details.fuelType}
+          transmission={details.transmission}
+        />
+        <AllVehiclesCardDetails
+          id={_id}
+          amount={price.amount}
+          currency={price.currency}
+        />
       </div>
     </div>
   );
