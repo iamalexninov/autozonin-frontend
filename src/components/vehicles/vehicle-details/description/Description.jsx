@@ -1,4 +1,4 @@
-import { GlobalIcon } from "../../global/GlobalIcon";
+import { GlobalIcon } from "../../../global/GlobalIcon";
 import styles from "./style.module.css";
 
 export const Description = () => {

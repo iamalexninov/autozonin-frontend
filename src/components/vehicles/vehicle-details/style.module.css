@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   .panels {
     display: grid;
     grid-template-columns: minmax(500px, 900px) minmax(300px, 400px);

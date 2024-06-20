@@ -1,10 +1,13 @@
-import { GlobalIcon } from "../../global/GlobalIcon";
+import { GlobalIcon } from "../../../global/GlobalIcon";
 import styles from "./style.module.css";
 
-export const VehicleOverview = () => {
+export const VehicleOverview = ({data}) => {
+  console.log(data)
+
   return (
     <div className={styles.overview}>
       <h5 className={styles.overview_title}>Vehicle Overview</h5>
+
       <div className={styles.overview_record}>
         <div className={styles.overview_label}>
           <GlobalIcon type="car" size={22}/>

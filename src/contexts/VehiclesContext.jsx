@@ -4,13 +4,14 @@ export const VehiclesContext = createContext();
 
 export const vehiclesReducer = (state, action) => {
   switch (action.type) {
+    case "VEHICLE":
+      return { vehicle: action.payload };
     case "VEHICLES":
       return { vehicles: action.payload };
     case "VEHICLE_CREATE":
       return {
         vehicle: [action.payload, ...state.result],
       };
-    // edit, delete
     default:
       return state;
   }
@@ -18,6 +19,7 @@ export const vehiclesReducer = (state, action) => {
 
 export const VehiclesContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(vehiclesReducer, {
+    vehicle: null,
     vehicles: null,
   });
 

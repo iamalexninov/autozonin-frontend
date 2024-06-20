@@ -1,16 +1,19 @@
 import styles from "./style.module.css";
 
-import { GenericHero } from "../hero/generic-hero/GenericHero";
+import { GenericHero } from "../../hero/generic-hero/GenericHero";
 import { VehicleTitle } from "./vehicle-title/VehicleTitle";
-import { Wrapper } from "../global/wrapper/Wrapper";
-import { VehicleEngagementPanel } from "./vehicle-engagement-panel/VehicleEngagementPanel";
-import { VehicleBanners } from "./vehicle-banners/VehicleBanners";
+import { Wrapper } from "../../global/wrapper/Wrapper";
 import { Description } from "./description/Description";
 import { ActionPanel } from "./action-panel/ActionPanel";
 import { VehicleOverview } from "./vehicle-overview/VehicleOverview";
-import { Features } from "./features/Features";
+import { BannerEngagementPanel } from "./banner-engagement-panel/BannerEngagementPanel";
+import { useParams } from "react-router-dom";
+import { useGetVehicle } from "../../../hooks/useGetVehicle";
 
 export const VehiclesDetails = () => {
+  const params = useParams();
+  const { vehicle } = useGetVehicle(params.id);
+
   return (
     <>
       <GenericHero header="Details" title="Vehicle Details" />
@@ -18,15 +21,16 @@ export const VehiclesDetails = () => {
         <Wrapper>
           <div className={styles.panels}>
             <div className={styles.panels_left}>
-              <VehicleEngagementPanel />
-              <VehicleBanners />
+              <BannerEngagementPanel
+                url={vehicle && vehicle.banners.url}
+                title={vehicle && vehicle.details.title}
+              />
               <VehicleTitle />
               <Description />
-              <Features />
             </div>
             <div className={styles.panels_right}>
               <ActionPanel />
-              <VehicleOverview />
+              <VehicleOverview data={vehicle && vehicle.details} />
             </div>
           </div>
         </Wrapper>

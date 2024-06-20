@@ -2,12 +2,13 @@ import { api } from "./api";
 
 const endpoints = {
   vehicles: "/vehicles/",
-  vehicle: "/vehicles/:id",
+  vehicle: "/vehicles/",
   create: "/vehicles/create",
 };
 
-const renderVehicle = async () => {
-  // const entry = await api.get
+const renderVehicle = async (id) => {
+  const record = await api.get(endpoints.vehicle + id);
+  return record;
 };
 
 const renderVehicles = async () => {
@@ -21,6 +22,7 @@ const createVehicle = async (vehicleData) => {
 };
 
 export const vehicleApi = {
+  renderVehicle,
   renderVehicles,
   createVehicle,
 };

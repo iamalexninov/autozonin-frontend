@@ -7,7 +7,7 @@ import { Catalog } from "../pages/Catalog";
 import { Blog } from "../pages/Blog";
 import { Auth } from "../pages/Auth/Auth";
 import { Contact } from "../pages/Contact";
-import { VehiclesDetails } from "../components/vehicle-details/VehiclesDetails";
+import { VehiclesDetails } from "../components/vehicles/vehicle-details/VehiclesDetails";
 
 export const MainLayout = () => {
   return (
