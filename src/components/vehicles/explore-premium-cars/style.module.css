@@ -3,18 +3,19 @@
 }
 
 .car_entries {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
 }
 
-.car_card {
-  width: 100%;
-  max-width: 400px;
+@media only screen and (min-width: 481px) {
+  .car_entries {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 992px) {
   .car_entries {
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

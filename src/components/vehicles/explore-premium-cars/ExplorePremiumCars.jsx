@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 import { Wrapper } from "../../global/wrapper/Wrapper";
 import { SectionHeaderWithLinkBtn } from "../../global/section-header-link-btn/SectionHeaderWithLinkBtn";
 import { RenderConditionsMakers } from "../render-conditions-makers/RenderConditionsMakers";
-import { AllVehiclesCard } from "../vehicle-cards/all-vehicles-card/AllVehiclesCard";
+import { VehicleCard } from "../card/VehicleCard";
 
 import { useGetVehicles } from "../../../hooks/useGetVehicles";
 
@@ -33,7 +33,11 @@ const CarEntries = ({ entries }) => {
         entries
           .slice(0, 3)
           .map((vehicle) => (
-            <AllVehiclesCard key={vehicle._id} vehicle={vehicle} />
+            <VehicleCard
+              key={vehicle._id}
+              vehicle={vehicle}
+              cardType="primary"
+            />
           ))}
     </div>
   );

@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 import { SectionHeaderWithLinkBtn } from "../../global/section-header-link-btn/SectionHeaderWithLinkBtn";
 import { Wrapper } from "../../global/wrapper/Wrapper";
 import { RenderConditionsMakers } from "../render-conditions-makers/RenderConditionsMakers";
-import { PopularMakesCard } from "../vehicle-cards/popular-makes-card/PopularMakesCard";
+import { VehicleCard } from "../card/VehicleCard";
 
 import { useGetVehicles } from "../../../hooks/useGetVehicles";
 
@@ -31,9 +31,9 @@ const PopularEntries = ({ entries }) => {
     <div className={styles.popular_makers}>
       {entries &&
         entries
-          .slice(0, 2)
+          .slice(0, 3)
           .map((vehicle) => (
-            <PopularMakesCard key={vehicle._id} vehicle={vehicle} />
+            <VehicleCard key={vehicle._id} vehicle={vehicle} />
           ))}
     </div>
   );
