@@ -28,7 +28,7 @@ export const VehicleCard = ({ cardType, vehicle }) => {
 const CardBanner = ({ url, title }) => {
   return (
     <div className={styles.card_banner}>
-      <img src={url} alt={title} className={styles.card_img}/>
+      <img src={url} alt={title} className={styles.card_img} />
     </div>
   );
 };

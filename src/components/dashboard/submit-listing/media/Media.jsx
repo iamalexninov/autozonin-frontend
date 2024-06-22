@@ -1,8 +1,8 @@
 import styles from "./style.module.css";
 
-import { RenderField } from "../../../../global/fields/RenderField";
+import { RenderField } from "../../../global/fields/RenderField";
 
-export const Media = () => {
+export const Media = ({ setMedia }) => {
   return (
     <div className="vehicle_category">
       <h5 className="vehicle_category_title">Media</h5>
@@ -11,11 +11,12 @@ export const Media = () => {
           attributes={{
             type: "text",
             label: "Upload Image",
-            name: "image1",
+            name: "url",
             placeholder: "Place Image Link",
+            setValues: setMedia,
           }}
         />
-        <RenderField
+        {/* <RenderField
           attributes={{
             type: "text",
             label: "Upload Image",
@@ -54,16 +55,8 @@ export const Media = () => {
             name: "image6",
             placeholder: "Place Image Link",
           }}
-        />
+        /> */}
       </div>
-      <RenderField
-        attributes={{
-          type: "text",
-          label: "Video Link",
-          name: "video",
-          placeholder: "Enter Youtube or Vimeo url..",
-        }}
-      />
     </div>
   );
 };

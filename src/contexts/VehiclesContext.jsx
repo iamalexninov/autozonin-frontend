@@ -10,7 +10,8 @@ export const vehiclesReducer = (state, action) => {
       return { vehicles: action.payload };
     case "VEHICLE_CREATE":
       return {
-        vehicle: [action.payload, ...state.result],
+        ...state,
+        vehicles: [action.payload],
       };
     default:
       return state;
@@ -19,8 +20,8 @@ export const vehiclesReducer = (state, action) => {
 
 export const VehiclesContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(vehiclesReducer, {
-    vehicle: null,
-    vehicles: null,
+    vehicle: {},
+    vehicles: [],
   });
 
   // TODO:Remove it later

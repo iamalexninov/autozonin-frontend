@@ -1,7 +1,12 @@
 import styles from "./style.module.css";
 
-import { MainDetails } from "./main-details/MainDetails";
 import { useState } from "react";
+
+import { useCreateVehicle } from "../../../hooks/useCreateVehicle";
+
+import { MainDetails } from "./main-details/MainDetails";
+import { Media } from "./media/Media";
+import { Price } from "./Price";
 
 export const SubmitListing = () => {
   const [details, setDetails] = useState({
@@ -28,10 +33,23 @@ export const SubmitListing = () => {
     vin: "",
     description: "",
   });
+  const [media, setMedia] = useState({
+    url: "",
+  });
+  const [price, setPrice] = useState({
+    amount: 0,
+    currency: "€",
+    negotiable: false,
+    leaseAvailable: false,
+    leaseInitialPayment: 0,
+    monthlyPayment: 0,
+  });
 
-  const handleSubmit = (e) => {
+  const { createRecord } = useCreateVehicle();
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
+    await createRecord({ details: details, banners: media, price: price });
   };
 
   return (
@@ -42,6 +60,8 @@ export const SubmitListing = () => {
       <h3 className={styles.submit_title}>Add Vehicle Listing</h3>
       <form onSubmit={handleSubmit}>
         <MainDetails setDetails={setDetails} />
+        <Media setMedia={setMedia} />
+        <Price setPrice={setPrice} />
         <button>Submit</button>
       </form>
     </div>
