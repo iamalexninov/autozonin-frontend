@@ -1,17 +1,17 @@
 import { InputField } from "./input/InputField";
 import { TextareaField } from "./input/TextareaField";
-import { SelectField } from "./select/SelectField";
+import { SelectField } from "./SelectField";
 import { CheckboxField } from "./checkbox/CheckboxField";
 
 export const RenderField = ({ attributes }) => {
-  const { type, name, onChange, label, placeholder } = attributes;
+  const { type, name, label, placeholder, options, setValues } = attributes;
 
   const renderFieldByType = {
     text: (
       <InputField
         type={type}
         name={name}
-        onChange={onChange}
+        setValues={setValues}
         label={label}
         placeholder={placeholder}
       />
@@ -20,7 +20,7 @@ export const RenderField = ({ attributes }) => {
       <InputField
         type={type}
         name={name}
-        onChange={onChange}
+        setValues={setValues}
         label={label}
         placeholder={placeholder}
       />
@@ -29,7 +29,7 @@ export const RenderField = ({ attributes }) => {
       <InputField
         type={type}
         name={name}
-        onChange={onChange}
+        setValues={setValues}
         label={label}
         placeholder={placeholder}
       />
@@ -39,7 +39,7 @@ export const RenderField = ({ attributes }) => {
         label={label}
         name={name}
         placeholder={placeholder}
-        onChange={onChange}
+        setValues={setValues}
       />
     ),
     checkbox: (
@@ -47,15 +47,16 @@ export const RenderField = ({ attributes }) => {
         type={type}
         label={label}
         name={name}
-        onChange={onChange}
+        // onChange={onChange}
       />
     ),
     select: (
       <SelectField
         label={label}
         name={name}
-        onChange={onChange}
+        setValues={setValues}
         placeholder={placeholder}
+        options={options}
       />
     ),
   };

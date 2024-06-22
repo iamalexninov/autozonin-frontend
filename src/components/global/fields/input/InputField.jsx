@@ -1,6 +1,15 @@
 import styles from "./style.module.css";
 
-export const InputField = ({ type, label, placeholder, name, onChange }) => {
+export const InputField = ({ type, label, placeholder, name, setValues }) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setValues((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
   return (
     <div className={styles.field}>
       {label && (
@@ -14,8 +23,8 @@ export const InputField = ({ type, label, placeholder, name, onChange }) => {
           placeholder={placeholder}
           name={name}
           id={name}
-          className={styles.field_item}
-          onChange={onChange}
+          className={["field", styles.field_item].join(" ")}
+          onChange={handleChange}
         />
       )}
     </div>

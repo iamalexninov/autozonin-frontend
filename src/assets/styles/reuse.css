@@ -1,13 +1,6 @@
-.cards_list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
-
 .field {
   outline: none;
-  padding: 15px 20px;
+  padding: 1.25rem;
   border: 1px solid var(--light-gray);
 }
 
