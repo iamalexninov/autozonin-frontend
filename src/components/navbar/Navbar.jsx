@@ -11,12 +11,13 @@ export const Navbar = () => {
 
   return (
     <header
-      style={
-        url.pathname === "/"
-          ? { backgroundColor: "transparent" }
-          : { backgroundColor: "var(--cape-verde-green)" }
-      }
-      className={styles.header}
+      // style={
+      //   url.pathname === "/"
+      //     ? { backgroundColor: "transparent" }
+      //     : { backgroundColor: "var(--cape-verde-green)" }
+      // }
+      className="bg-slate-600"
+      // className={styles.header}
     >
       <nav className={styles.nav}>
         <NavbarLogo />
