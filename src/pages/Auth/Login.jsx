@@ -1,26 +1,36 @@
 import styles from "./style.module.css";
 
 import { RenderField } from "../../components/global/fields/RenderField";
-import { Form } from "../../components/global/form/Form";
 import { AuthBtn } from "./auth-btn/AuthBtn";
 import { AuthSeparator } from "./auth-separator/AuthSeparator";
 import { AuthSocials } from "./auth-socials/AuthSocials";
-import { useGetUsers } from "../../hooks/useGetUsers";
+
+import { useState } from "react";
+import { useSignIn } from "../../hooks/useSignIn";
 
 export const Login = () => {
-  const { users } = useGetUsers();
+  const [userData, setUserData] = useState({
+    email: "",
+    password: "",
+  });
 
-  console.log(users && users);
+  const { signIn } = useSignIn();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await signIn(userData);
+  };
 
   return (
     <div className={styles.auth_container}>
-      <Form>
+      <form onClick={handleSubmit}>
         <RenderField
           attributes={{
             type: "text",
             label: "Email",
             name: "email",
             placeholder: "iordan@gmail.com",
+            setValues: setUserData,
           }}
         />
         <RenderField
@@ -29,12 +39,13 @@ export const Login = () => {
             label: "Password",
             name: "password",
             placeholder: "*****",
+            setValues: setUserData,
           }}
         />
         <AuthBtn text="Login" />
         <AuthSeparator />
         <AuthSocials />
-      </Form>
+      </form>
     </div>
   );
 };

@@ -10,7 +10,7 @@ import { useState } from "react";
 import { useSignUp } from "../../hooks/useSignUp";
 
 export const Register = () => {
-  const [formValues, setFormValues] = useState({
+  const [user, setUser] = useState({
     username: "",
     email: "",
     phone: "",
@@ -21,7 +21,7 @@ export const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await signUp(formValues)
+    await signUp(user)
   };
 
   return (
@@ -33,7 +33,7 @@ export const Register = () => {
             label: "Username",
             placeholder: "iamiordan",
             name: "username",
-            setValues: setFormValues,
+            setValues: setUser,
           }}
         />
         <RenderField
@@ -42,7 +42,7 @@ export const Register = () => {
             label: "Email",
             placeholder: "iordan@gmail.com",
             name: "email",
-            setValues: setFormValues,
+            setValues: setUser,
           }}
         />
         <RenderField
@@ -51,7 +51,7 @@ export const Register = () => {
             label: "Phone",
             placeholder: "+359 896 35 9651",
             name: "phone",
-            setValues: setFormValues,
+            setValues: setUser,
           }}
         />
         <RenderField
@@ -60,7 +60,7 @@ export const Register = () => {
             label: "Password",
             placeholder: "*****",
             name: "password",
-            setValues: setFormValues,
+            setValues: setUser,
           }}
         />
         <RenderField
@@ -69,7 +69,7 @@ export const Register = () => {
             label: "Repeat Password",
             placeholder: "*****",
             name: "repass",
-            setValues: setFormValues,
+            setValues: setUser,
           }}
         />
         <AuthBtn text="Register" />

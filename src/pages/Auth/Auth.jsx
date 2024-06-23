@@ -13,7 +13,7 @@ export const Auth = () => {
     <section className={styles.auth}>
       <div className={styles.auth_wrapper}>
         <AuthNav />
-        <div>{url.pathname === "/login" ? <Login /> : <Register />}</div>
+        <>{url.pathname === "/login" ? <Login /> : <Register />}</>
       </div>
     </section>
   );

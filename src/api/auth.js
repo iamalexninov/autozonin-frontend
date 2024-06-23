@@ -20,8 +20,8 @@ async function register(data) {
   return result;
 }
 
-async function login(email, password) {
-  const result = await api.post(endpoints.login, { email, password });
+async function login(data) {
+  const result = await api.post(endpoints.login, data);
 
   setUser(result);
   return result;
