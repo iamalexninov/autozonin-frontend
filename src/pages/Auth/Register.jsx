@@ -1,13 +1,13 @@
 import styles from "./style.module.css";
 
 import { RenderField } from "../../components/global/fields/RenderField";
-import { Form } from "../../components/global/form/Form";
 import { AuthBtn } from "./auth-btn/AuthBtn";
 import { AuthSeparator } from "./auth-separator/AuthSeparator";
 import { AuthSocials } from "./auth-socials/AuthSocials";
 
-import { userApi } from "../../api/user";
 import { useState } from "react";
+
+import { useSignUp } from "../../hooks/useSignUp";
 
 export const Register = () => {
   const [formValues, setFormValues] = useState({
@@ -17,35 +17,23 @@ export const Register = () => {
     password: "",
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+  const { signUp } = useSignUp();
 
-    setFormValues({
-      ...formValues,
-      [name]: value,
-    });
-  };
-
-  const handleOnSubmit = async () => {
-    const { username, email, phone, password } = formValues;
-
-    try {
-      await userApi.register(username, email, phone, password);
-    } catch (error) {
-      alert(error);
-    }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await signUp(formValues)
   };
 
   return (
     <div className={styles.auth_container}>
-      <Form onSubmit={handleOnSubmit}>
+      <form onSubmit={handleSubmit}>
         <RenderField
           attributes={{
             type: "text",
             label: "Username",
             placeholder: "iamiordan",
             name: "username",
-            onChange: handleChange,
+            setValues: setFormValues,
           }}
         />
         <RenderField
@@ -54,7 +42,7 @@ export const Register = () => {
             label: "Email",
             placeholder: "iordan@gmail.com",
             name: "email",
-            onChange: handleChange,
+            setValues: setFormValues,
           }}
         />
         <RenderField
@@ -63,7 +51,7 @@ export const Register = () => {
             label: "Phone",
             placeholder: "+359 896 35 9651",
             name: "phone",
-            onChange: handleChange,
+            setValues: setFormValues,
           }}
         />
         <RenderField
@@ -72,7 +60,7 @@ export const Register = () => {
             label: "Password",
             placeholder: "*****",
             name: "password",
-            onChange: handleChange,
+            setValues: setFormValues,
           }}
         />
         <RenderField
@@ -81,13 +69,13 @@ export const Register = () => {
             label: "Repeat Password",
             placeholder: "*****",
             name: "repass",
-            onChange: handleChange,
+            setValues: setFormValues,
           }}
         />
         <AuthBtn text="Register" />
         <AuthSeparator />
         <AuthSocials />
-      </Form>
+      </form>
     </div>
   );
 };

@@ -24,7 +24,6 @@ export const VehiclesContextProvider = ({ children }) => {
     vehicles: [],
   });
 
-  // TODO:Remove it later
   console.log("VehiclesContext:", state);
 
   return (

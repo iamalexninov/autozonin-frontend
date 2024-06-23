@@ -8,18 +8,20 @@ async function request(method, url, data) {
     headers: {},
   };
 
-  //   const user = getUser();
-  //
-  //   if (user) {
-  //     const token = user.accessToken;
-  //     options.headers["X-Authorization"] = token;
-  //   }
+  const user = getUser();
+
+  if (user) {
+    const token = user.accessToken;
+    options.headers["X-Authorization"] = token;
+  }
+
+  console.log(data);
 
   if (data !== undefined) {
     options.headers["Content-Type"] = "application/json";
     options.body = JSON.stringify(data);
   }
-  
+
   try {
     const response = await fetch(host + url, options);
 
@@ -38,6 +40,7 @@ async function request(method, url, data) {
       throw error;
     }
 
+    console.log(result)
     return result;
   } catch (error) {
     throw new Error(error.message);
