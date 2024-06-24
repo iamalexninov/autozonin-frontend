@@ -2,7 +2,7 @@ import styles from "./style.module.css";
 
 import { useGetVehicles } from "../../../../hooks/useGetVehicles";
 
-import { VehicleCard } from "../../card/VehicleCard";
+import { VehicleCard } from "../../VehicleCard";
 
 export const VehicleList = () => {
   const { vehicles } = useGetVehicles();

@@ -1,14 +1,12 @@
-import styles from "./style.module.css";
-
 import { Link } from "react-router-dom";
 
-import { GlobalIcon } from "../../global/GlobalIcon";
+import { GlobalIcon } from "../global/GlobalIcon";
 
 export const VehicleCard = ({ cardType, vehicle }) => {
   const { _id, banners, details, price } = vehicle;
 
   return (
-    <div className={styles.card}>
+    <div className="w-full max-w-96">
       <CardBanner url={banners.url} title={details.title} />
       <CardContent
         id={_id}
@@ -26,11 +24,7 @@ export const VehicleCard = ({ cardType, vehicle }) => {
 };
 
 const CardBanner = ({ url, title }) => {
-  return (
-    <div className={styles.card_banner}>
-      <img src={url} alt={title} className={styles.card_img} />
-    </div>
-  );
+  return <img src={url} alt={title} className="w-full h-64 rounded-t-3xl" />;
 };
 
 const CardContent = ({
@@ -45,7 +39,7 @@ const CardContent = ({
   amount,
 }) => {
   return (
-    <div className={styles.card_content}>
+    <div className="rounded-b-3xl border border-b-gray-400 p-6">
       <CardInfo title={title} tagline={tagline} />
       <CardSpecs
         condition={condition}
@@ -60,9 +54,9 @@ const CardContent = ({
 
 const CardInfo = ({ title, tagline }) => {
   return (
-    <div className={styles.card_info}>
-      <p className={styles.card_title}>{title}</p>
-      <p className={styles.card_tagline}>{tagline}</p>
+    <div>
+      <h3 className="uppercase mb-1 font-700 text-lg">{title}</h3>
+      <p className="text-gray-400">{tagline}</p>
     </div>
   );
 };
@@ -88,7 +82,7 @@ const CardSpecs = ({ condition, mileage, fuelType, transmission }) => {
   ];
 
   return (
-    <div className={styles.card_specs}>
+    <div className="flex justify-center gap-10 my-8 border-y-2 py-6">
       {specs &&
         specs.map((spec) => (
           <CardSpec key={spec.entry} icon={spec.icon} entry={spec.entry} />
@@ -99,22 +93,24 @@ const CardSpecs = ({ condition, mileage, fuelType, transmission }) => {
 
 const CardSpec = ({ icon, entry }) => {
   return (
-    <div className={styles.card_spec}>
-      <GlobalIcon type={icon} size={18} />
-      <p>{entry}</p>
+    <div className="flex flex-col items-center gap-2">
+      <div className="text-cape-green">
+        <GlobalIcon type={icon} />
+      </div>
+      <p className="text-gray-400">{entry}</p>
     </div>
   );
 };
 
 const CardDetails = ({ id, currency, amount }) => {
   return (
-    <div className={styles.card_details}>
-      <p className={styles.card_price}>
+    <div className="flex justify-between items-center">
+      <p className="font-700 text-xl">
         {currency}
         {amount}
       </p>
-      <Link to={`/catalog/${id}`} className={styles.card_btn}>
-        <p>More</p>
+      <Link to={`/catalog/${id}`} className="flex items-center gap-1">
+        <p className="hover:text-cape-green">More</p>
         <GlobalIcon type="arrowRightInline" />
       </Link>
     </div>
