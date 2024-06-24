@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 
-import { SectionHeaderWithLinkBtn } from "../../global/section-header-link-btn/SectionHeaderWithLinkBtn";
+import { SectionHeaderWithLinkBtn } from "../../global/SectionHeaderWithLinkBtn";
 import { Wrapper } from "../../global/wrapper/Wrapper";
 import { RenderConditionsMakers } from "../render-conditions-makers/RenderConditionsMakers";
 import { VehicleCard } from "../card/VehicleCard";

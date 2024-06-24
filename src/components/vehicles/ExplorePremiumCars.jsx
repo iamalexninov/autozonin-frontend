@@ -1,23 +1,21 @@
-import styles from "./style.module.css";
+import { Wrapper } from "../global/wrapper/Wrapper";
+import { SectionHeaderWithLinkBtn } from "../global/SectionHeaderWithLinkBtn";
+import { RenderConditionsMakers } from "./render-conditions-makers/RenderConditionsMakers";
+import { VehicleCard } from "./card/VehicleCard";
 
-import { Wrapper } from "../../global/wrapper/Wrapper";
-import { SectionHeaderWithLinkBtn } from "../../global/section-header-link-btn/SectionHeaderWithLinkBtn";
-import { RenderConditionsMakers } from "../render-conditions-makers/RenderConditionsMakers";
-import { VehicleCard } from "../card/VehicleCard";
-
-import { useGetVehicles } from "../../../hooks/useGetVehicles";
+import { useGetVehicles } from "../../hooks/useGetVehicles";
 
 export const ExplorePremiumCars = () => {
   const { vehicles } = useGetVehicles();
 
   return (
-    <section className={styles.car}>
+    <section className="py-24">
       <Wrapper>
         <SectionHeaderWithLinkBtn
           color="dark"
           header="Explore Premium Cars"
           linkPath="/catalog"
-          linkText="View All"
+          linkText="View"
         />
         <RenderConditionsMakers type="conditions" />
         <CarEntries entries={vehicles} />
@@ -28,7 +26,7 @@ export const ExplorePremiumCars = () => {
 
 const CarEntries = ({ entries }) => {
   return (
-    <div className={styles.car_entries}>
+    <div className="flex gap-8 flex-wrap">
       {entries &&
         entries
           .slice(0, 3)

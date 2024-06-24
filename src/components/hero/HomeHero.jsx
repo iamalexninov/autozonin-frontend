@@ -3,7 +3,7 @@ import { RenderField } from "../global/fields/RenderField";
 export const HomeHero = () => {
   return (
     <section className="min-h-screen bg-hero-pattern flex justify-center items-center">
-      <div className="px-5 py-9 w-full md:w-2/4">
+      <div className="px-5 py-9 w-full xl:w-2/4">
         <h1 className="text-center mb-10 text-4xl text-white uppercase">
           find your perfect vehicle
         </h1>

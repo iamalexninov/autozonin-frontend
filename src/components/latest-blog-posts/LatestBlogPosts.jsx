@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 
 import { Wrapper } from "../global/wrapper/Wrapper";
-import { SectionHeaderWithLinkBtn } from "../global/section-header-link-btn/SectionHeaderWithLinkBtn";
+import { SectionHeaderWithLinkBtn } from "../global/SectionHeaderWithLinkBtn";
 import { BlogCard } from "../cards/blog-card/BlogCard";
 
 export const LatestBlogPosts = () => {

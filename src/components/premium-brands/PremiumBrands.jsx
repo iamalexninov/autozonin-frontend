@@ -1,28 +1,18 @@
-import styles from "./style.module.css";
 import { brands } from "./Text";
 
 import { Link } from "react-router-dom";
 
 import { Wrapper } from "../global/wrapper/Wrapper";
-import { SectionHeaderWithLinkBtn } from "../global/section-header-link-btn/SectionHeaderWithLinkBtn";
+import { SectionHeaderWithLinkBtn } from "../global/SectionHeaderWithLinkBtn";
 
 export const ExplorePremiumBrands = ({ type }) => {
-  const customStyles = {
-    position: "relative",
-    top: "-80px",
-    borderRadius: "50px 50px 0px 0px",
-  };
-
   return (
-    <section
-      className={styles.premium_brands}
-      style={type !== "generic" ? customStyles : null}
-    >
+    <section className="py-24 bg-gray-50">
       <Wrapper>
         <SectionHeaderWithLinkBtn
           header="Explore Our Premium Brands"
           linkPath="/catalogue"
-          linkText="Show All"
+          linkText="View"
         />
         <BrandsRecords records={brands} />
       </Wrapper>
@@ -32,7 +22,7 @@ export const ExplorePremiumBrands = ({ type }) => {
 
 const BrandsRecords = ({ records }) => {
   return (
-    <ul className={styles.premium_records}>
+    <ul className="flex gap-10 flex-wrap justify-center">
       {records.map((record) => (
         <BrandsRecord key={record.brand} record={record} />
       ))}
@@ -42,14 +32,10 @@ const BrandsRecords = ({ records }) => {
 
 const BrandsRecord = ({ record }) => {
   return (
-    <li className={styles.premium_record}>
-      <Link to="/catalogue" className={styles.premium_link}>
-        <img
-          className={styles.premium_banner}
-          src={record.banner}
-          alt={record.brand}
-        />
-        <p className={styles.premium_brand}>{record.brand}</p>
+    <li className="rounded-lg border-cape-green border w-full max-w-48 p-8">
+      <Link to="/catalogue" className="flex flex-col text-center items-center">
+        <img src={record.banner} alt={record.brand} className="mb-4 w-24"/>
+        <p className="uppercase">{record.brand}</p>
       </Link>
     </li>
   );

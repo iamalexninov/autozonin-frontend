@@ -11,7 +11,7 @@
 .card_content {
   padding: 1.5rem;
   border-radius: 0px 0px 30px 30px;
-  border: 1px solid var(--light-gray);
+  border: 1px solid black;
   background-color: var(--white);
 }
 
