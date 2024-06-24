@@ -26,6 +26,9 @@ export default {
         600: 600,
         700: 700,
       },
+      backgroundImage: {
+        "hero-pattern": "url(./src/assets/images/jpg/hero_home_bg.jpg)",
+      },
     },
   },
   plugins: [],
