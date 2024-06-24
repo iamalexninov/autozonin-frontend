@@ -4,14 +4,14 @@ import { useNavbarMenu, useAsideMenu } from "../hooks/useMenu";
 export const MenuContext = createContext();
 
 export const MenuContextProvider = ({ children }) => {
-  const { navbar, toggleNavbar, openNavbar, closeNavbar } = useNavbarMenu();
+  const { nav, toggleNavbar, openNavbar, closeNavbar } = useNavbarMenu();
   const { aside, toggleAside, openAside, closeAside } = useAsideMenu();
 
   return (
     <MenuContext.Provider
       value={{
         navbarMenu: {
-          navbar,
+          nav,
           toggleNavbar,
           openNavbar,
           closeNavbar,

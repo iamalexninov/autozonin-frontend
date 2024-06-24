@@ -1,4 +1,3 @@
-import styles from "./style.module.css";
 import { links } from "./Text";
 
 import { Link } from "react-router-dom";
@@ -10,7 +9,7 @@ export const LinkEntries = () => {
   const { navbarMenu } = useMenuContext();
 
   return (
-    <ul className={styles.nav_links}>
+    <ul className="flex flex-col gap-8 my-8 lg:flex-row lg:gap-4 lg:my-0">
       {links.map((record) => (
         <LinkEntry
           record={record}
@@ -25,8 +24,8 @@ export const LinkEntries = () => {
 const LinkEntry = ({ record, closeNavbar }) => {
   return (
     <li onClick={closeNavbar}>
-      <Link to={record.path} className={styles.nav_link}>
-        <GlobalIcon type={record.icon} size={16} />
+      <Link to={record.path} className="flex items-center gap-2 text-base">
+        <GlobalIcon type={record.icon} size={18} />
         <p>{record.text}</p>
       </Link>
     </li>

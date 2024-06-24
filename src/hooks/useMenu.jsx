@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 export const useNavbarMenu = () => {
-  const [navbar, setNavbar] = useState(false);
+  const [nav, setNavbar] = useState(false);
 
   const toggleNavbar = () => setNavbar((prev) => !prev);
   const openNavbar = () => setNavbar(true);
   const closeNavbar = () => setNavbar(false);
 
-  return { navbar, toggleNavbar, openNavbar, closeNavbar };
+  return { nav, toggleNavbar, openNavbar, closeNavbar };
 };
 
 export const useAsideMenu = () => {
