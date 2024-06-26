@@ -1,13 +1,12 @@
-import styles from "./style.module.css";
 import { features } from "./Text";
 
 import { Wrapper } from "../global/wrapper/Wrapper";
 
 export const WhyChooseUs = () => {
   return (
-    <section className={styles.features}>
+    <section className="pt-20">
       <Wrapper>
-        <h3 className={styles.features_title}>Why Choose Us?</h3>
+        <h3 className="text-2xl mb-10">Why Choose Us?</h3>
         <FeaturesRecords records={features} />
       </Wrapper>
     </section>
@@ -16,7 +15,7 @@ export const WhyChooseUs = () => {
 
 const FeaturesRecords = ({ records }) => {
   return (
-    <ul className={styles.features_records}>
+    <ul className="flex flex-wrap justify-between">
       {records.map((record) => (
         <FeaturesRecord key={record.type} record={record} />
       ))}
@@ -26,9 +25,9 @@ const FeaturesRecords = ({ records }) => {
 
 const FeaturesRecord = ({ record }) => {
   return (
-    <li className={styles.features_record}>
-      <p className={styles.features_type}>{record.type}</p>
-      <p className={styles.features_desc}>{record.desc}</p>
+    <li className="max-w-72">
+      <p className="mb-3 text-base font-600">{record.type}</p>
+      <p>{record.desc}</p>
     </li>
   );
 };

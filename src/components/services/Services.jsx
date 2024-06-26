@@ -4,7 +4,7 @@ import { ServicesContent } from "./ServicesContent";
 
 export const Services = () => {
   return (
-    <section className="bg-white py-6">
+    <section className="bg-white py-24">
       <Wrapper>
         <div className="lg:flex lg:justify-between lg:gap-10 lg:items-center">
           <ServicesBanner />

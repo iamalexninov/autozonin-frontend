@@ -4,7 +4,7 @@ import { Wrapper } from "../global/wrapper/Wrapper";
 
 export const Stats = () => {
   return (
-    <section className="py-10">
+    <section className="py-18">
       <Wrapper>
         <StatsRecords records={stats} />
       </Wrapper>

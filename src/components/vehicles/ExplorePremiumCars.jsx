@@ -18,17 +18,17 @@ export const ExplorePremiumCars = () => {
           linkText="View"
         />
         <RenderConditionsMakers type="conditions" />
-        <CarEntries entries={vehicles} />
+        <CarRecords records={vehicles} />
       </Wrapper>
     </section>
   );
 };
 
-const CarEntries = ({ entries }) => {
+const CarRecords = ({ records }) => {
   return (
     <div className="flex gap-8 flex-wrap">
-      {entries &&
-        entries
+      {records &&
+        records
           .slice(0, 3)
           .map((vehicle) => (
             <VehicleCard
