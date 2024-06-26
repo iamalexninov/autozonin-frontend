@@ -25,7 +25,7 @@ export const AutoHub = () => {
 const RenderAutohubSection = ({ title, desc, path, type }) => {
   return (
     <div
-      className={`p-20 rounded ${
+      className={`p-10 lg:p-20 rounded ${
         type === "selling"
           ? "bg-midnight-cian"
           : type === "buying"
