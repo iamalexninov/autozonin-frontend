@@ -1,11 +1,10 @@
-import styles from "./style.module.css";
 import { stats } from "./Text";
 
 import { Wrapper } from "../global/wrapper/Wrapper";
 
 export const Stats = () => {
   return (
-    <section className={styles.stats}>
+    <section className="py-10">
       <Wrapper>
         <StatsRecords records={stats} />
       </Wrapper>
@@ -15,7 +14,7 @@ export const Stats = () => {
 
 const StatsRecords = ({ records }) => {
   return (
-    <ul className={styles.stats_records}>
+    <ul className="flex flex-wrap justify-center gap-5 lg:gap-20">
       {records.map((record) => (
         <StatsRecord key={record.type} record={record} />
       ))}
@@ -25,9 +24,9 @@ const StatsRecords = ({ records }) => {
 
 const StatsRecord = ({ record }) => {
   return (
-    <li className={styles.stats_record}>
-      <p className={styles.stats_value}>{record.value}</p>
-      <p className={styles.stats_type}>{record.type}</p>
+    <li className="flex flex-col items-center">
+      <p className="text-3xl font-700 mb-2">{record.value}</p>
+      <p className="uppercase text-xl">{record.type}</p>
     </li>
   );
 };

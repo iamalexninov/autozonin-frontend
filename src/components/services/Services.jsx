@@ -1,11 +1,15 @@
 import { Wrapper } from "../global/wrapper/Wrapper";
-import { ServicesInfo } from "./services-info/ServicesInfo";
+import { ServicesBanner } from "./ServicesBanner";
+import { ServicesContent } from "./ServicesContent";
 
 export const Services = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-white py-6">
       <Wrapper>
-        <ServicesInfo />
+        <div className="lg:flex lg:justify-between lg:gap-10 lg:items-center">
+          <ServicesBanner />
+          <ServicesContent />
+        </div>
       </Wrapper>
     </section>
   );
