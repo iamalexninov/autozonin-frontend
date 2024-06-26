@@ -1,9 +1,9 @@
-import { SectionHeaderWithLinkBtn } from "../../global/SectionHeaderWithLinkBtn";
-import { Wrapper } from "../../global/wrapper/Wrapper";
-import { RenderConditionsMakers } from "../render-conditions-makers/RenderConditionsMakers";
-import { VehicleCard } from "../VehicleCard";
+import { SectionHeaderWithLinkBtn } from "../global/SectionHeaderWithLinkBtn";
+import { Wrapper } from "../global/wrapper/Wrapper";
+import { RenderConditionsMakers } from "./render-conditions-makers/RenderConditionsMakers";
+import { VehicleCard } from "./VehicleCard";
 
-import { useGetVehicles } from "../../../hooks/useGetVehicles";
+import { useGetVehicles } from "../../hooks/useGetVehicles";
 
 export const PopularMakers = () => {
   const { vehicles } = useGetVehicles();
@@ -26,7 +26,7 @@ export const PopularMakers = () => {
 
 const PopularRecords = ({ records }) => {
   return (
-    <div className="flex gap-5">
+    <div className="flex gap-5 flex-wrap">
       {records &&
         records
           .slice(0, 3)

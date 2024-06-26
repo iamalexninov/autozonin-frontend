@@ -7,7 +7,7 @@ import { LatestBlogPosts } from "../components/latest-blog-posts/LatestBlogPosts
 import { AutoHub } from "../components/autohub/AutoHub";
 import { Subscribe } from "../components/subscribe/Subscribe";
 import { ExplorePremiumCars } from "../components/vehicles/ExplorePremiumCars";
-import { PopularMakers } from "../components/vehicles/popular-makers/PopularMakers";
+import { PopularMakers } from "../components/vehicles/PopularMakers";
 
 export const Home = () => {
   return (

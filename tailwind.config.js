@@ -9,6 +9,8 @@ export default {
         "hidden-falls-green": "#274541",
         "hunter-green": "#1c3933",
         "bg-section": "#f9fbfc",
+        "midnight-yellow": "#ffd900dd",
+        "midnight-cian": "#6ec7d87a",
       },
       fontSize: {
         h1: ["clamp(36px, 6vw, 44px)", { lineHeight: "1.1" }],
