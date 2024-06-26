@@ -14,7 +14,7 @@ export const Stats = () => {
 
 const StatsRecords = ({ records }) => {
   return (
-    <ul className="flex flex-wrap justify-center gap-5 lg:gap-20">
+    <ul className="flex flex-wrap justify-center gap-10 lg:gap-20">
       {records.map((record) => (
         <StatsRecord key={record.type} record={record} />
       ))}

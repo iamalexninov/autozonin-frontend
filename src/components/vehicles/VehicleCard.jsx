@@ -39,7 +39,7 @@ const CardContent = ({
   amount,
 }) => {
   return (
-    <div className="rounded-b-3xl border border-b-gray-400 p-6">
+    <div className="rounded-b-3xl border border-b-gray-400 p-6 bg-white">
       <CardInfo title={title} tagline={tagline} />
       <CardSpecs
         condition={condition}
@@ -54,10 +54,10 @@ const CardContent = ({
 
 const CardInfo = ({ title, tagline }) => {
   return (
-    <div>
+    <>
       <h3 className="uppercase mb-1 font-700 text-lg">{title}</h3>
       <p className="text-gray-400">{tagline}</p>
-    </div>
+    </>
   );
 };
 
@@ -82,7 +82,7 @@ const CardSpecs = ({ condition, mileage, fuelType, transmission }) => {
   ];
 
   return (
-    <div className="flex justify-center gap-10 my-8 border-y-2 py-6">
+    <div className="flex flex-wrap justify-center gap-10 my-8 border-y-2 py-6">
       {specs &&
         specs.map((spec) => (
           <CardSpec key={spec.entry} icon={spec.icon} entry={spec.entry} />

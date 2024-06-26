@@ -4,7 +4,7 @@ import { Wrapper } from "../global/wrapper/Wrapper";
 
 export const WhyChooseUs = () => {
   return (
-    <section className="pt-20">
+    <section className="py-20">
       <Wrapper>
         <h3 className="text-2xl mb-10">Why Choose Us?</h3>
         <FeaturesRecords records={features} />
