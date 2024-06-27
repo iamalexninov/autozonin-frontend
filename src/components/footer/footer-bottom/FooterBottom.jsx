@@ -1,14 +1,17 @@
-import styles from "./style.module.css";
+import { Wrapper } from "../../global/wrapper/Wrapper";
 
 export const FooterBottom = () => {
   return (
-    <div className={styles.footer_bottom}>
-      <p>&copy; zonincars.com. All right reserved.</p>
-      <div className={styles.footer_bottom_terms}>
-        <p>Terms & Conditions</p>
-        <span className={styles.footer_bottom_terms_dot}></span>
-        <p>Privacy Notice</p>
-      </div>
+    <div className="bg-white w-full p-5">
+      <Wrapper>
+        <div className="flex justify-between flex-wrap items-center gap-5">
+          <p>&copy; zonincars.com. All right reserved.</p>
+          <div className="flex justify-between items-center gap-3">
+            <p>Terms & Conditions</p>
+            <p>Privacy Notice</p>
+          </div>
+        </div>
+      </Wrapper>
     </div>
   );
 };

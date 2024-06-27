@@ -7,7 +7,7 @@ import { GlobalIcon } from "../../global/GlobalIcon";
 
 export const FooterTop = () => {
   return (
-    <div className={styles.footer_top}>
+    <div className="flex flex-wrap justify-between py-12 gap-12">
       <RenderFooterSection section={mockdata.company} />
       <RenderFooterSection section={mockdata.quickLinks} />
       <RenderFooterSection section={mockdata.brands} />
@@ -19,9 +19,9 @@ export const FooterTop = () => {
 
 const RenderFooterSection = ({ section }) => {
   return (
-    <div className={styles.footer_section}>
-      <p className={styles.footer_section_header}>{section.header}</p>
-      <ul className={styles.footer_section_links}>
+    <div>
+      <h4 className="text-lg mb-8 font-600 text-white">{section.header}</h4>
+      <ul className="mb-4">
         <RenderFooterSectionLinks links={section.links} />
       </ul>
     </div>
@@ -32,8 +32,10 @@ const RenderFooterSectionLinks = ({ links }) => {
   return (
     <>
       {links.map((link) => (
-        <li className={styles.footer_section_link} key={link.text}>
-          <Link to={link.path}>{link.text}</Link>
+        <li className="mb-4 hover:border-b border-gray-400" key={link.text}>
+          <Link to={link.path} className="text-base text-gray-300">
+            {link.text}
+          </Link>
         </li>
       ))}
     </>
@@ -42,19 +44,19 @@ const RenderFooterSectionLinks = ({ links }) => {
 
 const ConnectWithUs = () => {
   return (
-    <div className={styles.footer_connect}>
-      <p className={styles.footer_connect_header}>Connect With Us</p>
-      <div className={styles.footer_connect_icons}>
-        <div className={styles.footer_connect_icon}>
+    <div>
+      <h4 className="text-lg mb-8 font-600 text-white">Connect With Us</h4>
+      <div className="flex gap-4">
+        <div className="bg-cape-light text-white flex p-4 rounded-md">
           <GlobalIcon type="facebook" />
         </div>
-        <div className={styles.footer_connect_icon}>
+        <div className="bg-cape-light text-white flex p-4 rounded-md">
           <GlobalIcon type="twitter" />
         </div>
-        <div className={styles.footer_connect_icon}>
+        <div className="bg-cape-light text-white flex p-4 rounded-md">
           <GlobalIcon type="pinterest" />
         </div>
-        <div className={styles.footer_connect_icon}>
+        <div className="bg-cape-light text-white flex p-4 rounded-md">
           <GlobalIcon type="linkedin" />
         </div>
       </div>

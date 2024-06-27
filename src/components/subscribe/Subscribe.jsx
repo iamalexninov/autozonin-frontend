@@ -2,7 +2,7 @@ import { Wrapper } from "../global/wrapper/Wrapper";
 
 export const Subscribe = () => {
   return (
-    <section className="pt-24 bg-cape-green">
+    <section className="pt-24 bg-cape-green border-b border-gray-300">
       <Wrapper>
         <div className="pb-10">
           <div className="text-center">
