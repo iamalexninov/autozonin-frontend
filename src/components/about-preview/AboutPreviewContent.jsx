@@ -1,13 +1,11 @@
-import styles from "./style.module.css";
-
 export const AboutPreviewText = () => {
   return (
-    <div className={styles.about_content}>
-      <h2 className={styles.about_content_header}>
+    <div>
+      <h2 className="text-xl font-600 mb-10">
         We Value Our Clients And Want Them To Have An Excellent Experience.
       </h2>
-      <div className={styles.about_content_paragraphs}>
-        <p>
+      <div className="flex flex-col justify-around md:flex-row">
+        <p className="text-justify max-w-96">
           Welcome to ZoninCars, the premier platform for buying and selling
           vehicles. At ZoninCars, we are committed to providing an exceptional
           experience for our customers. Whether you're in the market for a new
@@ -15,7 +13,7 @@ export const AboutPreviewText = () => {
           comprehensive services and dedicated team are here to assist you every
           step of the way.
         </p>
-        <p>
+        <p className="text-justify max-w-96">
           Our extensive inventory includes a wide range of makes and models to
           suit every taste and budget. From sleek sedans and powerful SUVs to
           fuel-efficient hybrids and reliable trucks, we have something for
@@ -24,7 +22,7 @@ export const AboutPreviewText = () => {
           our competitive pricing and financing options ensure that you drive
           away satisfied.
         </p>
-        <p>
+        <p className="text-justify max-w-96">
           For those looking to sell, ZoninCars offers a seamless and
           straightforward process. We provide accurate appraisals and fair
           market value offers to make sure you get the best deal for your

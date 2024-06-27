@@ -1,6 +1,6 @@
 import { Wrapper } from "../global/wrapper/Wrapper";
-import { AboutPreviewText } from "./about-preview-text/AboutPreviewText";
-import { AboutPreviewGallery } from "./about-preview-gallery/AboutPreviewGallery";
+import { AboutPreviewText } from "./AboutPreviewContent";
+import { AboutPreviewGallery } from "./AboutPreviewGallery";
 
 export const AboutPreview = () => {
   return (

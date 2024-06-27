@@ -16,7 +16,6 @@ export const About = () => {
       <AboutPreview />
       <WhyChooseUs />
       <Services />
-      <Stats />
       <ExplorePremiumBrands type="generic" />
       <Team />
       <Testimonials />
