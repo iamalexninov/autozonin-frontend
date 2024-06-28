@@ -5,9 +5,9 @@ import { Wrapper } from "../global/wrapper/Wrapper";
 
 export const Team = () => {
   return (
-    <section className={styles.team}>
+    <section className="py-20">
       <Wrapper>
-        <h3 className={styles.team_header}>Our Team</h3>
+        <h3 className="text-2xl mb-12 text-center">Our Team</h3>
         <TeamRecords records={members} />
       </Wrapper>
     </section>
@@ -16,7 +16,7 @@ export const Team = () => {
 
 const TeamRecords = ({ records }) => {
   return (
-    <ul className={styles.team_records}>
+    <ul className="flex flex-wrap gap-3 justify-center lg:justify-between">
       {records.map((record) => (
         <TeamRecord key={record.name} record={record} />
       ))}
@@ -26,11 +26,11 @@ const TeamRecords = ({ records }) => {
 
 const TeamRecord = ({ record }) => {
   return (
-    <li className={styles.team_record}>
-      <img src={record.img} alt={record.name} />
-      <div className={styles.team_record_info}>
-        <p>{record.name}</p>
-        <p>{record.role}</p>
+    <li className="relative w-full max-w-52 lg:max-w-xs">
+      <img src={record.img} alt={record.name} className="h-full max-h-96 w-full rounded-md"/>
+      <div className="absolute bottom-3 left-3">
+        <p className="bg-gray-200 text-center p-2 rounded mb-2 text-xs">{record.name}</p>
+        <p className="bg-gray-200 text-center p-2 rounded text-xs">{record.role}</p>
       </div>
     </li>
   );

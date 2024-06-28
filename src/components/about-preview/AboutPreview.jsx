@@ -1,12 +1,12 @@
 import { Wrapper } from "../global/wrapper/Wrapper";
-import { AboutPreviewText } from "./AboutPreviewContent";
+import { AboutPreviewContent } from "./AboutPreviewContent";
 import { AboutPreviewGallery } from "./AboutPreviewGallery";
 
 export const AboutPreview = () => {
   return (
     <section>
       <Wrapper>
-        <AboutPreviewText />
+        <AboutPreviewContent />
         <AboutPreviewGallery />
       </Wrapper>
     </section>

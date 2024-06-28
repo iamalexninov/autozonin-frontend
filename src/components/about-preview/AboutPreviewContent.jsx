@@ -1,10 +1,10 @@
-export const AboutPreviewText = () => {
+export const AboutPreviewContent = () => {
   return (
     <div>
       <h2 className="text-xl font-600 mb-10">
         We Value Our Clients And Want Them To Have An Excellent Experience.
       </h2>
-      <div className="flex flex-col justify-around md:flex-row">
+      <div className="flex flex-col justify-around gap-5 md:flex-row">
         <p className="text-justify max-w-96">
           Welcome to ZoninCars, the premier platform for buying and selling
           vehicles. At ZoninCars, we are committed to providing an exceptional
