@@ -8,11 +8,24 @@ export const HomeHero = () => {
           find your perfect vehicle
         </h1>
         <form className="bg-white rounded flex flex-col justify-between p-4 md:flex-row mb-10">
-          <RenderField
-            attributes={{ type: "select", placeholder: "Conditions" }}
-          />
-          <RenderField attributes={{ type: "select", placeholder: "Makers" }} />
-          <RenderField attributes={{ type: "select", placeholder: "Models" }} />
+          <div className="w-full max-w-56">
+            <RenderField
+              attributes={{
+                type: "select",
+                placeholder: "Condition",
+              }}
+            />
+          </div>
+          <div className="w-full max-w-56">
+            <RenderField
+              attributes={{ type: "select", placeholder: "Makers" }}
+            />
+          </div>
+          <div className="w-full max-w-56">
+            <RenderField
+              attributes={{ type: "select", placeholder: "Models" }}
+            />
+          </div>
           <button className="bg-cape-green w-full md:w-48 text-center p-4 rounded text-white uppercase">
             Search
           </button>

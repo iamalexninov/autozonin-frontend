@@ -2,7 +2,7 @@ import styles from "./style.module.css";
 
 import { Wrapper } from "../global/wrapper/Wrapper";
 import { SectionHeaderWithLinkBtn } from "../global/SectionHeaderWithLinkBtn";
-import { BlogCard } from "../cards/blog-card/BlogCard";
+// import { BlogCard } from "../cards/blog-card/BlogCard";
 
 export const LatestBlogPosts = () => {
   return (
@@ -14,11 +14,11 @@ export const LatestBlogPosts = () => {
           linkText="View All"
         />
         {/* TODO: Make a list, and fetch server data */}
-        <div className={styles.blog_cards}>
+        {/* <div className={styles.blog_cards}>
           <BlogCard />
           <BlogCard />
           <BlogCard />
-        </div>
+        </div> */}
       </Wrapper>
     </section>
   );

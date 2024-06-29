@@ -15,7 +15,7 @@ export const SelectField = ({
   };
 
   return (
-    <div>
+    <>
       <label className="label">{label}</label>
       <CreatableSelect
         options={options}
@@ -24,14 +24,16 @@ export const SelectField = ({
         styles={{
           control: () => ({
             display: "flex",
-            padding: "0.6rem",
-            borderRadius: "10px",
-            border: "1px solid var(--light-gray)",
-            fontSize: "14px",
+            padding: "0.75rem",
+            borderRadius: "9999px",
+            border: "1px solid rgb(163, 163, 163)",
+            fontSize: "16px",
+            width: "100%",
+            color: "black",
           }),
         }}
         onChange={handleOnChange}
       />
-    </div>
+    </>
   );
 };

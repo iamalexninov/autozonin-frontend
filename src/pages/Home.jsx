@@ -19,7 +19,7 @@ export const Home = () => {
       <Stats />
       <WhyChooseUs />
       <PopularMakers />
-      <LatestBlogPosts />
+      {/* <LatestBlogPosts /> */}
       <AutoHub />
       <Subscribe />
     </>
