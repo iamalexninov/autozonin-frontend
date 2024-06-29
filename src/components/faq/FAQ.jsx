@@ -1,4 +1,3 @@
-import styles from "./style.module.css";
 import { questions } from "./Text";
 
 import { useState } from "react";
@@ -8,9 +7,11 @@ import { GlobalIcon } from "../global/GlobalIcon";
 
 export const FAQ = () => {
   return (
-    <section className={styles.faq}>
+    <section className="py-14">
       <Wrapper>
-        <h2 className={styles.faq_title}>Frequently Asked Questions</h2>
+        <h2 className="text-2xl mb-20 text-center">
+          Frequently Asked Questions
+        </h2>
         <FAQRecords records={questions} />
       </Wrapper>
     </section>
@@ -19,7 +20,7 @@ export const FAQ = () => {
 
 const FAQRecords = ({ records }) => {
   return (
-    <ul className={styles.records}>
+    <ul className="flex flex-col gap-14 m-auto lg:max-w-3xl">
       {records.map((record) => (
         <FAQRecord key={record.id} record={record} />
       ))}
@@ -35,14 +36,22 @@ const FAQRecord = ({ record }) => {
   };
 
   return (
-    <li className={styles.record} onClick={handleOnClick}>
-      <div className={styles.question}>
-        <h5>{record.question}</h5>
-        <div className={styles.question_icon}>
-          {clicked ? <GlobalIcon type="minus" /> : <GlobalIcon type="plus" />}
+    <li className="py-3" onClick={handleOnClick}>
+      <div className="flex justify-between items-center">
+        <h5 className="text-base font-600">{record.question}</h5>
+        <div className="bg-cape-light text-white p-3 rounded-full">
+          {clicked ? (
+            <GlobalIcon type="minus" size={18} />
+          ) : (
+            <GlobalIcon type="plus" size={18} />
+          )}
         </div>
       </div>
-      {clicked && <p>{record.answer}</p>}
+      {clicked && (
+        <p className="text-sm mt-5 bg-cape-light p-5 rounded text-white text-center">
+          {record.answer}
+        </p>
+      )}
     </li>
   );
 };
