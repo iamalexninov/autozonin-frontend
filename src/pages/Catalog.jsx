@@ -1,4 +1,4 @@
-import { GenericHero } from "../components/hero/generic-hero/GenericHero";
+import { GenericHero } from "../components/hero/GenericHero";
 import { VehiclesCatalog } from "../components/vehicles/vehicle-catalog/VehiclesCatalog";
 
 export const Catalog = () => {

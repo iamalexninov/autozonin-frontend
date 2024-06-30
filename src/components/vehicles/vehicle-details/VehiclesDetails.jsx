@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 
-import { GenericHero } from "../../hero/generic-hero/GenericHero";
+import { GenericHero } from "../../hero/GenericHero";
 import { VehicleTitle } from "./vehicle-title/VehicleTitle";
 import { Wrapper } from "../../global/wrapper/Wrapper";
 import { Description } from "./description/Description";

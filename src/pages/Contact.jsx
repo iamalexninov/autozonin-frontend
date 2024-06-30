@@ -1,5 +1,5 @@
 import { ContactUs } from "../components/contact-us/ContactUs";
-import { GenericHero } from "../components/hero/generic-hero/GenericHero";
+import { GenericHero } from "../components/hero/GenericHero";
 
 export const Contact = () => {
   return (

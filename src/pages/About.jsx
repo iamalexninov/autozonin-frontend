@@ -1,5 +1,5 @@
 import { AboutPreview } from "../components/about-preview/AboutPreview";
-import { GenericHero } from "../components/hero/generic-hero/GenericHero";
+import { GenericHero } from "../components/hero/GenericHero";
 import { WhyChooseUs } from "../components/why-choose-us/WhyChooseUs";
 import { Services } from "../components/services/Services";
 import { Stats } from "../components/stats/Stats";
