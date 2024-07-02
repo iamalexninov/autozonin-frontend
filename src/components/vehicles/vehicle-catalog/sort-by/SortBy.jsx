@@ -1,13 +1,11 @@
-import styles from "./style.module.css";
-
 import { RenderField } from "../../../global/fields/RenderField";
 
 export const SortBy = () => {
   return (
-    <div className={styles.sort}>
-      <p className={styles.sort_available}>Available Vehicles: 24</p>
-      <div className={styles.sort_field}>
-        <p className={styles.sort_by}>Sort By:</p>
+    <div className="flex items-center flex-wrap justify-between mb-8 gap-3">
+      <p className="text-base text-gray-500">Available Vehicles: 24</p>
+      <div className="flex items-center gap-3">
+        <p className="text-base text-gray-500">Sort By:</p>
         <RenderField
           attributes={{
             type: "select",

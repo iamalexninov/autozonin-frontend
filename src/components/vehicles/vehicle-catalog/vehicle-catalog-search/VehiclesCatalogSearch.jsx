@@ -1,8 +1,5 @@
-import styles from "./style.module.css";
-
 import { useState } from "react";
 
-import { Form } from "../../../global/form/Form";
 import { MainFilters } from "./main-filters/MainFilters";
 import { AdditionalFilters } from "./additional-filters/AdditionalFilters";
 import { SliderFilters } from "./slider-filters/SliderFilters";
@@ -16,17 +13,17 @@ export const VehiclesCatalogSearch = () => {
   };
 
   return (
-    <div className={styles.search}>
-      <Form>
+    <div className="mb-9 bg-white">
+      <form>
         <MainFilters onClick={handleClick} />
         {toggleFilters && (
-          <div className={styles.filters}>
+          <div className="p-7 rounded-lg border-gray-500 max-w-7xl">
             <AdditionalFilters />
             <SliderFilters />
             <FeatureFilters />
           </div>
         )}
-      </Form>
+      </form>
     </div>
   );
 };
