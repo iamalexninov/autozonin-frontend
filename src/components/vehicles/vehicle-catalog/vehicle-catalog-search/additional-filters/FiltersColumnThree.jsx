@@ -1,11 +1,9 @@
-import styles from "./style.module.css";
-
 import { RenderField } from "../../../../global/fields/RenderField";
 
 export const FiltersColumnThree = () => {
   return (
-    <div className={styles.filters_three}>
-      <div className={styles.filters_container}>
+    <div className="flex flex-wrap gap-3 xl:flex-nowrap">
+      <div className="flex flex-wrap gap-3 w-full md:flex-nowrap">
         <RenderField
           attributes={{
             type: "number",
@@ -23,7 +21,7 @@ export const FiltersColumnThree = () => {
           }}
         />
       </div>
-      <div className={styles.filters_container}>
+      <div className="flex flex-wrap gap-3 w-full md:flex-nowrap">
         <RenderField
           attributes={{
             type: "number",

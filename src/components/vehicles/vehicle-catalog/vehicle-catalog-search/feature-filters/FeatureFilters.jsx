@@ -1,12 +1,11 @@
-import styles from "./style.module.css";
 import { additionalFeatures } from "../../../../../utils/features/additionalFeatures";
 
 import { RenderField } from "../../../../global/fields/RenderField";
 
 export const FeatureFilters = () => {
   return (
-    <div className={styles.features}>
-      <p>Features</p>
+    <div className="mt-8">
+      <p className="text-base mb-5">Features</p>
       <FeatureRecords records={additionalFeatures} />
     </div>
   );
@@ -14,7 +13,7 @@ export const FeatureFilters = () => {
 
 const FeatureRecords = ({ records }) => {
   return (
-    <ul className={styles.features_records}>
+    <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
       {records.map((record) => (
         <FeatureRecord key={record.name} record={record} />
       ))}
@@ -24,7 +23,7 @@ const FeatureRecords = ({ records }) => {
 
 const FeatureRecord = ({ record }) => {
   return (
-    <li className={styles.features_record}>
+    <li>
       <RenderField
         attributes={{
           type: "checkbox",

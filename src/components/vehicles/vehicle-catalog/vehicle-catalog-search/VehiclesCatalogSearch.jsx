@@ -6,18 +6,18 @@ import { SliderFilters } from "./slider-filters/SliderFilters";
 import { FeatureFilters } from "./feature-filters/FeatureFilters";
 
 export const VehiclesCatalogSearch = () => {
-  const [toggleFilters, setToggleFilters] = useState(false);
+  const [showFilters, setShowFilters] = useState(false);
 
-  const handleClick = () => {
-    setToggleFilters((prev) => !prev);
+  const handleMoreFiltersOnClick = () => {
+    setShowFilters((prev) => !prev);
   };
 
   return (
     <div className="mb-9 bg-white">
       <form>
-        <MainFilters onClick={handleClick} />
-        {toggleFilters && (
-          <div className="p-7 rounded-lg border-gray-500 max-w-7xl">
+        <MainFilters onClick={handleMoreFiltersOnClick} />
+        {showFilters && (
+          <div className="mt-10 p-10 rounded-lg border border-gray-300 w-full">
             <AdditionalFilters />
             <SliderFilters />
             <FeatureFilters />

@@ -1,5 +1,3 @@
-import styles from "./style.module.css";
-
 export const InputField = ({ type, label, placeholder, name, setValues }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -11,7 +9,7 @@ export const InputField = ({ type, label, placeholder, name, setValues }) => {
   };
 
   return (
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-col gap-1 w-full">
       {label && (
         <label htmlFor={name} className="pl-2 text-neutral-600">
           {label}
@@ -23,7 +21,7 @@ export const InputField = ({ type, label, placeholder, name, setValues }) => {
           placeholder={placeholder}
           name={name}
           id={name}
-          className="p-3 text-base border border-l-neutral-400 rounded-full outline-none"
+          className="p-5 text-base border border-l-neutral-400 rounded-full outline-none"
           onChange={handleChange}
         />
       )}
