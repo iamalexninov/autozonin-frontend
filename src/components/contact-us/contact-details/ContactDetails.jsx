@@ -1,13 +1,12 @@
-import styles from "./style.module.css";
 import { contacts, socials } from "./Text";
 
 import { GlobalIcon } from "../../global/GlobalIcon";
 
 export const ContactDetails = () => {
   return (
-    <div className={styles.contact}>
-      <h5 className={styles.contact_header}>Contact Details</h5>
-      <p className={styles.contact_desc}>
+    <div className="w-full rounded-xl p-10 border border-gray-400">
+      <h5 className="mb-5 text-xl">Contact Details</h5>
+      <p className="mb-8 text-sm text-gray-400">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
         provident sed tempore repellendus deserunt, quisquam maxime assumenda.
       </p>
@@ -19,7 +18,7 @@ export const ContactDetails = () => {
 
 const ContactRecords = ({ records }) => {
   return (
-    <ul className={styles.contact_records}>
+    <ul className="flex flex-col gap-7 mb-10">
       {records.map((record) => (
         <ContactRecord key={record.label} record={record} />
       ))}
@@ -29,13 +28,13 @@ const ContactRecords = ({ records }) => {
 
 const ContactRecord = ({ record }) => {
   return (
-    <li className={styles.contact_record}>
-      <div className={styles.contact_record_icon}>
-        <GlobalIcon type={record.icon} size={25} />
+    <li className="flex gap-2">
+      <div className="flex items-center rounded-full bg-cape-green p-3 text-white">
+        <GlobalIcon type={record.icon} size={22}/>
       </div>
-      <div className={styles.contact_record_info}>
-        <p>{record.label}</p>
-        <p>{record.value}</p>
+      <div>
+        <p className="text-sm font-600">{record.label}</p>
+        <p className="text-gray-500 text-base">{record.value}</p>
       </div>
     </li>
   );
@@ -43,7 +42,7 @@ const ContactRecord = ({ record }) => {
 
 const SocialRecords = ({ records }) => {
   return (
-    <ul className={styles.contact_social_records}>
+    <ul className="flex gap-5">
       {records.map((record) => (
         <SocialRecord key={record} record={record} />
       ))}
@@ -53,8 +52,8 @@ const SocialRecords = ({ records }) => {
 
 const SocialRecord = ({ record }) => {
   return (
-    <li className={styles.contact_social_record}>
-      <GlobalIcon type={record} />
+    <li className="bg-cape-light text-white rounded-full cursor-pointer p-3">
+      <GlobalIcon type={record} size={22}/>
     </li>
   );
 };

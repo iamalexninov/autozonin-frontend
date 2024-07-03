@@ -18,7 +18,6 @@ export const MenuActionPanel = () => {
         onClick={handleOnClick}
         className="bg-black text-white p-3 w-full rounded-md lg:w-40"
       >
-        {/* TODO: make a change */}
         <p className="text-center uppercase">
           {user ? user.username : "Sign In"}
         </p>

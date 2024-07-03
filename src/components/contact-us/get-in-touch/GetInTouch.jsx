@@ -1,22 +1,21 @@
-import styles from "./style.module.css";
-
-import { Form } from "../../global/form/Form";
 import { RenderField } from "../../global/fields/RenderField";
 
 export const GetInTouch = () => {
+  const handleOnClick = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <div className={styles.info_section}>
-      <Form>
-        <div className={styles.info}>
-          <h2 className={styles.info_header}>Get In Touch</h2>
-          <p className={styles.info_desc}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ab,
-            sunt illo voluptatibus vitae fuga in soluta aperiam maiores et
-            suscipit laudantium atque aut laboriosam possimus accusantium minus.
-            Ducimus, doloremque?
-          </p>
-        </div>
-        <div className={styles.fields}>
+    <div className="w-full max-w-4xl py-10">
+      <form onClick={handleOnClick}>
+        <h2 className="text-2xl mb-5">Get In Touch</h2>
+        <p className="text-base mb-10 text-gray-500">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ab,
+          sunt illo voluptatibus vitae fuga in soluta aperiam maiores et
+          suscipit laudantium atque aut laboriosam possimus accusantium minus.
+          Ducimus, doloremque?
+        </p>
+        <div className="flex flex-col gap-4 mb-5 sm:flex-row">
           <RenderField
             attributes={{
               type: "text",
@@ -34,7 +33,7 @@ export const GetInTouch = () => {
             }}
           />
         </div>
-        <div className={styles.fields}>
+        <div className="flex flex-col gap-4 mb-5 sm:flex-row">
           <RenderField
             attributes={{
               type: "text",
@@ -60,8 +59,10 @@ export const GetInTouch = () => {
             placeholder: "Message",
           }}
         />
-        <button className={styles.btn}>Send Message</button>
-      </Form>
+        <button className="mt-10 p-4 text-white font-600 w-full max-w-80 bg-cape-green rounded-sm uppercase hover:bg-cape-light">
+          Send Message
+        </button>
+      </form>
     </div>
   );
 };

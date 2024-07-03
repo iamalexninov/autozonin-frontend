@@ -20,7 +20,7 @@ export const TextareaField = ({ label, name, placeholder, setValues }) => {
           placeholder={placeholder}
           name={name}
           id={name}
-          className="p-3 text-base border border-l-neutral-400 rounded-full outline-none"
+          className="p-3 text-base border border-l-neutral-400 rounded-2xl outline-none min-h-36"
           onChange={handleChange}
         ></textarea>
       )}

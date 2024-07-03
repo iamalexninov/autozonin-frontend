@@ -17,11 +17,6 @@ export const links = [
     icon: "catalog",
   },
   {
-    path: endpoints.blog,
-    text: "Articles",
-    icon: "blog",
-  },
-  {
     path: endpoints.contact,
     text: "Contact",
     icon: "contact",

@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import { MainFilters } from "./main-filters/MainFilters";
 import { AdditionalFilters } from "./additional-filters/AdditionalFilters";
-import { SliderFilters } from "./slider-filters/SliderFilters";
 import { FeatureFilters } from "./feature-filters/FeatureFilters";
 
 export const VehiclesCatalogSearch = () => {
@@ -19,7 +18,6 @@ export const VehiclesCatalogSearch = () => {
         {showFilters && (
           <div className="mt-10 p-10 rounded-lg border border-gray-300 w-full">
             <AdditionalFilters />
-            <SliderFilters />
             <FeatureFilters />
           </div>
         )}
