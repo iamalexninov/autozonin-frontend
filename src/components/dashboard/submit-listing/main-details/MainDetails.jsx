@@ -1,12 +1,12 @@
-import styles from "./style.module.css";
-
 import { RenderField } from "../../../global/fields/RenderField";
 
 export const MainDetails = ({ setDetails }) => {
   return (
-    <div className={["vehicle_category", styles.details].join(" ")}>
-      <h5 className="vehicle_category_title">Vehicle Details</h5>
-      <div className={styles.details_fields}>
+    <div className="p-8 border border-gray-300 rounded mb-10">
+      <h5 className="text-xl mb-7 pb-2 font-600">
+        Vehicle Details
+      </h5>
+      <div className="flex gap-5 mb-5">
         <RenderField
           attributes={{
             type: "text",
@@ -39,7 +39,7 @@ export const MainDetails = ({ setDetails }) => {
           }}
         />
       </div>
-      <div className={styles.details_fields}>
+      <div className="flex gap-5 mb-5">
         <RenderField
           attributes={{
             type: "select",
@@ -90,7 +90,7 @@ export const MainDetails = ({ setDetails }) => {
           }}
         />
       </div>
-      <div className={styles.details_fields}>
+      <div className="flex gap-5 mb-5">
         <RenderField
           attributes={{
             type: "text",
@@ -119,7 +119,7 @@ export const MainDetails = ({ setDetails }) => {
           }}
         />
       </div>
-      <div className={styles.details_fields}>
+      <div className="flex gap-5 mb-5">
         <RenderField
           attributes={{
             type: "number",
@@ -156,7 +156,7 @@ export const MainDetails = ({ setDetails }) => {
           }}
         />
       </div>
-      <div className={styles.details_fields}>
+      <div className="flex gap-5 mb-5">
         <RenderField
           attributes={{
             type: "select",
@@ -190,7 +190,7 @@ export const MainDetails = ({ setDetails }) => {
           }}
         />
       </div>
-      <div className={styles.details_fields}>
+      <div className="flex gap-5 mb-5">
         <RenderField
           attributes={{
             type: "number",
@@ -216,7 +216,7 @@ export const MainDetails = ({ setDetails }) => {
           }}
         />
       </div>
-      <div className={styles.details_fields}>
+      <div className="flex gap-5 mb-5">
         <RenderField
           attributes={{
             type: "select",

@@ -4,14 +4,9 @@
   left: -100%;
   width: 100%;
   max-width: 250px;
-  height: 100vh;
   z-index: 998;
   transition: all ease-in-out 0.5s;
   background-color: var(--cape-verde-green);
-}
-
-.active {
-  left: 0;
 }
 
 .aside_btn {

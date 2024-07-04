@@ -14,7 +14,7 @@ export const Layout = () => {
   return (
     <>
       <Navbar />
-      <main className={isDashboardPath(pathname) && "dashboard"}>
+      <main className={isDashboardPath(pathname) && "lg:flex lg:gap-10 lg:pt-20"}>
         {isDashboardPath(pathname) && <DashboardAside />}
         <MainLayout />
         <DashboardLayout />

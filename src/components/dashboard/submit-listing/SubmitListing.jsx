@@ -1,5 +1,3 @@
-import styles from "./style.module.css";
-
 import { useState } from "react";
 
 import { useCreateVehicle } from "../../../hooks/useCreateVehicle";
@@ -33,9 +31,11 @@ export const SubmitListing = () => {
     vin: "",
     description: "",
   });
+
   const [media, setMedia] = useState({
     url: "",
   });
+
   const [price, setPrice] = useState({
     amount: 0,
     currency: "€",
@@ -53,11 +53,8 @@ export const SubmitListing = () => {
   };
 
   return (
-    <div
-      className={["dashboard_section", styles.submit].join(" ")}
-      style={{ paddingTop: "10rem" }}
-    >
-      <h3 className={styles.submit_title}>Add Vehicle Listing</h3>
+    <div className="px-10 py-10 w-full">
+      <h2 className="text-2xl mb-10">Add Vehicle Listing</h2>
       <form onSubmit={handleSubmit}>
         <MainDetails setDetails={setDetails} />
         <Media setMedia={setMedia} />
