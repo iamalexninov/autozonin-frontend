@@ -1,4 +1,3 @@
-import styles from "./style.module.css";
 import { offices } from "./Text";
 
 import { GlobalIcon } from "../../global/GlobalIcon";

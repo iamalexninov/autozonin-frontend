@@ -14,7 +14,7 @@ export const MenuActionPanel = () => {
   return (
     <div className="flex flex-col gap-2 sm:flex-row">
       <Link
-        to={user ? "/dashboard" : "/login"}
+        to={user ? "/dashboard" : "/user"}
         onClick={handleOnClick}
         className="bg-black text-white p-3 w-full rounded-md lg:w-40"
       >
