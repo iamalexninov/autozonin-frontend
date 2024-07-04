@@ -2,8 +2,8 @@ import { useState } from "react";
 
 import { useCreateVehicle } from "../../../hooks/useCreateVehicle";
 
-import { MainDetails } from "./main-details/MainDetails";
-import { Media } from "./media/Media";
+import { MainDetails } from "./MainDetails";
+import { Media } from "./Media";
 import { Price } from "./Price";
 
 export const SubmitListing = () => {
@@ -59,7 +59,7 @@ export const SubmitListing = () => {
         <MainDetails setDetails={setDetails} />
         <Media setMedia={setMedia} />
         <Price setPrice={setPrice} />
-        <button>Submit</button>
+        <button className="bg-cape-green text-white w-full max-w-80 p-4 uppercase font-600 rounded-xl">Submit</button>
       </form>
     </div>
   );
