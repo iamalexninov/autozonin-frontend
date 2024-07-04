@@ -1,4 +1,4 @@
-# :car: Zonin Showroom - Front-end
+# :car: AutoZonin - Front-end
 
 ### Zonin Showroom! This repository contains the front-end codebase for our online platform where customers can explore our car catalog, read our blog, and learn more about automotive niche.
 
