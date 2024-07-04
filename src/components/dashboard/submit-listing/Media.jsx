@@ -4,7 +4,7 @@ export const Media = ({ setMedia }) => {
   return (
     <div className="p-8 border border-gray-300 rounded mb-10">
       <h5 className="text-xl mb-7 pb-2 font-600">Media</h5>
-      <div className="flex gap-5 mb-5">
+      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
         <RenderField
           attributes={{
             type: "text",
@@ -28,7 +28,7 @@ export const Media = ({ setMedia }) => {
           }}
         />
       </div>
-      <div className="flex gap-5">
+      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
         <RenderField
           attributes={{
             type: "text",

@@ -6,7 +6,7 @@ export const MainDetails = ({ setDetails }) => {
       <h5 className="text-xl mb-7 pb-2 font-600">
         Vehicle Details
       </h5>
-      <div className="flex gap-5 mb-5">
+      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
         <RenderField
           attributes={{
             type: "text",
@@ -39,7 +39,7 @@ export const MainDetails = ({ setDetails }) => {
           }}
         />
       </div>
-      <div className="flex gap-5 mb-5">
+      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
         <RenderField
           attributes={{
             type: "select",
@@ -90,7 +90,7 @@ export const MainDetails = ({ setDetails }) => {
           }}
         />
       </div>
-      <div className="flex gap-5 mb-5">
+      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
         <RenderField
           attributes={{
             type: "text",
@@ -119,7 +119,7 @@ export const MainDetails = ({ setDetails }) => {
           }}
         />
       </div>
-      <div className="flex gap-5 mb-5">
+      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
         <RenderField
           attributes={{
             type: "number",
@@ -156,7 +156,7 @@ export const MainDetails = ({ setDetails }) => {
           }}
         />
       </div>
-      <div className="flex gap-5 mb-5">
+      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
         <RenderField
           attributes={{
             type: "select",
@@ -190,7 +190,7 @@ export const MainDetails = ({ setDetails }) => {
           }}
         />
       </div>
-      <div className="flex gap-5 mb-5">
+      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
         <RenderField
           attributes={{
             type: "number",
@@ -216,7 +216,7 @@ export const MainDetails = ({ setDetails }) => {
           }}
         />
       </div>
-      <div className="flex gap-5 mb-5">
+      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
         <RenderField
           attributes={{
             type: "select",

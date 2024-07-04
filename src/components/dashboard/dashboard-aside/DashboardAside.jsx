@@ -1,10 +1,7 @@
-import styles from "./style.module.css";
-
 import { Link } from "react-router-dom";
 import { useMenuContext } from "../../../hooks/useContexts";
 
 import { GlobalIcon } from "../../global/GlobalIcon";
-import { useState } from "react";
 
 export const DashboardAside = () => {
   const paths = [
