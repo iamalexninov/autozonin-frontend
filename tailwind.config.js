@@ -29,7 +29,7 @@ export default {
         700: 700,
       },
       backgroundImage: {
-        "hero-pattern": "url(./src/assets/images/jpg/hero_home_bg.jpg)",
+        "hero-pattern": 'url("./src/assets/images/jpg/hero_home_bg.jpg")',
       },
     },
   },

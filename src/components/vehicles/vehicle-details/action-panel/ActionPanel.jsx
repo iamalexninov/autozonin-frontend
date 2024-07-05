@@ -1,5 +1,5 @@
-import { GlobalIcon } from "../../../global/GlobalIcon";
 import styles from "./style.module.css";
+import { GlobalIcon } from "../../../global/GlobalIcon";
 
 export const ActionPanel = () => {
   return (
@@ -11,7 +11,6 @@ export const ActionPanel = () => {
         Montly Payment: <span className={styles.panel_leasing_price}>$650</span>{" "}
         for 36 months.
       </p>
-
       <div className={styles.panel_action}>
         <button className={styles.panel_offer}>
           <GlobalIcon type="offer" />
