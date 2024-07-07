@@ -1,5 +1,3 @@
-import styles from "./style.module.css";
-
 import { GenericHero } from "../../hero/GenericHero";
 import { Wrapper } from "../../global/wrapper/Wrapper";
 import { Description } from "./description/Description";
