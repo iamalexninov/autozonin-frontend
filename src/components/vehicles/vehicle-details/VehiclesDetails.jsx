@@ -7,6 +7,7 @@ import { BannerEngagementPanel } from "./banner-engagement-panel/BannerEngagemen
 
 import { useParams } from "react-router-dom";
 import { useGetVehicle } from "../../../hooks/useGetVehicle";
+import { OfferPrice } from "./action-panel/OfferPrice";
 
 export const VehiclesDetails = () => {
   const params = useParams();

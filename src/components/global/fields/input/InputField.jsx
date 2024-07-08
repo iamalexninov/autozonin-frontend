@@ -23,6 +23,7 @@ export const InputField = ({ type, label, placeholder, name, setValues }) => {
           id={name}
           className="p-5 text-base border border-l-neutral-400 rounded-full outline-none"
           onChange={handleChange}
+          min={0}
         />
       )}
     </div>

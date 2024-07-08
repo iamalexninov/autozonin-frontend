@@ -8,7 +8,7 @@ export const Navbar = () => {
   const { navbarMenu } = useMenuContext();
 
   return (
-    <header className="bg-slate-50 flex p-5 justify-between items-center w-full lg:fixed lg:top-0 lg:z-50">
+    <header className="bg-slate-50 flex p-5 justify-between items-center w-full lg:fixed lg:top-0 lg:z-30">
       <div>
         <Link to="/" className="text-2xl font-black text-black">
           ZONIN
@@ -16,7 +16,7 @@ export const Navbar = () => {
       </div>
       <nav>
         <div
-          className={`fixed top-0 z-50 bg-white p-8 w-60 sm:w-96 lg:relative lg:top-0 lg:left-0 lg:bg-transparent lg:w-full lg:flex lg:items-center lg:gap-7 lg:p-0 ${
+          className={`fixed top-0 z-30 bg-white p-8 w-60 sm:w-96 lg:relative lg:top-0 lg:left-0 lg:bg-transparent lg:w-full lg:flex lg:items-center lg:gap-7 lg:p-0 ${
             navbarMenu.nav ? "left-0 h-full" : "-left-full"
           } `}
         >
