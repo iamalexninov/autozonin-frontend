@@ -7,7 +7,6 @@ import { BannerEngagementPanel } from "./banner-engagement-panel/BannerEngagemen
 
 import { useParams } from "react-router-dom";
 import { useGetVehicle } from "../../../hooks/useGetVehicle";
-import { OfferPrice } from "./action-panel/OfferPrice";
 
 export const VehiclesDetails = () => {
   const params = useParams();
@@ -20,10 +19,9 @@ export const VehiclesDetails = () => {
         <Wrapper>
           <div className="flex flex-col justify-between gap-5 lg:flex-row">
             <div className="max-w-5xl">
-              <BannerEngagementPanel
-                url={vehicle && vehicle.banners.url}
-                title={vehicle && vehicle.details.title}
-              />
+              {/* <BannerEngagementPanel
+                url={vehicle.banners.url}
+              /> */}
               <h5 className="">Mercedes-Amg E 53 4Matic+ 2022</h5>
               <Description />
             </div>

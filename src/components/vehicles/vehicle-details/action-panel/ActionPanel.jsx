@@ -1,13 +1,11 @@
 import { useState } from "react";
 import { GlobalIcon } from "../../../global/GlobalIcon";
 import { OfferPrice } from "./OfferPrice";
+import { TestDrive } from "./TestDrive";
 
 export const ActionPanel = () => {
-  const [active, setActive] = useState(false);
-
-  const handleClick = () => {
-    setActive(true);
-  };
+  const [offerPrice, setOfferPrice] = useState(false);
+  const [testDrive, setTestDrive] = useState(false);
 
   return (
     <>
@@ -22,21 +20,22 @@ export const ActionPanel = () => {
         <div className="flex flex-col gap-3">
           <button
             className="flex justify-center gap-2 uppercase p-4 bg-cape-green text-white rounded-md hover:bg-cape-light font-600"
-            onClick={handleClick}
+            onClick={() => setOfferPrice(true)}
           >
             <GlobalIcon type="offer" />
             <p>make an offer</p>
           </button>
           <button
             className="flex justify-center gap-2 uppercase p-4 bg-slate-800 text-white rounded-md hover:bg-slate-600 font-600"
-            onClick={handleClick}
+            onClick={() => setTestDrive(true)}
           >
             <GlobalIcon type="drive" />
             <p>schedule test drive</p>
           </button>
         </div>
       </div>
-      <OfferPrice active={active} setActive={setActive}/>
+      <OfferPrice active={offerPrice} setActive={setOfferPrice} />
+      <TestDrive active={testDrive} setActive={setTestDrive} />
     </>
   );
 };
