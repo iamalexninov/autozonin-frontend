@@ -3,10 +3,10 @@ import { Wrapper } from "../../global/wrapper/Wrapper";
 import { Description } from "./description/Description";
 import { ActionPanel } from "./action-panel/ActionPanel";
 import { VehicleOverview } from "./vehicle-overview/VehicleOverview";
-import { BannerEngagementPanel } from "./banner-engagement-panel/BannerEngagementPanel";
 
 import { useParams } from "react-router-dom";
 import { useGetVehicle } from "../../../hooks/useGetVehicle";
+import { EngagementPanel } from "./EngagementPanel";
 
 export const VehiclesDetails = () => {
   const params = useParams();
@@ -18,17 +18,29 @@ export const VehiclesDetails = () => {
       <section>
         <Wrapper>
           <div className="flex flex-col justify-between gap-5 lg:flex-row">
-            <div className="max-w-5xl">
-              {/* <BannerEngagementPanel
+            {vehicle && vehicle.details ? (
+              <>
+                <div className="max-w-5xl">
+                  <h5 className="text-3xl font-600 mb-2">
+                    {vehicle?.details.title}
+                  </h5>
+                  <p className="text-lg text-slate-600">
+                    {vehicle?.details.tagline}
+                  </p>
+                  {/* <BannerEngagementPanel
                 url={vehicle.banners.url}
               /> */}
-              <h5 className="">Mercedes-Amg E 53 4Matic+ 2022</h5>
-              <Description />
-            </div>
-            <div className="">
-              <ActionPanel />
-              <VehicleOverview data={vehicle && vehicle.details} />
-            </div>
+                  <Description />
+                </div>
+                <div className="w-full">
+                  <EngagementPanel />
+                  <ActionPanel />
+                  <VehicleOverview data={vehicle?.details} />
+                </div>
+              </>
+            ) : (
+              <p>Loading...</p>
+            )}
           </div>
         </Wrapper>
       </section>

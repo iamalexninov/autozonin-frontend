@@ -1,5 +1,3 @@
-import styles from "./style.module.css";
-
 import { GlobalIcon } from "../../../global/GlobalIcon";
 
 export const VehicleOverview = ({ data }) => {
@@ -65,12 +63,12 @@ export const VehicleOverview = ({ data }) => {
     <div className="bg-slate-50 p-8 border border-gray-300 rounded-3xl mb-10">
       <h5 className="font-600 mb-10 text-base">Vehicle Overview</h5>
       {dataVehicleRecords.map((vehicle) => (
-        <div className="flex items-center gap-4 mb-5" key={vehicle.label}>
-          <div className="flex items-center gap-2">
-            <GlobalIcon type={vehicle.icon} size={25}/>
-            <p className="text-base w-full">{vehicle.label}</p>
+        <div className="flex items-center justify-between gap-2 mb-5" key={vehicle.label}>
+          <div className="flex items-center gap-2 text-cape-green">
+            <GlobalIcon type={vehicle.icon} size={30}/>
+            <p className="text-base w-full font-600 text-black">{vehicle.label}</p>
           </div>
-          <div className="w-full bg-cape-green h-0.5 border border-dotted"></div>
+          <div className="w-full max-w-52 bg-cape-green h-0.5 border border-dotted"></div>
           <p className="text-base">{vehicle.value}</p>
         </div>
       ))}
