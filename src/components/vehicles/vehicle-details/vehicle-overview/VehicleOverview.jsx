@@ -62,15 +62,16 @@ export const VehicleOverview = ({ data }) => {
   ];
 
   return (
-    <div className={styles.overview}>
-      <h5 className={styles.overview_title}>Vehicle Overview</h5>
+    <div className="bg-slate-50 p-8 border border-gray-300 rounded-3xl mb-10">
+      <h5 className="font-600 mb-10 text-base">Vehicle Overview</h5>
       {dataVehicleRecords.map((vehicle) => (
-        <div className={styles.overview_record} key={vehicle.label}>
-          <div className={styles.overview_label}>
-            <GlobalIcon type={vehicle.icon} size={18} />
-            <p>{vehicle.label}</p>
+        <div className="flex items-center gap-4 mb-5" key={vehicle.label}>
+          <div className="flex items-center gap-2">
+            <GlobalIcon type={vehicle.icon} size={25}/>
+            <p className="text-base w-full">{vehicle.label}</p>
           </div>
-          <p className={styles.overview_value}>{vehicle.value}</p>
+          <div className="w-full bg-cape-green h-0.5 border border-dotted"></div>
+          <p className="text-base">{vehicle.value}</p>
         </div>
       ))}
     </div>
