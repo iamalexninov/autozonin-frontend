@@ -30,7 +30,7 @@ export const ActionPanel = () => {
             onClick={() => setTestDrive(true)}
           >
             <GlobalIcon type="drive" />
-            <p>schedule test drive</p>  
+            <p>test drive</p>  
           </button>
         </div>
       </div>

@@ -1,23 +1,21 @@
-import { endpoints } from "../../../../utils/endpoints";
-
 export const links = [
   {
-    path: endpoints.home,
+    path: '/',
     text: "Home",
     icon: "home",
   },
   {
-    path: endpoints.about,
+    path: '/about',
     text: "About",
     icon: "about",
   },
   {
-    path: endpoints.catalog,
+    path: '/catalog',
     text: "Catalog",
     icon: "catalog",
   },
   {
-    path: endpoints.contact,
+    path: '/contacts',
     text: "Contact",
     icon: "contact",
   },

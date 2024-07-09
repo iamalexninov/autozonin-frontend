@@ -1,13 +1,12 @@
-import { RenderField } from "../../global/fields/RenderField";
-import { Form } from "../../global/form/Form";
 import styles from "./style.module.css";
+import { RenderField } from "../../global/fields/RenderField";
 
 export const ChangePassword = () => {
   return (
     <div className={styles.password}>
       <h5 className="vehicle_category_title">Change Password</h5>
       <div className={styles.password_container}>
-        <Form>
+        <form>
           <div className={styles.password_fields}>
             <RenderField
               attributes={{
@@ -38,7 +37,7 @@ export const ChangePassword = () => {
             />
             <button className={styles.password_btn}>Change Password</button>
           </div>
-        </Form>
+        </form>
       </div>
     </div>
   );

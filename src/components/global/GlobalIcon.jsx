@@ -1,5 +1,3 @@
-import { renderErrorMessage } from "../../utils/errorMessages";
-
 import {
   FaPhoneAlt,
   FaEye,

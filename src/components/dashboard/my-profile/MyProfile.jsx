@@ -1,11 +1,10 @@
-import { RenderField } from "../../global/fields/RenderField";
-import { Form } from "../../global/form/Form";
 import styles from "./style.module.css";
+import { RenderField } from "../../global/fields/RenderField";
 
 export const MyProfile = () => {
   return (
     <div className={styles.profile}>
-      <Form>
+      <form>
         <RenderField
           attributes={{
             type: "input",
@@ -58,7 +57,7 @@ export const MyProfile = () => {
         <button className={styles.profile_btn}>
             Save Profile
         </button>
-      </Form>
+      </form>
     </div>
   );
 };

@@ -7,7 +7,7 @@ export const Testimonials = () => {
   return (
     <section className="py-14">
       <Wrapper>
-        <h2 className="text-2xl mb-10">What Our Customers Say</h2>
+        <h2 className="text-2xl mb-10 text-center">What Our Customers Say</h2>
         <TestimonialsRecords records={reviews} />
       </Wrapper>
     </section>

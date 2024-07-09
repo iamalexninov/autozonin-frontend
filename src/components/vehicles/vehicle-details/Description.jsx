@@ -1,6 +1,9 @@
-import { GlobalIcon } from "../../../global/GlobalIcon";
+import { useGetVehicle } from "../../../hooks/useGetVehicle";
+import { GlobalIcon } from "../../global/GlobalIcon";
 
-export const Description = () => {
+export const Description = ({ id }) => {
+  const { vehicle } = useGetVehicle(id);
+
   return (
     <div className="bg-slate-50 p-8 border border-gray-300 rounded-3xl mb-10">
       <h5 className="text-lg font-600 mb-5">Description</h5>

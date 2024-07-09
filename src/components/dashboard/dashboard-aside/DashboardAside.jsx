@@ -17,12 +17,12 @@ export const DashboardAside = () => {
     },
     {
       icon: "listing",
-      path: "/dashboard/listings",
+      path: "/dashboard/my-listings",
       text: "My Listings",
     },
     {
       icon: "favorite",
-      path: "/dashboard/favorite",
+      path: "/dashboard/favorite-listings",
       text: "My favorite",
     },
     {
@@ -51,7 +51,7 @@ export const DashboardAside = () => {
   return (
     <>
       <aside
-        className={`fixed top-0 w-full max-w-64 z-40 bg-cape-green md:max-w-72 lg:relative lg:left-0 lg:max-w-80 pt-16 pb-8 ${
+        className={`fixed top-0 w-full max-w-64 z-40 bg-cape-green md:max-w-72 lg:relative lg:left-0 lg:max-w-80 ${
           asideMenu.aside ? "left-0 h-full" : "-left-full"
         }`}
       >
