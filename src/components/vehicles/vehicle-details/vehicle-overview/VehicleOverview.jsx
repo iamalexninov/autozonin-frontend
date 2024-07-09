@@ -61,7 +61,7 @@ export const VehicleOverview = ({ data }) => {
 
   return (
     <div className="bg-slate-50 p-8 border border-gray-300 rounded-3xl mb-10">
-      <h5 className="font-600 mb-10 text-base">Vehicle Overview</h5>
+      <h5 className="font-600 mb-10 text-lg">Vehicle Overview</h5>
       {dataVehicleRecords.map((vehicle) => (
         <div className="flex items-center justify-between gap-2 mb-5" key={vehicle.label}>
           <div className="flex items-center gap-2 text-cape-green">

@@ -75,14 +75,10 @@ const CardSpecs = ({ condition, mileage, fuelType, transmission }) => {
       icon: "petrol",
       entry: fuelType,
     },
-    {
-      icon: "transmission",
-      entry: transmission,
-    },
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-10 my-8 border-y-2 py-6">
+    <div className="flex flex-wrap justify-around gap-3 my-8 border-y-2 py-3">
       {specs &&
         specs.map((spec) => (
           <CardSpec key={spec.entry} icon={spec.icon} entry={spec.entry} />
