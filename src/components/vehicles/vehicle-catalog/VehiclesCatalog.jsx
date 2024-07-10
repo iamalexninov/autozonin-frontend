@@ -1,4 +1,4 @@
-import { Wrapper } from "../../global/wrapper/Wrapper";
+import { Wrapper } from "../../global/Wrapper";
 import { SortBy } from "./sort-by/SortBy";
 import { VehiclesCatalogSearch } from "./vehicle-catalog-search/VehiclesCatalogSearch";
 import { VehicleList } from "./vehicle-list/VehicleList";

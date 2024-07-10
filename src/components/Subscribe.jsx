@@ -1,4 +1,4 @@
-import { Wrapper } from "../global/wrapper/Wrapper";
+import { Wrapper } from "./global/Wrapper";
 
 export const Subscribe = () => {
   return (

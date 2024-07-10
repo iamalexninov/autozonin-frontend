@@ -7,7 +7,7 @@ export const HomeHero = () => {
         <h1 className="text-center mb-10 text-4xl text-white uppercase">
           find your perfect vehicle
         </h1>
-        <form className="bg-white rounded flex flex-col justify-between p-4 md:flex-row mb-10">
+        <form className="bg-white rounded flex flex-col justify-between gap-3 p-4 md:flex-row mb-10">
           <div className="w-full max-w-56">
             <RenderField
               attributes={{
@@ -26,7 +26,7 @@ export const HomeHero = () => {
               attributes={{ type: "select", placeholder: "Models" }}
             />
           </div>
-          <button className="bg-cape-green w-full md:w-48 text-center p-4 rounded text-white uppercase">
+          <button className="bg-cape-green w-full md:w-48 text-center p-3 rounded text-white uppercase">
             Search
           </button>
         </form>

@@ -1,6 +1,6 @@
-import { Wrapper } from "../global/wrapper/Wrapper";
+import { Wrapper } from "../global/Wrapper";
 import { FooterTop } from "./footer-top/FooterTop";
-import { FooterBottom } from "./footer-bottom/FooterBottom";
+import { FooterBottom } from "./FooterBottom";
 
 export const Footer = () => {
   return (

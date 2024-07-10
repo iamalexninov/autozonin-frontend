@@ -11,7 +11,7 @@ export const InputField = ({ type, label, placeholder, name, setValues }) => {
   return (
     <div className="flex flex-col gap-1 w-full">
       {label && (
-        <label htmlFor={name} className="pl-2 text-neutral-600">
+        <label htmlFor={name} className="pl-2 text-neutral-600 text-sm">
           {label}
         </label>
       )}
@@ -21,7 +21,7 @@ export const InputField = ({ type, label, placeholder, name, setValues }) => {
           placeholder={placeholder}
           name={name}
           id={name}
-          className="p-5 text-base border border-l-neutral-400 rounded-full outline-none"
+          className="p-3 text-sm border border-l-neutral-400 rounded-full outline-none"
           onChange={handleChange}
           min={0}
         />

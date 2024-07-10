@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Wrapper } from "../global/wrapper/Wrapper";
+import { Wrapper } from "../global/Wrapper";
 import { GlobalIcon } from "../global/GlobalIcon";
 
 export const GenericHero = ({ header, title }) => {

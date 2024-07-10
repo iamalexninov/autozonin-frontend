@@ -1,4 +1,4 @@
-import { Wrapper } from "../global/wrapper/Wrapper";
+import { Wrapper } from "../global/Wrapper";
 import { ServicesBanner } from "./ServicesBanner";
 import { ServicesContent } from "./ServicesContent";
 

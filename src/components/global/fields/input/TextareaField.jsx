@@ -11,7 +11,7 @@ export const TextareaField = ({ label, name, placeholder, setValues }) => {
   return (
     <div className="flex flex-col gap-1">
       {label && (
-        <label htmlFor={name} className="pl-2 text-neutral-600">
+        <label htmlFor={name} className="pl-2 text-neutral-600 text-sm">
           {label}
         </label>
       )}

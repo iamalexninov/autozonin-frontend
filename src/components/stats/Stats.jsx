@@ -1,32 +1,12 @@
-import { stats } from "./Text";
-
-import { Wrapper } from "../global/wrapper/Wrapper";
+import { Wrapper } from "../global/Wrapper";
+import { StatsList } from "./StatsList";
 
 export const Stats = () => {
   return (
     <section className="py-18">
       <Wrapper>
-        <StatsRecords records={stats} />
+        <StatsList />
       </Wrapper>
     </section>
-  );
-};
-
-const StatsRecords = ({ records }) => {
-  return (
-    <ul className="flex flex-wrap justify-center gap-10 lg:gap-20">
-      {records.map((record) => (
-        <StatsRecord key={record.type} record={record} />
-      ))}
-    </ul>
-  );
-};
-
-const StatsRecord = ({ record }) => {
-  return (
-    <li className="flex flex-col items-center">
-      <p className="text-3xl font-700 mb-2">{record.value}</p>
-      <p className="uppercase text-xl">{record.type}</p>
-    </li>
   );
 };

@@ -6,11 +6,11 @@
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   .checkbox_wrapper_13 input[type="checkbox"] {
-    --active: var(--cape-verde-green);
+    --active: #00574f;
     --active-inner: #fff;
     --focus: 2px rgba(106, 255, 146, 0.378);
     --border: #bbc1e1;
-    --border-hover: var(--cape-verde-green);
+    --border-hover: #00574f;
     --background: #fff;
     --disabled: #f6f8ff;
     --disabled-inner: #e1e6f9;

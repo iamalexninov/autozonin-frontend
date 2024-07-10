@@ -1,64 +1,64 @@
-import { mockdata } from "./Text";
-
-import { Link } from "react-router-dom";
-
-import { GlobalIcon } from "../../global/GlobalIcon";
+import { ConnectUs } from "./ConnectUs";
+import { RenderLinks } from "./RenderLinks";
 
 export const FooterTop = () => {
+  const companymockdata = {
+    title: "Company",
+    links: [
+      { path: "/", text: "Home" },
+      { path: "/about", text: "About Us" },
+      { path: "/blog", text: "Blog" },
+      { path: "/catalogue", text: "Listing" },
+      { path: "/about", text: "Services" },
+      { path: "/contact", text: "Contact Us" },
+    ],
+  };
+
+  const quickLinksmockdata = {
+    title: "Quick Links",
+    links: [
+      { path: "/contact", text: "Get In Touch" },
+      { path: "/", text: "Help Center" },
+      { path: "/", text: "Live Chat" },
+      { path: "/", text: "How it works" },
+    ],
+  };
+
+  const brandsmockdata = {
+    title: "Our Brands",
+    links: [
+      { path: "/catalogue", text: "Toyota" },
+      { path: "/catalogue", text: "Porsche" },
+      { path: "/catalogue", text: "Audi" },
+      { path: "/catalogue", text: "BMW" },
+      { path: "/catalogue", text: "Ford" },
+      { path: "/catalogue", text: "Nissan" },
+      { path: "/catalogue", text: "Peugeot" },
+      { path: "/catalogue", text: "Volkswagen" },
+    ],
+  };
+
+  const typesmockdata = {
+    title: "Vehicles Type",
+    links: [
+      { path: "/catalogue", text: "Sedan" },
+      { path: "/catalogue", text: "Hatchback" },
+      { path: "/catalogue", text: "SUV" },
+      { path: "/catalogue", text: "Hybrid" },
+      { path: "/catalogue", text: "Electric" },
+      { path: "/catalogue", text: "Coupe" },
+      { path: "/catalogue", text: "Truck" },
+      { path: "/catalogue", text: "Convertible" },
+    ],
+  };
+
   return (
     <div className="flex flex-wrap justify-between py-12 gap-12">
-      <RenderFooterSection section={mockdata.company} />
-      <RenderFooterSection section={mockdata.quickLinks} />
-      <RenderFooterSection section={mockdata.brands} />
-      <RenderFooterSection section={mockdata.types} />
-      <ConnectWithUs />
-    </div>
-  );
-};
-
-const RenderFooterSection = ({ section }) => {
-  return (
-    <div>
-      <h4 className="text-lg mb-8 font-600 text-white">{section.header}</h4>
-      <ul className="mb-4">
-        <RenderFooterSectionLinks links={section.links} />
-      </ul>
-    </div>
-  );
-};
-
-const RenderFooterSectionLinks = ({ links }) => {
-  return (
-    <>
-      {links.map((link) => (
-        <li className="mb-4 hover:border-b border-gray-400" key={link.text}>
-          <Link to={link.path} className="text-base text-gray-300">
-            {link.text}
-          </Link>
-        </li>
-      ))}
-    </>
-  );
-};
-
-const ConnectWithUs = () => {
-  return (
-    <div>
-      <h4 className="text-lg mb-8 font-600 text-white">Connect With Us</h4>
-      <div className="flex gap-4">
-        <div className="bg-cape-light text-white flex p-4 rounded-md">
-          <GlobalIcon type="facebook" />
-        </div>
-        <div className="bg-cape-light text-white flex p-4 rounded-md">
-          <GlobalIcon type="twitter" />
-        </div>
-        <div className="bg-cape-light text-white flex p-4 rounded-md">
-          <GlobalIcon type="pinterest" />
-        </div>
-        <div className="bg-cape-light text-white flex p-4 rounded-md">
-          <GlobalIcon type="linkedin" />
-        </div>
-      </div>
+      <RenderLinks record={companymockdata} />
+      <RenderLinks record={quickLinksmockdata} />
+      <RenderLinks record={brandsmockdata} />
+      <RenderLinks record={typesmockdata} />
+      <ConnectUs />
     </div>
   );
 };

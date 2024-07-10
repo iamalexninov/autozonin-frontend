@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { Wrapper } from "../../global/wrapper/Wrapper";
+import { Wrapper } from "../../global/Wrapper";
 import { Info } from "./Info";
 import { Banners } from "./Banners";
 import { Description } from "./Description";

@@ -1,5 +1,5 @@
-import { Wrapper } from "../global/wrapper/Wrapper";
-import { GetInTouch } from "./get-in-touch/GetInTouch";
+import { Wrapper } from "../global/Wrapper";
+import { GetInTouch } from "./GetInTouch";
 import { ContactDetails } from "./contact-details/ContactDetails";
 import { Offices } from "./offices/Offices";
 

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { useMenuContext } from "../../hooks/useContexts";
 import { GlobalIcon } from "../global/GlobalIcon";
 import { LinkEntries } from "./menu/links/LinkEntries";
 import { MenuActionPanel } from "./menu/MenuActionPanel";
+import { useMenuContext } from "../../hooks/useContexts";
 
 export const Navbar = () => {
   const { navbarMenu } = useMenuContext();

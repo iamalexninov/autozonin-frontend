@@ -1,5 +1,5 @@
 import { SectionHeaderWithLinkBtn } from "../global/SectionHeaderWithLinkBtn";
-import { Wrapper } from "../global/wrapper/Wrapper";
+import { Wrapper } from "../global/Wrapper";
 import { RenderConditionsMakers } from "./render-conditions-makers/RenderConditionsMakers";
 import { VehicleCard } from "./VehicleCard";
 
