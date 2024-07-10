@@ -2,7 +2,7 @@ import { GlobalIcon } from "../../global/GlobalIcon";
 
 export const Features = () => {
   return (
-    <div className="bg-slate-50 p-8 border border-gray-300 rounded-3xl mb-10">
+    <div className="bg-white p-8 border border-gray-300 rounded-3xl mb-10">
       <h3 className="text-xl font-600 mb-5">Features</h3>
       <div>
         <div className="flex gap-2 items-center">

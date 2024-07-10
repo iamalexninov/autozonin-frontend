@@ -31,6 +31,7 @@ import {
   MdEmail,
   MdKeyboardArrowDown,
   MdKeyboardArrowUp,
+  MdModeEdit,
   MdOutlineContacts,
   MdOutlineSaveAlt,
   MdOutlineSearch,
@@ -44,6 +45,7 @@ import {
   IoSettings,
   IoShareSocial,
   IoSpeedometer,
+  IoTrashBin,
 } from "react-icons/io5";
 import {
   AiFillLike,
@@ -127,6 +129,8 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     cylinders: TbCylinderPlus,
     color: IoIosColorPalette,
     vin: PiIdentificationCardFill,
+    edit: MdModeEdit,
+    bin: IoTrashBin,
   };
 
   let IconComponent = iconComponents[type];

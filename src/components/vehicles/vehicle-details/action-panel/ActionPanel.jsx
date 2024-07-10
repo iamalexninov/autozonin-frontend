@@ -9,9 +9,9 @@ export const ActionPanel = () => {
 
   return (
     <>
-      <div className="bg-slate-50 p-8 border border-gray-300 rounded-3xl mb-10">
-        <p className="text-lg font-600 mb-1">Our Price</p>
-        <h5 className="text-2xl font-700 text-cape-green mb-5">$50,000</h5>
+      <div className="bg-white p-8 border border-gray-300 rounded-3xl mb-10">
+        <p className="text-xl font-600 mb-1">Our Price</p>
+        <h3 className="text-2xl font-700 text-cape-green mb-5">$50,000</h3>
         <p className="text-base font-600 text-gray-500 mb-1">Leasing Offer:</p>
         <p className="text-base mb-8">
           Montly Payment: <span className="font-700 mx-1">$650</span>

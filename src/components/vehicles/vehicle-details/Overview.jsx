@@ -70,8 +70,8 @@ export const VehicleOverview = ({ id }) => {
   ];
 
   return (
-    <div className="bg-slate-50 p-5 lg:p-8 border border-gray-300 rounded-3xl mb-10">
-      <h5 className="font-600 mb-10 text-lg">Vehicle Overview</h5>
+    <div className="bg-white p-5 lg:p-8 border border-gray-300 rounded-3xl mb-10">
+      <h3 className="font-600 mb-10 text-xl">Vehicle Overview</h3>
       {dataVehicleRecords.map((vehicle) => (
         <div
           className="flex items-center justify-between gap-2 mb-5"

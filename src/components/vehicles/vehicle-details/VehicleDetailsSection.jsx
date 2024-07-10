@@ -8,6 +8,7 @@ import { ActionPanel } from "./action-panel/ActionPanel";
 import { VehicleOverview } from "./Overview";
 import { RelatedVehicles } from "../RelatedVehicles";
 import { Features } from "./Features";
+import { MakeReview } from "./make-review/MakeReview";
 
 
 export const VehicleDetailsSection = () => {
@@ -22,6 +23,7 @@ export const VehicleDetailsSection = () => {
             <Banners id={params.id} />
             <Description id={params.id}/>
             <Features />
+            <MakeReview />
           </div>
           <div className="w-full max-w-md">
             <EngagementPanel />
