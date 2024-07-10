@@ -56,6 +56,7 @@ import { TbCylinderPlus, TbEngine, TbManualGearbox } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
 import { RiArticleFill, RiSendPlaneFill } from "react-icons/ri";
 import {
+  IoIosArrowBack,
   IoIosColorPalette,
   IoIosListBox,
   IoIosPricetags,
@@ -78,6 +79,7 @@ const RenderIconComponent = ({ type, size = 20 }) => {
     arrowDown: MdKeyboardArrowDown,
     arrowRight: FaArrowRight,
     arrowRightInline: GoArrowUpRight,
+    chevronLeft: IoIosArrowBack,
     eye: FaEye,
     calendar: FaCalendarAlt,
     setting: IoSettings,

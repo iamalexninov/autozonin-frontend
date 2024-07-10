@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { isDashboardPath } from "../utils/helpers";
 import { Navbar } from "../components/navbar/Navbar";
 import { Footer } from "../components/footer/Footer";
-import { DashboardAside } from "../components/dashboard/dashboard-aside/DashboardAside";
+import { DashboardAside } from "../components/dashboard/DashboardAside";
 import { MainLayout } from "./MainLayout";
 import { DashboardLayout } from "./DashboardLayout";
 

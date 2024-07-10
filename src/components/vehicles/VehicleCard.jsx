@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-
 import { GlobalIcon } from "../global/GlobalIcon";
 
-export const VehicleCard = ({ cardType, vehicle }) => {
+export const VehicleCard = ({ vehicle }) => {
   const { _id, banners, details, price } = vehicle;
 
   return (

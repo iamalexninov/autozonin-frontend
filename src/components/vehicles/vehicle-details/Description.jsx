@@ -6,7 +6,7 @@ export const Description = ({ id }) => {
 
   return (
     <div className="bg-slate-50 p-8 border border-gray-300 rounded-3xl mb-10">
-      <h5 className="text-lg font-600 mb-5">Description</h5>
+      <h3 className="text-xl font-600 mb-5">Description</h3>
       <p className="text-sm mb-5">
         Quisque imperdiet dignissim enim dictum finibus. Sed consectetutr
         convallis enim eget laoreet. Aenean vitae nisl mollis, porta risus vel,

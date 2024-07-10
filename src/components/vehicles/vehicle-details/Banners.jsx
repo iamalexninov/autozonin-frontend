@@ -5,7 +5,7 @@ export const Banners = ({ id }) => {
 
   return (
     <div className="w-full my-8">
-      {vehicle.banners ? (
+      {vehicle && vehicle.banners ? (
         <img
           src={vehicle.banners.url}
           alt=""

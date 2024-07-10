@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { useMenuContext } from "../../../hooks/useContexts";
+import { useMenuContext } from "../../hooks/useContexts";
 
-import { GlobalIcon } from "../../global/GlobalIcon";
+import { GlobalIcon } from "../global/GlobalIcon";
 
 export const DashboardAside = () => {
   const paths = [
@@ -51,7 +51,7 @@ export const DashboardAside = () => {
   return (
     <>
       <aside
-        className={`fixed top-0 w-full max-w-64 z-40 bg-cape-green md:max-w-72 lg:relative lg:left-0 lg:max-w-80 ${
+        className={`fixed top-0 pt-10 w-full max-w-64 z-40 bg-cape-green md:max-w-72 lg:relative lg:left-0 lg:max-w-80 ${
           asideMenu.aside ? "left-0 h-full" : "-left-full"
         }`}
       >
@@ -70,6 +70,12 @@ export const DashboardAside = () => {
 const LinkRecords = ({ records }) => {
   return (
     <ul className="flex flex-col gap-10 px-10">
+      <div>
+        <Link to="/" className="text-gray-200 flex gap-1 items-center">
+          <GlobalIcon type="chevronLeft" size={25}/>
+          <p>Back To Home</p>
+        </Link>
+      </div>
       {records.map((record) => (
         <LinkRecord key={record.link} record={record} />
       ))}

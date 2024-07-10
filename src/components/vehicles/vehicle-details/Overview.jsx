@@ -6,57 +6,65 @@ export const VehicleOverview = ({ id }) => {
   const dataVehicleRecords = [
     {
       label: "Body",
-      value: vehicle.details && vehicle.details.type,
+      value: vehicle && vehicle.details ? vehicle.details.type : "Loading...",
       icon: "car",
     },
     {
       label: "Condition",
-      value: vehicle.details && vehicle.details.condition,
+      value:
+        vehicle && vehicle.details ? vehicle.details.condition : "Loading...",
       icon: "filter",
     },
     {
       label: "Fuel Type",
-      value: vehicle.details && vehicle.details.fuelType,
+      value:
+        vehicle && vehicle.details ? vehicle.details.fuelType : "Loading...",
       icon: "petrol",
     },
     {
       label: "Year",
-      value: vehicle.details && vehicle.details.year,
+      value: vehicle && vehicle.details ? vehicle.details.year : "Loading...",
       icon: "calendar",
     },
     {
       label: "Transmission",
-      value: vehicle.details && vehicle.details.transmission,
+      value:
+        vehicle && vehicle.details
+          ? vehicle.details.transmission
+          : "Loading...",
       icon: "transmission",
     },
     {
       label: "Drive Type",
-      value: vehicle.details && vehicle.details.driveType,
+      value:
+        vehicle && vehicle.details ? vehicle.details.driveType : "Loading...",
       icon: "drive",
     },
     {
       label: "Engine Size",
-      value: vehicle.details && vehicle.details.engineSize,
+      value:
+        vehicle && vehicle.details ? vehicle.details.engineSize : "Loading...",
       icon: "engine",
     },
     {
       label: "Doors",
-      value: vehicle.details && vehicle.details.doors,
+      value: vehicle && vehicle.details ? vehicle.details.doors : "Loading...",
       icon: "doors",
     },
     {
       label: "Cylinders",
-      value: vehicle.details && vehicle.details.cylinder,
+      value:
+        vehicle && vehicle.details ? vehicle.details.cylinder : "Loading...",
       icon: "cylinders",
     },
     {
       label: "Color",
-      value: vehicle.details && vehicle.details.color,
+      value: vehicle && vehicle.details ? vehicle.details.color : "Loading...",
       icon: "color",
     },
     {
       label: "VIN",
-      value: vehicle.details && vehicle.details.vin,
+      value: vehicle && vehicle.details ? vehicle.details.vin : "Loading...",
       icon: "vin",
     },
   ];
