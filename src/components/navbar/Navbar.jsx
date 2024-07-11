@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { GlobalIcon } from "../global/GlobalIcon";
-import { LinkEntries } from "./menu/links/LinkEntries";
+import { LinksList } from "./menu/links/LinksList";
 import { MenuActionPanel } from "./menu/MenuActionPanel";
 import { useMenuContext } from "../../hooks/useContexts";
 
@@ -25,7 +25,7 @@ export const Navbar = () => {
               <h3 className="text-2xl font-black  text-black">ZONIN</h3>
             </Link>
           </div>
-          <LinkEntries />
+          <LinksList />
           <MenuActionPanel />
         </div>
       </nav>

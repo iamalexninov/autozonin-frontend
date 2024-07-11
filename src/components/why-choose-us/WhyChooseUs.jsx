@@ -6,7 +6,7 @@ export const WhyChooseUs = () => {
     <section className="py-20">
       <Wrapper>
         <h3 className="text-2xl mb-10">Why Choose Us?</h3>
-        <FeaturesList records={features} />
+        <FeaturesList />
       </Wrapper>
     </section>
   );

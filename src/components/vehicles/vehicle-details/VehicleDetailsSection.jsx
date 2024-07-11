@@ -7,7 +7,7 @@ import { EngagementPanel } from "./EngagementPanel";
 import { ActionPanel } from "./action-panel/ActionPanel";
 import { VehicleOverview } from "./Overview";
 import { RelatedVehicles } from "../RelatedVehicles";
-import { Features } from "./Features";
+import { Features } from "./features/Features";
 import { MakeReview } from "./make-review/MakeReview";
 
 

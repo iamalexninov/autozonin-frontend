@@ -4,7 +4,7 @@ export const AddReview = () => {
   return (
     <form>
       <h3 className="text-xl font-600 mb-8">Add a Review</h3>
-      <div className="flex gap-5 mb-5">
+      <div className="flex flex-col gap-5 mb-5 sm:flex-row">
         <RenderField
           attributes={{
             type: "text",
