@@ -4,7 +4,16 @@ import { SelectField } from "./SelectField";
 import { CheckboxField } from "./checkbox/CheckboxField";
 
 export const RenderField = ({ attributes }) => {
-  const { type, name, label, placeholder, options, setValues } = attributes;
+  const {
+    type,
+    name,
+    label,
+    placeholder,
+    options,
+    category,
+    values,
+    setValues,
+  } = attributes;
 
   const renderFieldByType = {
     text: (
@@ -47,7 +56,9 @@ export const RenderField = ({ attributes }) => {
         type={type}
         label={label}
         name={name}
-        // onChange={onChange}
+        category={category}
+        values={values}
+        setValues={setValues}
       />
     ),
     select: (

@@ -5,6 +5,7 @@ import { useCreateVehicle } from "../../../hooks/useCreateVehicle";
 import { MainDetails } from "./MainDetails";
 import { Media } from "./Media";
 import { Price } from "./Price";
+import { Features } from "./Features";
 
 export const SubmitListing = () => {
   const [details, setDetails] = useState({
@@ -36,6 +37,13 @@ export const SubmitListing = () => {
     url: "",
   });
 
+  const [features, setFeatures] = useState({
+    interior: [],
+    exterior: [],
+    comfort: [],
+    safety: [],
+  });
+
   const [price, setPrice] = useState({
     amount: 0,
     currency: "€",
@@ -49,7 +57,12 @@ export const SubmitListing = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await createRecord({ details: details, banners: media, price: price });
+    await createRecord({
+      details: details,
+      banners: media,
+      features: features,
+      price: price,
+    });
   };
 
   return (
@@ -58,8 +71,11 @@ export const SubmitListing = () => {
       <form onSubmit={handleSubmit}>
         <MainDetails setDetails={setDetails} />
         <Media setMedia={setMedia} />
+        <Features values={features} setValues={setFeatures} />
         <Price setPrice={setPrice} />
-        <button className="bg-cape-green text-white w-full max-w-80 p-4 uppercase font-600 rounded-xl">Submit</button>
+        <button className="bg-cape-green text-white w-full max-w-80 p-4 uppercase font-600 rounded-xl">
+          Submit
+        </button>
       </form>
     </div>
   );
