@@ -27,7 +27,7 @@ async function login(data) {
   return result;
 }
 
-async function logout() {
+function logout() {
   clearUser();
 }
 

@@ -1,6 +1,6 @@
 import { Wrapper } from "../global/Wrapper";
 import { SectionHeaderWithLinkBtn } from "../global/SectionHeaderWithLinkBtn";
-import { RenderConditionsMakers } from "./render-conditions-makers/RenderConditionsMakers";
+import { RenderConditionsMakers } from "./RenderConditionsMakers";
 import { VehicleCard } from "./VehicleCard";
 
 import { useGetVehicles } from "../../hooks/useGetVehicles";

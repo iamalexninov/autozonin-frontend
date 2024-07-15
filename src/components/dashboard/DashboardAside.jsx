@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useMenuContext } from "../../hooks/useContexts";
 
 import { GlobalIcon } from "../global/GlobalIcon";
@@ -70,12 +70,14 @@ export const DashboardAside = () => {
 const LinkRecords = ({ records }) => {
   return (
     <ul className="flex flex-col gap-10 px-10">
-      <div>
-        <Link to="/" className="text-gray-200 flex gap-1 items-center">
-          <GlobalIcon type="chevronLeft" size={25}/>
-          <p>Back To Home</p>
-        </Link>
-      </div>
+      <Link
+        to="/"
+        className="text-gray-200 flex gap-1 items-center"
+        reloadDocument="true"
+      >
+        <GlobalIcon type="chevronLeft" size={25} />
+        <p>Back To Home</p>
+      </Link>
       {records.map((record) => (
         <LinkRecord key={record.link} record={record} />
       ))}

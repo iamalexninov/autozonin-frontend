@@ -6,6 +6,7 @@ export function isDashboardPath(path) {
     "/dashboard/favorite-listings",
     "/dashboard/submit-listing",
     "/dashboard/change-password",
+    "/dashboard/logout",
   ];
 
   return paths.includes(path);
@@ -619,5 +620,43 @@ export const carModels = [
         modifications: ["Base", "S", "SE", "HSE", "R-Dynamic"],
       },
     ],
+  },
+];
+
+export const carConditions = [
+  {
+    label: "All",
+    value: "all",
+  },
+  {
+    label: "New",
+    value: "new",
+  },
+  {
+    label: "Used",
+    value: "used",
+  },
+  {
+    label: "Damaged",
+    value: "damaged",
+  },
+];
+
+export const carPopularMakes = [
+  {
+    label: "Mercedes",
+    value: "mercedes",
+  },
+  {
+    label: "BMW",
+    value: "bmw",
+  },
+  {
+    label: "Audi",
+    value: "audi",
+  },
+  {
+    label: "Honda",
+    value: "honda",
   },
 ];

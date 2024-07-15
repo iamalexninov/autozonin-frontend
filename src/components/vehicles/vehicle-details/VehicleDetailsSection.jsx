@@ -6,7 +6,6 @@ import { Description } from "./Description";
 import { EngagementPanel } from "./EngagementPanel";
 import { ActionPanel } from "./action-panel/ActionPanel";
 import { VehicleOverview } from "./Overview";
-import { RelatedVehicles } from "../RelatedVehicles";
 import { Features } from "./features/Features";
 import { MakeReview } from "./make-review/MakeReview";
 
@@ -31,7 +30,6 @@ export const VehicleDetailsSection = () => {
             <VehicleOverview id={params}/>
           </div>
         </div>
-        <RelatedVehicles />
       </Wrapper>
     </section>
   );

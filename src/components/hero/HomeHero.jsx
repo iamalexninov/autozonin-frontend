@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { SelectField } from "../global/fields/SelectField";
-import { carModels } from "../../utils/helpers";
+import { carModels, carConditions } from "../../utils/helpers";
 
 export const HomeHero = () => {
   const [models, setModels] = useState([]);
@@ -23,18 +22,25 @@ export const HomeHero = () => {
           find your perfect vehicle
         </h1>
         <form className="bg-white rounded flex flex-col justify-between gap-3 p-4 md:flex-row mb-10">
-          <div className="w-full max-w-56">
-            <SelectField
-              options={[
-                { label: "All", value: "all" },
-                { label: "New", value: "new" },
-                { label: "Used", value: "used" },
-                { label: "Damaged", value: "damaged" },
-              ]}
-            />
+          <div className="w-full">
+            <select
+              name="conditions"
+              className="w-full py-3 px-2 border border-gray-300 rounded-lg"
+            >
+              <option value="">Select Condition</option>
+              {carConditions.map((condition) => (
+                <option key={condition.label} value={condition.value}>
+                  {condition.label}
+                </option>
+              ))}
+            </select>
           </div>
-          <div className="w-full max-w-56">
-            <select name="makes" onClick={handleMakeChange}>
+          <div className="w-full">
+            <select
+              name="makes"
+              onClick={handleMakeChange}
+              className="w-full py-3 px-2 border border-gray-300 rounded-lg"
+            >
               <option value="">Select Make</option>
               {carModels.map((make) => (
                 <option key={make.make} value={make.make}>
@@ -43,7 +49,7 @@ export const HomeHero = () => {
               ))}
             </select>
           </div>
-          <div className="w-full max-w-56">
+          <div className="w-full">
             <select
               name="models"
               disabled={!models.length}
@@ -57,7 +63,7 @@ export const HomeHero = () => {
               ))}
             </select>
           </div>
-          <button className="bg-cape-green w-full md:w-48 text-center p-3 rounded text-white uppercase">
+          <button className="bg-cape-green w-full text-center p-3 rounded text-white uppercase">
             Search
           </button>
         </form>

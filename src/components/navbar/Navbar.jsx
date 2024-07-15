@@ -33,7 +33,7 @@ export const Navbar = () => {
         onClick={navbarMenu.toggleNavbar}
         className="cursor-pointer border-gray-700 p-2 text-black bg-slate-200 rounded-2xl lg:hidden"
       >
-        <GlobalIcon type={navbarMenu.nav ? "bars" : "exit"} />
+        <GlobalIcon type={navbarMenu.nav ? "exit" : "bars"} />
       </div>
     </header>
   );
