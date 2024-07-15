@@ -1,12 +1,10 @@
-import { additionalFeatures } from "../../../../../utils/features/additionalFeatures";
-
 import { RenderField } from "../../../../global/fields/RenderField";
 
 export const FeatureFilters = () => {
   return (
     <div className="mt-8">
       <p className="text-base mb-5">Features</p>
-      <FeatureRecords records={additionalFeatures} />
+      <FeatureRecords />
     </div>
   );
 };

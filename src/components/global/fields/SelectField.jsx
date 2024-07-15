@@ -5,13 +5,20 @@ export const SelectField = ({
   label,
   placeholder,
   options,
+  onClick,
   setValues,
 }) => {
   const handleOnChange = (selectedOption, { name }) => {
-    setValues((prev) => ({
-      ...prev,
-      [name]: selectedOption.value,
-    }));
+    if (setValues) {
+      setValues((prev) => ({
+        ...prev,
+        [name]: selectedOption.value,
+      }));
+    }
+
+    if (onClick) {
+      onClick();
+    }
   };
 
   return (

@@ -6,7 +6,7 @@ export const VehicleCard = ({ vehicle }) => {
 
   return (
     <div className="w-full max-w-96">
-      <CardBanner url={banners.url} title={details.title} />
+      {/* <CardBanner url={banners.url} title={details.title} /> */}
       <CardContent
         id={_id}
         title={details.title}
