@@ -7,17 +7,16 @@ export const VehicleCard = ({ vehicle }) => {
   return (
     <div className="w-full max-w-96">
       {/* <CardBanner url={banners.url} title={details.title} /> */}
-      <CardContent
+      {/* <CardContent
         id={_id}
         title={details.title}
         tagline={details.tagline}
         condition={details.condition}
         mileage={details.mileage}
-        fuelType={details.fuelType}
         transmission={details.transmission}
         currency={price.currency}
-        amount={price.amount}
-      />
+        amount={price}
+      /> */}
     </div>
   );
 };

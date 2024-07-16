@@ -1,56 +1,13 @@
-import { RenderField } from "../../global/fields/RenderField";
-
-export const Media = ({ setMedia }) => {
+export const Media = () => {
   return (
     <div className="p-8 border border-gray-300 rounded mb-10">
-      <h5 className="text-xl mb-7 pb-2 font-600">Media</h5>
-      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
-        <RenderField
-          attributes={{
-            type: "text",
-            name: "url",
-            placeholder: "Place Image Link",
-            setValues: setMedia,
-          }}
-        />
-        <RenderField
-          attributes={{
-            type: "text",
-            name: "image2",
-            placeholder: "Place Image Link",
-          }}
-        />
-        <RenderField
-          attributes={{
-            type: "text",
-            name: "image3",
-            placeholder: "Place Image Link",
-          }}
-        />
-      </div>
-      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
-        <RenderField
-          attributes={{
-            type: "text",
-            name: "image4",
-            placeholder: "Place Image Link",
-          }}
-        />
-        <RenderField
-          attributes={{
-            type: "text",
-            name: "image5",
-            placeholder: "Place Image Link",
-          }}
-        />
-        <RenderField
-          attributes={{
-            type: "text",
-            name: "image6",
-            placeholder: "Place Image Link",
-          }}
-        />
-      </div>
+      <h5 className="text-xl mb-3 pb-2 font-600">Media</h5>
+      <input
+        type="text"
+        name="banner"
+        placeholder="url"
+        className="w-full py-3 px-2 border border-gray-300 rounded-lg"
+      />
     </div>
   );
 };

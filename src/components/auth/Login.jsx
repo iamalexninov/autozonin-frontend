@@ -30,7 +30,7 @@ export const Login = () => {
     <form onClick={handleSubmit} className="w-full flex flex-col gap-5 p-3">
       <h2 className="text-xl mb-8">Sign In</h2>
       <div className="flex flex-col gap-1">
-        <label htmlFor="logEmail" className="pl-1 font-base">
+        <label htmlFor="logEmail" className="pl-1 text-base">
           Email:
         </label>
         <input
@@ -43,7 +43,7 @@ export const Login = () => {
         />
       </div>
       <div className="flex flex-col gap-1">
-        <label htmlFor="logPass" className="pl-1 font-base">
+        <label htmlFor="logPass" className="pl-1 text-base">
           Password:
         </label>
         <input

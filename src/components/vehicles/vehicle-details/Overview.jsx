@@ -16,12 +16,6 @@ export const VehicleOverview = ({ id }) => {
       icon: "filter",
     },
     {
-      label: "Fuel Type",
-      value:
-        vehicle && vehicle.details ? vehicle.details.fuelType : "Loading...",
-      icon: "petrol",
-    },
-    {
       label: "Year",
       value: vehicle && vehicle.details ? vehicle.details.year : "Loading...",
       icon: "calendar",
@@ -35,37 +29,9 @@ export const VehicleOverview = ({ id }) => {
       icon: "transmission",
     },
     {
-      label: "Drive Type",
-      value:
-        vehicle && vehicle.details ? vehicle.details.driveType : "Loading...",
-      icon: "drive",
-    },
-    {
-      label: "Engine Size",
-      value:
-        vehicle && vehicle.details ? vehicle.details.engineSize : "Loading...",
-      icon: "engine",
-    },
-    {
-      label: "Doors",
-      value: vehicle && vehicle.details ? vehicle.details.doors : "Loading...",
-      icon: "doors",
-    },
-    {
-      label: "Cylinders",
-      value:
-        vehicle && vehicle.details ? vehicle.details.cylinder : "Loading...",
-      icon: "cylinders",
-    },
-    {
       label: "Color",
       value: vehicle && vehicle.details ? vehicle.details.color : "Loading...",
       icon: "color",
-    },
-    {
-      label: "VIN",
-      value: vehicle && vehicle.details ? vehicle.details.vin : "Loading...",
-      icon: "vin",
     },
   ];
 

@@ -32,7 +32,9 @@ export const Register = () => {
     <form onSubmit={handleSubmit} className="w-full flex flex-col gap-5 p-3">
       <h2 className="text-xl mb-5">Sign Up</h2>
       <div className="flex flex-col gap-1">
-        <label htmlFor="username">Username:</label>
+        <label htmlFor="username" className="pl-1 text-base">
+          Username:
+        </label>
         <input
           type="text"
           name="username"
@@ -43,7 +45,9 @@ export const Register = () => {
         />
       </div>
       <div className="flex flex-col gap-1">
-        <label htmlFor="regEmail">Email:</label>
+        <label htmlFor="regEmail" className="pl-1 text-base">
+          Email:
+        </label>
         <input
           type="email"
           name="email"
@@ -54,7 +58,9 @@ export const Register = () => {
         />
       </div>
       <div className="flex flex-col gap-1">
-        <label htmlFor="phone">Phone:</label>
+        <label htmlFor="phone" className="pl-1 text-base">
+          Phone:
+        </label>
         <input
           type="tel"
           name="phone"
@@ -65,7 +71,9 @@ export const Register = () => {
         />
       </div>
       <div className="flex flex-col gap-1">
-        <label htmlFor="regPass">Password:</label>
+        <label htmlFor="regPass" className="pl-1 text-base">
+          Password:
+        </label>
         <input
           type="password"
           name="password"

@@ -1,4 +1,3 @@
-import { RenderField } from "../../../global/fields/RenderField";
 import { GlobalIcon } from "../../../global/GlobalIcon";
 
 export const OfferPrice = ({ active, setActive }) => {
@@ -27,34 +26,10 @@ export const OfferPrice = ({ active, setActive }) => {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <RenderField
-              attributes={{
-                type: "text",
-                name: "username",
-                placeholder: "Enter Username...",
-              }}
-            />
-            <RenderField
-              attributes={{
-                type: "text",
-                name: "email",
-                placeholder: "Enter Email...",
-              }}
-            />
-            <RenderField
-              attributes={{
-                type: "text",
-                name: "phone",
-                placeholder: "Enter Phone Number...",
-              }}
-            />
-            <RenderField
-              attributes={{
-                type: "number",
-                name: "offer",
-                placeholder: "Enter Offer...",
-              }}
-            />
+            <input type="text" placeholder="Enter Username..." />
+            <input type="email" placeholder="Enter Email..." />
+            <input type="tel" placeholder="Enter Phone Number..." />
+            <input type="number" min={0} placeholder="Enter Offer..." />
           </div>
         </div>
       </div>

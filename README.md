@@ -17,14 +17,6 @@ Our Car Dealership aims to provide a visually appealing and intuitive user inter
 
 As someone deeply involved in the car niche, I've recognized the need for a comprehensive online platform where individuals can easily list their cars for sale and where potential buyers can browse through a diverse range of options. My goal in developing this website is to create a space where users can seamlessly add their car advertisements and communicate between each other, providing detailed information and images to attract potential buyers.
 
-## :boom: Features
-
-- #### Responsive Design
-
-## :books: What I Learned
-
-## :thought_balloon: How can it be improved and future features
-
 ## :rotating_light: Running the Project
 
 To run the project in your local environment, follow these steps:
@@ -33,8 +25,3 @@ To run the project in your local environment, follow these steps:
 2. Run `npm install` or `yarn` in the project directory to install the required dependencies.
 3. Run `npm run dev` or `yarn run dev` to get the project started.
 4. Open [http://localhost:5173](http://localhost:5173) (or the address shown in your console) in your web browser to view the app.
-
-
-
-<!--  -->
-<!-- Home -->
