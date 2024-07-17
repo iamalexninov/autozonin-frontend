@@ -10,19 +10,17 @@ export const SubmitListing = () => {
   const [details, setDetails] = useState({
     title: "",
     tagline: "",
-    category: "",
     label: "",
-    condition: "",
-    type: "",
     make: "",
     model: "",
     specification: "",
-    year: "",
+    condition: "",
+    type: "",
     transmission: "",
-    fuelType: "",
+    year: "",
     mileage: "",
     color: "",
-    doors: "",
+    fuel:'',
     description: "",
   });
 
@@ -31,7 +29,7 @@ export const SubmitListing = () => {
   });
 
   const [price, setPrice] = useState({
-    price: 0,
+    value: 0,
   });
 
   const { createRecord } = useCreateVehicle();
@@ -39,9 +37,9 @@ export const SubmitListing = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await createRecord({
+      banner: media.banner,
       details: details,
-      banners: media,
-      price: price,
+      price: price.value,
     });
   };
 

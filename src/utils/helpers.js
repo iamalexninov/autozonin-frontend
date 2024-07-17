@@ -14,489 +14,312 @@ export function isDashboardPath(path) {
 
 export const carModels = [
   {
-    make: "Toyota",
-    models: [
-      { name: "Camry", modifications: ["LE", "SE", "XLE", "XSE", "TRD"] },
-      { name: "Corolla", modifications: ["L", "LE", "SE", "XLE", "XSE"] },
-      {
-        name: "RAV4",
-        modifications: ["LE", "XLE", "XLE Premium", "Adventure", "Limited"],
-      },
-      {
-        name: "Prius",
-        modifications: ["L Eco", "LE", "XLE", "Limited", "Prime"],
-      },
-      {
-        name: "Highlander",
-        modifications: ["L", "LE", "XLE", "Limited", "Platinum"],
-      },
-    ],
-  },
-  {
-    make: "Honda",
+    label: "Toyota",
+    value: "toyota",
     models: [
       {
-        name: "Accord",
-        modifications: ["LX", "Sport", "EX-L", "Touring", "Hybrid"],
-      },
-      {
-        name: "Civic",
-        modifications: ["LX", "Sport", "EX", "EX-L", "Touring"],
-      },
-      {
-        name: "CR-V",
-        modifications: ["LX", "EX", "EX-L", "Touring", "Hybrid"],
-      },
-      {
-        name: "Pilot",
-        modifications: ["LX", "EX", "EX-L", "Touring", "Elite"],
-      },
-      {
-        name: "Odyssey",
-        modifications: ["LX", "EX", "EX-L", "Touring", "Elite"],
-      },
-    ],
-  },
-  {
-    make: "Ford",
-    models: [
-      {
-        name: "F-150",
-        modifications: ["XL", "XLT", "Lariat", "King Ranch", "Platinum"],
-      },
-      {
-        name: "Escape",
-        modifications: ["S", "SE", "SEL", "Titanium", "Plug-In Hybrid"],
-      },
-      {
-        name: "Explorer",
-        modifications: ["Base", "XLT", "Limited", "ST", "Platinum"],
-      },
-      { name: "Focus", modifications: ["S", "SE", "SEL", "Titanium", "ST"] },
-      {
-        name: "Mustang",
-        modifications: ["EcoBoost", "GT", "Mach 1", "Bullitt", "Shelby GT500"],
-      },
-    ],
-  },
-  {
-    make: "Chevrolet",
-    models: [
-      {
-        name: "Silverado",
-        modifications: ["WT", "LT", "RST", "LTZ", "High Country"],
-      },
-      { name: "Malibu", modifications: ["L", "LS", "RS", "LT", "Premier"] },
-      { name: "Equinox", modifications: ["L", "LS", "LT", "Premier", "RS"] },
-      {
-        name: "Tahoe",
-        modifications: ["LS", "LT", "RST", "Z71", "High Country"],
-      },
-      { name: "Camaro", modifications: ["LS", "LT", "SS", "ZL1", "RS"] },
-    ],
-  },
-  {
-    make: "Nissan",
-    models: [
-      { name: "Altima", modifications: ["S", "SV", "SR", "SL", "Platinum"] },
-      { name: "Rogue", modifications: ["S", "SV", "SL", "Platinum", "Sport"] },
-      { name: "Sentra", modifications: ["S", "SV", "SR", "SR Turbo", "NISMO"] },
-      {
-        name: "Pathfinder",
-        modifications: ["S", "SV", "SL", "Platinum", "Rock Creek"],
-      },
-      {
-        name: "Frontier",
+        label: "Camry",
+        value: "camry",
         modifications: [
-          "S",
-          "SV",
-          "Pro-4X",
-          "Desert Runner",
-          "Midnight Edition",
+          { label: "LE", value: "le" },
+          { label: "SE", value: "se" },
+          { label: "XLE", value: "xle" },
+          { label: "XSE", value: "xse" },
+          { label: "TRD", value: "trd" },
+        ],
+      },
+      {
+        label: "Corolla",
+        value: "corolla",
+        modifications: [
+          { label: "L", value: "l" },
+          { label: "LE", value: "le" },
+          { label: "SE", value: "se" },
+          { label: "XLE", value: "xle" },
+          { label: "XSE", value: "xse" },
+        ],
+      },
+      {
+        label: "RAV4",
+        value: "rav4",
+        modifications: [
+          { label: "LE", value: "le" },
+          { label: "XLE", value: "xle" },
+          { label: "XLE Premium", value: "xle_premium" },
+          { label: "Adventure", value: "adventure" },
+          { label: "Limited", value: "limited" },
+        ],
+      },
+      {
+        label: "Prius",
+        value: "prius",
+        modifications: [
+          { label: "L Eco", value: "l_eco" },
+          { label: "LE", value: "le" },
+          { label: "XLE", value: "xle" },
+          { label: "Limited", value: "limited" },
+          { label: "Prime", value: "prime" },
+        ],
+      },
+      {
+        label: "Highlander",
+        value: "highlander",
+        modifications: [
+          { label: "L", value: "l" },
+          { label: "LE", value: "le" },
+          { label: "XLE", value: "xle" },
+          { label: "Limited", value: "limited" },
+          { label: "Platinum", value: "platinum" },
         ],
       },
     ],
   },
   {
-    make: "Hyundai",
+    label: "Honda",
+    value: "honda",
     models: [
       {
-        name: "Sonata",
-        modifications: ["SE", "SEL", "SEL Plus", "Limited", "N Line"],
-      },
-      {
-        name: "Elantra",
-        modifications: ["SE", "SEL", "Value Edition", "Limited", "Sport"],
-      },
-      {
-        name: "Santa Fe",
-        modifications: ["SE", "SEL", "SEL Plus", "Limited", "Ultimate"],
-      },
-      {
-        name: "Tucson",
-        modifications: ["SE", "SEL", "Sport", "Limited", "Ultimate"],
-      },
-      {
-        name: "Kona",
-        modifications: ["SE", "SEL", "SEL Plus", "Limited", "Ultimate"],
-      },
-    ],
-  },
-  {
-    make: "BMW",
-    models: [
-      {
-        name: "3 Series",
-        modifications: ["320i", "330i", "340i", "M340i", "330e"],
-      },
-      {
-        name: "5 Series",
-        modifications: ["530i", "540i", "550i", "M550i", "530e"],
-      },
-      {
-        name: "X3",
+        label: "Accord",
+        value: "accord",
         modifications: [
-          "sDrive30i",
-          "xDrive30i",
-          "M40i",
-          "xDrive30e",
-          "xDrive28i",
+          { label: "LX", value: "lx" },
+          { label: "Sport", value: "sport" },
+          { label: "EX-L", value: "ex-l" },
+          { label: "Touring", value: "touring" },
+          { label: "Hybrid", value: "hybrid" },
         ],
       },
       {
-        name: "X5",
+        label: "Civic",
+        value: "civic",
         modifications: [
-          "sDrive40i",
-          "xDrive40i",
-          "xDrive50i",
-          "M50i",
-          "xDrive45e",
+          { label: "LX", value: "lx" },
+          { label: "Sport", value: "sport" },
+          { label: "EX", value: "ex" },
+          { label: "EX-L", value: "ex-l" },
+          { label: "Touring", value: "touring" },
         ],
       },
       {
-        name: "7 Series",
-        modifications: ["740i", "750i", "745e", "760i", "ALPINA B7"],
-      },
-    ],
-  },
-  {
-    make: "Mercedes-Benz",
-    models: [
-      {
-        name: "C-Class",
+        label: "CR-V",
+        value: "cr-v",
         modifications: [
-          "C300",
-          "C300 4MATIC",
-          "AMG C43",
-          "AMG C63",
-          "AMG C63 S",
+          { label: "LX", value: "lx" },
+          { label: "EX", value: "ex" },
+          { label: "EX-L", value: "ex-l" },
+          { label: "Touring", value: "touring" },
+          { label: "Hybrid", value: "hybrid" },
         ],
       },
       {
-        name: "E-Class",
-        modifications: ["E350", "E450", "E450 4MATIC", "AMG E53", "AMG E63"],
-      },
-      {
-        name: "GLC",
+        label: "Pilot",
+        value: "pilot",
         modifications: [
-          "GLC300",
-          "GLC300 4MATIC",
-          "AMG GLC43",
-          "AMG GLC63",
-          "GLC350e",
+          { label: "LX", value: "lx" },
+          { label: "EX", value: "ex" },
+          { label: "EX-L", value: "ex-l" },
+          { label: "Touring", value: "touring" },
+          { label: "Elite", value: "elite" },
         ],
       },
       {
-        name: "GLE",
-        modifications: ["GLE350", "GLE450", "GLE580", "AMG GLE53", "AMG GLE63"],
-      },
-      {
-        name: "S-Class",
+        label: "Odyssey",
+        value: "odyssey",
         modifications: [
-          "S500",
-          "S580",
-          "Maybach S580",
-          "Maybach S680",
-          "AMG S63",
+          { label: "LX", value: "lx" },
+          { label: "EX", value: "ex" },
+          { label: "EX-L", value: "ex-l" },
+          { label: "Touring", value: "touring" },
+          { label: "Elite", value: "elite" },
         ],
       },
     ],
   },
   {
-    make: "Audi",
+    label: "Ford",
+    value: "ford",
     models: [
       {
-        name: "A4",
-        modifications: ["Premium", "Premium Plus", "Prestige", "S4", "RS4"],
-      },
-      {
-        name: "A6",
-        modifications: ["Premium", "Premium Plus", "Prestige", "S6", "RS6"],
-      },
-      {
-        name: "Q5",
+        label: "F-150",
+        value: "f-150",
         modifications: [
-          "Premium",
-          "Premium Plus",
-          "Prestige",
-          "SQ5",
-          "Q5 TFSI e",
+          { label: "XL", value: "xl" },
+          { label: "XLT", value: "xlt" },
+          { label: "Lariat", value: "lariat" },
+          { label: "King Ranch", value: "king_ranch" },
+          { label: "Platinum", value: "platinum" },
         ],
       },
       {
-        name: "Q7",
+        label: "Escape",
+        value: "escape",
         modifications: [
-          "Premium",
-          "Premium Plus",
-          "Prestige",
-          "SQ7",
-          "Q7 TFSI e",
+          { label: "S", value: "s" },
+          { label: "SE", value: "se" },
+          { label: "SEL", value: "sel" },
+          { label: "Titanium", value: "titanium" },
+          { label: "Plug-In Hybrid", value: "plug_in_hybrid" },
         ],
       },
       {
-        name: "A3",
-        modifications: ["Premium", "Premium Plus", "Prestige", "S3", "RS3"],
-      },
-    ],
-  },
-  {
-    make: "Kia",
-    models: [
-      { name: "Optima", modifications: ["LX", "S", "EX", "SX", "Hybrid"] },
-      { name: "Forte", modifications: ["FE", "LXS", "GT-Line", "EX", "GT"] },
-      {
-        name: "Sportage",
-        modifications: ["LX", "S", "EX", "SX Turbo", "Nightfall Edition"],
-      },
-      {
-        name: "Sorento",
-        modifications: ["LX", "S", "EX", "SX", "SX Prestige"],
-      },
-      { name: "Soul", modifications: ["LX", "S", "EX", "GT-Line", "Turbo"] },
-    ],
-  },
-  {
-    make: "Subaru",
-    models: [
-      {
-        name: "Outback",
+        label: "Explorer",
+        value: "explorer",
         modifications: [
-          "Base",
-          "Premium",
-          "Limited",
-          "Touring",
-          "Onyx Edition XT",
+          { label: "Base", value: "base" },
+          { label: "XLT", value: "xlt" },
+          { label: "Limited", value: "limited" },
+          { label: "ST", value: "st" },
+          { label: "Platinum", value: "platinum" },
         ],
       },
       {
-        name: "Forester",
-        modifications: ["Base", "Premium", "Sport", "Limited", "Touring"],
-      },
-      {
-        name: "Impreza",
-        modifications: ["Base", "Premium", "Sport", "Limited", "STI"],
-      },
-      {
-        name: "Legacy",
-        modifications: ["Base", "Premium", "Sport", "Limited", "Touring XT"],
-      },
-      {
-        name: "Crosstrek",
-        modifications: ["Base", "Premium", "Sport", "Limited", "Hybrid"],
-      },
-    ],
-  },
-  {
-    make: "Mazda",
-    models: [
-      {
-        name: "Mazda3",
-        modifications: ["Base", "Select", "Preferred", "Premium", "Turbo"],
-      },
-      {
-        name: "CX-5",
+        label: "Focus",
+        value: "focus",
         modifications: [
-          "Sport",
-          "Touring",
-          "Grand Touring",
-          "Signature",
-          "Carbon Edition",
+          { label: "S", value: "s" },
+          { label: "SE", value: "se" },
+          { label: "SEL", value: "sel" },
+          { label: "Titanium", value: "titanium" },
+          { label: "ST", value: "st" },
         ],
       },
       {
-        name: "CX-9",
+        label: "Mustang",
+        value: "mustang",
         modifications: [
-          "Sport",
-          "Touring",
-          "Grand Touring",
-          "Signature",
-          "Carbon Edition",
-        ],
-      },
-      {
-        name: "MX-5 Miata",
-        modifications: [
-          "Sport",
-          "Club",
-          "Grand Touring",
-          "RF Club",
-          "RF Grand Touring",
-        ],
-      },
-      {
-        name: "CX-30",
-        modifications: ["Base", "Select", "Preferred", "Premium", "Turbo"],
-      },
-    ],
-  },
-  {
-    make: "Volkswagen",
-    models: [
-      { name: "Golf", modifications: ["S", "SE", "SEL", "GTI", "R"] },
-      { name: "Jetta", modifications: ["S", "SE", "R-Line", "SEL", "GLI"] },
-      { name: "Passat", modifications: ["S", "SE", "R-Line", "SEL", "GT"] },
-      {
-        name: "Tiguan",
-        modifications: ["S", "SE", "SE R-Line", "SEL", "SEL Premium R-Line"],
-      },
-      {
-        name: "Atlas",
-        modifications: ["S", "SE", "SEL", "SEL R-Line", "SEL Premium"],
-      },
-    ],
-  },
-  {
-    make: "Tesla",
-    models: [
-      { name: "Model S", modifications: ["Long Range", "Plaid", "Plaid+"] },
-      {
-        name: "Model 3",
-        modifications: ["Standard Range Plus", "Long Range", "Performance"],
-      },
-      { name: "Model X", modifications: ["Long Range", "Plaid"] },
-      { name: "Model Y", modifications: ["Long Range", "Performance"] },
-      {
-        name: "Cybertruck",
-        modifications: ["Single Motor", "Dual Motor", "Tri Motor"],
-      },
-    ],
-  },
-  {
-    make: "Porsche",
-    models: [
-      {
-        name: "911",
-        modifications: ["Carrera", "Carrera S", "Turbo", "Turbo S", "GT3"],
-      },
-      {
-        name: "Cayenne",
-        modifications: ["Base", "S", "GTS", "Turbo", "Turbo S E-Hybrid"],
-      },
-      { name: "Macan", modifications: ["Base", "S", "GTS", "Turbo", "T"] },
-      {
-        name: "Panamera",
-        modifications: ["Base", "4S", "GTS", "Turbo S", "Turbo S E-Hybrid"],
-      },
-      {
-        name: "Taycan",
-        modifications: ["Base", "4S", "Turbo", "Turbo S", "Cross Turismo"],
-      },
-    ],
-  },
-  {
-    make: "Lexus",
-    models: [
-      {
-        name: "ES",
-        modifications: [
-          "ES 250",
-          "ES 350",
-          "ES 300h",
-          "ES 250 F Sport",
-          "ES 350 F Sport",
-        ],
-      },
-      {
-        name: "RX",
-        modifications: [
-          "RX 350",
-          "RX 450h",
-          "RX 350L",
-          "RX 450hL",
-          "RX 350 F Sport",
-        ],
-      },
-      {
-        name: "NX",
-        modifications: ["NX 250", "NX 350", "NX 350h", "NX 450h+", "NX 300"],
-      },
-      {
-        name: "IS",
-        modifications: [
-          "IS 300",
-          "IS 350",
-          "IS 500",
-          "IS 300 F Sport",
-          "IS 350 F Sport",
-        ],
-      },
-      {
-        name: "GX",
-        modifications: [
-          "GX 460",
-          "GX 460 Premium",
-          "GX 460 Luxury",
-          "GX 460 Black Line",
-          "GX 460 Off-Road",
+          { label: "EcoBoost", value: "ecoboost" },
+          { label: "GT", value: "gt" },
+          { label: "Mach 1", value: "mach_1" },
+          { label: "Bullitt", value: "bullitt" },
+          { label: "Shelby GT500", value: "shelby_gt500" },
         ],
       },
     ],
   },
   {
-    make: "Jaguar",
+    label: "Chevrolet",
+    value: "chevrolet",
     models: [
-      { name: "XE", modifications: ["Base", "S", "SE", "HSE", "R-Dynamic"] },
-      { name: "XF", modifications: ["Base", "S", "SE", "HSE", "R-Dynamic"] },
-      { name: "F-PACE", modifications: ["Base", "S", "SE", "HSE", "SVR"] },
       {
-        name: "E-PACE",
-        modifications: ["Base", "S", "SE", "HSE", "R-Dynamic"],
+        label: "Silverado",
+        value: "silverado",
+        modifications: [
+          { label: "WT", value: "wt" },
+          { label: "LT", value: "lt" },
+          { label: "RST", value: "rst" },
+          { label: "LTZ", value: "ltz" },
+          { label: "High Country", value: "high_country" },
+        ],
       },
       {
-        name: "F-TYPE",
-        modifications: ["Base", "S", "R", "SVR", "First Edition"],
+        label: "Malibu",
+        value: "malibu",
+        modifications: [
+          { label: "L", value: "l" },
+          { label: "LS", value: "ls" },
+          { label: "RS", value: "rs" },
+          { label: "LT", value: "lt" },
+          { label: "Premier", value: "premier" },
+        ],
+      },
+      {
+        label: "Equinox",
+        value: "equinox",
+        modifications: [
+          { label: "L", value: "l" },
+          { label: "LS", value: "ls" },
+          { label: "LT", value: "lt" },
+          { label: "Premier", value: "premier" },
+          { label: "RS", value: "rs" },
+        ],
+      },
+      {
+        label: "Tahoe",
+        value: "tahoe",
+        modifications: [
+          { label: "LS", value: "ls" },
+          { label: "LT", value: "lt" },
+          { label: "RST", value: "rst" },
+          { label: "Z71", value: "z71" },
+          { label: "High Country", value: "high_country" },
+        ],
+      },
+      {
+        label: "Camaro",
+        value: "camaro",
+        modifications: [
+          { label: "LS", value: "ls" },
+          { label: "LT", value: "lt" },
+          { label: "SS", value: "ss" },
+          { label: "ZL1", value: "zl1" },
+          { label: "RS", value: "rs" },
+        ],
       },
     ],
   },
   {
-    make: "Land Rover",
+    label: "Nissan",
+    value: "nissan",
     models: [
       {
-        name: "Range Rover",
+        label: "Altima",
+        value: "altima",
         modifications: [
-          "Base",
-          "HSE",
-          "Autobiography",
-          "SVAutobiography",
-          "SVAutobiography Dynamic",
+          { label: "S", value: "s" },
+          { label: "SV", value: "sv" },
+          { label: "SR", value: "sr" },
+          { label: "SL", value: "sl" },
+          { label: "Platinum", value: "platinum" },
         ],
       },
       {
-        name: "Discovery",
-        modifications: ["Base", "S", "SE", "HSE", "HSE Luxury"],
+        label: "Sentra",
+        value: "sentra",
+        modifications: [
+          { label: "S", value: "s" },
+          { label: "SV", value: "sv" },
+          { label: "SR", value: "sr" },
+          { label: "SL", value: "sl" },
+          { label: "NISMO", value: "nismo" },
+        ],
       },
-      { name: "Defender", modifications: ["Base", "S", "SE", "HSE", "X"] },
       {
-        name: "Range Rover Sport",
-        modifications: ["Base", "HSE", "Autobiography", "SVR", "HST"],
+        label: "Rogue",
+        value: "rogue",
+        modifications: [
+          { label: "S", value: "s" },
+          { label: "SV", value: "sv" },
+          { label: "SL", value: "sl" },
+          { label: "Platinum", value: "platinum" },
+          { label: "Midnight Edition", value: "midnight_edition" },
+        ],
       },
       {
-        name: "Range Rover Velar",
-        modifications: ["Base", "S", "SE", "HSE", "R-Dynamic"],
+        label: "Murano",
+        value: "murano",
+        modifications: [
+          { label: "S", value: "s" },
+          { label: "SV", value: "sv" },
+          { label: "SL", value: "sl" },
+          { label: "Platinum", value: "platinum" },
+          { label: "Midnight Edition", value: "midnight_edition" },
+        ],
+      },
+      {
+        label: "Frontier",
+        value: "frontier",
+        modifications: [
+          { label: "S", value: "s" },
+          { label: "SV", value: "sv" },
+          { label: "Pro-4X", value: "pro_4x" },
+          { label: "Desert Runner", value: "desert_runner" },
+          { label: "Midnight Edition", value: "midnight_edition" },
+        ],
       },
     ],
   },
 ];
+
 
 export const carConditions = [
   {
@@ -558,6 +381,14 @@ export const types = [
   { label: "Hybrid", value: "hybrid" },
 ];
 
+export const transmissions = [
+  { label: "Automatic", value: "automatic" },
+  { label: "Manual", value: "manual" },
+  { label: "CVT", value: "cvt" },
+  { label: "DCT", value: "dct" },
+  { label: "AWT", value: "awt" },
+];
+
 export const colors = [
   { label: "Black", value: "black" },
   { label: "White", value: "white" },
@@ -566,4 +397,12 @@ export const colors = [
   { label: "Blue", value: "blue" },
   { label: "Red", value: "red" },
   { label: "Metallic", value: "metallic" },
+];
+
+export const fuels = [
+  { label: "Gasoline", value: "gasoline" },
+  { label: "Diesel", value: "diesel" },
+  { label: "LPG", value: "lpg" },
+  { label: "Electric", value: "electric" },
+  { label: "Hybrid", value: "hybrid" },
 ];
