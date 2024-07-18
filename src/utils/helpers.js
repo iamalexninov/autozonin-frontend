@@ -15,184 +15,79 @@ export function isDashboardPath(path) {
 export const carModels = [
   {
     label: "Toyota",
-    value: "toyota",
+    value: "Toyota",
     models: [
       {
         label: "Camry",
-        value: "camry",
-        modifications: [
-          { label: "LE", value: "le" },
-          { label: "SE", value: "se" },
-          { label: "XLE", value: "xle" },
-          { label: "XSE", value: "xse" },
-          { label: "TRD", value: "trd" },
-        ],
+        value: "Camry",
       },
       {
         label: "Corolla",
-        value: "corolla",
-        modifications: [
-          { label: "L", value: "l" },
-          { label: "LE", value: "le" },
-          { label: "SE", value: "se" },
-          { label: "XLE", value: "xle" },
-          { label: "XSE", value: "xse" },
-        ],
+        value: "Corolla",
       },
       {
         label: "RAV4",
-        value: "rav4",
-        modifications: [
-          { label: "LE", value: "le" },
-          { label: "XLE", value: "xle" },
-          { label: "XLE Premium", value: "xle_premium" },
-          { label: "Adventure", value: "adventure" },
-          { label: "Limited", value: "limited" },
-        ],
+        value: "RAV4",
       },
       {
         label: "Prius",
-        value: "prius",
-        modifications: [
-          { label: "L Eco", value: "l_eco" },
-          { label: "LE", value: "le" },
-          { label: "XLE", value: "xle" },
-          { label: "Limited", value: "limited" },
-          { label: "Prime", value: "prime" },
-        ],
+        value: "Prius",
       },
       {
         label: "Highlander",
-        value: "highlander",
-        modifications: [
-          { label: "L", value: "l" },
-          { label: "LE", value: "le" },
-          { label: "XLE", value: "xle" },
-          { label: "Limited", value: "limited" },
-          { label: "Platinum", value: "platinum" },
-        ],
+        value: "Highlander",
       },
     ],
   },
   {
     label: "Honda",
-    value: "honda",
+    value: "Honda",
     models: [
       {
         label: "Accord",
-        value: "accord",
-        modifications: [
-          { label: "LX", value: "lx" },
-          { label: "Sport", value: "sport" },
-          { label: "EX-L", value: "ex-l" },
-          { label: "Touring", value: "touring" },
-          { label: "Hybrid", value: "hybrid" },
-        ],
+        value: "Accord",
       },
       {
         label: "Civic",
-        value: "civic",
-        modifications: [
-          { label: "LX", value: "lx" },
-          { label: "Sport", value: "sport" },
-          { label: "EX", value: "ex" },
-          { label: "EX-L", value: "ex-l" },
-          { label: "Touring", value: "touring" },
-        ],
+        value: "Civic",
       },
       {
         label: "CR-V",
-        value: "cr-v",
-        modifications: [
-          { label: "LX", value: "lx" },
-          { label: "EX", value: "ex" },
-          { label: "EX-L", value: "ex-l" },
-          { label: "Touring", value: "touring" },
-          { label: "Hybrid", value: "hybrid" },
-        ],
+        value: "CR-V",
       },
       {
         label: "Pilot",
-        value: "pilot",
-        modifications: [
-          { label: "LX", value: "lx" },
-          { label: "EX", value: "ex" },
-          { label: "EX-L", value: "ex-l" },
-          { label: "Touring", value: "touring" },
-          { label: "Elite", value: "elite" },
-        ],
+        value: "Pilot",
       },
       {
         label: "Odyssey",
-        value: "odyssey",
-        modifications: [
-          { label: "LX", value: "lx" },
-          { label: "EX", value: "ex" },
-          { label: "EX-L", value: "ex-l" },
-          { label: "Touring", value: "touring" },
-          { label: "Elite", value: "elite" },
-        ],
+        value: "Odyssey",
       },
     ],
   },
   {
     label: "Ford",
-    value: "ford",
+    value: "Ford",
     models: [
       {
         label: "F-150",
-        value: "f-150",
-        modifications: [
-          { label: "XL", value: "xl" },
-          { label: "XLT", value: "xlt" },
-          { label: "Lariat", value: "lariat" },
-          { label: "King Ranch", value: "king_ranch" },
-          { label: "Platinum", value: "platinum" },
-        ],
+        value: "F-150",
       },
       {
         label: "Escape",
-        value: "escape",
-        modifications: [
-          { label: "S", value: "s" },
-          { label: "SE", value: "se" },
-          { label: "SEL", value: "sel" },
-          { label: "Titanium", value: "titanium" },
-          { label: "Plug-In Hybrid", value: "plug_in_hybrid" },
-        ],
+        value: "Escape",
       },
       {
         label: "Explorer",
-        value: "explorer",
-        modifications: [
-          { label: "Base", value: "base" },
-          { label: "XLT", value: "xlt" },
-          { label: "Limited", value: "limited" },
-          { label: "ST", value: "st" },
-          { label: "Platinum", value: "platinum" },
-        ],
+        value: "Explorer",
       },
       {
         label: "Focus",
-        value: "focus",
-        modifications: [
-          { label: "S", value: "s" },
-          { label: "SE", value: "se" },
-          { label: "SEL", value: "sel" },
-          { label: "Titanium", value: "titanium" },
-          { label: "ST", value: "st" },
-        ],
+        value: "Focus",
       },
       {
         label: "Mustang",
-        value: "mustang",
-        modifications: [
-          { label: "EcoBoost", value: "ecoboost" },
-          { label: "GT", value: "gt" },
-          { label: "Mach 1", value: "mach_1" },
-          { label: "Bullitt", value: "bullitt" },
-          { label: "Shelby GT500", value: "shelby_gt500" },
-        ],
+        value: "Mustang",
       },
     ],
   },
@@ -202,141 +97,70 @@ export const carModels = [
     models: [
       {
         label: "Silverado",
-        value: "silverado",
-        modifications: [
-          { label: "WT", value: "wt" },
-          { label: "LT", value: "lt" },
-          { label: "RST", value: "rst" },
-          { label: "LTZ", value: "ltz" },
-          { label: "High Country", value: "high_country" },
-        ],
+        value: "Silverado",
       },
       {
         label: "Malibu",
-        value: "malibu",
-        modifications: [
-          { label: "L", value: "l" },
-          { label: "LS", value: "ls" },
-          { label: "RS", value: "rs" },
-          { label: "LT", value: "lt" },
-          { label: "Premier", value: "premier" },
-        ],
+        value: "Malibu",
       },
       {
         label: "Equinox",
-        value: "equinox",
-        modifications: [
-          { label: "L", value: "l" },
-          { label: "LS", value: "ls" },
-          { label: "LT", value: "lt" },
-          { label: "Premier", value: "premier" },
-          { label: "RS", value: "rs" },
-        ],
+        value: "Equinox",
       },
       {
         label: "Tahoe",
-        value: "tahoe",
-        modifications: [
-          { label: "LS", value: "ls" },
-          { label: "LT", value: "lt" },
-          { label: "RST", value: "rst" },
-          { label: "Z71", value: "z71" },
-          { label: "High Country", value: "high_country" },
-        ],
+        value: "Тahoe",
       },
       {
         label: "Camaro",
-        value: "camaro",
-        modifications: [
-          { label: "LS", value: "ls" },
-          { label: "LT", value: "lt" },
-          { label: "SS", value: "ss" },
-          { label: "ZL1", value: "zl1" },
-          { label: "RS", value: "rs" },
-        ],
+        value: "Camaro",
       },
     ],
   },
   {
     label: "Nissan",
-    value: "nissan",
+    value: "Nissan",
     models: [
       {
         label: "Altima",
-        value: "altima",
-        modifications: [
-          { label: "S", value: "s" },
-          { label: "SV", value: "sv" },
-          { label: "SR", value: "sr" },
-          { label: "SL", value: "sl" },
-          { label: "Platinum", value: "platinum" },
-        ],
+        value: "Altima",
       },
       {
         label: "Sentra",
-        value: "sentra",
-        modifications: [
-          { label: "S", value: "s" },
-          { label: "SV", value: "sv" },
-          { label: "SR", value: "sr" },
-          { label: "SL", value: "sl" },
-          { label: "NISMO", value: "nismo" },
-        ],
+        value: "Sentra",
       },
       {
         label: "Rogue",
-        value: "rogue",
-        modifications: [
-          { label: "S", value: "s" },
-          { label: "SV", value: "sv" },
-          { label: "SL", value: "sl" },
-          { label: "Platinum", value: "platinum" },
-          { label: "Midnight Edition", value: "midnight_edition" },
-        ],
+        value: "Rogue",
       },
       {
         label: "Murano",
-        value: "murano",
-        modifications: [
-          { label: "S", value: "s" },
-          { label: "SV", value: "sv" },
-          { label: "SL", value: "sl" },
-          { label: "Platinum", value: "platinum" },
-          { label: "Midnight Edition", value: "midnight_edition" },
-        ],
+        value: "Murano",
       },
       {
         label: "Frontier",
-        value: "frontier",
-        modifications: [
-          { label: "S", value: "s" },
-          { label: "SV", value: "sv" },
-          { label: "Pro-4X", value: "pro_4x" },
-          { label: "Desert Runner", value: "desert_runner" },
-          { label: "Midnight Edition", value: "midnight_edition" },
-        ],
+        value: "Frontier",
       },
     ],
   },
 ];
 
-
 export const carConditions = [
   {
     label: "All",
-    value: "all",
+    value: "All",
   },
   {
     label: "New",
-    value: "new",
+    value: "New",
   },
   {
     label: "Used",
-    value: "used",
+    value: "Used",
   },
   {
     label: "Damaged",
-    value: "damaged",
+    value: "Damaged",
   },
 ];
 
@@ -382,27 +206,27 @@ export const types = [
 ];
 
 export const transmissions = [
-  { label: "Automatic", value: "automatic" },
-  { label: "Manual", value: "manual" },
-  { label: "CVT", value: "cvt" },
-  { label: "DCT", value: "dct" },
-  { label: "AWT", value: "awt" },
+  { label: "Automatic", value: "Automatic" },
+  { label: "Manual", value: "Manual" },
+  { label: "CVT", value: "CVT" },
+  { label: "DCT", value: "DCT" },
+  { label: "AWT", value: "AWT" },
 ];
 
 export const colors = [
-  { label: "Black", value: "black" },
-  { label: "White", value: "white" },
-  { label: "Silver", value: "silver" },
-  { label: "Gray", value: "gray" },
-  { label: "Blue", value: "blue" },
-  { label: "Red", value: "red" },
-  { label: "Metallic", value: "metallic" },
+  { label: "Black", value: "Black" },
+  { label: "White", value: "White" },
+  { label: "Silver", value: "Silver" },
+  { label: "Gray", value: "Gray" },
+  { label: "Blue", value: "Blue" },
+  { label: "Red", value: "Red" },
+  { label: "Metallic", value: "Metallic" },
 ];
 
 export const fuels = [
-  { label: "Gasoline", value: "gasoline" },
-  { label: "Diesel", value: "diesel" },
-  { label: "LPG", value: "lpg" },
-  { label: "Electric", value: "electric" },
-  { label: "Hybrid", value: "hybrid" },
+  { label: "Gasoline", value: "Gasoline" },
+  { label: "Diesel", value: "Diesel" },
+  { label: "LPG", value: "LPG" },
+  { label: "Electric", value: "Electric" },
+  { label: "Hybrid", value: "Hybrid" },
 ];

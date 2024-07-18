@@ -1,6 +1,6 @@
 import { useGetVehicles } from "../../../../hooks/useGetVehicles";
 
-import { VehicleCard } from "../../VehicleCard";
+import { VehicleCard } from "../../vehicle-card/VehicleCard";
 
 export const VehicleList = () => {
   const { vehicles } = useGetVehicles();
