@@ -1,4 +1,4 @@
-export const InputField = ({ type, label, name, placeholder, setValues }) => {
+export const InputField = ({ type, label, name, placeholder, setValues, max }) => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
@@ -21,7 +21,7 @@ export const InputField = ({ type, label, name, placeholder, setValues }) => {
         placeholder={placeholder}
         onChange={handleInputChange}
         min={0}
-        max={500000}
+        max={max}
         className="w-full py-3 px-2 border border-gray-300 rounded-lg"
       />
     </div>

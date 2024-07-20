@@ -11,7 +11,7 @@ export const ServicesContent = () => {
       <p className="text-gray-500 mb-10">
         Explore our diverse selection of vehicles for sale and discover
         hassle-free car shopping. Whether you`re buying, selling, or browsing,
-        find the perfect ride with us today.
+        find the perfect ride with us today.  
       </p>
       <ServicesList />
       <Link

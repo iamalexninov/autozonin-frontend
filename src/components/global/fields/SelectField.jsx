@@ -1,4 +1,4 @@
-  export const SelectField = ({
+export const SelectField = ({
   label,
   name,
   initialOption,
@@ -25,9 +25,9 @@
         className="w-full py-3 px-2 border border-gray-300 rounded-lg text-gray-400"
       >
         <option value="">{initialOption}</option>
-        {options.map((option) => (
-          <option value={option.value} key={option.label}>
-            {option.label}
+        {options.map((option, index) => (
+          <option value={name === "make" ? option.name : option} key={index}>
+            {name === "make" ? option.name : option}
           </option>
         ))}
       </select>

@@ -5,6 +5,7 @@ import { useCreateVehicle } from "../../../hooks/useCreateVehicle";
 import { MainDetails } from "./MainDetails";
 import { Media } from "./Media";
 import { Price } from "./Price";
+import { Features } from "./Features";
 
 export const SubmitListing = () => {
   const [details, setDetails] = useState({
@@ -48,6 +49,7 @@ export const SubmitListing = () => {
       <h2 className="text-2xl mb-10">Add Vehicle Listing</h2>
       <form onSubmit={handleSubmit}>
         <MainDetails setDetails={setDetails} />
+        <Features />
         <Media setMedia={setMedia} />
         <Price setPrice={setPrice} />
         <button className="bg-cape-green text-white w-full max-w-80 p-4 uppercase font-600 rounded-xl">

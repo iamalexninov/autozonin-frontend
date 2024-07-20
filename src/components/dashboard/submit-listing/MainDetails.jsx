@@ -1,9 +1,13 @@
 import { useState } from "react";
 import {
-  carConditions,
-  carModels,
+  carMakesAndModels,
+  categories,
   colors,
-  fuels,
+  conditions,
+  cylinders,
+  doors,
+  driveTypes,
+  fuelTypes,
   labels,
   transmissions,
   types,
@@ -14,31 +18,16 @@ import { Textarea } from "../../global/fields/Textarea";
 
 export const MainDetails = ({ setDetails }) => {
   const [models, setModels] = useState([]);
-  const [specifications, setSpecifications] = useState([]);
 
   const handleMakeChange = (e) => {
     const selected = e.target.value;
 
-    const make = carModels.find((spec) => spec.value === selected);
+    const make = carMakesAndModels.find((spec) => spec.name === selected);
 
     if (make) {
       setModels(make.models);
     } else {
       setModels([]);
-    }
-  };
-
-  const handleModelChange = (e) => {
-    const selected = e.target.value;
-
-    const model = models.find((mod) => mod.value === selected);
-    console.log(model);
-    console.log(selected);
-
-    if (model) {
-      setSpecifications(model.modifications);
-    } else {
-      setSpecifications([]);
     }
   };
 
@@ -49,70 +38,69 @@ export const MainDetails = ({ setDetails }) => {
         <InputField
           type="text"
           name="title"
-          label="Title"
-          placeholder="Mercedes-Benz C300"
+          label="Listing Title"
+          placeholder="Enter Title.."
           setValues={setDetails}
         />
         <InputField
           type="text"
           name="tagline"
           label="Tagline"
-          placeholder="Excellent performance..."
+          placeholder="Enter Tagline.."
           setValues={setDetails}
         />
         <SelectField
+          options={categories}
+          initialOption="Select Category"
+          label="Category"
+          name="category"
+          setValues={setDetails}
+        />
+      </div>
+      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
+        <SelectField
           options={labels}
-          initialOption="Select Label"
+          initialOption="Enter Label.."
           label="Label"
           name="label"
           setValues={setDetails}
         />
-      </div>
-      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
         <SelectField
-          name="make"
-          initialOption="Select Make"
-          label="Make"
-          options={carModels}
-          onClick={handleMakeChange}
-          setValues={setDetails}
-        />
-        <SelectField
-          name="model"
-          initialOption="Models"
-          label="Model"
-          options={models}
-          onClick={handleModelChange}
-          setValues={setDetails}
-        />
-        <SelectField
-          name="specification"
-          initialOption="Select Spec"
-          label="Srecification"
-          options={specifications}
-          setValues={setDetails}
-        />
-      </div>
-      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
-        <SelectField
-          name="condition"
+          options={conditions}
+          initialOption="Enter Condition.."
           label="Condition"
-          initialOption="Select Condition"
-          options={carConditions}
+          name="condition"
           setValues={setDetails}
         />
         <SelectField
-          name="type"
-          label="Types"
-          initialOption="Select Types"
           options={types}
+          initialOption="Enter Type.."
+          label="Type"
+          name="type"
+          setValues={setDetails}
+        />
+      </div>
+      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
+        <SelectField
+          options={carMakesAndModels}
+          onClick={handleMakeChange}
+          name="make"
+          initialOption="Enter Make.."
+          label="Make"
           setValues={setDetails}
         />
         <SelectField
-          name="transmission"
-          label="Transmission"
-          initialOption="Select Transmission"
-          options={transmissions}
+          options={models}
+          name="model"
+          initialOption="Enter Model.."
+          label="Model"
+          setValues={setDetails}
+        />
+        <InputField
+          type="text"
+          label="Specification"
+          name="specification"
+          placeholder="Enter Specification.."
           setValues={setDetails}
         />
       </div>
@@ -120,36 +108,86 @@ export const MainDetails = ({ setDetails }) => {
         <InputField
           type="number"
           label="Year"
+          placeholder="Enter Year.."
           name="year"
-          placeholder="Enter Year:"
+          setValues={setDetails}
+        />
+        <SelectField
+          options={driveTypes}
+          name="driveType"
+          initialOption="Enter Drive.."
+          label="Drive Type"
+          setValues={setDetails}
+        />
+        <SelectField
+          options={transmissions}
+          name="transmission"
+          initialOption="Enter Transmission.."
+          label="Transmission"
+          setValues={setDetails}
+        />
+      </div>
+      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
+        <SelectField
+          options={fuelTypes}
+          name="fuel"
+          label="Fuel"
+          initialOption="Enter Fuel.."
           setValues={setDetails}
         />
         <InputField
           type="number"
           label="Mileage"
           name="mileage"
-          placeholder="Enter Mileage:"
+          setValues={setDetails}
+          placeholder="Enter Mileage.."
+          max={500000}
+        />
+        <InputField
+          type="number"
+          label="Engine Size"
+          placeholder="Engine Size in Nm.."
+          max={1000}
+          name="engineSize"
+          setValues={setDetails}
+        />
+      </div>
+      <div className="flex flex-col gap-5 mb-5 lg:flex-row">
+        <SelectField
+          name="cylinder"
+          initialOption="Enter Cylinder.."
+          label="Cylinder"
+          options={cylinders}
           setValues={setDetails}
         />
         <SelectField
-          label="Color"
           name="color"
+          initialOption="Enter Color.."
+          label="Color"
           options={colors}
-          initialOption="Select Color"
           setValues={setDetails}
         />
         <SelectField
-          label="Fuel"
-          name="fuel"
-          options={fuels}
-          initialOption="Select Fuel"
+          name="door"
+          initialOption="Enter Door.."
+          label="Door"
+          options={doors}
+          setValues={setDetails}
+        />
+      </div>
+      <div className="flex flex-col gap-5 mb-5 lg:flex-row max-w-md">
+        <InputField
+          type="text"
+          label="VIN"
+          name="vin"
+          placeholder="Enter VIN.."
           setValues={setDetails}
         />
       </div>
       <Textarea
         label="Listing Description"
         name="description"
-        placeholder="Describe"
+        placeholder="Enter Description.."
         setValues={setDetails}
       />
     </div>

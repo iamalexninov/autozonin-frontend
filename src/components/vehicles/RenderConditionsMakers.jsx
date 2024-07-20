@@ -1,15 +1,17 @@
 import { useState } from "react";
-import { carConditions, carPopularMakes } from "../../utils/helpers";
+import { conditions } from "../../utils/helpers";
 
 export const RenderConditionsMakers = ({ type }) => {
+  const popularMakes = ["Mercedes", "BMW", "Audi", "VW", "Honda"];
+
   return (
     <TypeEntries
       type={type}
       entries={
         type === "conditions"
-          ? carConditions
+          ? conditions
           : type === "makers"
-          ? carPopularMakes
+          ? popularMakes
           : null
       }
     />
@@ -17,13 +19,7 @@ export const RenderConditionsMakers = ({ type }) => {
 };
 
 const TypeEntries = ({ type, entries }) => {
-  const [active, setActive] = useState(
-    type === "conditions"
-      ? carConditions[0].value
-      : type === "makers"
-      ? carPopularMakes[0].value
-      : null
-  );
+  const [active, setActive] = useState(entries[0]);
 
   const handleOnClick = (value) => {
     setActive(value);
