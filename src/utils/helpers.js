@@ -126,3 +126,33 @@ export const colors = [
   "Gold",
 ];
 export const doors = [2, 4, 6];
+export const features = {
+  interior: [
+    "Advanced Infotainment System",
+    "Ambient Lighting",
+    "Digital Instrument Cluster",
+    "Wireless Charging Pad",
+    "Premium Upholstery and Materials",
+  ],
+  exterior: [
+    "LED Headlights and Taillights",
+    "Aerodynamic Design",
+    "Panoramic Sunroof",
+    "Alloy Wheels",
+    "Power Liftgate",
+  ],
+  safety: [
+    "Advanced Driver Assistance Systems (ADAS)",
+    "360-Degree Camera System",
+    "Automatic Emergency Braking",
+    "Blind-Spot Monitoring",
+    "Rear Cross-Traffic Alert",
+  ],
+  comfort: [
+    "Heated and Ventilated Seats",
+    "Dual-Zone Climate Control",
+    "Noise-Canceling Technology",
+    "Power-Adjustable Seats with Memory",
+    "Adaptive Suspension System",
+  ],
+};

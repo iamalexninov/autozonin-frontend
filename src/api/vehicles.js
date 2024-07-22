@@ -17,7 +17,6 @@ const renderVehicles = async () => {
 };
 
 const createVehicle = async (vehicleData) => {
-  console.log(vehicleData)
   const record = await api.post(endpoints.create, vehicleData);
   return record;
 };

@@ -1,19 +1,7 @@
-import { useGetVehicle } from "../../../hooks/useGetVehicle";
-
-export const Banners = ({ id }) => {
-  const { vehicle } = useGetVehicle(id);
-
+export const Banners = ({ banner }) => {
   return (
     <div className="w-full my-8">
-      {vehicle && vehicle.banners ? (
-        <img
-          src={vehicle.banners.url}
-          alt=""
-          className="rounded-md object-cover w-full"
-        />
-      ) : (
-        <p>Loading...</p>
-      )}
+      {banner ? <img src={banner} alt="Vehicle Banner" className="rounded-3xl"/> : <p>Loading...</p>}
     </div>
   );
 };

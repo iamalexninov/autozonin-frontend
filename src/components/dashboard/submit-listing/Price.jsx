@@ -7,7 +7,7 @@ export const Price = ({ setPrice }) => {
       <InputField
         type="number"
         name="price"
-        placeholder="Enter Price"
+        placeholder="Enter Price.."
         setValues={setPrice}
       />
     </div>

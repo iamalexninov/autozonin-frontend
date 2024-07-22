@@ -1,6 +1,13 @@
+import { useState } from "react";
+import { InputField } from "../../../global/fields/InputField";
 import { GlobalIcon } from "../../../global/GlobalIcon";
 
 export const TestDrive = ({ active, setActive }) => {
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [date, setDate] = useState("");
+
   const handleClick = () => {
     if (setActive) {
       setActive();
@@ -26,10 +33,34 @@ export const TestDrive = ({ active, setActive }) => {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <input type="text" placeholder="Enter Username..." />
-            <input type="email" placeholder="Enter Email..." />
-            <input type="tel" placeholder="Enter Phone Number..." />
-            <input type="date" placeholder="Enter Date..." />
+            <InputField
+              type="text"
+              label="Enter Username.."
+              name="username"
+              placeholder="iamalexninov"
+              setValues={setUsername}
+            />
+            <InputField
+              type="email"
+              label="Enter Email.."
+              name="email"
+              placeholder="alex@gmail.com"
+              setValues={setEmail}
+            />
+            <InputField
+              type="tel"
+              label="Enter Phone.."
+              name="phone"
+              placeholder="+359 896 35 9814"
+              setValues={setPhone}
+            />
+            <InputField
+              type="date"
+              label="Enter Date"
+              name="date"
+              placeholder="11.05.2024"
+              setValues={setDate}
+            />
           </div>
         </div>
       </div>

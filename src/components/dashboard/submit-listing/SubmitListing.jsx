@@ -6,42 +6,53 @@ import { MainDetails } from "./MainDetails";
 import { Media } from "./Media";
 import { Price } from "./Price";
 import { Features } from "./Features";
+import { useNavigate } from "react-router-dom";
 
 export const SubmitListing = () => {
   const [details, setDetails] = useState({
     title: "",
     tagline: "",
+    category: "",
     label: "",
+    condition: "",
+    type: "",
     make: "",
     model: "",
     specification: "",
-    condition: "",
-    type: "",
-    transmission: "",
     year: "",
+    driveType: "",
+    transmission: "",
+    fuel: "",
     mileage: "",
+    engineSize: "",
+    cylinder: "",
     color: "",
-    fuel:'',
+    doors: "",
+    vin: "",
     description: "",
   });
 
-  const [media, setMedia] = useState({
-    banner: "",
+  const [banner, setBanner] = useState({ banner: "" });
+  const [price, setPrice] = useState({ price: 0 });
+  const [features, setFeatures] = useState({
+    interior: [],
+    exterior: [],
+    safety: [],
+    comfort: [],
   });
 
-  const [price, setPrice] = useState({
-    value: 0,
-  });
-
+  const navigate = useNavigate();
   const { createRecord } = useCreateVehicle();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     await createRecord({
-      banner: media.banner,
+      banner: banner.banner,
       details: details,
-      price: price.value,
+      features: features,
+      price: price.price,
     });
+    navigate("/");
   };
 
   return (
@@ -49,8 +60,8 @@ export const SubmitListing = () => {
       <h2 className="text-2xl mb-10">Add Vehicle Listing</h2>
       <form onSubmit={handleSubmit}>
         <MainDetails setDetails={setDetails} />
-        <Features />
-        <Media setMedia={setMedia} />
+        <Features features={features} setFeatures={setFeatures} />
+        <Media setMedia={setBanner} />
         <Price setPrice={setPrice} />
         <button className="bg-cape-green text-white w-full max-w-80 p-4 uppercase font-600 rounded-xl">
           Submit
