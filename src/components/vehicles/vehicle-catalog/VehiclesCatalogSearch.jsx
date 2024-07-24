@@ -4,10 +4,10 @@ import {
   categories,
   conditions,
   types,
-} from "../../../../utils/helpers";
-import { SelectField } from "../../../global/fields/SelectField";
-import { VehicleCard } from "../../vehicle-card/VehicleCard";
-import { useGetVehicles } from "../../../../hooks/useGetVehicles";
+} from "../../../utils/helpers";
+import { SelectField } from "../../global/fields/SelectField";
+import { VehicleCard } from "../vehicle-card/VehicleCard";
+import { useGetVehicles } from "../../../hooks/useGetVehicles";
 
 export const VehiclesCatalogSearch = () => {
   const [category, setCategory] = useState({ category: "" });

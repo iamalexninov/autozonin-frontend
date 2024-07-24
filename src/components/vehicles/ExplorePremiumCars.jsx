@@ -1,6 +1,5 @@
 import { Wrapper } from "../global/Wrapper";
 import { SectionHeaderWithLinkBtn } from "../global/SectionHeaderWithLinkBtn";
-import { RenderConditionsMakers } from "./RenderConditionsMakers";
 import { VehicleCard } from "./vehicle-card/VehicleCard";
 
 import { useGetVehicles } from "../../hooks/useGetVehicles";
@@ -17,7 +16,7 @@ export const ExplorePremiumCars = () => {
           linkPath="/catalog"
           linkText="View"
         />
-        <RenderConditionsMakers type="conditions" />
+        {/* <RenderConditionsMakers type="conditions" /> */}
         <CarRecords records={vehicles} />
       </Wrapper>
     </section>

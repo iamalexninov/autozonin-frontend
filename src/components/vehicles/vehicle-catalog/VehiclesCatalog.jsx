@@ -1,6 +1,6 @@
 import { Wrapper } from "../../global/Wrapper";
-import { SortBy } from "./sort-by/SortBy";
-import { VehiclesCatalogSearch } from "./vehicle-catalog-search/VehiclesCatalogSearch";
+import { SortBy } from "./SortBy";
+import { VehiclesCatalogSearch } from "./VehiclesCatalogSearch";
 
 export const VehiclesCatalog = () => {
   return (
@@ -8,7 +8,6 @@ export const VehiclesCatalog = () => {
       <Wrapper>
         <SortBy />
         <VehiclesCatalogSearch />
-        {/* <VehicleList /> */}
       </Wrapper>
     </section>
   );
