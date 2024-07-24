@@ -15,7 +15,7 @@ export const BrandsList = () => {
     },
     {
       banner: mercedes,
-      brand: "Mercedes",
+      brand: "Mercedes-Benz",
     },
     {
       banner: bmw,

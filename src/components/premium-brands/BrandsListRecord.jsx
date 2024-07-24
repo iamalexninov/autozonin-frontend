@@ -1,12 +1,22 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const BrandsListRecord = ({ record }) => {
+  const navigate = useNavigate();
+
+  const handleMakeClick = (e) => {
+    e.preventDefault();
+
+    const params = new URLSearchParams({ make: record.brand }).toString();
+    navigate(`/catalog?${params}`);
+  };
+
   return (
-    <li className="rounded-lg border-cape-green border w-full max-w-48 p-8">
-      <Link to="/catalogue" className="flex flex-col text-center items-center">
-        <img src={record.banner} alt={record.brand} className="mb-4 w-24" />
-        <p className="uppercase">{record.brand}</p>
-      </Link>
+    <li
+      className="flex flex-col items-center rounded-lg border-cape-green border w-full max-w-48 p-8"
+      onClick={handleMakeClick}
+    >
+      <img src={record.banner} alt={record.brand} className="mb-4 w-24" />
+      <p className="uppercase">{record.brand}</p>
     </li>
   );
 };

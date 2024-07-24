@@ -8,6 +8,7 @@ import {
 import { SelectField } from "../../global/fields/SelectField";
 import { VehicleCard } from "../vehicle-card/VehicleCard";
 import { useGetVehicles } from "../../../hooks/useGetVehicles";
+import { useLocation } from "react-router-dom";
 
 export const VehiclesCatalogSearch = () => {
   const [category, setCategory] = useState({ category: "" });
@@ -19,9 +20,6 @@ export const VehiclesCatalogSearch = () => {
   const [data, setData] = useState([]);
 
   const { vehicles } = useGetVehicles();
-  useEffect(() => {
-    setData(vehicles && vehicles);
-  }, []);
 
   const handleMakeChange = (e) => {
     const selected = e.target.value;
@@ -54,6 +52,26 @@ export const VehiclesCatalogSearch = () => {
       console.error("Error fetching data", error);
     }
   };
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleSearch = async () => {
+      const params = new URLSearchParams(location.search);
+      const item = params.get("make");
+
+      const paramsSecond = new URLSearchParams({
+        make: item,
+      });
+      const response = await fetch(
+        `http://localhost:5000/api/vehicles?${paramsSecond}`
+      );
+      const vehicles = await response.json();
+      setData(vehicles);
+    };
+
+    handleSearch();
+  }, []);
 
   return (
     <div className="mb-9 bg-white">

@@ -16,7 +16,6 @@ export const ExplorePremiumCars = () => {
           linkPath="/catalog"
           linkText="View"
         />
-        {/* <RenderConditionsMakers type="conditions" /> */}
         <CarRecords records={vehicles} />
       </Wrapper>
     </section>
