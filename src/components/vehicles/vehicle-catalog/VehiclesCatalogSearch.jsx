@@ -20,6 +20,7 @@ export const VehiclesCatalogSearch = () => {
   const [data, setData] = useState([]);
 
   const { vehicles } = useGetVehicles();
+  f;
 
   const handleMakeChange = (e) => {
     const selected = e.target.value;
@@ -58,10 +59,11 @@ export const VehiclesCatalogSearch = () => {
   useEffect(() => {
     const handleSearch = async () => {
       const params = new URLSearchParams(location.search);
-      const item = params.get("make");
+      const make = params.get("make");
+      // const condition = params.get("condition");
 
       const paramsSecond = new URLSearchParams({
-        make: item,
+        make: make,
       });
       const response = await fetch(
         `http://localhost:5000/api/vehicles?${paramsSecond}`

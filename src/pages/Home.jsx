@@ -5,7 +5,7 @@ import { Stats } from "../components/stats/Stats";
 import { WhyChooseUs } from "../components/why-choose-us/WhyChooseUs";
 import { AutoHub } from "../components/autohub/AutoHub";
 import { Subscribe } from "../components/Subscribe";
-import { ExplorePremiumCars } from "../components/vehicles/ExplorePremiumCars";
+import { CarsByConditions } from "../components/vehicles/CarsByConditions";
 import { RecentAdded } from "../components/vehicles/RecentAdded";
 
 export const Home = () => {
@@ -13,7 +13,7 @@ export const Home = () => {
     <>
       <HomeHero />
       <ExplorePremiumBrands />
-      <ExplorePremiumCars />
+      <CarsByConditions />
       <Services />
       <Stats />
       <WhyChooseUs />
