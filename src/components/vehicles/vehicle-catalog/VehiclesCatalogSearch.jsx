@@ -8,19 +8,23 @@ import {
 import { SelectField } from "../../global/fields/SelectField";
 import { VehicleCard } from "../vehicle-card/VehicleCard";
 import { useGetVehicles } from "../../../hooks/useGetVehicles";
-import { useLocation } from "react-router-dom";
 
 export const VehiclesCatalogSearch = () => {
-  const [category, setCategory] = useState({ category: "" });
-  const [condition, setCondition] = useState({ condition: "" });
-  const [type, setType] = useState({ type: "" });
-  const [make, setMake] = useState({ make: "" });
-  const [model, setModel] = useState({ model: "" });
+  const [formData, setFormData] = useState({
+    category: "",
+    condition: "",
+    type: "",
+    make: "",
+    model: "",
+  });
   const [models, setModels] = useState([]);
+  const [searchData, setSearchData] = useState(formData);
   const [data, setData] = useState([]);
 
-  const { vehicles } = useGetVehicles();
-  f;
+  const { vehicles } = useGetVehicles(searchData);
+  useEffect(() => {
+    setData(vehicles);
+  }, [vehicles]);
 
   const handleMakeChange = (e) => {
     const selected = e.target.value;
@@ -35,45 +39,8 @@ export const VehiclesCatalogSearch = () => {
 
   const handleFormSearch = async (e) => {
     e.preventDefault();
-
-    try {
-      const params = new URLSearchParams({
-        category: category.category,
-        condition: condition.condition,
-        type: type.type,
-        make: make.make,
-        model: model.model,
-      }).toString();
-      const response = await fetch(
-        `http://localhost:5000/api/vehicles?${params}`
-      );
-      const vehicles = await response.json();
-      setData(vehicles);
-    } catch (error) {
-      console.error("Error fetching data", error);
-    }
+    setSearchData(formData);
   };
-
-  const location = useLocation();
-
-  useEffect(() => {
-    const handleSearch = async () => {
-      const params = new URLSearchParams(location.search);
-      const make = params.get("make");
-      // const condition = params.get("condition");
-
-      const paramsSecond = new URLSearchParams({
-        make: make,
-      });
-      const response = await fetch(
-        `http://localhost:5000/api/vehicles?${paramsSecond}`
-      );
-      const vehicles = await response.json();
-      setData(vehicles);
-    };
-
-    handleSearch();
-  }, []);
 
   return (
     <div className="mb-9 bg-white">
@@ -85,34 +52,34 @@ export const VehiclesCatalogSearch = () => {
           initialOption="Enter Category"
           name="category"
           options={categories}
-          setValues={setCategory}
+          setValues={setFormData}
         />
         <SelectField
           initialOption="Enter Condition"
           name="condition"
           options={conditions}
-          setValues={setCondition}
+          setValues={setFormData}
         />
         <SelectField
           initialOption="Enter Type"
           name="type"
           options={types}
-          setValues={setType}
+          setValues={setFormData}
         />
         <SelectField
           initialOption="Enter Make"
           name="make"
           options={carMakesAndModels}
-          setValues={setMake}
+          setValues={setFormData}
           onClick={handleMakeChange}
         />
         <SelectField
           initialOption="Enter Model"
           name="model"
           options={models}
-          setValues={setModel}
+          setValues={setFormData}
         />
-        <button className="text-white bg-cape-green w-full rounded-full">
+        <button className="text-white bg-cape-green w-full rounded-full p-3">
           Search
         </button>
       </form>

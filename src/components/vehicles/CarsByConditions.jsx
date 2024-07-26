@@ -3,7 +3,7 @@ import { SectionHeaderWithLinkBtn } from "../global/SectionHeaderWithLinkBtn";
 import { VehicleCard } from "./vehicle-card/VehicleCard";
 
 import { useGetVehicles } from "../../hooks/useGetVehicles";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { conditions } from "../../utils/helpers";
 
 export const CarsByConditions = () => {
@@ -11,7 +11,12 @@ export const CarsByConditions = () => {
   const [condition, setCondition] = useState("");
   const [data, setData] = useState([]);
 
-  const handleConditionClick = async (item) => {
+  useEffect(() => {
+    setData(vehicles);
+  }, [vehicles]);
+
+  const handleConditionClick = async (e, item) => {
+    e.preventDefault();
     setCondition(item);
 
     const params = new URLSearchParams({ condition: condition }).toString();
@@ -31,9 +36,13 @@ export const CarsByConditions = () => {
           linkPath="/catalog"
           linkText="View"
         />
-        <ul>
+        <ul className="flex gap-4 mb-5">
           {conditions.map((c) => (
-            <li key={c} onClick={() => handleConditionClick(c)}>
+            <li
+              key={c}
+              onClick={(e) => handleConditionClick(e, c)}
+              className="text-lg font-600 uppercase cursor-pointer"
+            >
               {c}
             </li>
           ))}

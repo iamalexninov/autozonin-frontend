@@ -4,8 +4,6 @@ import { CardContent } from "./CardContent";
 export const VehicleCard = ({ vehicle }) => {
   const { _id, banner, details, price } = vehicle;
 
-  console.log(details);
-
   return (
     <div className="w-full max-w-96">
       <CardBanner banner={banner} />

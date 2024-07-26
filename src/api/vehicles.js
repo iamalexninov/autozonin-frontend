@@ -1,7 +1,7 @@
 import { api } from "./api";
 
 const endpoints = {
-  vehicles: "/vehicles/",
+  vehicles: "/vehicles",
   vehicle: "/vehicles/",
   create: "/vehicles/create",
 };
@@ -11,9 +11,16 @@ const renderVehicle = async (id) => {
   return record;
 };
 
-const renderVehicles = async () => {
-  const records = await api.get(endpoints.vehicles);
-  return records;
+const renderVehicles = async (params) => {
+  const query = new URLSearchParams(params).toString();
+
+  let result;
+
+  query
+    ? (result = await api.get(`${endpoints.vehicles}?${query}`))
+    : (result = await api.get(endpoints.vehicles));
+
+  return result;
 };
 
 const createVehicle = async (vehicleData) => {
