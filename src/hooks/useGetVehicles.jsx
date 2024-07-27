@@ -16,8 +16,10 @@ export const useGetVehicles = (params = {}) => {
       }
     };
 
-    fetchVehicles();
-  }, [params]);
+    if (Object.keys(params).length) {
+      fetchVehicles();
+    }
+  }, [params, dispatch]);
 
   return { vehicles };
 };

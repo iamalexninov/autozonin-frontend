@@ -7,24 +7,19 @@ import { useEffect, useState } from "react";
 import { conditions } from "../../utils/helpers";
 
 export const CarsByConditions = () => {
-  const { vehicles } = useGetVehicles();
   const [condition, setCondition] = useState("");
-  const [data, setData] = useState([]);
+  const [searchData, setSearchData] = useState({ condition: "" });
+
+  const { vehicles } = useGetVehicles(searchData);
 
   useEffect(() => {
-    setData(vehicles);
-  }, [vehicles]);
+    if (condition) {
+      setSearchData({ condition });
+    }
+  }, [condition]);
 
-  const handleConditionClick = async (e, item) => {
-    e.preventDefault();
-    setCondition(item);
-
-    const params = new URLSearchParams({ condition: condition }).toString();
-    const response = await fetch(
-      `http://localhost:5000/api/vehicles?${params}`
-    );
-    const json = await response.json();
-    setData(json);
+  const handleConditionClick = async (selected) => {
+    setCondition(selected);
   };
 
   return (
@@ -40,7 +35,7 @@ export const CarsByConditions = () => {
           {conditions.map((c) => (
             <li
               key={c}
-              onClick={(e) => handleConditionClick(e, c)}
+              onClick={() => handleConditionClick(c)}
               className="text-lg font-600 uppercase cursor-pointer"
             >
               {c}
@@ -48,7 +43,7 @@ export const CarsByConditions = () => {
           ))}
         </ul>
         <div className="flex gap-5 flex-wrap">
-          {data.slice(0, 3).map((vehicle) => (
+          {vehicles.slice(0, 3).map((vehicle) => (
             <VehicleCard
               key={vehicle._id}
               vehicle={vehicle}

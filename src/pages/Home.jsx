@@ -6,7 +6,6 @@ import { WhyChooseUs } from "../components/why-choose-us/WhyChooseUs";
 import { AutoHub } from "../components/autohub/AutoHub";
 import { Subscribe } from "../components/Subscribe";
 import { CarsByConditions } from "../components/vehicles/CarsByConditions";
-import { RecentAdded } from "../components/vehicles/RecentAdded";
 
 export const Home = () => {
   return (
@@ -17,7 +16,6 @@ export const Home = () => {
       <Services />
       <Stats />
       <WhyChooseUs />
-      <RecentAdded />
       <AutoHub />
       <Subscribe />
     </>

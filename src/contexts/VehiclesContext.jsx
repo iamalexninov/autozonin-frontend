@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext, useEffect, useReducer } from "react";
 
 export const VehiclesContext = createContext();
 
@@ -24,7 +24,9 @@ export const VehiclesContextProvider = ({ children }) => {
     vehicles: [],
   });
 
-  console.log("VehiclesContext:", state);
+  useEffect(()=>{
+    console.log("VehiclesContext:", state);
+  },[])
 
   return (
     <VehiclesContext.Provider value={{ ...state, dispatch }}>

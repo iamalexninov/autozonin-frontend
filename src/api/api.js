@@ -15,8 +15,6 @@ async function request(method, url, data) {
     options.headers["X-Authorization"] = token;
   }
 
-  console.log(data);
-
   if (data !== undefined) {
     options.headers["Content-Type"] = "application/json";
     options.body = JSON.stringify(data);
@@ -40,7 +38,6 @@ async function request(method, url, data) {
       throw error;
     }
 
-    console.log(result)
     return result;
   } catch (error) {
     throw new Error(error.message);
