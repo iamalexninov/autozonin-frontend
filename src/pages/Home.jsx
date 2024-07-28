@@ -1,4 +1,4 @@
-import { HomeHero } from "../components/hero/HomeHero";
+import { HomeHero } from "../components/hero/home-hero/HomeHero";
 import { ExplorePremiumBrands } from "../components/premium-brands/PremiumBrands";
 import { Services } from "../components/services/Services";
 import { Stats } from "../components/stats/Stats";

@@ -12,11 +12,11 @@ export const BrandsListRecord = ({ record }) => {
 
   return (
     <li
-      className="flex flex-col items-center rounded-lg border-cape-green border w-full max-w-48 p-8"
+      className="flex flex-col items-center rounded-lg border-cape-green border w-full max-w-52 p-8 cursor-pointer"
       onClick={handleMakeClick}
     >
       <img src={record.banner} alt={record.brand} className="mb-4 w-24" />
-      <p className="uppercase">{record.brand}</p>
+      <p className="uppercase text-center">{record.brand}</p>
     </li>
   );
 };

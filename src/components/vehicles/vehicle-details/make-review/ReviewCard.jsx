@@ -16,14 +16,6 @@ export const ReviewCard = () => {
             <p className="text-sm text-gray-400">November 13,2024y.</p>
           </div>
         </div>
-        <div className="flex justify-start gap-2">
-          <div className="flex p-2 rounded-full bg-blue-600 hover:bg-blue-300 text-blue-300 hover:text-blue-600 cursor-pointer">
-            <GlobalIcon type="edit" />
-          </div>
-          <div className="flex p-2 rounded-full bg-red-600 text-red-300 hover:bg-red-300 hover:text-red-600 cursor-pointer">
-            <GlobalIcon type="bin" />
-          </div>
-        </div>
       </div>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor labore

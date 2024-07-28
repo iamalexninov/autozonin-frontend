@@ -8,20 +8,25 @@ import {
 import { SelectField } from "../../global/fields/SelectField";
 import { VehicleCard } from "../vehicle-card/VehicleCard";
 import { useGetVehicles } from "../../../hooks/useGetVehicles";
+import { useLocation } from "react-router-dom";
 
 export const VehiclesCatalogSearch = () => {
+  const location = useLocation();
+  const query = new URLSearchParams(location.search);
+
   const [formData, setFormData] = useState({
     category: "",
-    condition: "",
+    condition: query.get("condition") || "",
     type: "",
-    make: "",
-    model: "",
+    make: query.get("make") || "",
+    model: query.get("model") || "",
   });
   const [models, setModels] = useState([]);
   const [searchData, setSearchData] = useState(formData);
   const [data, setData] = useState([]);
 
   const { vehicles } = useGetVehicles(searchData);
+
   useEffect(() => {
     setData(vehicles);
   }, [vehicles]);
